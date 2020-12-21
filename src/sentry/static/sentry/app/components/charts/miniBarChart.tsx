@@ -4,8 +4,8 @@ import './components/markPoint';
 import React from 'react';
 import set from 'lodash/set';
 
-import {getFormattedDate} from 'app/utils/dates';
-import theme from 'app/utils/theme';
+import {getFormattedDate} from 'sentry/utils/dates';
+import theme from 'sentry/utils/theme';
 
 import BarChart, {BarChartSeries} from './barChart';
 import BaseChart from './baseChart';

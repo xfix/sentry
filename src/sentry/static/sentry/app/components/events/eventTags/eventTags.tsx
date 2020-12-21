@@ -3,12 +3,12 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import isEmpty from 'lodash/isEmpty';
 
-import EventDataSection from 'app/components/events/eventDataSection';
-import Pills from 'app/components/pills';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event} from 'app/types';
-import {defined, generateQueryWithTag} from 'app/utils';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import Pills from 'sentry/components/pills';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event} from 'sentry/types';
+import {defined, generateQueryWithTag} from 'sentry/utils';
 
 import EventTagsPill from './eventTagsPill';
 

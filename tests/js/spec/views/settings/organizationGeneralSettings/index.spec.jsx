@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import OrganizationGeneralSettings from 'app/views/settings/organizationGeneralSettings';
+import OrganizationGeneralSettings from 'sentry/views/settings/organizationGeneralSettings';
 
 jest.mock('jquery');
 

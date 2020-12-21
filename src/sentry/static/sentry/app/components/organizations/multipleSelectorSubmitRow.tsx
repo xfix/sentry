@@ -2,10 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import {t} from 'app/locale';
-import {growIn} from 'app/styles/animations';
-import space from 'app/styles/space';
+import Button from 'sentry/components/button';
+import {t} from 'sentry/locale';
+import {growIn} from 'sentry/styles/animations';
+import space from 'sentry/styles/space';
 
 type Props = {
   onSubmit: () => void;

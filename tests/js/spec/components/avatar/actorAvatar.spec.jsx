@@ -2,9 +2,9 @@ import React from 'react';
 
 import {mount, mountWithTheme} from 'sentry-test/enzyme';
 
-import ActorAvatar from 'app/components/avatar/actorAvatar';
-import MemberListStore from 'app/stores/memberListStore';
-import TeamStore from 'app/stores/teamStore';
+import ActorAvatar from 'sentry/components/avatar/actorAvatar';
+import MemberListStore from 'sentry/stores/memberListStore';
+import TeamStore from 'sentry/stores/teamStore';
 
 describe('ActorAvatar', function () {
   const USER = {

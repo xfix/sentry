@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Banner from 'app/components/banner';
-import Button from 'app/components/button';
+import Banner from 'sentry/components/banner';
+import Button from 'sentry/components/button';
 import FeatureTourModal, {
   TourImage,
   TourStep,
   TourText,
-} from 'app/components/modals/featureTourModal';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
+} from 'sentry/components/modals/featureTourModal';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
 
 import tourAlert from '../../../images/spot/discover-tour-alert.svg';
 import tourExplore from '../../../images/spot/discover-tour-explore.svg';

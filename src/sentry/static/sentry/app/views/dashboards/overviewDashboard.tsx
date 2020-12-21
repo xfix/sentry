@@ -1,11 +1,11 @@
 import React from 'react';
 import {RouteComponentProps} from 'react-router';
 
-import {t} from 'app/locale';
-import {Organization, Release} from 'app/types';
-import withOrganization from 'app/utils/withOrganization';
-import AsyncView from 'app/views/asyncView';
-import DashboardDetail from 'app/views/dashboardsV2/detail';
+import {t} from 'sentry/locale';
+import {Organization, Release} from 'sentry/types';
+import withOrganization from 'sentry/utils/withOrganization';
+import AsyncView from 'sentry/views/asyncView';
+import DashboardDetail from 'sentry/views/dashboardsV2/detail';
 
 import overviewDashboard from './data/dashboards/overviewDashboard';
 import Dashboard from './dashboard';

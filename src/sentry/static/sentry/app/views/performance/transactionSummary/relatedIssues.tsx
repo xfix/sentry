@@ -3,20 +3,20 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import pick from 'lodash/pick';
 
-import Button from 'app/components/button';
-import {SectionHeading} from 'app/components/charts/styles';
-import EmptyStateWarning from 'app/components/emptyStateWarning';
-import GroupList from 'app/components/issues/groupList';
-import {Panel, PanelBody} from 'app/components/panels';
-import {DEFAULT_RELATIVE_PERIODS} from 'app/constants';
-import {URL_PARAM} from 'app/constants/globalSelectionHeader';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {OrganizationSummary} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {TRACING_FIELDS} from 'app/utils/discover/fields';
-import {decodeScalar} from 'app/utils/queryString';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
+import Button from 'sentry/components/button';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import EmptyStateWarning from 'sentry/components/emptyStateWarning';
+import GroupList from 'sentry/components/issues/groupList';
+import {Panel, PanelBody} from 'sentry/components/panels';
+import {DEFAULT_RELATIVE_PERIODS} from 'sentry/constants';
+import {URL_PARAM} from 'sentry/constants/globalSelectionHeader';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {OrganizationSummary} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import {TRACING_FIELDS} from 'sentry/utils/discover/fields';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
 
 type Props = {
   organization: OrganizationSummary;

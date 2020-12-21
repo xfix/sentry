@@ -2,14 +2,14 @@ import React from 'react';
 import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import ApiForm from 'app/components/forms/apiForm';
-import NumberField from 'app/components/forms/numberField';
-import List from 'app/components/list';
-import ListItem from 'app/components/list/listItem';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Group, Organization, Project} from 'app/types';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import ApiForm from 'sentry/components/forms/apiForm';
+import NumberField from 'sentry/components/forms/numberField';
+import List from 'sentry/components/list';
+import ListItem from 'sentry/components/list/listItem';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Group, Organization, Project} from 'sentry/types';
 
 const impacts = [
   tct(

@@ -2,12 +2,12 @@ import React from 'react';
 import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import SelectControl from 'app/components/forms/selectControl';
-import {IconAdd, IconEdit} from 'app/icons';
-import {t} from 'app/locale';
-import {Organization} from 'app/types';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import SelectControl from 'sentry/components/forms/selectControl';
+import {IconAdd, IconEdit} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {Organization} from 'sentry/types';
 
 import {DashboardDetails, DashboardListItem, DashboardState} from './types';
 

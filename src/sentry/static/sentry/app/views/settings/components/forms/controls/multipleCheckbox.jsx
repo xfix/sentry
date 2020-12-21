@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import {Box} from 'reflexbox'; // eslint-disable-line no-restricted-imports
 
-import {defined} from 'app/utils';
+import {defined} from 'sentry/utils';
 
 const MultipleCheckboxWrapper = styled('div')`
   display: flex;

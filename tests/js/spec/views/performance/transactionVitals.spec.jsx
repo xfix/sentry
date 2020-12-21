@@ -4,12 +4,12 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import TransactionVitals from 'app/views/performance/transactionVitals';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import TransactionVitals from 'sentry/views/performance/transactionVitals';
 import {
   WEB_VITAL_DETAILS,
   ZOOM_KEYS,
-} from 'app/views/performance/transactionVitals/constants';
+} from 'sentry/views/performance/transactionVitals/constants';
 
 function initialize({project, features, transaction, query} = {}) {
   features = features || ['performance-view'];

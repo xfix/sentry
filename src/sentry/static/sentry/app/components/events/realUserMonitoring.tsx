@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {SectionHeading} from 'app/components/charts/styles';
-import {Panel} from 'app/components/panels';
-import Tooltip from 'app/components/tooltip';
-import {IconFire, IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event} from 'app/types';
-import {formattedValue} from 'app/utils/measurements/index';
-import {IconSize} from 'app/utils/theme';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import {Panel} from 'sentry/components/panels';
+import Tooltip from 'sentry/components/tooltip';
+import {IconFire, IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event} from 'sentry/types';
+import {formattedValue} from 'sentry/utils/measurements/index';
+import {IconSize} from 'sentry/utils/theme';
 import {
   LONG_WEB_VITAL_NAMES,
   WEB_VITAL_DETAILS,
-} from 'app/views/performance/transactionVitals/constants';
+} from 'sentry/views/performance/transactionVitals/constants';
 
 type Props = {
   event: Event;

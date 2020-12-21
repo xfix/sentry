@@ -2,7 +2,7 @@ import React from 'react';
 
 import {shallow} from 'sentry-test/enzyme';
 
-import SnoozeActionModal from 'app/components/issues/snoozeActionModal';
+import SnoozeActionModal from 'sentry/components/issues/snoozeActionModal';
 
 const modalProps = {
   Body: p => p.children,

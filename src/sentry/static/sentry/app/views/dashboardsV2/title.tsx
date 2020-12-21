@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import InlineInput from 'app/components/inputInline';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import InlineInput from 'sentry/components/inputInline';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
 
 import {DashboardDetails} from './types';
 

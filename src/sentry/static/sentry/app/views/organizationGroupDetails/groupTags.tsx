@@ -2,20 +2,20 @@ import React from 'react';
 import styled from '@emotion/styled';
 import isEqual from 'lodash/isEqual';
 
-import {Client} from 'app/api';
-import Alert from 'app/components/alert';
-import Count from 'app/components/count';
-import DeviceName from 'app/components/deviceName';
-import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import Version from 'app/components/version';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Group, TagWithTopValues} from 'app/types';
-import {percent} from 'app/utils';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import Alert from 'sentry/components/alert';
+import Count from 'sentry/components/count';
+import DeviceName from 'sentry/components/deviceName';
+import GlobalSelectionLink from 'sentry/components/globalSelectionLink';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import Version from 'sentry/components/version';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Group, TagWithTopValues} from 'sentry/types';
+import {percent} from 'sentry/utils';
+import withApi from 'sentry/utils/withApi';
 
 type Props = {
   baseUrl: string;

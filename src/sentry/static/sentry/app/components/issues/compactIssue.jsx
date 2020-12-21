@@ -4,23 +4,23 @@ import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import {addLoadingMessage, clearIndicators} from 'app/actionCreators/indicator';
-import {openModal} from 'app/actionCreators/modal';
-import DropdownLink from 'app/components/dropdownLink';
-import EventOrGroupTitle from 'app/components/eventOrGroupTitle';
-import ErrorLevel from 'app/components/events/errorLevel';
-import SnoozeActionModal from 'app/components/issues/snoozeActionModal';
-import Link from 'app/components/links/link';
-import {PanelItem} from 'app/components/panels';
-import GroupChart from 'app/components/stream/groupChart';
-import {IconChat, IconCheckmark, IconEllipsis, IconMute, IconStar} from 'app/icons';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import GroupStore from 'app/stores/groupStore';
-import space from 'app/styles/space';
-import {getMessage} from 'app/utils/events';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
+import {addLoadingMessage, clearIndicators} from 'sentry/actionCreators/indicator';
+import {openModal} from 'sentry/actionCreators/modal';
+import DropdownLink from 'sentry/components/dropdownLink';
+import EventOrGroupTitle from 'sentry/components/eventOrGroupTitle';
+import ErrorLevel from 'sentry/components/events/errorLevel';
+import SnoozeActionModal from 'sentry/components/issues/snoozeActionModal';
+import Link from 'sentry/components/links/link';
+import {PanelItem} from 'sentry/components/panels';
+import GroupChart from 'sentry/components/stream/groupChart';
+import {IconChat, IconCheckmark, IconEllipsis, IconMute, IconStar} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import GroupStore from 'sentry/stores/groupStore';
+import space from 'sentry/styles/space';
+import {getMessage} from 'sentry/utils/events';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
 
 class CompactIssueHeader extends React.Component {
   static propTypes = {

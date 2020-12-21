@@ -2,11 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PlatformIcon from 'platformicons';
 
-import Line from 'app/components/events/interfaces/frame/line';
-import {getImageRange, parseAddress} from 'app/components/events/interfaces/utils';
-import {t} from 'app/locale';
-import {Event, Frame, PlatformType} from 'app/types';
-import {StacktraceType} from 'app/types/stacktrace';
+import Line from 'sentry/components/events/interfaces/frame/line';
+import {getImageRange, parseAddress} from 'sentry/components/events/interfaces/utils';
+import {t} from 'sentry/locale';
+import {Event, Frame, PlatformType} from 'sentry/types';
+import {StacktraceType} from 'sentry/types/stacktrace';
 
 const defaultProps = {
   includeSystemFrames: true,

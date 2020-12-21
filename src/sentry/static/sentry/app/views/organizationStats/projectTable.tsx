@@ -2,14 +2,14 @@ import React from 'react';
 import {Link} from 'react-router';
 import styled from '@emotion/styled';
 
-import Count from 'app/components/count';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {formatPercentage} from 'app/utils/formatters';
+import Count from 'sentry/components/count';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {formatPercentage} from 'sentry/utils/formatters';
 import {
   ProjectTableDataElement,
   ProjectTableLayout,
-} from 'app/views/organizationStats/projectTableLayout';
+} from 'sentry/views/organizationStats/projectTableLayout';
 
 import {ProjectTotal} from './types';
 

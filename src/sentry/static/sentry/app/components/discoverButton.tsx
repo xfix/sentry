@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Feature from 'app/components/acl/feature';
-import Button from 'app/components/button';
+import Feature from 'sentry/components/acl/feature';
+import Button from 'sentry/components/button';
 
 type Props = React.PropsWithChildren<{
   className?: string;

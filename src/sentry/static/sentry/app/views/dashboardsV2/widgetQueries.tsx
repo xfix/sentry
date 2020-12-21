@@ -1,21 +1,21 @@
 import React from 'react';
 import isEqual from 'lodash/isEqual';
 
-import {doEventsRequest} from 'app/actionCreators/events';
-import {Client} from 'app/api';
+import {doEventsRequest} from 'sentry/actionCreators/events';
+import {Client} from 'sentry/api';
 import {
   getDiffInMinutes,
   getInterval,
   isMultiSeriesStats,
-} from 'app/components/charts/utils';
+} from 'sentry/components/charts/utils';
 import {
   EventsStats,
   GlobalSelection,
   MultiSeriesEventsStats,
   Organization,
-} from 'app/types';
-import {Series} from 'app/types/echarts';
-import {parsePeriodToHours} from 'app/utils/dates';
+} from 'sentry/types';
+import {Series} from 'sentry/types/echarts';
+import {parsePeriodToHours} from 'sentry/utils/dates';
 
 import {Widget, WidgetQuery} from './types';
 

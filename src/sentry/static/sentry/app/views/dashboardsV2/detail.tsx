@@ -7,17 +7,17 @@ import {
   createDashboard,
   deleteDashboard,
   updateDashboard,
-} from 'app/actionCreators/dashboards';
-import {addSuccessMessage} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import NotFound from 'app/components/errors/notFound';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import GlobalSelectionHeader from 'app/components/organizations/globalSelectionHeader';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
+} from 'sentry/actionCreators/dashboards';
+import {addSuccessMessage} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import NotFound from 'sentry/components/errors/notFound';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import GlobalSelectionHeader from 'sentry/components/organizations/globalSelectionHeader';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import Controls from './controls';
 import Dashboard from './dashboard';

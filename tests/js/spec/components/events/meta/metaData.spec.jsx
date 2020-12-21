@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mount} from 'sentry-test/enzyme';
 
-import MetaData from 'app/components/events/meta/metaData';
-import {withMeta} from 'app/components/events/meta/metaProxy';
+import MetaData from 'sentry/components/events/meta/metaData';
+import {withMeta} from 'sentry/components/events/meta/metaProxy';
 
 describe('MetaData', function () {
   const exc = TestStubs.ExceptionWithMeta();

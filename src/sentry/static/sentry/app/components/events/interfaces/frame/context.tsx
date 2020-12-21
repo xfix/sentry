@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import ClippedBox from 'app/components/clippedBox';
-import ErrorBoundary from 'app/components/errorBoundary';
-import {Assembly} from 'app/components/events/interfaces/assembly';
-import ContextLine from 'app/components/events/interfaces/contextLine';
-import FrameRegisters from 'app/components/events/interfaces/frameRegisters/frameRegisters';
-import FrameVariables from 'app/components/events/interfaces/frameVariables';
-import {OpenInContextLine} from 'app/components/events/interfaces/openInContextLine';
-import StacktraceLink from 'app/components/events/interfaces/stacktraceLink';
-import {parseAssembly} from 'app/components/events/interfaces/utils';
-import {IconFlag} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, Frame, Organization, SentryAppComponent} from 'app/types';
-import {defined} from 'app/utils';
-import withOrganization from 'app/utils/withOrganization';
+import ClippedBox from 'sentry/components/clippedBox';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import {Assembly} from 'sentry/components/events/interfaces/assembly';
+import ContextLine from 'sentry/components/events/interfaces/contextLine';
+import FrameRegisters from 'sentry/components/events/interfaces/frameRegisters/frameRegisters';
+import FrameVariables from 'sentry/components/events/interfaces/frameVariables';
+import {OpenInContextLine} from 'sentry/components/events/interfaces/openInContextLine';
+import StacktraceLink from 'sentry/components/events/interfaces/stacktraceLink';
+import {parseAssembly} from 'sentry/components/events/interfaces/utils';
+import {IconFlag} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, Frame, Organization, SentryAppComponent} from 'sentry/types';
+import {defined} from 'sentry/utils';
+import withOrganization from 'sentry/utils/withOrganization';
 
 type Props = {
   frame: Frame;

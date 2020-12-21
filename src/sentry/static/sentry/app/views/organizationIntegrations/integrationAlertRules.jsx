@@ -2,13 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import ProjectBadge from 'app/components/idBadge/projectBadge';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import withProjects from 'app/utils/withProjects';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import Button from 'sentry/components/button';
+import ProjectBadge from 'sentry/components/idBadge/projectBadge';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import withProjects from 'sentry/utils/withProjects';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 class IntegrationAlertRules extends React.Component {
   static propTypes = {

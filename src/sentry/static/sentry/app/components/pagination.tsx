@@ -4,12 +4,12 @@ import styled from '@emotion/styled';
 import {Query} from 'history';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import {IconChevron} from 'app/icons';
-import {t} from 'app/locale';
-import {callIfFunction} from 'app/utils/callIfFunction';
-import parseLinkHeader from 'app/utils/parseLinkHeader';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import {IconChevron} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {callIfFunction} from 'sentry/utils/callIfFunction';
+import parseLinkHeader from 'sentry/utils/parseLinkHeader';
 
 const defaultProps = {
   size: 'small',

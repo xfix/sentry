@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import Button from 'app/components/button';
-import {t} from 'app/locale';
-import {Organization} from 'app/types';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import Button from 'sentry/components/button';
+import {t} from 'sentry/locale';
+import {Organization} from 'sentry/types';
 
 type MissingProjectWarningModalProps = ModalRenderProps & {
   organization: Organization;

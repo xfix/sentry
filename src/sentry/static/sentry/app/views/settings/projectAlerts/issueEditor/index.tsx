@@ -8,35 +8,35 @@ import {
   addErrorMessage,
   addLoadingMessage,
   addSuccessMessage,
-} from 'app/actionCreators/indicator';
-import {updateOnboardingTask} from 'app/actionCreators/onboardingTasks';
-import Access from 'app/components/acl/access';
-import Feature from 'app/components/acl/feature';
-import Alert from 'app/components/alert';
-import Button from 'app/components/button';
-import Confirm from 'app/components/confirm';
-import LoadingMask from 'app/components/loadingMask';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {ALL_ENVIRONMENTS_KEY} from 'app/constants';
-import {IconChevron, IconWarning} from 'app/icons';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Environment, OnboardingTaskKey, Organization, Project} from 'app/types';
+} from 'sentry/actionCreators/indicator';
+import {updateOnboardingTask} from 'sentry/actionCreators/onboardingTasks';
+import Access from 'sentry/components/acl/access';
+import Feature from 'sentry/components/acl/feature';
+import Alert from 'sentry/components/alert';
+import Button from 'sentry/components/button';
+import Confirm from 'sentry/components/confirm';
+import LoadingMask from 'sentry/components/loadingMask';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {ALL_ENVIRONMENTS_KEY} from 'sentry/constants';
+import {IconChevron, IconWarning} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Environment, OnboardingTaskKey, Organization, Project} from 'sentry/types';
 import {
   IssueAlertRule,
   IssueAlertRuleAction,
   IssueAlertRuleActionTemplate,
   IssueAlertRuleConditionTemplate,
   UnsavedIssueAlertRule,
-} from 'app/types/alerts';
-import {getDisplayName} from 'app/utils/environment';
-import recreateRoute from 'app/utils/recreateRoute';
-import withOrganization from 'app/utils/withOrganization';
-import AsyncView from 'app/views/asyncView';
-import Input from 'app/views/settings/components/forms/controls/input';
-import Field from 'app/views/settings/components/forms/field';
-import Form from 'app/views/settings/components/forms/form';
-import SelectField from 'app/views/settings/components/forms/selectField';
+} from 'sentry/types/alerts';
+import {getDisplayName} from 'sentry/utils/environment';
+import recreateRoute from 'sentry/utils/recreateRoute';
+import withOrganization from 'sentry/utils/withOrganization';
+import AsyncView from 'sentry/views/asyncView';
+import Input from 'sentry/views/settings/components/forms/controls/input';
+import Field from 'sentry/views/settings/components/forms/field';
+import Form from 'sentry/views/settings/components/forms/form';
+import SelectField from 'sentry/views/settings/components/forms/selectField';
 
 import RuleNodeList from './ruleNodeList';
 

@@ -3,22 +3,22 @@ import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {archiveRelease, restoreRelease} from 'app/actionCreators/release';
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import Confirm from 'app/components/confirm';
-import DropdownLink from 'app/components/dropdownLink';
-import ProjectBadge from 'app/components/idBadge/projectBadge';
-import MenuItem from 'app/components/menuItem';
-import TextOverflow from 'app/components/textOverflow';
-import Tooltip from 'app/components/tooltip';
-import {IconEllipsis} from 'app/icons';
-import {t, tct, tn} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
-import {Release, ReleaseMeta} from 'app/types';
-import {formatVersion} from 'app/utils/formatters';
+import {archiveRelease, restoreRelease} from 'sentry/actionCreators/release';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import Confirm from 'sentry/components/confirm';
+import DropdownLink from 'sentry/components/dropdownLink';
+import ProjectBadge from 'sentry/components/idBadge/projectBadge';
+import MenuItem from 'sentry/components/menuItem';
+import TextOverflow from 'sentry/components/textOverflow';
+import Tooltip from 'sentry/components/tooltip';
+import {IconEllipsis} from 'sentry/icons';
+import {t, tct, tn} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
+import {Release, ReleaseMeta} from 'sentry/types';
+import {formatVersion} from 'sentry/utils/formatters';
 
 import {isReleaseArchived} from '../utils';
 

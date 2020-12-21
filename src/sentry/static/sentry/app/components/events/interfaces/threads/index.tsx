@@ -1,14 +1,14 @@
 import React from 'react';
 
-import EventDataSection from 'app/components/events/eventDataSection';
-import CrashActions from 'app/components/events/interfaces/crashHeader/crashActions';
-import CrashTitle from 'app/components/events/interfaces/crashHeader/crashTitle';
-import {isStacktraceNewestFirst} from 'app/components/events/interfaces/stacktrace';
-import {t} from 'app/locale';
-import {Event, Project} from 'app/types';
-import {Thread} from 'app/types/events';
-import {STACK_TYPE, STACK_VIEW} from 'app/types/stacktrace';
-import {defined} from 'app/utils';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import CrashActions from 'sentry/components/events/interfaces/crashHeader/crashActions';
+import CrashTitle from 'sentry/components/events/interfaces/crashHeader/crashTitle';
+import {isStacktraceNewestFirst} from 'sentry/components/events/interfaces/stacktrace';
+import {t} from 'sentry/locale';
+import {Event, Project} from 'sentry/types';
+import {Thread} from 'sentry/types/events';
+import {STACK_TYPE, STACK_VIEW} from 'sentry/types/stacktrace';
+import {defined} from 'sentry/utils';
 
 import getThreadException from './threadSelector/getThreadException';
 import getThreadStacktrace from './threadSelector/getThreadStacktrace';

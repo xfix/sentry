@@ -2,9 +2,9 @@ import React from 'react';
 
 import {mount} from 'sentry-test/enzyme';
 
-import {Client} from 'app/api';
-import EventView from 'app/utils/discover/eventView';
-import MeasurementsHistogramQuery from 'app/views/performance/transactionVitals/measurementsHistogramQuery';
+import {Client} from 'sentry/api';
+import EventView from 'sentry/utils/discover/eventView';
+import MeasurementsHistogramQuery from 'sentry/views/performance/transactionVitals/measurementsHistogramQuery';
 
 function renderHistogram({isLoading, error, histograms}) {
   if (isLoading) {

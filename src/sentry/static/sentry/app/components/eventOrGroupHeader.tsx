@@ -4,17 +4,17 @@ import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 import capitalize from 'lodash/capitalize';
 
-import EventOrGroupTitle from 'app/components/eventOrGroupTitle';
-import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import Tooltip from 'app/components/tooltip';
-import {IconMute, IconStar} from 'app/icons';
-import {tct} from 'app/locale';
-import {Event, Group, GroupTombstone, Level, Organization} from 'app/types';
-import {getLocation, getMessage} from 'app/utils/events';
-import withOrganization from 'app/utils/withOrganization';
+import EventOrGroupTitle from 'sentry/components/eventOrGroupTitle';
+import GlobalSelectionLink from 'sentry/components/globalSelectionLink';
+import Tooltip from 'sentry/components/tooltip';
+import {IconMute, IconStar} from 'sentry/icons';
+import {tct} from 'sentry/locale';
+import {Event, Group, GroupTombstone, Level, Organization} from 'sentry/types';
+import {getLocation, getMessage} from 'sentry/utils/events';
+import withOrganization from 'sentry/utils/withOrganization';
 import UnhandledTag, {
   TagAndMessageWrapper,
-} from 'app/views/organizationGroupDetails/unhandledTag';
+} from 'sentry/views/organizationGroupDetails/unhandledTag';
 
 type DefaultProps = {
   includeLink: boolean;

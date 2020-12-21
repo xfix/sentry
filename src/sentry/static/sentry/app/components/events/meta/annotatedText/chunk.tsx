@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Tooltip from 'app/components/tooltip';
-import {ChunkType} from 'app/types';
+import Tooltip from 'sentry/components/tooltip';
+import {ChunkType} from 'sentry/types';
 
 import Redaction from './redaction';
 import {getTooltipText} from './utils';

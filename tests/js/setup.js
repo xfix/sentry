@@ -6,7 +6,7 @@ import MockDate from 'mockdate';
 import fromEntries from 'object.fromentries';
 import PropTypes from 'prop-types';
 
-import ConfigStore from 'app/stores/configStore';
+import ConfigStore from 'sentry/stores/configStore';
 
 import {loadFixtures} from './sentry-test/loadFixtures';
 

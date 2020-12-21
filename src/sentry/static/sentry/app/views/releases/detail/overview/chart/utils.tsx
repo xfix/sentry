@@ -1,13 +1,13 @@
-import {DateTimeObject, getDiffInMinutes, TWO_WEEKS} from 'app/components/charts/utils';
-import {t} from 'app/locale';
-import {GlobalSelection, NewQuery, Organization} from 'app/types';
-import {escapeDoubleQuotes} from 'app/utils';
-import {getUtcDateString} from 'app/utils/dates';
-import EventView from 'app/utils/discover/eventView';
-import {getAggregateAlias, WebVital} from 'app/utils/discover/fields';
-import {formatVersion} from 'app/utils/formatters';
-import {QueryResults, stringifyQueryObject} from 'app/utils/tokenizeSearch';
-import {WEB_VITAL_DETAILS} from 'app/views/performance/transactionVitals/constants';
+import {DateTimeObject, getDiffInMinutes, TWO_WEEKS} from 'sentry/components/charts/utils';
+import {t} from 'sentry/locale';
+import {GlobalSelection, NewQuery, Organization} from 'sentry/types';
+import {escapeDoubleQuotes} from 'sentry/utils';
+import {getUtcDateString} from 'sentry/utils/dates';
+import EventView from 'sentry/utils/discover/eventView';
+import {getAggregateAlias, WebVital} from 'sentry/utils/discover/fields';
+import {formatVersion} from 'sentry/utils/formatters';
+import {QueryResults, stringifyQueryObject} from 'sentry/utils/tokenizeSearch';
+import {WEB_VITAL_DETAILS} from 'sentry/views/performance/transactionVitals/constants';
 
 import {EventType, YAxis} from './releaseChartControls';
 

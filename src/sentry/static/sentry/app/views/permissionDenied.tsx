@@ -4,11 +4,11 @@ import {withRouter, WithRouterProps} from 'react-router';
 import * as Sentry from '@sentry/react';
 import PropTypes from 'prop-types';
 
-import ExternalLink from 'app/components/links/externalLink';
-import LoadingError from 'app/components/loadingError';
-import {t, tct} from 'app/locale';
-import {PageContent} from 'app/styles/organization';
-import getRouteStringFromRoutes from 'app/utils/getRouteStringFromRoutes';
+import ExternalLink from 'sentry/components/links/externalLink';
+import LoadingError from 'sentry/components/loadingError';
+import {t, tct} from 'sentry/locale';
+import {PageContent} from 'sentry/styles/organization';
+import getRouteStringFromRoutes from 'sentry/utils/getRouteStringFromRoutes';
 
 const ERROR_NAME = 'Permission Denied';
 

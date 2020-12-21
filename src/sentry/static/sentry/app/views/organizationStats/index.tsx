@@ -2,13 +2,13 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 import {RouteComponentProps} from 'react-router';
 
-import {Client} from 'app/api';
-import {t} from 'app/locale';
-import {Organization, Project, TimeseriesValue} from 'app/types';
-import {Series} from 'app/types/echarts';
-import theme from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
+import {Client} from 'sentry/api';
+import {t} from 'sentry/locale';
+import {Organization, Project, TimeseriesValue} from 'sentry/types';
+import {Series} from 'sentry/types/echarts';
+import theme from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import OrganizationStatsDetails from './organizationStatsDetails';
 import {OrgTotal, ProjectTotal} from './types';

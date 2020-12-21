@@ -2,11 +2,11 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import OrganizationStore from 'app/stores/organizationStore';
-import ProjectsStore from 'app/stores/projectsStore';
+import OrganizationStore from 'sentry/stores/organizationStore';
+import ProjectsStore from 'sentry/stores/projectsStore';
 import OrganizationDetails, {
   LightWeightOrganizationDetails,
-} from 'app/views/organizationDetails';
+} from 'sentry/views/organizationDetails';
 
 let wrapper;
 

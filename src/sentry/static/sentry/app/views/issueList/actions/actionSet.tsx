@@ -2,16 +2,16 @@ import React from 'react';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
-import ActionLink from 'app/components/actions/actionLink';
-import IgnoreActions from 'app/components/actions/ignore';
-import DropdownLink from 'app/components/dropdownLink';
-import MenuItem from 'app/components/menuItem';
-import Tooltip from 'app/components/tooltip';
-import {IconEllipsis, IconIssues, IconPause, IconPlay} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project, ResolutionStatus} from 'app/types';
-import Projects from 'app/utils/projects';
+import ActionLink from 'sentry/components/actions/actionLink';
+import IgnoreActions from 'sentry/components/actions/ignore';
+import DropdownLink from 'sentry/components/dropdownLink';
+import MenuItem from 'sentry/components/menuItem';
+import Tooltip from 'sentry/components/tooltip';
+import {IconEllipsis, IconIssues, IconPause, IconPlay} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project, ResolutionStatus} from 'sentry/types';
+import Projects from 'sentry/utils/projects';
 
 import ResolveActions from './resolveActions';
 import {ConfirmAction, getConfirm, getLabel} from './utils';

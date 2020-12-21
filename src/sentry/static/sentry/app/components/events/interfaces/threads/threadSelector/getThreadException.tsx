@@ -1,6 +1,6 @@
-import {Event, ExceptionType} from 'app/types';
-import {Thread} from 'app/types/events';
-import {defined} from 'app/utils';
+import {Event, ExceptionType} from 'sentry/types';
+import {Thread} from 'sentry/types/events';
+import {defined} from 'sentry/utils';
 
 function getThreadException(
   thread: Thread,

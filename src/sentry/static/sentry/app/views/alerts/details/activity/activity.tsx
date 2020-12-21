@@ -3,18 +3,18 @@ import styled from '@emotion/styled';
 import groupBy from 'lodash/groupBy';
 import moment from 'moment';
 
-import {Client} from 'app/api';
-import ActivityItem from 'app/components/activity/item';
-import Note from 'app/components/activity/note';
-import NoteInputWithStorage from 'app/components/activity/note/inputWithStorage';
-import {CreateError} from 'app/components/activity/note/types';
-import ErrorBoundary from 'app/components/errorBoundary';
-import LoadingError from 'app/components/loadingError';
-import TimeSince from 'app/components/timeSince';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {User} from 'app/types';
-import {NoteType} from 'app/types/alerts';
+import {Client} from 'sentry/api';
+import ActivityItem from 'sentry/components/activity/item';
+import Note from 'sentry/components/activity/note';
+import NoteInputWithStorage from 'sentry/components/activity/note/inputWithStorage';
+import {CreateError} from 'sentry/components/activity/note/types';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import LoadingError from 'sentry/components/loadingError';
+import TimeSince from 'sentry/components/timeSince';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {User} from 'sentry/types';
+import {NoteType} from 'sentry/types/alerts';
 
 import {ActivityType, Incident, IncidentActivityType} from '../../types';
 

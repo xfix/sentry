@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import space from 'app/styles/space';
-import {SentryTransactionEvent} from 'app/types';
+import space from 'sentry/styles/space';
+import {SentryTransactionEvent} from 'sentry/types';
 
 import * as CursorGuideHandler from './cursorGuideHandler';
 import * as DividerHandlerManager from './dividerHandlerManager';

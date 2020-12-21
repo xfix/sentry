@@ -2,15 +2,15 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import PageHeading from 'app/components/pageHeading';
-import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
-import {t} from 'app/locale';
-import {PageContent, PageHeader} from 'app/styles/organization';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import BuilderBreadCrumbs from 'app/views/alerts/builder/builderBreadCrumbs';
-import IncidentRulesDetails from 'app/views/settings/incidentRules/details';
-import IssueEditor from 'app/views/settings/projectAlerts/issueEditor';
+import PageHeading from 'sentry/components/pageHeading';
+import SentryDocumentTitle from 'sentry/components/sentryDocumentTitle';
+import {t} from 'sentry/locale';
+import {PageContent, PageHeader} from 'sentry/styles/organization';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import BuilderBreadCrumbs from 'sentry/views/alerts/builder/builderBreadCrumbs';
+import IncidentRulesDetails from 'sentry/views/settings/incidentRules/details';
+import IssueEditor from 'sentry/views/settings/projectAlerts/issueEditor';
 
 type RouteParams = {
   orgId: string;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {shallow} from 'sentry-test/enzyme';
 
-import BulkNotice from 'app/components/bulkController/bulkNotice';
+import BulkNotice from 'sentry/components/bulkController/bulkNotice';
 
 const props = {
   allRowsCount: 64,

@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import UserAvatar from 'app/components/avatar/userAvatar';
-import DateTime from 'app/components/dateTime';
-import SelectField from 'app/components/forms/selectField';
-import Pagination from 'app/components/pagination';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import Tooltip from 'app/components/tooltip';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
+import UserAvatar from 'sentry/components/avatar/userAvatar';
+import DateTime from 'sentry/components/dateTime';
+import SelectField from 'sentry/components/forms/selectField';
+import Pagination from 'sentry/components/pagination';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import Tooltip from 'sentry/components/tooltip';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
+import SettingsPageHeader from 'sentry/views/settings/components/settingsPageHeader';
 
 const avatarStyle = {
   width: 36,

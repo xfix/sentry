@@ -4,17 +4,17 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import moment from 'moment-timezone';
 
-import DateTime from 'app/components/dateTime';
-import FileSize from 'app/components/fileSize';
-import ExternalLink from 'app/components/links/externalLink';
-import NavigationButtonGroup from 'app/components/navigationButtonGroup';
-import Tooltip from 'app/components/tooltip';
-import {IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
-import space from 'app/styles/space';
-import {Event, Group} from 'app/types';
-import getDynamicText from 'app/utils/getDynamicText';
+import DateTime from 'sentry/components/dateTime';
+import FileSize from 'sentry/components/fileSize';
+import ExternalLink from 'sentry/components/links/externalLink';
+import NavigationButtonGroup from 'sentry/components/navigationButtonGroup';
+import Tooltip from 'sentry/components/tooltip';
+import {IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
+import space from 'sentry/styles/space';
+import {Event, Group} from 'sentry/types';
+import getDynamicText from 'sentry/utils/getDynamicText';
 
 const formatDateDelta = (reference: moment.Moment, observed: moment.Moment) => {
   const duration = moment.duration(Math.abs(+observed - +reference));

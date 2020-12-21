@@ -2,29 +2,29 @@ import React from 'react';
 import styled from '@emotion/styled';
 import * as Sentry from '@sentry/react';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import Button from 'app/components/button';
-import SelectControl from 'app/components/forms/selectControl';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import {IconAdd} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project, SelectValue} from 'app/types';
-import {removeAtArrayIndex} from 'app/utils/removeAtArrayIndex';
-import {replaceAtArrayIndex} from 'app/utils/replaceAtArrayIndex';
-import withOrganization from 'app/utils/withOrganization';
-import FieldHelp from 'app/views/settings/components/forms/field/fieldHelp';
-import FieldLabel from 'app/views/settings/components/forms/field/fieldLabel';
-import ActionTargetSelector from 'app/views/settings/incidentRules/triggers/actionsPanel/actionTargetSelector';
-import DeleteActionButton from 'app/views/settings/incidentRules/triggers/actionsPanel/deleteActionButton';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import Button from 'sentry/components/button';
+import SelectControl from 'sentry/components/forms/selectControl';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import {IconAdd} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project, SelectValue} from 'sentry/types';
+import {removeAtArrayIndex} from 'sentry/utils/removeAtArrayIndex';
+import {replaceAtArrayIndex} from 'sentry/utils/replaceAtArrayIndex';
+import withOrganization from 'sentry/utils/withOrganization';
+import FieldHelp from 'sentry/views/settings/components/forms/field/fieldHelp';
+import FieldLabel from 'sentry/views/settings/components/forms/field/fieldLabel';
+import ActionTargetSelector from 'sentry/views/settings/incidentRules/triggers/actionsPanel/actionTargetSelector';
+import DeleteActionButton from 'sentry/views/settings/incidentRules/triggers/actionsPanel/deleteActionButton';
 import {
   Action,
   ActionType,
   MetricActionTemplate,
   TargetType,
   Trigger,
-} from 'app/views/settings/incidentRules/types';
+} from 'sentry/views/settings/incidentRules/types';
 
 const ActionLabel = {
   [ActionType.EMAIL]: t('E-mail'),

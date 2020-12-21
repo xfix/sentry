@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import SelectControl from 'app/components/forms/selectControl';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
+import SelectControl from 'sentry/components/forms/selectControl';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
 import {
   IssueAlertRuleAction,
   IssueAlertRuleActionTemplate,
   IssueAlertRuleCondition,
   IssueAlertRuleConditionTemplate,
-} from 'app/types/alerts';
+} from 'sentry/types/alerts';
 
 import RuleNode from './ruleNode';
 

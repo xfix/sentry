@@ -2,9 +2,9 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import PropTypes from 'prop-types';
 
-import DetailedError from 'app/components/errors/detailedError';
-import {t} from 'app/locale';
-import {PageContent} from 'app/styles/organization';
+import DetailedError from 'sentry/components/errors/detailedError';
+import {t} from 'sentry/locale';
+import {PageContent} from 'sentry/styles/organization';
 
 type Props = RouteComponentProps<{}, {}>;
 

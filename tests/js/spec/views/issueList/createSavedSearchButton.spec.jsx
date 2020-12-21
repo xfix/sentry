@@ -2,10 +2,10 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {openModal} from 'app/actionCreators/modal';
-import CreateSavedSearchButton from 'app/views/issueList/createSavedSearchButton';
+import {openModal} from 'sentry/actionCreators/modal';
+import CreateSavedSearchButton from 'sentry/views/issueList/createSavedSearchButton';
 
-jest.mock('app/actionCreators/modal');
+jest.mock('sentry/actionCreators/modal');
 
 describe('CreateSavedSearchButton', function () {
   let wrapper, organization;

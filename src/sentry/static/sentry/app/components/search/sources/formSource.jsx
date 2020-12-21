@@ -4,10 +4,10 @@ import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import {loadSearchMap} from 'app/actionCreators/formSearch';
-import FormSearchStore from 'app/stores/formSearchStore';
-import {createFuzzySearch} from 'app/utils/createFuzzySearch';
-import replaceRouterParams from 'app/utils/replaceRouterParams';
+import {loadSearchMap} from 'sentry/actionCreators/formSearch';
+import FormSearchStore from 'sentry/stores/formSearchStore';
+import {createFuzzySearch} from 'sentry/utils/createFuzzySearch';
+import replaceRouterParams from 'sentry/utils/replaceRouterParams';
 
 class FormSource extends React.Component {
   static propTypes = {

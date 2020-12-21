@@ -3,16 +3,16 @@ import {Link, RouteComponentProps} from 'react-router';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import Confirm from 'app/components/confirm';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import {IconDelete, IconEdit} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import recreateRoute from 'app/utils/recreateRoute';
-import AsyncView from 'app/views/asyncView';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import Button from 'sentry/components/button';
+import Confirm from 'sentry/components/confirm';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import {IconDelete, IconEdit} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import recreateRoute from 'sentry/utils/recreateRoute';
+import AsyncView from 'sentry/views/asyncView';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 import {deleteRule} from './actions';
 import {SavedIncidentRule} from './types';

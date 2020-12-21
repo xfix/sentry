@@ -1,8 +1,8 @@
 import React from 'react';
 
-import BasePlugin from 'app/plugins/basePlugin';
-import IssueActions from 'app/plugins/components/issueActions';
-import {Group, Organization, Plugin, Project} from 'app/types';
+import BasePlugin from 'sentry/plugins/basePlugin';
+import IssueActions from 'sentry/plugins/components/issueActions';
+import {Group, Organization, Plugin, Project} from 'sentry/types';
 
 type Props = {
   plugin: Plugin;

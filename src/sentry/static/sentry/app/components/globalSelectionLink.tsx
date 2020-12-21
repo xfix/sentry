@@ -4,7 +4,7 @@ import {LocationDescriptor} from 'history';
 import PropTypes from 'prop-types';
 import * as qs from 'query-string';
 
-import {extractSelectionParameters} from 'app/components/organizations/globalSelectionHeader/utils';
+import {extractSelectionParameters} from 'sentry/components/organizations/globalSelectionHeader/utils';
 
 type Props = {
   /**

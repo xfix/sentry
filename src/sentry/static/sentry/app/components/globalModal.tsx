@@ -5,9 +5,9 @@ import {ClassNames} from '@emotion/core';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import {closeModal, ModalOptions, ModalRenderProps} from 'app/actionCreators/modal';
-import Confirm from 'app/components/confirm';
-import ModalStore from 'app/stores/modalStore';
+import {closeModal, ModalOptions, ModalRenderProps} from 'sentry/actionCreators/modal';
+import Confirm from 'sentry/components/confirm';
+import ModalStore from 'sentry/stores/modalStore';
 
 type DefaultProps = {
   options: ModalOptions;

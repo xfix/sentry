@@ -4,8 +4,8 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import TransactionSummary from 'app/views/performance/transactionSummary';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import TransactionSummary from 'sentry/views/performance/transactionSummary';
 
 function initializeData({features: additionalFeatures = [], query = {}} = {}) {
   const features = ['discover-basic', 'performance-view', ...additionalFeatures];

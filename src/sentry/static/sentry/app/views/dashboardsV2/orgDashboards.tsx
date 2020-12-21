@@ -3,14 +3,14 @@ import {browserHistory} from 'react-router';
 import {Params} from 'react-router/lib/Router';
 import {Location} from 'history';
 
-import {Client} from 'app/api';
-import AsyncComponent from 'app/components/asyncComponent';
-import NotFound from 'app/components/errors/notFound';
-import LightWeightNoProjectMessage from 'app/components/lightWeightNoProjectMessage';
-import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
-import {t} from 'app/locale';
-import {PageContent} from 'app/styles/organization';
-import {Organization} from 'app/types';
+import {Client} from 'sentry/api';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import NotFound from 'sentry/components/errors/notFound';
+import LightWeightNoProjectMessage from 'sentry/components/lightWeightNoProjectMessage';
+import SentryDocumentTitle from 'sentry/components/sentryDocumentTitle';
+import {t} from 'sentry/locale';
+import {PageContent} from 'sentry/styles/organization';
+import {Organization} from 'sentry/types';
 
 import {DashboardDetails, DashboardListItem} from './types';
 

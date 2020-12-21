@@ -3,19 +3,19 @@ import {Location} from 'history';
 import isEqual from 'lodash/isEqual';
 import pick from 'lodash/pick';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import BarChart from 'app/components/charts/barChart';
-import BarChartZoom from 'app/components/charts/barChartZoom';
-import ErrorPanel from 'app/components/charts/errorPanel';
-import LoadingPanel from 'app/components/charts/loadingPanel';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import {OrganizationSummary} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import EventView from 'app/utils/discover/eventView';
-import {getDuration} from 'app/utils/formatters';
-import theme from 'app/utils/theme';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import BarChart from 'sentry/components/charts/barChart';
+import BarChartZoom from 'sentry/components/charts/barChartZoom';
+import ErrorPanel from 'sentry/components/charts/errorPanel';
+import LoadingPanel from 'sentry/components/charts/loadingPanel';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {OrganizationSummary} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import EventView from 'sentry/utils/discover/eventView';
+import {getDuration} from 'sentry/utils/formatters';
+import theme from 'sentry/utils/theme';
 
 import {HeaderTitleLegend} from '../styles';
 

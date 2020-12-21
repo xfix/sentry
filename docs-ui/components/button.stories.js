@@ -4,12 +4,12 @@ import {action} from '@storybook/addon-actions';
 import {withInfo} from '@storybook/addon-info';
 import {boolean, number} from '@storybook/addon-knobs';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import DropdownButton from 'app/components/dropdownButton';
-import DropdownLink from 'app/components/dropdownLink';
-import NavigationButtonGroup from 'app/components/navigationButtonGroup';
-import {IconDelete} from 'app/icons/iconDelete';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import DropdownButton from 'sentry/components/dropdownButton';
+import DropdownLink from 'sentry/components/dropdownLink';
+import NavigationButtonGroup from 'sentry/components/navigationButtonGroup';
+import {IconDelete} from 'sentry/icons/iconDelete';
 
 const Item = styled('span')`
   padding: 12px;

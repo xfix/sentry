@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import Alert from 'app/components/alert';
-import AsyncComponent from 'app/components/asyncComponent';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import {IconInfo} from 'app/icons';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Integration, Organization, Project} from 'app/types';
-import {getIntegrationIcon, trackIntegrationEvent} from 'app/utils/integrationUtil';
-import InputField from 'app/views/settings/components/forms/inputField';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import Alert from 'sentry/components/alert';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import {IconInfo} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Integration, Organization, Project} from 'sentry/types';
+import {getIntegrationIcon, trackIntegrationEvent} from 'sentry/utils/integrationUtil';
+import InputField from 'sentry/views/settings/components/forms/inputField';
 
 type Props = AsyncComponent['props'] &
   ModalRenderProps & {

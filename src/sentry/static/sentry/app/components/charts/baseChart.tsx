@@ -6,16 +6,16 @@ import echarts, {EChartOption, ECharts} from 'echarts/lib/echarts';
 import ReactEchartsCore from 'echarts-for-react/lib/core';
 import {withTheme} from 'emotion-theming';
 
-import {IS_ACCEPTANCE_TEST} from 'app/constants';
-import space from 'app/styles/space';
+import {IS_ACCEPTANCE_TEST} from 'sentry/constants';
+import space from 'sentry/styles/space';
 import {
   EChartChartReadyHandler,
   EChartDataZoomHandler,
   EChartEventHandler,
   ReactEchartsRef,
   Series,
-} from 'app/types/echarts';
-import {Theme} from 'app/utils/theme';
+} from 'sentry/types/echarts';
+import {Theme} from 'sentry/utils/theme';
 
 import Grid from './components/grid';
 import Legend from './components/legend';

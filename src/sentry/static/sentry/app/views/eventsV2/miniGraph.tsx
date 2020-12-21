@@ -3,19 +3,19 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import isEqual from 'lodash/isEqual';
 
-import {Client} from 'app/api';
-import AreaChart from 'app/components/charts/areaChart';
-import EventsRequest from 'app/components/charts/eventsRequest';
-import {getInterval} from 'app/components/charts/utils';
-import LoadingContainer from 'app/components/loading/loadingContainer';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {IconWarning} from 'app/icons';
-import {Organization} from 'app/types';
-import {getUtcToLocalDateObject} from 'app/utils/dates';
-import {axisLabelFormatter} from 'app/utils/discover/charts';
-import EventView from 'app/utils/discover/eventView';
-import theme from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import AreaChart from 'sentry/components/charts/areaChart';
+import EventsRequest from 'sentry/components/charts/eventsRequest';
+import {getInterval} from 'sentry/components/charts/utils';
+import LoadingContainer from 'sentry/components/loading/loadingContainer';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {IconWarning} from 'sentry/icons';
+import {Organization} from 'sentry/types';
+import {getUtcToLocalDateObject} from 'sentry/utils/dates';
+import {axisLabelFormatter} from 'sentry/utils/discover/charts';
+import EventView from 'sentry/utils/discover/eventView';
+import theme from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
 
 type Props = {
   organization: Organization;

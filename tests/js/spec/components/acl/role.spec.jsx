@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mount} from 'sentry-test/enzyme';
 
-import Role from 'app/components/acl/role';
-import ConfigStore from 'app/stores/configStore';
+import Role from 'sentry/components/acl/role';
+import ConfigStore from 'sentry/stores/configStore';
 
 describe('Role', function () {
   const organization = TestStubs.Organization({

@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mount} from 'sentry-test/enzyme';
 
-import SentryAppComponentsStore from 'app/stores/sentryAppComponentsStore';
-import withSentryAppComponents from 'app/utils/withSentryAppComponents';
+import SentryAppComponentsStore from 'sentry/stores/sentryAppComponentsStore';
+import withSentryAppComponents from 'sentry/utils/withSentryAppComponents';
 
 describe('withSentryAppComponents HoC', function () {
   beforeEach(() => {

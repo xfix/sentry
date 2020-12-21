@@ -1,14 +1,14 @@
 import React from 'react';
 import {RouteComponentProps} from 'react-router';
 
-import {fetchOrgMembers} from 'app/actionCreators/members';
-import {Client} from 'app/api';
-import Alert from 'app/components/alert';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t} from 'app/locale';
-import {Organization, Project} from 'app/types';
-import Projects from 'app/utils/projects';
-import withApi from 'app/utils/withApi';
+import {fetchOrgMembers} from 'sentry/actionCreators/members';
+import {Client} from 'sentry/api';
+import Alert from 'sentry/components/alert';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t} from 'sentry/locale';
+import {Organization, Project} from 'sentry/types';
+import Projects from 'sentry/utils/projects';
+import withApi from 'sentry/utils/withApi';
 
 type Props = RouteComponentProps<RouteParams, {}> & {
   organization: Organization;

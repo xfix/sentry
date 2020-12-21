@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import EventOrGroupTitle from 'app/components/eventOrGroupTitle';
+import EventOrGroupTitle from 'sentry/components/eventOrGroupTitle';
 
 describe('EventOrGroupTitle', function () {
   const data = {

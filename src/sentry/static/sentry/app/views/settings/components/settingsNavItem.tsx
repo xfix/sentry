@@ -2,9 +2,9 @@ import React from 'react';
 import {Link} from 'react-router';
 import styled from '@emotion/styled';
 
-import Badge from 'app/components/badge';
-import FeatureBadge from 'app/components/featureBadge';
-import HookOrDefault from 'app/components/hookOrDefault';
+import Badge from 'sentry/components/badge';
+import FeatureBadge from 'sentry/components/featureBadge';
+import HookOrDefault from 'sentry/components/hookOrDefault';
 
 type Props = {
   to: React.ComponentProps<Link>['to'];

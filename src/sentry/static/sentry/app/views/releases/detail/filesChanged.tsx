@@ -2,17 +2,17 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import {Client} from 'app/api';
-import FileChange from 'app/components/fileChange';
-import {Body, Main} from 'app/components/layouts/thirds';
-import Pagination from 'app/components/pagination';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {t, tn} from 'app/locale';
-import {CommitFile, Repository} from 'app/types';
-import {formatVersion} from 'app/utils/formatters';
-import routeTitleGen from 'app/utils/routeTitle';
-import withApi from 'app/utils/withApi';
-import AsyncView from 'app/views/asyncView';
+import {Client} from 'sentry/api';
+import FileChange from 'sentry/components/fileChange';
+import {Body, Main} from 'sentry/components/layouts/thirds';
+import Pagination from 'sentry/components/pagination';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {t, tn} from 'sentry/locale';
+import {CommitFile, Repository} from 'sentry/types';
+import {formatVersion} from 'sentry/utils/formatters';
+import routeTitleGen from 'sentry/utils/routeTitle';
+import withApi from 'sentry/utils/withApi';
+import AsyncView from 'sentry/views/asyncView';
 
 import EmptyState from './emptyState';
 import RepositorySwitcher from './repositorySwitcher';

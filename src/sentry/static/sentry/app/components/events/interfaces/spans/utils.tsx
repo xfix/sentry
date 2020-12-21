@@ -3,10 +3,10 @@ import isString from 'lodash/isString';
 import set from 'lodash/set';
 import moment from 'moment';
 
-import CHART_PALETTE from 'app/constants/chartPalette';
-import {SentryTransactionEvent} from 'app/types';
-import {assert} from 'app/types/utils';
-import {WEB_VITAL_DETAILS} from 'app/views/performance/transactionVitals/constants';
+import CHART_PALETTE from 'sentry/constants/chartPalette';
+import {SentryTransactionEvent} from 'sentry/types';
+import {assert} from 'sentry/types/utils';
+import {WEB_VITAL_DETAILS} from 'sentry/views/performance/transactionVitals/constants';
 
 import {
   GapSpanType,

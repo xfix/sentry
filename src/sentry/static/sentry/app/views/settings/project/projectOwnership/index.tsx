@@ -2,18 +2,18 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {t, tct} from 'app/locale';
-import {Organization, Project} from 'app/types';
-import routeTitleGen from 'app/utils/routeTitle';
-import AsyncView from 'app/views/asyncView';
-import Form from 'app/views/settings/components/forms/form';
-import JsonForm from 'app/views/settings/components/forms/jsonForm';
-import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
-import TextBlock from 'app/views/settings/components/text/textBlock';
-import PermissionAlert from 'app/views/settings/project/permissionAlert';
-import OwnerInput from 'app/views/settings/project/projectOwnership/ownerInput';
+import Button from 'sentry/components/button';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {t, tct} from 'sentry/locale';
+import {Organization, Project} from 'sentry/types';
+import routeTitleGen from 'sentry/utils/routeTitle';
+import AsyncView from 'sentry/views/asyncView';
+import Form from 'sentry/views/settings/components/forms/form';
+import JsonForm from 'sentry/views/settings/components/forms/jsonForm';
+import SettingsPageHeader from 'sentry/views/settings/components/settingsPageHeader';
+import TextBlock from 'sentry/views/settings/components/text/textBlock';
+import PermissionAlert from 'sentry/views/settings/project/permissionAlert';
+import OwnerInput from 'sentry/views/settings/project/projectOwnership/ownerInput';
 
 type Props = {
   organization: Organization;

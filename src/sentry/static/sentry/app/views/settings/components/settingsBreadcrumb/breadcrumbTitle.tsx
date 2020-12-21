@@ -1,7 +1,7 @@
 import React from 'react';
 import {PlainRoute} from 'react-router/lib/Route';
 
-import SettingsBreadcrumbActions from 'app/actions/settingsBreadcrumbActions';
+import SettingsBreadcrumbActions from 'sentry/actions/settingsBreadcrumbActions';
 
 type Props = {
   routes: Array<PlainRoute>;

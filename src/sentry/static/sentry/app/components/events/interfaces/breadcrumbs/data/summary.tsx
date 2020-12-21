@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import AnnotatedText from 'app/components/events/meta/annotatedText';
-import {getMeta} from 'app/components/events/meta/metaProxy';
-import Highlight from 'app/components/highlight';
-import {defined} from 'app/utils';
+import AnnotatedText from 'sentry/components/events/meta/annotatedText';
+import {getMeta} from 'sentry/components/events/meta/metaProxy';
+import Highlight from 'sentry/components/highlight';
+import {defined} from 'sentry/utils';
 
 type Props = {
   searchTerm: string;

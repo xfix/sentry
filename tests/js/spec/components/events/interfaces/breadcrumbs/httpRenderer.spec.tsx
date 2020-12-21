@@ -2,11 +2,11 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import HttpRenderer from 'app/components/events/interfaces/breadcrumbs/data/http';
+import HttpRenderer from 'sentry/components/events/interfaces/breadcrumbs/data/http';
 import {
   BreadcrumbLevelType,
   BreadcrumbType,
-} from 'app/components/events/interfaces/breadcrumbs/types';
+} from 'sentry/components/events/interfaces/breadcrumbs/types';
 
 describe('HttpRenderer', () => {
   describe('render', () => {

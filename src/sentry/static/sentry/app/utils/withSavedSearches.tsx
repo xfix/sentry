@@ -3,9 +3,9 @@ import {RouteComponentProps} from 'react-router';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import SavedSearchesStore from 'app/stores/savedSearchesStore';
-import {SavedSearch} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
+import SavedSearchesStore from 'sentry/stores/savedSearchesStore';
+import {SavedSearch} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 type InjectedSavedSearchesProps = {
   savedSearches: SavedSearch[];

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {WEB_VITAL_DETAILS} from 'app/views/performance/transactionVitals/constants';
+import {WEB_VITAL_DETAILS} from 'sentry/views/performance/transactionVitals/constants';
 
 type Measurement = {
   name: string;

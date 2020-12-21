@@ -1,14 +1,14 @@
 import React from 'react';
 
-import OptionSelector from 'app/components/charts/optionSelector';
+import OptionSelector from 'sentry/components/charts/optionSelector';
 import {
   ChartControls,
   InlineContainer,
   SectionHeading,
   SectionValue,
-} from 'app/components/charts/styles';
-import {t} from 'app/locale';
-import {SelectValue} from 'app/types';
+} from 'sentry/components/charts/styles';
+import {t} from 'sentry/locale';
+import {SelectValue} from 'sentry/types';
 
 type Props = {
   total: number | null;

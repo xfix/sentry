@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {IconChevron} from 'app/icons';
+import {IconChevron} from 'sentry/icons';
 
 type Props = {
   isHover?: boolean;

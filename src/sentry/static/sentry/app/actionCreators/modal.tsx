@@ -2,9 +2,9 @@ import React from 'react';
 import {Modal as BoostrapModal} from 'react-bootstrap';
 import {css} from '@emotion/core';
 
-import ModalActions from 'app/actions/modalActions';
-import type {DashboardWidgetModalOptions} from 'app/components/modals/addDashboardWidgetModal';
-import {Event, Group, Organization, Project, SentryApp, Team} from 'app/types';
+import ModalActions from 'sentry/actions/modalActions';
+import type {DashboardWidgetModalOptions} from 'sentry/components/modals/addDashboardWidgetModal';
+import {Event, Group, Organization, Project, SentryApp, Team} from 'sentry/types';
 
 export type ModalRenderProps = {
   closeModal: () => void;
@@ -47,7 +47,7 @@ type OpenSudoModalOptions = {
 
 export async function openSudo({onClose, ...args}: OpenSudoModalOptions = {}) {
   const mod = await import(
-    /* webpackChunkName: "SudoModal" */ 'app/components/modals/sudoModal'
+    /*/* webpackChunkName: "SudoModal" */ 'sentry/components/modals/sudoModal'
   );
   const {default: Modal} = mod;
 
@@ -65,7 +65,7 @@ type OpenDiffModalOptions = {
 
 export async function openDiffModal(options: OpenDiffModalOptions) {
   const mod = await import(
-    /* webpackChunkName: "DiffModal" */ 'app/components/modals/diffModal'
+    /*/* webpackChunkName: "DiffModal" */ 'sentry/components/modals/diffModal'
   );
   const {default: Modal, modalCss} = mod;
 
@@ -86,7 +86,7 @@ type CreateTeamModalOptions = {
 
 export async function openCreateTeamModal(options: CreateTeamModalOptions) {
   const mod = await import(
-    /* webpackChunkName: "CreateTeamModal" */ 'app/components/modals/createTeamModal'
+    /*/* webpackChunkName: "CreateTeamModal" */ 'sentry/components/modals/createTeamModal'
   );
   const {default: Modal} = mod;
 
@@ -107,7 +107,7 @@ type CreateOwnershipRuleModalOptions = {
 
 export async function openCreateOwnershipRule(options: CreateOwnershipRuleModalOptions) {
   const mod = await import(
-    /* webpackChunkName: "CreateOwnershipRuleModal" */ 'app/components/modals/createOwnershipRuleModal'
+    /*/* webpackChunkName: "CreateOwnershipRuleModal" */ 'sentry/components/modals/createOwnershipRuleModal'
   );
   const {default: Modal, modalCss} = mod;
 
@@ -116,7 +116,7 @@ export async function openCreateOwnershipRule(options: CreateOwnershipRuleModalO
 
 export async function openCommandPalette(options: ModalOptions = {}) {
   const mod = await import(
-    /* webpackChunkName: "CommandPalette" */ 'app/components/modals/commandPalette'
+    /*/* webpackChunkName: "CommandPalette" */ 'sentry/components/modals/commandPalette'
   );
   const {default: Modal, modalCss} = mod;
 
@@ -129,7 +129,7 @@ type RecoveryModalOptions = {
 
 export async function openRecoveryOptions(options: RecoveryModalOptions) {
   const mod = await import(
-    /* webpackChunkName: "RecoveryOptionsModal" */ 'app/components/modals/recoveryOptionsModal'
+    /*/* webpackChunkName: "RecoveryOptionsModal" */ 'sentry/components/modals/recoveryOptionsModal'
   );
   const {default: Modal} = mod;
 
@@ -146,7 +146,7 @@ export type TeamAccessRequestModalOptions = {
 
 export async function openTeamAccessRequestModal(options: TeamAccessRequestModalOptions) {
   const mod = await import(
-    /* webpackChunkName: "TeamAccessRequestModal" */ 'app/components/modals/teamAccessRequestModal'
+    /*/* webpackChunkName: "TeamAccessRequestModal" */ 'sentry/components/modals/teamAccessRequestModal'
   );
   const {default: Modal} = mod;
 
@@ -157,7 +157,7 @@ export async function openTeamAccessRequestModal(options: TeamAccessRequestModal
 
 export async function redirectToProject(newProjectSlug: string) {
   const mod = await import(
-    /* webpackChunkName: "RedirectToProjectModal" */ 'app/components/modals/redirectToProject'
+    /*/* webpackChunkName: "RedirectToProjectModal" */ 'sentry/components/modals/redirectToProject'
   );
   const {default: Modal} = mod;
 
@@ -171,7 +171,7 @@ type HelpSearchModalOptipons = {
 
 export async function openHelpSearchModal(options: HelpSearchModalOptipons) {
   const mod = await import(
-    /* webpackChunkName: "HelpSearchModal" */ 'app/components/modals/helpSearchModal'
+    /*/* webpackChunkName: "HelpSearchModal" */ 'sentry/components/modals/helpSearchModal'
   );
   const {default: Modal, modalCss} = mod;
 
@@ -188,7 +188,7 @@ export type SentryAppDetailsModalOptions = {
 
 export async function openDebugFileSourceModal(options: ModalOptions = {}) {
   const mod = await import(
-    /* webpackChunkName: "DebugFileSourceModal" */ 'app/components/modals/debugFileSourceModal'
+    /*/* webpackChunkName: "DebugFileSourceModal" */ 'sentry/components/modals/debugFileSourceModal'
   );
   const {default: Modal} = mod;
 
@@ -199,7 +199,7 @@ export async function openDebugFileSourceModal(options: ModalOptions = {}) {
 
 export async function openInviteMembersModal(options = {}) {
   const mod = await import(
-    /* webpackChunkName: "InviteMembersModal" */ 'app/components/modals/inviteMembersModal'
+    /*/* webpackChunkName: "InviteMembersModal" */ 'sentry/components/modals/inviteMembersModal'
   );
   const {default: Modal, modalCss} = mod;
 
@@ -208,7 +208,7 @@ export async function openInviteMembersModal(options = {}) {
 
 export async function openAddDashboardWidgetModal(options: DashboardWidgetModalOptions) {
   const mod = await import(
-    /* webpackChunkName: "AddDashboardWidgetModal" */ 'app/components/modals/addDashboardWidgetModal'
+    /*/* webpackChunkName: "AddDashboardWidgetModal" */ 'sentry/components/modals/addDashboardWidgetModal'
   );
   const {default: Modal} = mod;
 

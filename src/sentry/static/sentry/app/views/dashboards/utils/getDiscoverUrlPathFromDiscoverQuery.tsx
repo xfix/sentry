@@ -1,9 +1,9 @@
 import * as qs from 'query-string';
 
-import {GlobalSelection, Organization} from 'app/types';
-import {getExternal, getInternal} from 'app/views/discover/aggregations/utils';
-import {Query} from 'app/views/discover/types';
-import {getQueryStringFromQuery} from 'app/views/discover/utils';
+import {GlobalSelection, Organization} from 'sentry/types';
+import {getExternal, getInternal} from 'sentry/views/discover/aggregations/utils';
+import {Query} from 'sentry/views/discover/types';
+import {getQueryStringFromQuery} from 'sentry/views/discover/utils';
 
 export function getDiscoverUrlPathFromDiscoverQuery({
   organization,

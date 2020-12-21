@@ -6,7 +6,7 @@ import isObject from 'lodash/isObject';
 import isString from 'lodash/isString';
 import {sprintf} from 'sprintf-js';
 
-import {getTranslations} from 'app/translations';
+import {getTranslations} from 'sentry/translations';
 
 const markerCss = css`
   background: #ff801790;

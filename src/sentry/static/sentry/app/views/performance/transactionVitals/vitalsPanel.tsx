@@ -1,13 +1,13 @@
 import React from 'react';
 import {Location} from 'history';
 
-import {Panel} from 'app/components/panels';
-import {Organization} from 'app/types';
-import DiscoverQuery, {TableData} from 'app/utils/discover/discoverQuery';
-import EventView from 'app/utils/discover/eventView';
-import {getAggregateAlias, WebVital} from 'app/utils/discover/fields';
-import {GenericChildrenProps} from 'app/utils/discover/genericDiscoverQuery';
-import {decodeScalar} from 'app/utils/queryString';
+import {Panel} from 'sentry/components/panels';
+import {Organization} from 'sentry/types';
+import DiscoverQuery, {TableData} from 'sentry/utils/discover/discoverQuery';
+import EventView from 'sentry/utils/discover/eventView';
+import {getAggregateAlias, WebVital} from 'sentry/utils/discover/fields';
+import {GenericChildrenProps} from 'sentry/utils/discover/genericDiscoverQuery';
+import {decodeScalar} from 'sentry/utils/queryString';
 
 import {NUM_BUCKETS, PERCENTILE, VITAL_GROUPS, WEB_VITAL_DETAILS} from './constants';
 import MeasurementsHistogramQuery from './measurementsHistogramQuery';

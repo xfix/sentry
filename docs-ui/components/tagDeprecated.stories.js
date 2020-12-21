@@ -1,8 +1,8 @@
 import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 
-import Tooltip from 'app/components/tooltip';
-import Tag from 'app/components/tagDeprecated';
+import Tooltip from 'sentry/components/tooltip';
+import Tag from 'sentry/components/tagDeprecated';
 
 export default {
   title: 'Deprecated/TagDeprecated',

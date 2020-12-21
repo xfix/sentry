@@ -2,9 +2,9 @@ import * as Sentry from '@sentry/react';
 import isString from 'lodash/isString';
 import * as qs from 'query-string';
 
-import {FILTER_MASK} from 'app/constants';
-import {RequestEntry} from 'app/types';
-import {defined} from 'app/utils';
+import {FILTER_MASK} from 'sentry/constants';
+import {RequestEntry} from 'sentry/types';
+import {defined} from 'sentry/utils';
 
 import {DebugImage} from './debugMeta/types';
 

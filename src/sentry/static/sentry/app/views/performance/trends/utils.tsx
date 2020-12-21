@@ -4,18 +4,18 @@ import {ASAP} from 'downsample/methods/ASAP';
 import {Location} from 'history';
 import moment from 'moment';
 
-import {getInterval} from 'app/components/charts/utils';
-import Duration from 'app/components/duration';
-import {IconArrow} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Project} from 'app/types';
-import {Series, SeriesDataUnit} from 'app/types/echarts';
-import EventView from 'app/utils/discover/eventView';
-import {Field, Sort} from 'app/utils/discover/fields';
-import {decodeScalar} from 'app/utils/queryString';
-import theme from 'app/utils/theme';
-import {tokenizeSearch} from 'app/utils/tokenizeSearch';
+import {getInterval} from 'sentry/components/charts/utils';
+import Duration from 'sentry/components/duration';
+import {IconArrow} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Project} from 'sentry/types';
+import {Series, SeriesDataUnit} from 'sentry/types/echarts';
+import EventView from 'sentry/utils/discover/eventView';
+import {Field, Sort} from 'sentry/utils/discover/fields';
+import {decodeScalar} from 'sentry/utils/queryString';
+import theme from 'sentry/utils/theme';
+import {tokenizeSearch} from 'sentry/utils/tokenizeSearch';
 
 import {
   ConfidenceLevel,

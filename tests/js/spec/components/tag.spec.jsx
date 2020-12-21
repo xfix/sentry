@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import Tag from 'app/components/tag';
-import {IconFire} from 'app/icons';
+import Tag from 'sentry/components/tag';
+import {IconFire} from 'sentry/icons';
 
 describe('Tag', function () {
   it('basic', function () {

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import PageHeading from 'app/components/pageHeading';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
-import {Project, Scope, Team} from 'app/types';
+import PageHeading from 'sentry/components/pageHeading';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
+import {Project, Scope, Team} from 'sentry/types';
 
 import ProjectCard from './projectCard';
 import TeamMembers from './teamMembers';

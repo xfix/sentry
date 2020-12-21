@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {IconCheckmark, IconFire, IconWarning} from 'app/icons';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
+import {IconCheckmark, IconFire, IconWarning} from 'sentry/icons';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
 
 import {displayCrashFreePercent} from '../utils';
 

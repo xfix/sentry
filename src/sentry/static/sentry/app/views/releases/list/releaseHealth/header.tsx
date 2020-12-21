@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-import {PanelHeader} from 'app/components/panels';
-import space from 'app/styles/space';
+import {PanelHeader} from 'sentry/components/panels';
+import space from 'sentry/styles/space';
 
 const Header = styled(PanelHeader)`
   border-top-left-radius: 0;

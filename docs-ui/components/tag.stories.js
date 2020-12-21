@@ -2,10 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {select, text} from '@storybook/addon-knobs';
 
-import theme from 'app/utils/theme';
-import Tag from 'app/components/tag';
-import {IconFire, IconWarning, IconClock, IconDelete, IconIssues} from 'app/icons';
-import {toTitleCase} from 'app/utils';
+import theme from 'sentry/utils/theme';
+import Tag from 'sentry/components/tag';
+import {IconFire, IconWarning, IconClock, IconDelete, IconIssues} from 'sentry/icons';
+import {toTitleCase} from 'sentry/utils';
 
 export default {
   title: 'Core/Badges+Tags/Tag',

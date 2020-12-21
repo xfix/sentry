@@ -2,18 +2,18 @@ import React from 'react';
 import {browserHistory, RouteComponentProps} from 'react-router';
 import pick from 'lodash/pick';
 
-import {Client} from 'app/api';
-import EmptyStateWarning from 'app/components/emptyStateWarning';
-import EventsTable from 'app/components/eventsTable/eventsTable';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import Pagination from 'app/components/pagination';
-import {Panel, PanelBody} from 'app/components/panels';
-import SearchBar from 'app/components/searchBar';
-import {t} from 'app/locale';
-import {Event, Group} from 'app/types';
-import parseApiError from 'app/utils/parseApiError';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import EmptyStateWarning from 'sentry/components/emptyStateWarning';
+import EventsTable from 'sentry/components/eventsTable/eventsTable';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import Pagination from 'sentry/components/pagination';
+import {Panel, PanelBody} from 'sentry/components/panels';
+import SearchBar from 'sentry/components/searchBar';
+import {t} from 'sentry/locale';
+import {Event, Group} from 'sentry/types';
+import parseApiError from 'sentry/utils/parseApiError';
+import withApi from 'sentry/utils/withApi';
 
 type Props = {
   api: Client;

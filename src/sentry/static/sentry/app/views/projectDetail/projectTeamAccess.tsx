@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import {SectionHeading} from 'app/components/charts/styles';
-import Collapsible from 'app/components/collapsible';
-import IdBadge from 'app/components/idBadge';
-import Link from 'app/components/links/link';
-import Placeholder from 'app/components/placeholder';
-import {t, tn} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
+import Button from 'sentry/components/button';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import Collapsible from 'sentry/components/collapsible';
+import IdBadge from 'sentry/components/idBadge';
+import Link from 'sentry/components/links/link';
+import Placeholder from 'sentry/components/placeholder';
+import {t, tn} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
 
 type Props = {
   organization: Organization;

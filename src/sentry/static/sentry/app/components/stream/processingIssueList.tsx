@@ -2,11 +2,11 @@ import React from 'react';
 import isEqual from 'lodash/isEqual';
 import PropTypes from 'prop-types';
 
-import {fetchProcessingIssues} from 'app/actionCreators/processingIssues';
-import {Client} from 'app/api';
-import ProcessingIssueHint from 'app/components/stream/processingIssueHint';
-import SentryTypes from 'app/sentryTypes';
-import {Organization, ProcessingIssue} from 'app/types';
+import {fetchProcessingIssues} from 'sentry/actionCreators/processingIssues';
+import {Client} from 'sentry/api';
+import ProcessingIssueHint from 'sentry/components/stream/processingIssueHint';
+import SentryTypes from 'sentry/sentryTypes';
+import {Organization, ProcessingIssue} from 'sentry/types';
 
 const defaultProps = {
   showProject: false,

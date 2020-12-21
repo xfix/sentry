@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {IconCheckmark, IconClose} from 'app/icons';
+import {IconCheckmark, IconClose} from 'sentry/icons';
 
 type Props = {
   status: boolean;

@@ -5,11 +5,11 @@ import {initializeOrg} from 'sentry-test/initializeOrg';
 import {mockRouterPush} from 'sentry-test/mockRouterPush';
 import {selectByValue} from 'sentry-test/select-new';
 
-import * as memberActionCreators from 'app/actionCreators/members';
-import ProjectsStore from 'app/stores/projectsStore';
-import AlertsContainer from 'app/views/alerts';
-import AlertBuilderProjectProvider from 'app/views/alerts/builder/projectProvider';
-import ProjectAlertsCreate from 'app/views/settings/projectAlerts/create';
+import * as memberActionCreators from 'sentry/actionCreators/members';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import AlertsContainer from 'sentry/views/alerts';
+import AlertBuilderProjectProvider from 'sentry/views/alerts/builder/projectProvider';
+import ProjectAlertsCreate from 'sentry/views/settings/projectAlerts/create';
 
 jest.unmock('app/utils/recreateRoute');
 

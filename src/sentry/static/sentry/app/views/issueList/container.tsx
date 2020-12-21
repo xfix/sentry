@@ -1,11 +1,11 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 
-import LightWeightNoProjectMessage from 'app/components/lightWeightNoProjectMessage';
-import GlobalSelectionHeader from 'app/components/organizations/globalSelectionHeader';
-import {Organization} from 'app/types';
-import {metric} from 'app/utils/analytics';
-import withOrganization, {isLightweightOrganization} from 'app/utils/withOrganization';
+import LightWeightNoProjectMessage from 'sentry/components/lightWeightNoProjectMessage';
+import GlobalSelectionHeader from 'sentry/components/organizations/globalSelectionHeader';
+import {Organization} from 'sentry/types';
+import {metric} from 'sentry/utils/analytics';
+import withOrganization, {isLightweightOrganization} from 'sentry/utils/withOrganization';
 
 type Props = {
   organization: Organization;

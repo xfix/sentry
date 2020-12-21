@@ -3,17 +3,17 @@ import styled from '@emotion/styled';
 import omit from 'lodash/omit';
 import pick from 'lodash/pick';
 
-import GuideAnchor from 'app/components/assistant/guideAnchor';
-import Button from 'app/components/button';
-import ErrorBoundary from 'app/components/errorBoundary';
-import EventDataSection from 'app/components/events/eventDataSection';
-import SearchBar from 'app/components/searchBar';
-import {IconWarning} from 'app/icons/iconWarning';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, Organization} from 'app/types';
-import {defined} from 'app/utils';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import GuideAnchor from 'sentry/components/assistant/guideAnchor';
+import Button from 'sentry/components/button';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import SearchBar from 'sentry/components/searchBar';
+import {IconWarning} from 'sentry/icons/iconWarning';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, Organization} from 'sentry/types';
+import {defined} from 'sentry/utils';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 import Filter from './filter';
 import Icon from './icon';

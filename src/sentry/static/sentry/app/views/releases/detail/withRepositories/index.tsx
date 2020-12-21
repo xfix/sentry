@@ -2,13 +2,13 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import * as Sentry from '@sentry/react';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import {Body, Main} from 'app/components/layouts/thirds';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t} from 'app/locale';
-import {Repository} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import {Body, Main} from 'sentry/components/layouts/thirds';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t} from 'sentry/locale';
+import {Repository} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 import {ReleaseContext} from '..';
 

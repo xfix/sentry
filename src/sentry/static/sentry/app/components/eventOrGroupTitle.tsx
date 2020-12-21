@@ -1,9 +1,9 @@
 import React from 'react';
 
-import GuideAnchor from 'app/components/assistant/guideAnchor';
-import {Event, Group, GroupTombstone, Organization} from 'app/types';
-import {getTitle} from 'app/utils/events';
-import withOrganization from 'app/utils/withOrganization';
+import GuideAnchor from 'sentry/components/assistant/guideAnchor';
+import {Event, Group, GroupTombstone, Organization} from 'sentry/types';
+import {getTitle} from 'sentry/utils/events';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import StacktracePreview from './stacktracePreview';
 

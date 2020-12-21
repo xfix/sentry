@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {Client} from 'app/api';
-import {Event} from 'app/types';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import {Event} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
 
 export type ChildrenProps = {
   isLoading: boolean;

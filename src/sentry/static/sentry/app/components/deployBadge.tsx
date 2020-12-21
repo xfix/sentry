@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Link from 'app/components/links/link';
-import Tag from 'app/components/tag';
-import {IconOpen} from 'app/icons';
-import {t} from 'app/locale';
-import {Deploy} from 'app/types';
-import {QueryResults, stringifyQueryObject} from 'app/utils/tokenizeSearch';
+import Link from 'sentry/components/links/link';
+import Tag from 'sentry/components/tag';
+import {IconOpen} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {Deploy} from 'sentry/types';
+import {QueryResults, stringifyQueryObject} from 'sentry/utils/tokenizeSearch';
 
 type Props = {
   deploy: Deploy;

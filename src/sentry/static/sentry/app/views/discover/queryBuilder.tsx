@@ -3,13 +3,13 @@ import partition from 'lodash/partition';
 import uniq from 'lodash/uniq';
 import moment from 'moment-timezone';
 
-import {openModal} from 'app/actionCreators/modal';
-import {Client} from 'app/api';
-import {getParams} from 'app/components/organizations/globalSelectionHeader/getParams';
-import {DEFAULT_STATS_PERIOD} from 'app/constants';
-import {t} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
-import {Organization, Project} from 'app/types';
+import {openModal} from 'sentry/actionCreators/modal';
+import {Client} from 'sentry/api';
+import {getParams} from 'sentry/components/organizations/globalSelectionHeader/getParams';
+import {DEFAULT_STATS_PERIOD} from 'sentry/constants';
+import {t} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
+import {Organization, Project} from 'sentry/types';
 
 import {isValidAggregation} from './aggregations/utils';
 import {COLUMNS, HIDDEN_TAGS, PROMOTED_TAGS, SPECIAL_TAGS} from './data';

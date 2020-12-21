@@ -2,10 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import moment from 'moment';
 
-import DateTime from 'app/components/dateTime';
-import Tag from 'app/components/tag';
-import {t} from 'app/locale';
-import {InboxDetails} from 'app/types';
+import DateTime from 'sentry/components/dateTime';
+import Tag from 'sentry/components/tag';
+import {t} from 'sentry/locale';
+import {InboxDetails} from 'sentry/types';
 
 const GroupInboxReason = {
   NEW: 0,

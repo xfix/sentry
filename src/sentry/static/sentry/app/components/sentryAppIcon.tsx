@@ -8,8 +8,8 @@ import {
   IconRookout,
   IconTeamwork,
   IconZepel,
-} from 'app/icons';
-import {SentryAppComponent} from 'app/types';
+} from 'sentry/icons';
+import {SentryAppComponent} from 'sentry/types';
 
 type Props = {
   slug: SentryAppComponent['sentryApp']['slug'];

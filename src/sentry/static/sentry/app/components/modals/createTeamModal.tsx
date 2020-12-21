@@ -1,12 +1,12 @@
 import React from 'react';
 
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import {createTeam} from 'app/actionCreators/teams';
-import {Client} from 'app/api';
-import CreateTeamForm from 'app/components/teams/createTeamForm';
-import {t} from 'app/locale';
-import {Organization, Team} from 'app/types';
-import withApi from 'app/utils/withApi';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import {createTeam} from 'sentry/actionCreators/teams';
+import {Client} from 'sentry/api';
+import CreateTeamForm from 'sentry/components/teams/createTeamForm';
+import {t} from 'sentry/locale';
+import {Organization, Team} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
 
 type Props = {
   api: Client;

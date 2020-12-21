@@ -2,20 +2,20 @@ import React from 'react';
 import {browserHistory} from 'react-router';
 import {Location} from 'history';
 
-import OptionSelector from 'app/components/charts/optionSelector';
+import OptionSelector from 'sentry/components/charts/optionSelector';
 import {
   ChartControls,
   InlineContainer,
   SectionHeading,
   SectionValue,
-} from 'app/components/charts/styles';
-import {Panel} from 'app/components/panels';
-import {t} from 'app/locale';
-import {OrganizationSummary, SelectValue} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {decodeScalar} from 'app/utils/queryString';
-import {TransactionsListOption} from 'app/views/releases/detail/overview';
-import {YAxis} from 'app/views/releases/detail/overview/chart/releaseChartControls';
+} from 'sentry/components/charts/styles';
+import {Panel} from 'sentry/components/panels';
+import {t} from 'sentry/locale';
+import {OrganizationSummary, SelectValue} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {TransactionsListOption} from 'sentry/views/releases/detail/overview';
+import {YAxis} from 'sentry/views/releases/detail/overview/chart/releaseChartControls';
 
 import {ChartContainer} from '../styles';
 import {TrendFunctionField} from '../trends/types';

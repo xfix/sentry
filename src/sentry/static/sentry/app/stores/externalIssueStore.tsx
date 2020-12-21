@@ -1,6 +1,6 @@
 import Reflux from 'reflux';
 
-import {PlatformExternalIssue} from 'app/types';
+import {PlatformExternalIssue} from 'sentry/types';
 
 const ExternalIssueStore = Reflux.createStore({
   init() {

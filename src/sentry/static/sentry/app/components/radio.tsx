@@ -2,8 +2,8 @@ import React from 'react';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
-import {growIn} from 'app/styles/animations';
-import {Theme} from 'app/utils/theme';
+import {growIn} from 'sentry/styles/animations';
+import {Theme} from 'sentry/utils/theme';
 
 type CheckedProps = React.HTMLProps<HTMLInputElement> & {theme: Theme};
 

@@ -4,15 +4,15 @@ import {css} from '@emotion/core';
 import {Location, Query} from 'history';
 import * as queryString from 'query-string';
 
-import AnnotatedText from 'app/components/events/meta/annotatedText';
-import {getMeta} from 'app/components/events/meta/metaProxy';
-import ExternalLink from 'app/components/links/externalLink';
-import Pill from 'app/components/pill';
-import VersionHoverCard from 'app/components/versionHoverCard';
-import {IconInfo, IconOpen} from 'app/icons';
-import {EventTag} from 'app/types';
-import {isUrl} from 'app/utils';
-import TraceHoverCard from 'app/utils/discover/traceHoverCard';
+import AnnotatedText from 'sentry/components/events/meta/annotatedText';
+import {getMeta} from 'sentry/components/events/meta/metaProxy';
+import ExternalLink from 'sentry/components/links/externalLink';
+import Pill from 'sentry/components/pill';
+import VersionHoverCard from 'sentry/components/versionHoverCard';
+import {IconInfo, IconOpen} from 'sentry/icons';
+import {EventTag} from 'sentry/types';
+import {isUrl} from 'sentry/utils';
+import TraceHoverCard from 'sentry/utils/discover/traceHoverCard';
 
 import EventTagsPillValue from './eventTagsPillValue';
 

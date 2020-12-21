@@ -3,12 +3,12 @@ import {withRouter} from 'react-router';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import IdBadge from 'app/components/idBadge';
-import {IconInput, IconLink, IconSettings} from 'app/icons';
-import PluginIcon from 'app/plugins/components/pluginIcon';
-import space from 'app/styles/space';
-import highlightFuseMatches from 'app/utils/highlightFuseMatches';
-import SettingsSearch from 'app/views/settings/components/settingsSearch';
+import IdBadge from 'sentry/components/idBadge';
+import {IconInput, IconLink, IconSettings} from 'sentry/icons';
+import PluginIcon from 'sentry/plugins/components/pluginIcon';
+import space from 'sentry/styles/space';
+import highlightFuseMatches from 'sentry/utils/highlightFuseMatches';
+import SettingsSearch from 'sentry/views/settings/components/settingsSearch';
 
 class SearchResult extends React.Component {
   static propTypes = {

@@ -1,9 +1,9 @@
 import React from 'react';
 import orderBy from 'lodash/orderBy';
 
-import {Client} from 'app/api';
-import {t, tct} from 'app/locale';
-import {Event, Group, GroupActivity} from 'app/types';
+import {Client} from 'sentry/api';
+import {t, tct} from 'sentry/locale';
+import {Event, Group, GroupActivity} from 'sentry/types';
 
 /**
  * Fetches group data and mark as seen

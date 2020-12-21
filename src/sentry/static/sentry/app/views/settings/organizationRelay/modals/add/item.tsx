@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import ListItem from 'app/components/list/listItem';
-import space from 'app/styles/space';
+import ListItem from 'sentry/components/list/listItem';
+import space from 'sentry/styles/space';
 
 type Props = {
   title: React.ReactNode;

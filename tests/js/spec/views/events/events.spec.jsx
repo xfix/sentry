@@ -6,12 +6,12 @@ import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {mockRouterPush} from 'sentry-test/mockRouterPush';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import {getUtcToLocalDateObject} from 'app/utils/dates';
-import EventsContainer from 'app/views/events';
-import Events, {parseRowFromLinks} from 'app/views/events/events';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import {getUtcToLocalDateObject} from 'sentry/utils/dates';
+import EventsContainer from 'sentry/views/events';
+import Events, {parseRowFromLinks} from 'sentry/views/events/events';
 
-jest.mock('app/utils/withLatestContext');
+jest.mock('sentry/utils/withLatestContext');
 
 const generatePageLinks = (current, windowSize) => {
   const previous = current - windowSize;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import Threads from 'app/components/events/interfaces/threads';
+import Threads from 'sentry/components/events/interfaces/threads';
 
 describe('Threads', () => {
   const entries = TestStubs.Entries()[0];

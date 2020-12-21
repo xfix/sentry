@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {t} from 'app/locale';
-import ScoreCard from 'app/components/scoreCard';
-import space from 'app/styles/space';
+import {t} from 'sentry/locale';
+import ScoreCard from 'sentry/components/scoreCard';
+import space from 'sentry/styles/space';
 
 export default {
   title: 'UI/ScoreCard',

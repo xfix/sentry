@@ -4,10 +4,10 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ConfigStore from 'app/stores/configStore';
-import GlobalSelectionStore from 'app/stores/globalSelectionStore';
-import Discover from 'app/views/discover/discover';
-import createQueryBuilder from 'app/views/discover/queryBuilder';
+import ConfigStore from 'sentry/stores/configStore';
+import GlobalSelectionStore from 'sentry/stores/globalSelectionStore';
+import Discover from 'sentry/views/discover/discover';
+import createQueryBuilder from 'sentry/views/discover/queryBuilder';
 
 describe('Discover', function () {
   let organization, project, queryBuilder, routerContext;

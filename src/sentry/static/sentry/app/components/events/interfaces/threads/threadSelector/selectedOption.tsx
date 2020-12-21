@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import TextOverflow from 'app/components/textOverflow';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
+import TextOverflow from 'sentry/components/textOverflow';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
 
 type Props = {
   id: number;

@@ -2,14 +2,14 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import isEqual from 'lodash/isEqual';
 
-import EventUserFeedback from 'app/components/events/userFeedback';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import Pagination from 'app/components/pagination';
-import {Panel} from 'app/components/panels';
-import {Group, Organization, Project, UserReport} from 'app/types';
-import withOrganization from 'app/utils/withOrganization';
-import UserFeedbackEmpty from 'app/views/userFeedback/userFeedbackEmpty';
+import EventUserFeedback from 'sentry/components/events/userFeedback';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import Pagination from 'sentry/components/pagination';
+import {Panel} from 'sentry/components/panels';
+import {Group, Organization, Project, UserReport} from 'sentry/types';
+import withOrganization from 'sentry/utils/withOrganization';
+import UserFeedbackEmpty from 'sentry/views/userFeedback/userFeedbackEmpty';
 
 import {fetchGroupUserReports} from './utils';
 

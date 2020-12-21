@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import ActivityItem from 'app/components/activity/item';
-import {t, tct} from 'app/locale';
-import getDynamicText from 'app/utils/getDynamicText';
+import ActivityItem from 'sentry/components/activity/item';
+import {t, tct} from 'sentry/locale';
+import getDynamicText from 'sentry/utils/getDynamicText';
 
 import {
   ActivityType,

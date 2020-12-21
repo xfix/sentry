@@ -6,8 +6,8 @@ import memoize from 'lodash/memoize';
 import * as PopperJS from 'popper.js';
 import PropTypes from 'prop-types';
 
-import {IS_ACCEPTANCE_TEST} from 'app/constants';
-import {domId} from 'app/utils/domId';
+import {IS_ACCEPTANCE_TEST} from 'sentry/constants';
+import {domId} from 'sentry/utils/domId';
 
 const IS_HOVERABLE_DELAY = 50; // used if isHoverable is true (for hiding AND showing)
 
@@ -112,7 +112,7 @@ class Tooltip extends React.Component<Props, State> {
   async componentDidMount() {
     if (IS_ACCEPTANCE_TEST) {
       const TooltipStore = (
-        await import(/* webpackChunkName: "TooltipStore" */ 'app/stores/tooltipStore')
+        await import(/*/* webpackChunkName: "TooltipStore" */ 'sentry/stores/tooltipStore')
       ).default;
       TooltipStore.addTooltip(this);
     }
@@ -123,7 +123,7 @@ class Tooltip extends React.Component<Props, State> {
 
     if (IS_ACCEPTANCE_TEST) {
       const TooltipStore = (
-        await import(/* webpackChunkName: "TooltipStore" */ 'app/stores/tooltipStore')
+        await import(/*/* webpackChunkName: "TooltipStore" */ 'sentry/stores/tooltipStore')
       ).default;
       TooltipStore.removeTooltip(this);
     }

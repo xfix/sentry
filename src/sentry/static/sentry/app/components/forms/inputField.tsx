@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import FormField from 'app/components/forms/formField';
+import FormField from 'sentry/components/forms/formField';
 
 type InputFieldProps = FormField['props'] & {
   placeholder?: string;

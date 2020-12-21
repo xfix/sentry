@@ -2,12 +2,12 @@ import React from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 
-import {updateDateTime} from 'app/actionCreators/globalSelection';
-import DataZoomInside from 'app/components/charts/components/dataZoomInside';
-import ToolBox from 'app/components/charts/components/toolBox';
-import SentryTypes from 'app/sentryTypes';
-import {callIfFunction} from 'app/utils/callIfFunction';
-import {getUtcToLocalDateObject} from 'app/utils/dates';
+import {updateDateTime} from 'sentry/actionCreators/globalSelection';
+import DataZoomInside from 'sentry/components/charts/components/dataZoomInside';
+import ToolBox from 'sentry/components/charts/components/toolBox';
+import SentryTypes from 'sentry/sentryTypes';
+import {callIfFunction} from 'sentry/utils/callIfFunction';
+import {getUtcToLocalDateObject} from 'sentry/utils/dates';
 
 const getDate = date =>
   date ? moment.utc(date).format(moment.HTML5_FMT.DATETIME_LOCAL_SECONDS) : null;

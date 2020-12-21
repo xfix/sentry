@@ -6,15 +6,15 @@ import {
   deleteIncidentNote,
   fetchIncidentActivities,
   updateIncidentNote,
-} from 'app/actionCreators/incident';
-import {Client} from 'app/api';
-import {CreateError} from 'app/components/activity/note/types';
-import {DEFAULT_ERROR_JSON} from 'app/constants';
-import ConfigStore from 'app/stores/configStore';
-import {NoteType} from 'app/types/alerts';
-import {uniqueId} from 'app/utils/guid';
-import {replaceAtArrayIndex} from 'app/utils/replaceAtArrayIndex';
-import withApi from 'app/utils/withApi';
+} from 'sentry/actionCreators/incident';
+import {Client} from 'sentry/api';
+import {CreateError} from 'sentry/components/activity/note/types';
+import {DEFAULT_ERROR_JSON} from 'sentry/constants';
+import ConfigStore from 'sentry/stores/configStore';
+import {NoteType} from 'sentry/types/alerts';
+import {uniqueId} from 'sentry/utils/guid';
+import {replaceAtArrayIndex} from 'sentry/utils/replaceAtArrayIndex';
+import withApi from 'sentry/utils/withApi';
 
 import {
   ActivityType,

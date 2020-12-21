@@ -8,9 +8,9 @@ import isEqual from 'lodash/isEqual';
 import * as queryString from 'query-string';
 import Reflux from 'reflux';
 
-import {hideSidebar, showSidebar} from 'app/actionCreators/preferences';
-import Feature from 'app/components/acl/feature';
-import {extractSelectionParameters} from 'app/components/organizations/globalSelectionHeader/utils';
+import {hideSidebar, showSidebar} from 'sentry/actionCreators/preferences';
+import Feature from 'sentry/components/acl/feature';
+import {extractSelectionParameters} from 'sentry/components/organizations/globalSelectionHeader/utils';
 import {
   IconActivity,
   IconChevron,
@@ -26,16 +26,16 @@ import {
   IconStats,
   IconSupport,
   IconTelescope,
-} from 'app/icons';
-import {t} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
-import HookStore from 'app/stores/hookStore';
-import PreferencesStore from 'app/stores/preferencesStore';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
-import {getDiscoverLandingUrl} from 'app/utils/discover/urls';
-import theme from 'app/utils/theme';
-import withOrganization from 'app/utils/withOrganization';
+} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
+import HookStore from 'sentry/stores/hookStore';
+import PreferencesStore from 'sentry/stores/preferencesStore';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
+import {getDiscoverLandingUrl} from 'sentry/utils/discover/urls';
+import theme from 'sentry/utils/theme';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import Broadcasts from './broadcasts';
 import SidebarHelp from './help';

@@ -4,10 +4,10 @@ import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {mockRouterPush} from 'sentry-test/mockRouterPush';
 
-import {setActiveOrganization} from 'app/actionCreators/organizations';
-import GlobalSelectionStore from 'app/stores/globalSelectionStore';
-import ProjectsStore from 'app/stores/projectsStore';
-import EventsContainer from 'app/views/events';
+import {setActiveOrganization} from 'sentry/actionCreators/organizations';
+import GlobalSelectionStore from 'sentry/stores/globalSelectionStore';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import EventsContainer from 'sentry/views/events';
 
 describe('EventsContainer', function () {
   let wrapper;

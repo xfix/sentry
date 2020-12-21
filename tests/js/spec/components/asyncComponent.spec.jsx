@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {Client} from 'app/api';
-import AsyncComponent from 'app/components/asyncComponent';
+import {Client} from 'sentry/api';
+import AsyncComponent from 'sentry/components/asyncComponent';
 
 describe('AsyncComponent', function () {
   class TestAsyncComponent extends AsyncComponent {

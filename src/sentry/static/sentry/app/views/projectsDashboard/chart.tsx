@@ -1,10 +1,10 @@
 import React from 'react';
 
-import BaseChart from 'app/components/charts/baseChart';
-import {t} from 'app/locale';
-import {Project} from 'app/types';
-import {axisLabelFormatter} from 'app/utils/discover/charts';
-import theme from 'app/utils/theme';
+import BaseChart from 'sentry/components/charts/baseChart';
+import {t} from 'sentry/locale';
+import {Project} from 'sentry/types';
+import {axisLabelFormatter} from 'sentry/utils/discover/charts';
+import theme from 'sentry/utils/theme';
 
 import NoEvents from './noEvents';
 

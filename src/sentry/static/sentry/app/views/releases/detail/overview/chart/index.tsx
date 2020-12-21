@@ -3,18 +3,18 @@ import * as ReactRouter from 'react-router';
 import {withTheme} from 'emotion-theming';
 import {Location} from 'history';
 
-import {Client} from 'app/api';
-import EventsChart from 'app/components/charts/eventsChart';
-import {Panel} from 'app/components/panels';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {PlatformKey} from 'app/data/platformCategories';
-import {t} from 'app/locale';
-import {GlobalSelection, Organization, ReleaseMeta} from 'app/types';
-import {WebVital} from 'app/utils/discover/fields';
-import {decodeScalar} from 'app/utils/queryString';
-import {Theme} from 'app/utils/theme';
-import {getTermHelp} from 'app/views/performance/data';
-import {ChartContainer, HeaderTitleLegend} from 'app/views/performance/styles';
+import {Client} from 'sentry/api';
+import EventsChart from 'sentry/components/charts/eventsChart';
+import {Panel} from 'sentry/components/panels';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {PlatformKey} from 'sentry/data/platformCategories';
+import {t} from 'sentry/locale';
+import {GlobalSelection, Organization, ReleaseMeta} from 'sentry/types';
+import {WebVital} from 'sentry/utils/discover/fields';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {Theme} from 'sentry/utils/theme';
+import {getTermHelp} from 'sentry/views/performance/data';
+import {ChartContainer, HeaderTitleLegend} from 'sentry/views/performance/styles';
 
 import {ReleaseStatsRequestRenderProps} from '../releaseStatsRequest';
 

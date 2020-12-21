@@ -4,9 +4,9 @@ import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {openMenu, selectByLabel} from 'sentry-test/select-new';
 
-import Form from 'app/views/settings/components/forms/form';
-import MetricField from 'app/views/settings/incidentRules/metricField';
-import {Dataset} from 'app/views/settings/incidentRules/types';
+import Form from 'sentry/views/settings/components/forms/form';
+import MetricField from 'sentry/views/settings/incidentRules/metricField';
+import {Dataset} from 'sentry/views/settings/incidentRules/types';
 
 describe('MetricField', function () {
   const {organization} = initializeOrg({

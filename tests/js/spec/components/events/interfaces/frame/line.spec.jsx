@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import Line from 'app/components/events/interfaces/frame/line';
+import Line from 'sentry/components/events/interfaces/frame/line';
 
 describe('Frame - Line', function () {
   let data;

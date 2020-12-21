@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {Client} from 'app/api';
-import Access from 'app/components/acl/access';
-import Role from 'app/components/acl/role';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import Confirm from 'app/components/confirm';
-import PanelTable from 'app/components/panels/panelTable';
-import QuestionTooltip from 'app/components/questionTooltip';
-import TextOverflow from 'app/components/textOverflow';
-import Tooltip from 'app/components/tooltip';
-import {IconDelete, IconDownload} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {CandiateDownloadStatus, Image} from 'app/types/debugImage';
+import {Client} from 'sentry/api';
+import Access from 'sentry/components/acl/access';
+import Role from 'sentry/components/acl/role';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import Confirm from 'sentry/components/confirm';
+import PanelTable from 'sentry/components/panels/panelTable';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import TextOverflow from 'sentry/components/textOverflow';
+import Tooltip from 'sentry/components/tooltip';
+import {IconDelete, IconDownload} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {CandiateDownloadStatus, Image} from 'sentry/types/debugImage';
 
 import StacktraceStatusIcon from './candidate/stacktraceStatusIcon';
 import StatusTag from './candidate/statusTag';

@@ -1,8 +1,8 @@
 import React from 'react';
 import uniq from 'lodash/uniq';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import {t} from 'app/locale';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import {t} from 'sentry/locale';
 import {
   Entry,
   Frame,
@@ -10,8 +10,8 @@ import {
   Project,
   SentryErrorEvent,
   TagWithTopValues,
-} from 'app/types';
-import OwnerInput from 'app/views/settings/project/projectOwnership/ownerInput';
+} from 'sentry/types';
+import OwnerInput from 'sentry/views/settings/project/projectOwnership/ownerInput';
 
 type IssueOwnershipResponse = {
   raw: string;

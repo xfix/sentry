@@ -2,10 +2,10 @@ import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 import {action} from '@storybook/addon-actions';
 
-import Button from 'app/components/button';
-import {IconEdit} from 'app/icons';
-import GlobalModal from 'app/components/globalModal';
-import FeatureTourModal from 'app/components/modals/featureTourModal';
+import Button from 'sentry/components/button';
+import {IconEdit} from 'sentry/icons';
+import GlobalModal from 'sentry/components/globalModal';
+import FeatureTourModal from 'sentry/components/modals/featureTourModal';
 
 export default {
   title: 'Layouts/Modals',

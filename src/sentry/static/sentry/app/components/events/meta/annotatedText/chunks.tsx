@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {ChunkType} from 'app/types';
+import {ChunkType} from 'sentry/types';
 
 import Chunk from './chunk';
 

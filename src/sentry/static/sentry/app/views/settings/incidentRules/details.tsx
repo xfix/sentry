@@ -1,10 +1,10 @@
 import React from 'react';
 import {RouteComponentProps} from 'react-router';
 
-import {Organization, Project} from 'app/types';
-import AsyncView from 'app/views/asyncView';
-import RuleForm from 'app/views/settings/incidentRules/ruleForm';
-import {IncidentRule} from 'app/views/settings/incidentRules/types';
+import {Organization, Project} from 'sentry/types';
+import AsyncView from 'sentry/views/asyncView';
+import RuleForm from 'sentry/views/settings/incidentRules/ruleForm';
+import {IncidentRule} from 'sentry/views/settings/incidentRules/types';
 
 type RouteParams = {
   orgId: string;

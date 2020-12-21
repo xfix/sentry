@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment-timezone';
 import PropTypes from 'prop-types';
 
-import ConfigStore from 'app/stores/configStore';
+import ConfigStore from 'sentry/stores/configStore';
 
 type DefaultProps = {
   seconds: boolean;

@@ -2,7 +2,7 @@ import isString from 'lodash/isString';
 import parseurl from 'parseurl';
 import * as queryString from 'query-string';
 
-import {escapeDoubleQuotes} from 'app/utils';
+import {escapeDoubleQuotes} from 'sentry/utils';
 
 // remove leading and trailing whitespace and remove double spaces
 export function formatQueryString(qs: string): string {

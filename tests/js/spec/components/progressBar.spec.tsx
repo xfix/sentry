@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import ProgressBar from 'app/components/progressBar';
+import ProgressBar from 'sentry/components/progressBar';
 
 describe('ProgressBar', function () {
   it('basic', function () {

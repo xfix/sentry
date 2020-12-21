@@ -1,7 +1,7 @@
 import React from 'react';
 
-import BasePlugin from 'app/plugins/basePlugin';
-import DefaultIssuePlugin from 'app/plugins/defaultIssuePlugin';
+import BasePlugin from 'sentry/plugins/basePlugin';
+import DefaultIssuePlugin from 'sentry/plugins/defaultIssuePlugin';
 
 import IssueActions from './components/issueActions';
 import Settings from './components/settings';

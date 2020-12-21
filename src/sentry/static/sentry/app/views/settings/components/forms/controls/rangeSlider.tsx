@@ -2,9 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import Input from 'app/views/settings/components/forms/controls/input';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import Input from 'sentry/views/settings/components/forms/controls/input';
 
 type Props = {
   name: string;

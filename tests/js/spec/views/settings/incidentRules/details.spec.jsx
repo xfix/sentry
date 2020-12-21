@@ -3,8 +3,8 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import GlobalModal from 'app/components/globalModal';
-import IncidentRulesDetails from 'app/views/settings/incidentRules/details';
+import GlobalModal from 'sentry/components/globalModal';
+import IncidentRulesDetails from 'sentry/views/settings/incidentRules/details';
 
 describe('Incident Rules Details', function () {
   beforeAll(function () {

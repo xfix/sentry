@@ -2,18 +2,18 @@ import React from 'react';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
-import {ModalRenderProps, openModal} from 'app/actionCreators/modal';
-import Feature from 'app/components/acl/feature';
-import FeatureDisabled from 'app/components/acl/featureDisabled';
-import Button from 'app/components/button';
-import DropdownLink from 'app/components/dropdownLink';
-import LinkWithConfirmation from 'app/components/links/linkWithConfirmation';
-import MenuItem from 'app/components/menuItem';
-import {IconDelete} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {analytics} from 'app/utils/analytics';
+import {ModalRenderProps, openModal} from 'sentry/actionCreators/modal';
+import Feature from 'sentry/components/acl/feature';
+import FeatureDisabled from 'sentry/components/acl/featureDisabled';
+import Button from 'sentry/components/button';
+import DropdownLink from 'sentry/components/dropdownLink';
+import LinkWithConfirmation from 'sentry/components/links/linkWithConfirmation';
+import MenuItem from 'sentry/components/menuItem';
+import {IconDelete} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {analytics} from 'sentry/utils/analytics';
 
 type Props = {
   organization: Organization;

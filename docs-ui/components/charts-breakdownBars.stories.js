@@ -1,7 +1,7 @@
 import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 
-import BreakdownBars from 'app/components/charts/breakdownBars';
+import BreakdownBars from 'sentry/components/charts/breakdownBars';
 
 export default {
   title: 'Charts/BreakdownBars',

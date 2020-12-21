@@ -3,10 +3,10 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {MOCK_RESP_VERBOSE} from 'sentry-test/fixtures/ruleConditions';
 
-import {openCreateTeamModal} from 'app/actionCreators/modal';
-import {CreateProject} from 'app/views/projectInstall/createProject';
+import {openCreateTeamModal} from 'sentry/actionCreators/modal';
+import {CreateProject} from 'sentry/views/projectInstall/createProject';
 
-jest.mock('app/actionCreators/modal');
+jest.mock('sentry/actionCreators/modal');
 
 describe('CreateProject', function () {
   const baseProps = {

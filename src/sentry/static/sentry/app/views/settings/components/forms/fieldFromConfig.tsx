@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {Scope} from 'app/types';
+import {Scope} from 'sentry/types';
 
 import BooleanField from './booleanField';
 import ChoiceMapperField from './choiceMapperField';

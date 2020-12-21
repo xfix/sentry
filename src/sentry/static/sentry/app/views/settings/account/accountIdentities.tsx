@@ -2,14 +2,14 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import {disconnectIdentity} from 'app/actionCreators/account';
-import Button from 'app/components/button';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import {t} from 'app/locale';
-import {Identity} from 'app/types';
-import AsyncView from 'app/views/asyncView';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
+import {disconnectIdentity} from 'sentry/actionCreators/account';
+import Button from 'sentry/components/button';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import {t} from 'sentry/locale';
+import {Identity} from 'sentry/types';
+import AsyncView from 'sentry/views/asyncView';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
+import SettingsPageHeader from 'sentry/views/settings/components/settingsPageHeader';
 
 const ENDPOINT = '/users/me/social-identities/';
 

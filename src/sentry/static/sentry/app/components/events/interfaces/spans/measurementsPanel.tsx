@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Tooltip from 'app/components/tooltip';
-import {SentryTransactionEvent} from 'app/types';
-import {defined} from 'app/utils';
+import Tooltip from 'sentry/components/tooltip';
+import {SentryTransactionEvent} from 'sentry/types';
+import {defined} from 'sentry/utils';
 import {
   LONG_WEB_VITAL_NAMES,
   WEB_VITAL_ACRONYMS,
-} from 'app/views/performance/transactionVitals/constants';
+} from 'sentry/views/performance/transactionVitals/constants';
 
 import {
   getMeasurementBounds,

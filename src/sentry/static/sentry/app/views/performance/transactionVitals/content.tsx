@@ -3,18 +3,18 @@ import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import Button from 'app/components/button';
-import {CreateAlertFromViewButton} from 'app/components/createAlertButton';
-import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
-import * as Layout from 'app/components/layouts/thirds';
-import {getParams} from 'app/components/organizations/globalSelectionHeader/getParams';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import EventView from 'app/utils/discover/eventView';
-import {decodeScalar} from 'app/utils/queryString';
-import SearchBar from 'app/views/events/searchBar';
+import Button from 'sentry/components/button';
+import {CreateAlertFromViewButton} from 'sentry/components/createAlertButton';
+import DropdownControl, {DropdownItem} from 'sentry/components/dropdownControl';
+import * as Layout from 'sentry/components/layouts/thirds';
+import {getParams} from 'sentry/components/organizations/globalSelectionHeader/getParams';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import EventView from 'sentry/utils/discover/eventView';
+import {decodeScalar} from 'sentry/utils/queryString';
+import SearchBar from 'sentry/views/events/searchBar';
 
 import TransactionHeader, {Tab} from '../transactionSummary/header';
 

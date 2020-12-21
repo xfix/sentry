@@ -1,12 +1,12 @@
 import React from 'react';
 import omit from 'lodash/omit';
 
-import {Client} from 'app/api';
+import {Client} from 'sentry/api';
 import GenericDiscoverQuery, {
   DiscoverQueryProps,
   GenericChildrenProps,
-} from 'app/utils/discover/genericDiscoverQuery';
-import withApi from 'app/utils/withApi';
+} from 'sentry/utils/discover/genericDiscoverQuery';
+import withApi from 'sentry/utils/withApi';
 
 import {HistogramData} from './types';
 

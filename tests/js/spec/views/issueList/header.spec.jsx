@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import IssueListHeader from 'app/views/issueList/header';
+import IssueListHeader from 'sentry/views/issueList/header';
 
 const queryCounts = {
   'is:needs_review is:unresolved': 1,

@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import space from 'app/styles/space';
-import theme from 'app/utils/theme';
+import space from 'sentry/styles/space';
+import theme from 'sentry/utils/theme';
 
 const priorityColors = {
   new: theme.red300,

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Highlight from 'app/components/highlight';
-import Tag from 'app/components/tag';
-import {t} from 'app/locale';
+import Highlight from 'sentry/components/highlight';
+import Tag from 'sentry/components/tag';
+import {t} from 'sentry/locale';
 
 import {BreadcrumbLevelType} from './types';
 

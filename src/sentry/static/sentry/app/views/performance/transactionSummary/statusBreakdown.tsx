@@ -2,19 +2,19 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import BreakdownBars from 'app/components/charts/breakdownBars';
-import ErrorPanel from 'app/components/charts/errorPanel';
-import {SectionHeading} from 'app/components/charts/styles';
-import EmptyStateWarning from 'app/components/emptyStateWarning';
-import Placeholder from 'app/components/placeholder';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {LightWeightOrganization} from 'app/types';
-import DiscoverQuery from 'app/utils/discover/discoverQuery';
-import EventView from 'app/utils/discover/eventView';
-import {getTermHelp} from 'app/views/performance/data';
+import BreakdownBars from 'sentry/components/charts/breakdownBars';
+import ErrorPanel from 'sentry/components/charts/errorPanel';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import EmptyStateWarning from 'sentry/components/emptyStateWarning';
+import Placeholder from 'sentry/components/placeholder';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {LightWeightOrganization} from 'sentry/types';
+import DiscoverQuery from 'sentry/utils/discover/discoverQuery';
+import EventView from 'sentry/utils/discover/eventView';
+import {getTermHelp} from 'sentry/views/performance/data';
 
 type Props = {
   organization: LightWeightOrganization;

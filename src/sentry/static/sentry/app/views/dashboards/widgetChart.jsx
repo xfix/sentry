@@ -4,9 +4,9 @@ import {withTheme} from 'emotion-theming';
 import isEqual from 'lodash/isEqual';
 import PropTypes from 'prop-types';
 
-import ChartZoom from 'app/components/charts/chartZoom';
-import ReleaseSeries from 'app/components/charts/releaseSeries';
-import SentryTypes from 'app/sentryTypes';
+import ChartZoom from 'sentry/components/charts/chartZoom';
+import ReleaseSeries from 'sentry/components/charts/releaseSeries';
+import SentryTypes from 'sentry/sentryTypes';
 
 import {getChartComponent} from './utils/getChartComponent';
 import {getData} from './utils/getData';

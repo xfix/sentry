@@ -2,26 +2,26 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import Feature from 'app/components/acl/feature';
-import {SectionHeading} from 'app/components/charts/styles';
-import Link from 'app/components/links/link';
-import QuestionTooltip from 'app/components/questionTooltip';
-import UserMisery from 'app/components/userMisery';
-import {IconOpen} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {getFieldRenderer} from 'app/utils/discover/fieldRenderers';
-import {getAggregateAlias} from 'app/utils/discover/fields';
-import {decodeScalar} from 'app/utils/queryString';
-import {getTermHelp} from 'app/views/performance/data';
+import Feature from 'sentry/components/acl/feature';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import Link from 'sentry/components/links/link';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import UserMisery from 'sentry/components/userMisery';
+import {IconOpen} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {getFieldRenderer} from 'sentry/utils/discover/fieldRenderers';
+import {getAggregateAlias} from 'sentry/utils/discover/fields';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {getTermHelp} from 'sentry/views/performance/data';
 import {
   PERCENTILE as VITAL_PERCENTILE,
   VITAL_GROUPS,
   WEB_VITAL_DETAILS,
-} from 'app/views/performance/transactionVitals/constants';
-import {vitalsRouteWithQuery} from 'app/views/performance/transactionVitals/utils';
+} from 'sentry/views/performance/transactionVitals/constants';
+import {vitalsRouteWithQuery} from 'sentry/views/performance/transactionVitals/utils';
 
 import VitalsCards from '../vitalsCards';
 

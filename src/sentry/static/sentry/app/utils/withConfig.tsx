@@ -2,9 +2,9 @@ import React from 'react';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import ConfigStore from 'app/stores/configStore';
-import {Config} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
+import ConfigStore from 'sentry/stores/configStore';
+import {Config} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 type InjectedConfigProps = {
   config: Config;

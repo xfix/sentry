@@ -3,14 +3,14 @@ import DocumentTitle from 'react-document-title';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
-import sentryPattern from 'app/../images/pattern/sentry-pattern.png';
-import Alert from 'app/components/alert';
-import {ApiForm} from 'app/components/forms';
-import {IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
-import space from 'app/styles/space';
-import AsyncView from 'app/views/asyncView';
+import sentryPattern from 'sentry-images/pattern/sentry-pattern.png';
+import Alert from 'sentry/components/alert';
+import {ApiForm} from 'sentry/components/forms';
+import {IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
+import space from 'sentry/styles/space';
+import AsyncView from 'sentry/views/asyncView';
 
 import {getForm, getOptionDefault, getOptionField} from '../options';
 

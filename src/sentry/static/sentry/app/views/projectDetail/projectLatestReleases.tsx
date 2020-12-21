@@ -4,19 +4,19 @@ import {Location} from 'history';
 import isEqual from 'lodash/isEqual';
 import pick from 'lodash/pick';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import {SectionHeading} from 'app/components/charts/styles';
-import DateTime from 'app/components/dateTime';
-import Placeholder from 'app/components/placeholder';
-import TextOverflow from 'app/components/textOverflow';
-import Version from 'app/components/version';
-import {URL_PARAM} from 'app/constants/globalSelectionHeader';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Organization, Release} from 'app/types';
-import {analytics} from 'app/utils/analytics';
-import {RELEASES_TOUR_STEPS} from 'app/views/releases/list/releaseLanding';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import DateTime from 'sentry/components/dateTime';
+import Placeholder from 'sentry/components/placeholder';
+import TextOverflow from 'sentry/components/textOverflow';
+import Version from 'sentry/components/version';
+import {URL_PARAM} from 'sentry/constants/globalSelectionHeader';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Organization, Release} from 'sentry/types';
+import {analytics} from 'sentry/utils/analytics';
+import {RELEASES_TOUR_STEPS} from 'sentry/views/releases/list/releaseLanding';
 
 import MissingReleasesButtons from './missingFeatureButtons/missingReleasesButtons';
 

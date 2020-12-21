@@ -1,10 +1,10 @@
-import EventView from 'app/utils/discover/eventView';
-import {AggregationKey, LooseFieldKey} from 'app/utils/discover/fields';
+import EventView from 'sentry/utils/discover/eventView';
+import {AggregationKey, LooseFieldKey} from 'sentry/utils/discover/fields';
 import {
   DATA_SOURCE_TO_SET_AND_EVENT_TYPES,
   getQueryDatasource,
-} from 'app/views/alerts/utils';
-import {WEB_VITAL_DETAILS} from 'app/views/performance/transactionVitals/constants';
+} from 'sentry/views/alerts/utils';
+import {WEB_VITAL_DETAILS} from 'sentry/views/performance/transactionVitals/constants';
 import {
   AlertRuleThresholdType,
   Dataset,
@@ -12,7 +12,7 @@ import {
   EventTypes,
   Trigger,
   UnsavedIncidentRule,
-} from 'app/views/settings/incidentRules/types';
+} from 'sentry/views/settings/incidentRules/types';
 
 export const DEFAULT_AGGREGATE = 'count()';
 

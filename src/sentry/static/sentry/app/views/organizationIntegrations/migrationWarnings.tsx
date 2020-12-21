@@ -1,11 +1,11 @@
 import React from 'react';
 import groupBy from 'lodash/groupBy';
 
-import AlertLink from 'app/components/alertLink';
-import AsyncComponent from 'app/components/asyncComponent';
-import {tct} from 'app/locale';
-import {Integration, IntegrationProvider, Repository} from 'app/types';
-import AddIntegration from 'app/views/organizationIntegrations/addIntegration';
+import AlertLink from 'sentry/components/alertLink';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import {tct} from 'sentry/locale';
+import {Integration, IntegrationProvider, Repository} from 'sentry/types';
+import AddIntegration from 'sentry/views/organizationIntegrations/addIntegration';
 
 type Props = {
   orgId: string;

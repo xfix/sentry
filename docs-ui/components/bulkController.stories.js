@@ -2,9 +2,9 @@ import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 import styled from '@emotion/styled';
 
-import {PanelTable} from 'app/components/panels';
-import Checkbox from 'app/components/checkbox';
-import BulkController from 'app/components/bulkController';
+import {PanelTable} from 'sentry/components/panels';
+import Checkbox from 'sentry/components/checkbox';
+import BulkController from 'sentry/components/bulkController';
 
 const dummy = [
   {

@@ -2,7 +2,7 @@ import React from 'react';
 import * as Sentry from '@sentry/react';
 import rrwebPlayer from 'rrweb-player';
 
-import {Panel} from 'app/components/panels';
+import {Panel} from 'sentry/components/panels';
 
 type Props = {
   url: string;

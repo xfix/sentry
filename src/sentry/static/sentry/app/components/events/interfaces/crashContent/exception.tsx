@@ -1,10 +1,10 @@
 import React from 'react';
 
-import ErrorBoundary from 'app/components/errorBoundary';
-import ExceptionContent from 'app/components/events/interfaces/exceptionContent';
-import RawExceptionContent from 'app/components/events/interfaces/rawExceptionContent';
-import {Event, ExceptionType, PlatformType, Project} from 'app/types';
-import {STACK_TYPE, STACK_VIEW} from 'app/types/stacktrace';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import ExceptionContent from 'sentry/components/events/interfaces/exceptionContent';
+import RawExceptionContent from 'sentry/components/events/interfaces/rawExceptionContent';
+import {Event, ExceptionType, PlatformType, Project} from 'sentry/types';
+import {STACK_TYPE, STACK_VIEW} from 'sentry/types/stacktrace';
 
 type Props = {
   stackView: STACK_VIEW;

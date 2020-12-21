@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme, shallow} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import EventOrGroupHeader from 'app/components/eventOrGroupHeader';
+import EventOrGroupHeader from 'sentry/components/eventOrGroupHeader';
 
 const data = {
   metadata: {

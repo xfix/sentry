@@ -3,13 +3,13 @@ import styled from '@emotion/styled';
 import isEqual from 'lodash/isEqual';
 import PropTypes from 'prop-types';
 
-import PluginComponentBase from 'app/components/bases/pluginComponentBase';
-import {Form, FormState} from 'app/components/forms';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t, tct} from 'app/locale';
-import {Organization, Plugin, Project} from 'app/types';
-import {parseRepo} from 'app/utils';
-import {SingleIntegrationEvent, trackIntegrationEvent} from 'app/utils/integrationUtil';
+import PluginComponentBase from 'sentry/components/bases/pluginComponentBase';
+import {Form, FormState} from 'sentry/components/forms';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t, tct} from 'sentry/locale';
+import {Organization, Plugin, Project} from 'sentry/types';
+import {parseRepo} from 'sentry/utils';
+import {SingleIntegrationEvent, trackIntegrationEvent} from 'sentry/utils/integrationUtil';
 
 type Props = {
   organization: Organization;

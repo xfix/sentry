@@ -7,24 +7,24 @@ import {
   addLoadingMessage,
   addSuccessMessage,
   clearIndicators,
-} from 'app/actionCreators/indicator';
-import {fetchOrganizationTags} from 'app/actionCreators/tags';
-import Access from 'app/components/acl/access';
-import Feature from 'app/components/acl/feature';
-import AsyncComponent from 'app/components/asyncComponent';
-import Button from 'app/components/button';
-import Confirm from 'app/components/confirm';
-import {t} from 'app/locale';
-import {Organization, Project} from 'app/types';
-import {defined} from 'app/utils';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {convertDatasetEventTypesToSource} from 'app/views/alerts/utils';
-import Form from 'app/views/settings/components/forms/form';
-import FormModel from 'app/views/settings/components/forms/model';
-import RuleNameForm from 'app/views/settings/incidentRules/ruleNameForm';
-import Triggers from 'app/views/settings/incidentRules/triggers';
-import TriggersChart from 'app/views/settings/incidentRules/triggers/chart';
-import hasThresholdValue from 'app/views/settings/incidentRules/utils/hasThresholdValue';
+} from 'sentry/actionCreators/indicator';
+import {fetchOrganizationTags} from 'sentry/actionCreators/tags';
+import Access from 'sentry/components/acl/access';
+import Feature from 'sentry/components/acl/feature';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import Button from 'sentry/components/button';
+import Confirm from 'sentry/components/confirm';
+import {t} from 'sentry/locale';
+import {Organization, Project} from 'sentry/types';
+import {defined} from 'sentry/utils';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import {convertDatasetEventTypesToSource} from 'sentry/views/alerts/utils';
+import Form from 'sentry/views/settings/components/forms/form';
+import FormModel from 'sentry/views/settings/components/forms/model';
+import RuleNameForm from 'sentry/views/settings/incidentRules/ruleNameForm';
+import Triggers from 'sentry/views/settings/incidentRules/triggers';
+import TriggersChart from 'sentry/views/settings/incidentRules/triggers/chart';
+import hasThresholdValue from 'sentry/views/settings/incidentRules/utils/hasThresholdValue';
 
 import {addOrUpdateRule} from '../actions';
 import {

@@ -4,8 +4,8 @@ import React from 'react';
 import {components, OptionProps} from 'react-select';
 import styled from '@emotion/styled';
 
-import SelectControl from 'app/components/forms/selectControl';
-import space from 'app/styles/space';
+import SelectControl from 'sentry/components/forms/selectControl';
+import space from 'sentry/styles/space';
 
 type SelectControlProps = React.ComponentProps<typeof SelectControl>;
 

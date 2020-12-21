@@ -1,7 +1,7 @@
-import {analytics} from 'app/utils/analytics';
-import {trackQuery} from 'app/views/discover/analytics';
+import {analytics} from 'sentry/utils/analytics';
+import {trackQuery} from 'sentry/views/discover/analytics';
 
-jest.mock('app/utils/analytics');
+jest.mock('sentry/utils/analytics');
 
 describe('Analytics', function () {
   beforeEach(function () {

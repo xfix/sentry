@@ -1,9 +1,9 @@
 import React from 'react';
 
-import DeviceName from 'app/components/deviceName';
-import FileSize from 'app/components/fileSize';
-import {t} from 'app/locale';
-import {defined} from 'app/utils';
+import DeviceName from 'sentry/components/deviceName';
+import FileSize from 'sentry/components/fileSize';
+import {t} from 'sentry/locale';
+import {defined} from 'sentry/utils';
 
 import formatMemory from './formatMemory';
 import formatStorage from './formatStorage';

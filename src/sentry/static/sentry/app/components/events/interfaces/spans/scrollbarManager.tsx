@@ -1,6 +1,6 @@
 import React from 'react';
 
-import getDisplayName from 'app/utils/getDisplayName';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 import {DragManagerChildrenProps} from './dragManager';
 import {

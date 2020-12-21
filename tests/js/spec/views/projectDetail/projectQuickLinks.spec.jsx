@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ProjectQuickLinks from 'app/views/projectDetail/projectQuickLinks';
+import ProjectQuickLinks from 'sentry/views/projectDetail/projectQuickLinks';
 
 describe('ProjectDetail > ProjectQuickLinks', function () {
   const {organization, router} = initializeOrg({

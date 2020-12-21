@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import EventDataSection from 'app/components/events/eventDataSection';
-import CSPContent from 'app/components/events/interfaces/cspContent';
-import CSPHelp from 'app/components/events/interfaces/cspHelp';
-import {t} from 'app/locale';
-import {Event} from 'app/types';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import CSPContent from 'sentry/components/events/interfaces/cspContent';
+import CSPHelp from 'sentry/components/events/interfaces/cspHelp';
+import {t} from 'sentry/locale';
+import {Event} from 'sentry/types';
 
 function getView(view, data) {
   switch (view) {

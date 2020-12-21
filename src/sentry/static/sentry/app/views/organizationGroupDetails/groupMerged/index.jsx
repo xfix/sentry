@@ -3,13 +3,13 @@ import createReactClass from 'create-react-class';
 import * as queryString from 'query-string';
 import Reflux from 'reflux';
 
-import GroupingActions from 'app/actions/groupingActions';
-import Alert from 'app/components/alert';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import GroupingStore from 'app/stores/groupingStore';
+import GroupingActions from 'sentry/actions/groupingActions';
+import Alert from 'sentry/components/alert';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import GroupingStore from 'sentry/stores/groupingStore';
 
 import MergedList from './mergedList';
 

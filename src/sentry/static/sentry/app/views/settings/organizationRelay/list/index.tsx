@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import orderBy from 'lodash/orderBy';
 
-import space from 'app/styles/space';
-import {Relay, RelayActivity} from 'app/types';
+import space from 'sentry/styles/space';
+import {Relay, RelayActivity} from 'sentry/types';
 
 import ActivityList from './activityList';
 import CardHeader from './cardHeader';

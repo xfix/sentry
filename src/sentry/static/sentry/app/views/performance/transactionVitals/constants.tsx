@@ -1,7 +1,7 @@
-import {t} from 'app/locale';
-import {SelectValue} from 'app/types';
-import {measurementType, WebVital} from 'app/utils/discover/fields';
-import theme from 'app/utils/theme';
+import {t} from 'sentry/locale';
+import {SelectValue} from 'sentry/types';
+import {measurementType, WebVital} from 'sentry/utils/discover/fields';
+import theme from 'sentry/utils/theme';
 
 import {Vital, VitalGroup} from './types';
 

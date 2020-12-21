@@ -3,19 +3,19 @@ import styled from '@emotion/styled';
 import {Observer} from 'mobx-react';
 import PropTypes from 'prop-types';
 
-import Alert from 'app/components/alert';
-import Button from 'app/components/button';
-import PanelAlert from 'app/components/panels/panelAlert';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {defined} from 'app/utils';
-import {sanitizeQuerySelector} from 'app/utils/sanitizeQuerySelector';
-import Field from 'app/views/settings/components/forms/field';
-import FieldControl from 'app/views/settings/components/forms/field/fieldControl';
-import FieldErrorReason from 'app/views/settings/components/forms/field/fieldErrorReason';
-import FormFieldControlState from 'app/views/settings/components/forms/formField/controlState';
-import FormModel from 'app/views/settings/components/forms/model';
-import ReturnButton from 'app/views/settings/components/forms/returnButton';
+import Alert from 'sentry/components/alert';
+import Button from 'sentry/components/button';
+import PanelAlert from 'sentry/components/panels/panelAlert';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {defined} from 'sentry/utils';
+import {sanitizeQuerySelector} from 'sentry/utils/sanitizeQuerySelector';
+import Field from 'sentry/views/settings/components/forms/field';
+import FieldControl from 'sentry/views/settings/components/forms/field/fieldControl';
+import FieldErrorReason from 'sentry/views/settings/components/forms/field/fieldErrorReason';
+import FormFieldControlState from 'sentry/views/settings/components/forms/formField/controlState';
+import FormModel from 'sentry/views/settings/components/forms/model';
+import ReturnButton from 'sentry/views/settings/components/forms/returnButton';
 
 /**
  * Some fields don't need to implement their own onChange handlers, in

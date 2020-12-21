@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import GroupTags from 'app/views/organizationGroupDetails/groupTags';
+import GroupTags from 'sentry/views/organizationGroupDetails/groupTags';
 
 describe('GroupTags', function () {
   const {routerContext, router, organization} = initializeOrg();

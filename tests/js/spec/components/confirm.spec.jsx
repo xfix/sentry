@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme, shallow} from 'sentry-test/enzyme';
 
-import Confirm from 'app/components/confirm';
+import Confirm from 'sentry/components/confirm';
 
 describe('Confirm', function () {
   it('renders', function () {

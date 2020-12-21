@@ -2,14 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import moment from 'moment-timezone';
 
-import Button from 'app/components/button';
-import {getTraceDateTimeRange} from 'app/components/events/interfaces/spans/utils';
-import {ALL_ACCESS_PROJECTS} from 'app/constants/globalSelectionHeader';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, Organization} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {transactionSummaryRouteWithQuery} from 'app/views/performance/transactionSummary/utils';
+import Button from 'sentry/components/button';
+import {getTraceDateTimeRange} from 'sentry/components/events/interfaces/spans/utils';
+import {ALL_ACCESS_PROJECTS} from 'sentry/constants/globalSelectionHeader';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, Organization} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {transactionSummaryRouteWithQuery} from 'sentry/views/performance/transactionSummary/utils';
 
 import {TraceKnownData, TraceKnownDataType} from './types';
 

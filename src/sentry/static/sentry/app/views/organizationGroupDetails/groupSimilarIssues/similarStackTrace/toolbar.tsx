@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import Confirm from 'app/components/confirm';
-import FlowLayout from 'app/components/flowLayout';
-import SpreadLayout from 'app/components/spreadLayout';
-import Toolbar from 'app/components/toolbar';
-import ToolbarHeader from 'app/components/toolbarHeader';
-import {t} from 'app/locale';
-import GroupingStore from 'app/stores/groupingStore';
-import space from 'app/styles/space';
-import {callIfFunction} from 'app/utils/callIfFunction';
+import Button from 'sentry/components/button';
+import Confirm from 'sentry/components/confirm';
+import FlowLayout from 'sentry/components/flowLayout';
+import SpreadLayout from 'sentry/components/spreadLayout';
+import Toolbar from 'sentry/components/toolbar';
+import ToolbarHeader from 'sentry/components/toolbarHeader';
+import {t} from 'sentry/locale';
+import GroupingStore from 'sentry/stores/groupingStore';
+import space from 'sentry/styles/space';
+import {callIfFunction} from 'sentry/utils/callIfFunction';
 
 type Props = {
   onMerge: () => void;

@@ -3,13 +3,13 @@ import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import {DataSection} from 'app/components/events/styles';
-import {IconAnchor} from 'app/icons/iconAnchor';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {callIfFunction} from 'app/utils/callIfFunction';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import {DataSection} from 'sentry/components/events/styles';
+import {IconAnchor} from 'sentry/icons/iconAnchor';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {callIfFunction} from 'sentry/utils/callIfFunction';
 
 const defaultProps = {
   wrapTitle: true,

@@ -3,16 +3,16 @@ import styled from '@emotion/styled';
 import cloneDeep from 'lodash/cloneDeep';
 import set from 'lodash/set';
 
-import {addSuccessMessage} from 'app/actionCreators/indicator';
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import AbstractExternalIssueForm from 'app/components/externalIssues/abstractExternalIssueForm';
-import ExternalLink from 'app/components/links/externalLink';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {IssueConfigField, Organization} from 'app/types';
-import {IssueAlertRuleAction} from 'app/types/alerts';
-import AsyncView from 'app/views/asyncView';
-import Form from 'app/views/settings/components/forms/form';
+import {addSuccessMessage} from 'sentry/actionCreators/indicator';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import AbstractExternalIssueForm from 'sentry/components/externalIssues/abstractExternalIssueForm';
+import ExternalLink from 'sentry/components/links/externalLink';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {IssueConfigField, Organization} from 'sentry/types';
+import {IssueAlertRuleAction} from 'sentry/types/alerts';
+import AsyncView from 'sentry/views/asyncView';
+import Form from 'sentry/views/settings/components/forms/form';
 
 type Props = ModalRenderProps & {
   // Comes from the in-code definition of a `TicketEventAction`.

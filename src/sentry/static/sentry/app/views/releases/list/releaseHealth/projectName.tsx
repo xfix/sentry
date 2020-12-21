@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import ProjectBadge from 'app/components/idBadge/projectBadge';
-import space from 'app/styles/space';
-import {ReleaseProject} from 'app/types';
+import GlobalSelectionLink from 'sentry/components/globalSelectionLink';
+import ProjectBadge from 'sentry/components/idBadge/projectBadge';
+import space from 'sentry/styles/space';
+import {ReleaseProject} from 'sentry/types';
 
 type Props = {
   orgSlug: string;

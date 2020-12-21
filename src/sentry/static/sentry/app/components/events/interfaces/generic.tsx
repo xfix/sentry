@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import EventDataSection from 'app/components/events/eventDataSection';
-import KeyValueList from 'app/components/events/interfaces/keyValueList/keyValueList';
-import {t} from 'app/locale';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import KeyValueList from 'sentry/components/events/interfaces/keyValueList/keyValueList';
+import {t} from 'sentry/locale';
 
 function getView(view: View, data: State['data']) {
   switch (view) {

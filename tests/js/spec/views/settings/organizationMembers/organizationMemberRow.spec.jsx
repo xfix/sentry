@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import OrganizationMemberRow from 'app/views/settings/organizationMembers/organizationMemberRow';
+import OrganizationMemberRow from 'sentry/views/settings/organizationMembers/organizationMemberRow';
 
 describe('OrganizationMemberRow', function () {
   const member = {

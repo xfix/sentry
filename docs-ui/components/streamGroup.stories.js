@@ -3,8 +3,8 @@ import {browserHistory, Route, Router} from 'react-router';
 import {withInfo} from '@storybook/addon-info';
 import PropTypes from 'prop-types';
 
-import StreamGroup from 'app/components/stream/group';
-import GroupStore from 'app/stores/groupStore';
+import StreamGroup from 'sentry/components/stream/group';
+import GroupStore from 'sentry/stores/groupStore';
 
 export default {
   title: 'Features/Issues/Stream Group',

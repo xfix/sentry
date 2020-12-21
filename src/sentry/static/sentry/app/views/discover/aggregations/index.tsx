@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Link from 'app/components/links/link';
-import {IconClose} from 'app/icons/iconClose';
-import {t} from 'app/locale';
+import Link from 'sentry/components/links/link';
+import {IconClose} from 'sentry/icons/iconClose';
+import {t} from 'sentry/locale';
 
 import {AddText, PlaceholderText, SelectListItem, SidebarLabel} from '../styles';
 import {Aggregation, DiscoverBaseProps} from '../types';

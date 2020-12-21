@@ -2,7 +2,7 @@ import React from 'react';
 import {boolean} from '@storybook/addon-knobs';
 import {withInfo} from '@storybook/addon-info';
 
-import ProcessingIssueHint from 'app/components/stream/processingIssueHint';
+import ProcessingIssueHint from 'sentry/components/stream/processingIssueHint';
 
 export default {
   title: 'Features/Issues/Processing Issue Hint',

@@ -1,17 +1,17 @@
-import {Client} from 'app/api';
-import {t} from 'app/locale';
-import {NewQuery, Project} from 'app/types';
-import {IssueAlertRule} from 'app/types/alerts';
-import {getUtcDateString} from 'app/utils/dates';
-import EventView from 'app/utils/discover/eventView';
-import {getAggregateAlias} from 'app/utils/discover/fields';
-import {PRESET_AGGREGATES} from 'app/views/settings/incidentRules/presets';
+import {Client} from 'sentry/api';
+import {t} from 'sentry/locale';
+import {NewQuery, Project} from 'sentry/types';
+import {IssueAlertRule} from 'sentry/types/alerts';
+import {getUtcDateString} from 'sentry/utils/dates';
+import EventView from 'sentry/utils/discover/eventView';
+import {getAggregateAlias} from 'sentry/utils/discover/fields';
+import {PRESET_AGGREGATES} from 'sentry/views/settings/incidentRules/presets';
 import {
   Dataset,
   Datasource,
   EventTypes,
   SavedIncidentRule,
-} from 'app/views/settings/incidentRules/types';
+} from 'sentry/views/settings/incidentRules/types';
 
 import {Incident, IncidentStats, IncidentStatus} from '../types';
 

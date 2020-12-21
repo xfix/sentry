@@ -3,8 +3,8 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import Radio from 'app/components/radio';
-import space from 'app/styles/space';
+import Radio from 'sentry/components/radio';
+import space from 'sentry/styles/space';
 
 type RadioGroupProps<C extends string> = {
   label: string;

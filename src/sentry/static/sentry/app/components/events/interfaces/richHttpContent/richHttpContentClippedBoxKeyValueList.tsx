@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ClippedBox from 'app/components/clippedBox';
-import ErrorBoundary from 'app/components/errorBoundary';
-import KeyValueList from 'app/components/events/interfaces/keyValueList/keyValueListV2';
-import {Meta, RequestEntry} from 'app/types';
+import ClippedBox from 'sentry/components/clippedBox';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import KeyValueList from 'sentry/components/events/interfaces/keyValueList/keyValueListV2';
+import {Meta, RequestEntry} from 'sentry/types';
 
 import getTransformedData from './getTransformedData';
 

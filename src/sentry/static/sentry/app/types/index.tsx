@@ -1,19 +1,22 @@
 import u2f from 'u2f-api';
 
-import {Props as AlertProps} from 'app/components/alert';
-import {SpanEntry, TraceContextType} from 'app/components/events/interfaces/spans/types';
-import {SymbolicatorStatus} from 'app/components/events/interfaces/types';
-import {API_ACCESS_SCOPES} from 'app/constants';
-import {PlatformKey} from 'app/data/platformCategories';
-import {OrgExperiments, UserExperiments} from 'app/types/experiments';
-import {WIDGET_DISPLAY} from 'app/views/dashboards/constants';
-import {Query as DiscoverQuery} from 'app/views/discover/types';
+import {Props as AlertProps} from 'sentry/components/alert';
+import {
+  SpanEntry,
+  TraceContextType,
+} from 'sentry/components/events/interfaces/spans/types';
+import {SymbolicatorStatus} from 'sentry/components/events/interfaces/types';
+import {API_ACCESS_SCOPES} from 'sentry/constants';
+import {PlatformKey} from 'sentry/data/platformCategories';
+import {OrgExperiments, UserExperiments} from 'sentry/types/experiments';
+import {WIDGET_DISPLAY} from 'sentry/views/dashboards/constants';
+import {Query as DiscoverQuery} from 'sentry/views/discover/types';
 import {
   INSTALLED,
   NOT_INSTALLED,
   PENDING,
-} from 'app/views/organizationIntegrations/constants';
-import {Field} from 'app/views/settings/components/forms/type';
+} from 'sentry/views/organizationIntegrations/constants';
+import {Field} from 'sentry/views/settings/components/forms/type';
 
 import {Mechanism, RawStacktrace, StacktraceType} from './stacktrace';
 

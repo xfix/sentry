@@ -2,9 +2,9 @@ import React from 'react';
 import {Value} from 'react-select-legacy';
 import styled from '@emotion/styled';
 
-import SelectControl from 'app/components/forms/selectControl';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
+import SelectControl from 'sentry/components/forms/selectControl';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
 
 import {ARRAY_FIELD_PREFIXES, CONDITION_OPERATORS} from '../data';
 import {PlaceholderText} from '../styles';

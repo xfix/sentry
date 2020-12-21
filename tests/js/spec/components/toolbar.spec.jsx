@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import Toolbar from 'app/components/toolbar';
+import Toolbar from 'sentry/components/toolbar';
 
 describe('Toolbar', function () {
   beforeEach(function () {});

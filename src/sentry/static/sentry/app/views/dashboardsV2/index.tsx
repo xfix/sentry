@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Feature from 'app/components/acl/feature';
-import {Organization} from 'app/types';
-import withOrganization from 'app/utils/withOrganization';
-import DashboardsV1 from 'app/views/dashboards';
+import Feature from 'sentry/components/acl/feature';
+import {Organization} from 'sentry/types';
+import withOrganization from 'sentry/utils/withOrganization';
+import DashboardsV1 from 'sentry/views/dashboards';
 
 type Props = {
   organization: Organization;

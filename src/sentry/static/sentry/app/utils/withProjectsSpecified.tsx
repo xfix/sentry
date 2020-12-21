@@ -3,9 +3,9 @@ import React from 'react';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import {Project} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import {Project} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 type Props = {
   projects?: Project[];

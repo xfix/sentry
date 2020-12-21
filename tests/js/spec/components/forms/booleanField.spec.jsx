@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {BooleanField} from 'app/components/forms';
+import {BooleanField} from 'sentry/components/forms';
 
 describe('BooleanField', function () {
   describe('render()', function () {

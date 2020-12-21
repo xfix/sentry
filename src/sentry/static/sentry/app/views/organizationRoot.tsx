@@ -1,8 +1,8 @@
 import React from 'react';
 import {RouteComponentProps, withRouter} from 'react-router';
 
-import {setLastRoute} from 'app/actionCreators/navigation';
-import {setActiveProject} from 'app/actionCreators/projects';
+import {setLastRoute} from 'sentry/actionCreators/navigation';
+import {setActiveProject} from 'sentry/actionCreators/projects';
 
 type Props = RouteComponentProps<{}, {}>;
 

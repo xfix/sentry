@@ -1,8 +1,8 @@
 /**
  * Events by Release
  */
-import {t} from 'app/locale';
-import {OPERATOR} from 'app/views/discover/data';
+import {t} from 'sentry/locale';
+import {OPERATOR} from 'sentry/views/discover/data';
 
 const eventsByRelease = {
   name: t('Events by Release'),

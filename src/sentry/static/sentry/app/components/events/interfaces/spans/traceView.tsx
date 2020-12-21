@@ -1,11 +1,11 @@
 import React from 'react';
 import pick from 'lodash/pick';
 
-import EmptyStateWarning from 'app/components/emptyStateWarning';
-import {t} from 'app/locale';
-import {Organization, SentryTransactionEvent} from 'app/types';
-import {createFuzzySearch} from 'app/utils/createFuzzySearch';
-import {TableData} from 'app/utils/discover/discoverQuery';
+import EmptyStateWarning from 'sentry/components/emptyStateWarning';
+import {t} from 'sentry/locale';
+import {Organization, SentryTransactionEvent} from 'sentry/types';
+import {createFuzzySearch} from 'sentry/utils/createFuzzySearch';
+import {TableData} from 'sentry/utils/discover/discoverQuery';
 
 import * as CursorGuideHandler from './cursorGuideHandler';
 import * as DividerHandlerManager from './dividerHandlerManager';

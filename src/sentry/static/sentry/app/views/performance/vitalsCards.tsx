@@ -2,18 +2,18 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import Card from 'app/components/card';
-import Link from 'app/components/links/link';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {getAggregateAlias, WebVital} from 'app/utils/discover/fields';
-import {decodeList} from 'app/utils/queryString';
-import withProjects from 'app/utils/withProjects';
-import VitalsCardsDiscoverQuery from 'app/views/performance/vitalDetail/vitalsCardsDiscoverQuery';
+import Card from 'sentry/components/card';
+import Link from 'sentry/components/links/link';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {getAggregateAlias, WebVital} from 'sentry/utils/discover/fields';
+import {decodeList} from 'sentry/utils/queryString';
+import withProjects from 'sentry/utils/withProjects';
+import VitalsCardsDiscoverQuery from 'sentry/views/performance/vitalDetail/vitalsCardsDiscoverQuery';
 
 import ColorBar from './vitalDetail/colorBar';
 import {

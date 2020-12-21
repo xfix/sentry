@@ -5,18 +5,18 @@ import styled from '@emotion/styled';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import SelectControl from 'app/components/forms/selectControl';
-import IdBadge from 'app/components/idBadge';
-import Link from 'app/components/links/link';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t, tct} from 'app/locale';
-import OrganizationsStore from 'app/stores/organizationsStore';
-import OrganizationStore from 'app/stores/organizationStore';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import Projects from 'app/utils/projects';
-import replaceRouterParams from 'app/utils/replaceRouterParams';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import SelectControl from 'sentry/components/forms/selectControl';
+import IdBadge from 'sentry/components/idBadge';
+import Link from 'sentry/components/links/link';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t, tct} from 'sentry/locale';
+import OrganizationsStore from 'sentry/stores/organizationsStore';
+import OrganizationStore from 'sentry/stores/organizationStore';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import Projects from 'sentry/utils/projects';
+import replaceRouterParams from 'sentry/utils/replaceRouterParams';
 
 type Props = ModalRenderProps & {
   /**

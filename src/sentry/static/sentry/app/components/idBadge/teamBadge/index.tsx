@@ -3,9 +3,9 @@ import createReactClass from 'create-react-class';
 import isEqual from 'lodash/isEqual';
 import Reflux from 'reflux';
 
-import SentryTypes from 'app/sentryTypes';
-import TeamStore from 'app/stores/teamStore';
-import {Team} from 'app/types';
+import SentryTypes from 'sentry/sentryTypes';
+import TeamStore from 'sentry/stores/teamStore';
+import {Team} from 'sentry/types';
 
 import Badge from './badge';
 

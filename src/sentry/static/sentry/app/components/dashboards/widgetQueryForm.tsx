@@ -3,27 +3,27 @@ import styled from '@emotion/styled';
 import cloneDeep from 'lodash/cloneDeep';
 import set from 'lodash/set';
 
-import {fetchSavedQueries} from 'app/actionCreators/discoverSavedQueries';
-import {Client} from 'app/api';
-import Feature from 'app/components/acl/feature';
-import Button from 'app/components/button';
-import SelectControl from 'app/components/forms/selectControl';
-import {IconAdd, IconDelete} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {GlobalSelection, Organization, SavedQuery, SelectValue} from 'app/types';
+import {fetchSavedQueries} from 'sentry/actionCreators/discoverSavedQueries';
+import {Client} from 'sentry/api';
+import Feature from 'sentry/components/acl/feature';
+import Button from 'sentry/components/button';
+import SelectControl from 'sentry/components/forms/selectControl';
+import {IconAdd, IconDelete} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {GlobalSelection, Organization, SavedQuery, SelectValue} from 'sentry/types';
 import {
   explodeField,
   generateFieldAsString,
   QueryFieldValue,
-} from 'app/utils/discover/fields';
-import {WidgetQuery} from 'app/views/dashboardsV2/types';
-import SearchBar from 'app/views/events/searchBar';
-import {QueryField} from 'app/views/eventsV2/table/queryField';
-import {generateFieldOptions} from 'app/views/eventsV2/utils';
-import Input from 'app/views/settings/components/forms/controls/input';
-import RadioGroup from 'app/views/settings/components/forms/controls/radioGroup';
-import Field from 'app/views/settings/components/forms/field';
+} from 'sentry/utils/discover/fields';
+import {WidgetQuery} from 'sentry/views/dashboardsV2/types';
+import SearchBar from 'sentry/views/events/searchBar';
+import {QueryField} from 'sentry/views/eventsV2/table/queryField';
+import {generateFieldOptions} from 'sentry/views/eventsV2/utils';
+import Input from 'sentry/views/settings/components/forms/controls/input';
+import RadioGroup from 'sentry/views/settings/components/forms/controls/radioGroup';
+import Field from 'sentry/views/settings/components/forms/field';
 
 type Props = {
   api: Client;

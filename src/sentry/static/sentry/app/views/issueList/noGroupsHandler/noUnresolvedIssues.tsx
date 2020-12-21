@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import congratsRobotsPlaceholder from 'app/../images/spot/congrats-robots-placeholder.jpg';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
+import congratsRobotsPlaceholder from 'sentry-images/spot/congrats-robots-placeholder.jpg';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
 
 const Placeholder = () => (
   <PlaceholderImage

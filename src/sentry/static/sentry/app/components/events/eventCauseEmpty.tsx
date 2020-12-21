@@ -2,20 +2,20 @@ import React from 'react';
 import styled from '@emotion/styled';
 import moment from 'moment';
 
-import codesworth from 'app/../images/spot/codesworth.png';
-import {promptsUpdate} from 'app/actionCreators/prompts';
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import CommitRow from 'app/components/commitRow';
-import {DataSection} from 'app/components/events/styles';
-import {Panel} from 'app/components/panels';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Commit, Organization, Project, PromptActivity, RepositoryStatus} from 'app/types';
-import {trackAdhocEvent, trackAnalyticsEvent} from 'app/utils/analytics';
-import getDynamicText from 'app/utils/getDynamicText';
-import {snoozedDays} from 'app/utils/promptsActivity';
-import withApi from 'app/utils/withApi';
+import codesworth from 'sentry-images/spot/codesworth.png';
+import {promptsUpdate} from 'sentry/actionCreators/prompts';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import CommitRow from 'sentry/components/commitRow';
+import {DataSection} from 'sentry/components/events/styles';
+import {Panel} from 'sentry/components/panels';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Commit, Organization, Project, PromptActivity, RepositoryStatus} from 'sentry/types';
+import {trackAdhocEvent, trackAnalyticsEvent} from 'sentry/utils/analytics';
+import getDynamicText from 'sentry/utils/getDynamicText';
+import {snoozedDays} from 'sentry/utils/promptsActivity';
+import withApi from 'sentry/utils/withApi';
 
 const EXAMPLE_COMMITS = ['dec0de', 'de1e7e', '5ca1ed'];
 

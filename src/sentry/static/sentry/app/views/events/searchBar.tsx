@@ -7,23 +7,23 @@ import memoize from 'lodash/memoize';
 import omit from 'lodash/omit';
 import PropTypes from 'prop-types';
 
-import {fetchTagValues} from 'app/actionCreators/tags';
-import {Client} from 'app/api';
-import SmartSearchBar from 'app/components/smartSearchBar';
-import {NEGATION_OPERATOR, SEARCH_WILDCARD} from 'app/constants';
-import SentryTypes from 'app/sentryTypes';
-import {Organization, SavedSearchType, TagCollection} from 'app/types';
-import {defined} from 'app/utils';
+import {fetchTagValues} from 'sentry/actionCreators/tags';
+import {Client} from 'sentry/api';
+import SmartSearchBar from 'sentry/components/smartSearchBar';
+import {NEGATION_OPERATOR, SEARCH_WILDCARD} from 'sentry/constants';
+import SentryTypes from 'sentry/sentryTypes';
+import {Organization, SavedSearchType, TagCollection} from 'sentry/types';
+import {defined} from 'sentry/utils';
 import {
   Field,
   FIELD_TAGS,
   isAggregateField,
   isMeasurement,
   TRACING_FIELDS,
-} from 'app/utils/discover/fields';
-import Measurements from 'app/utils/measurements/measurements';
-import withApi from 'app/utils/withApi';
-import withTags from 'app/utils/withTags';
+} from 'sentry/utils/discover/fields';
+import Measurements from 'sentry/utils/measurements/measurements';
+import withApi from 'sentry/utils/withApi';
+import withTags from 'sentry/utils/withTags';
 
 const SEARCH_SPECIAL_CHARS_REGEXP = new RegExp(
   `^${NEGATION_OPERATOR}|\\${SEARCH_WILDCARD}`,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ExceptionType, ExceptionValue, PlatformType} from 'app/types';
+import {ExceptionType, ExceptionValue, PlatformType} from 'sentry/types';
 
 import Exception from './exception';
 import Stacktrace from './stacktrace';

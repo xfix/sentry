@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import EventAttachments from 'app/components/events/eventAttachments';
+import EventAttachments from 'sentry/components/events/eventAttachments';
 
 describe('EventAttachments', function () {
   const {routerContext, organization, project} = initializeOrg();

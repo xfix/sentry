@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import {Box} from 'reflexbox'; // eslint-disable-line no-restricted-imports
 import scrollToElement from 'scroll-to-element';
 
-import {defined} from 'app/utils';
-import {sanitizeQuerySelector} from 'app/utils/sanitizeQuerySelector';
+import {defined} from 'sentry/utils';
+import {sanitizeQuerySelector} from 'sentry/utils/sanitizeQuerySelector';
 
 import FieldFromConfig from './fieldFromConfig';
 import FormPanel from './formPanel';

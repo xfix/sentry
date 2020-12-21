@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import ProjectHpkpReports from 'app/views/settings/projectSecurityHeaders/hpkp';
+import ProjectHpkpReports from 'sentry/views/settings/projectSecurityHeaders/hpkp';
 
 describe('ProjectHpkpReports', function () {
   const org = TestStubs.Organization();

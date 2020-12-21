@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Tooltip from 'app/components/tooltip';
-import {IconCheckmark, IconClose, IconWarning} from 'app/icons';
-import {CandidateStacktraceInfo, CandidateStacktraceStatus} from 'app/types/debugImage';
+import Tooltip from 'sentry/components/tooltip';
+import {IconCheckmark, IconClose, IconWarning} from 'sentry/icons';
+import {CandidateStacktraceInfo, CandidateStacktraceStatus} from 'sentry/types/debugImage';
 
 type Props = {
   stacktraceInfo: CandidateStacktraceInfo;

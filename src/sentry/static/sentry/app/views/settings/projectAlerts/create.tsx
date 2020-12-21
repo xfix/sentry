@@ -2,18 +2,18 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import PageHeading from 'app/components/pageHeading';
-import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
-import {t} from 'app/locale';
-import {PageContent, PageHeader} from 'app/styles/organization';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import EventView from 'app/utils/discover/eventView';
-import {uniqueId} from 'app/utils/guid';
-import BuilderBreadCrumbs from 'app/views/alerts/builder/builderBreadCrumbs';
-import IncidentRulesCreate from 'app/views/settings/incidentRules/create';
-import IssueEditor from 'app/views/settings/projectAlerts/issueEditor';
+import PageHeading from 'sentry/components/pageHeading';
+import SentryDocumentTitle from 'sentry/components/sentryDocumentTitle';
+import {t} from 'sentry/locale';
+import {PageContent, PageHeader} from 'sentry/styles/organization';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import EventView from 'sentry/utils/discover/eventView';
+import {uniqueId} from 'sentry/utils/guid';
+import BuilderBreadCrumbs from 'sentry/views/alerts/builder/builderBreadCrumbs';
+import IncidentRulesCreate from 'sentry/views/settings/incidentRules/create';
+import IssueEditor from 'sentry/views/settings/projectAlerts/issueEditor';
 
 import AlertTypeChooser from './alertTypeChooser';
 

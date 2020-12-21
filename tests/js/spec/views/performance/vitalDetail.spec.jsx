@@ -4,8 +4,8 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import VitalDetail from 'app/views/performance/vitalDetail/';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import VitalDetail from 'sentry/views/performance/vitalDetail/';
 
 function initializeData({features: additionalFeatures = []} = {}) {
   const features = [

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {t} from 'app/locale';
+import {t} from 'sentry/locale';
 
 import U2fInterface from './u2finterface';
 

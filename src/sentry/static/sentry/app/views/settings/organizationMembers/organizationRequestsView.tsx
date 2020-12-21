@@ -2,16 +2,16 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import PropTypes from 'prop-types';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {MEMBER_ROLES} from 'app/constants';
-import {t, tct} from 'app/locale';
-import {AccessRequest, Member, Organization, Team} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import withOrganization from 'app/utils/withOrganization';
-import withTeams from 'app/utils/withTeams';
-import AsyncView from 'app/views/asyncView';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {MEMBER_ROLES} from 'sentry/constants';
+import {t, tct} from 'sentry/locale';
+import {AccessRequest, Member, Organization, Team} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import withOrganization from 'sentry/utils/withOrganization';
+import withTeams from 'sentry/utils/withTeams';
+import AsyncView from 'sentry/views/asyncView';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 import InviteRequestRow from './inviteRequestRow';
 import OrganizationAccessRequests from './organizationAccessRequests';

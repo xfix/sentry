@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Button from 'app/components/button';
-import SelectControl from 'app/components/forms/selectControl';
-import RoleSelectControl from 'app/components/roleSelectControl';
-import {IconClose} from 'app/icons/iconClose';
-import {t} from 'app/locale';
-import {MemberRole, Team} from 'app/types';
+import Button from 'sentry/components/button';
+import SelectControl from 'sentry/components/forms/selectControl';
+import RoleSelectControl from 'sentry/components/roleSelectControl';
+import {IconClose} from 'sentry/icons/iconClose';
+import {t} from 'sentry/locale';
+import {MemberRole, Team} from 'sentry/types';
 
 import renderEmailValue from './renderEmailValue';
 import {InviteStatus} from './types';

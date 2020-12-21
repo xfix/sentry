@@ -1,8 +1,8 @@
 import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 
-import DebugMeta from 'app/components/events/interfaces/debugMeta';
-import SentryTypes from 'app/sentryTypes';
+import DebugMeta from 'sentry/components/events/interfaces/debugMeta';
+import SentryTypes from 'sentry/sentryTypes';
 
 const event = {
   id: 'deadbeef',

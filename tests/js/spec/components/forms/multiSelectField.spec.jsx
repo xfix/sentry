@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {MultiSelectField} from 'app/components/forms';
+import {MultiSelectField} from 'sentry/components/forms';
 
 describe('MultiSelectField', function () {
   describe('render()', function () {

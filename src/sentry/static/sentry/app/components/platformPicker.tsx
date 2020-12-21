@@ -4,19 +4,19 @@ import styled from '@emotion/styled';
 import debounce from 'lodash/debounce';
 import PlatformIcon from 'platformicons';
 
-import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
-import ListLink from 'app/components/links/listLink';
-import NavTabs from 'app/components/navTabs';
-import categoryList, {PlatformKey} from 'app/data/platformCategories';
-import platforms from 'app/data/platforms';
-import {IconClose, IconProject, IconSearch} from 'app/icons';
-import {t, tct} from 'app/locale';
-import {inputStyles} from 'app/styles/input';
-import space from 'app/styles/space';
-import {PlatformIntegration} from 'app/types';
-import {analytics} from 'app/utils/analytics';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import Button from 'sentry/components/button';
+import ExternalLink from 'sentry/components/links/externalLink';
+import ListLink from 'sentry/components/links/listLink';
+import NavTabs from 'sentry/components/navTabs';
+import categoryList, {PlatformKey} from 'sentry/data/platformCategories';
+import platforms from 'sentry/data/platforms';
+import {IconClose, IconProject, IconSearch} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import {inputStyles} from 'sentry/styles/input';
+import space from 'sentry/styles/space';
+import {PlatformIntegration} from 'sentry/types';
+import {analytics} from 'sentry/utils/analytics';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 const PLATFORM_CATEGORIES = [...categoryList, {id: 'all', name: t('All')}] as const;
 

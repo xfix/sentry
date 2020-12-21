@@ -2,13 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import Button from 'app/components/button';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import {t, tct} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
-import withApi from 'app/utils/withApi';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import Button from 'sentry/components/button';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import {t, tct} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
+import withApi from 'sentry/utils/withApi';
 
 class OrganizationAccessRequests extends React.Component {
   static propTypes = {

@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import TextOverflow from 'app/components/textOverflow';
-import Tooltip from 'app/components/tooltip';
-import {IconFire} from 'app/icons';
-import {t, tct} from 'app/locale';
-import {EntryData} from 'app/types';
-import {Color} from 'app/utils/theme';
+import TextOverflow from 'sentry/components/textOverflow';
+import Tooltip from 'sentry/components/tooltip';
+import {IconFire} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import {EntryData} from 'sentry/types';
+import {Color} from 'sentry/utils/theme';
 
 import {Grid, GridCell} from './styles';
 

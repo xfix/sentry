@@ -4,22 +4,22 @@ import styled from '@emotion/styled';
 import property from 'lodash/property';
 import sortBy from 'lodash/sortBy';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import DataExport, {ExportQueryType} from 'app/components/dataExport';
-import DeviceName from 'app/components/deviceName';
-import DetailedError from 'app/components/errors/detailedError';
-import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import UserBadge from 'app/components/idBadge/userBadge';
-import ExternalLink from 'app/components/links/externalLink';
-import Pagination from 'app/components/pagination';
-import TimeSince from 'app/components/timeSince';
-import {IconMail, IconOpen} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Environment, Group, Tag, TagValue} from 'app/types';
-import {isUrl, percent} from 'app/utils';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import DataExport, {ExportQueryType} from 'sentry/components/dataExport';
+import DeviceName from 'sentry/components/deviceName';
+import DetailedError from 'sentry/components/errors/detailedError';
+import GlobalSelectionLink from 'sentry/components/globalSelectionLink';
+import UserBadge from 'sentry/components/idBadge/userBadge';
+import ExternalLink from 'sentry/components/links/externalLink';
+import Pagination from 'sentry/components/pagination';
+import TimeSince from 'sentry/components/timeSince';
+import {IconMail, IconOpen} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Environment, Group, Tag, TagValue} from 'sentry/types';
+import {isUrl, percent} from 'sentry/utils';
 
 type RouteParams = {
   groupId: string;

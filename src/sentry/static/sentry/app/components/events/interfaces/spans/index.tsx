@@ -2,19 +2,19 @@ import React from 'react';
 import * as ReactRouter from 'react-router';
 import styled from '@emotion/styled';
 
-import Alert from 'app/components/alert';
-import {Panel} from 'app/components/panels';
-import SearchBar from 'app/components/searchBar';
-import {ALL_ACCESS_PROJECTS} from 'app/constants/globalSelectionHeader';
-import {IconWarning} from 'app/icons';
-import {t, tn} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
-import {Organization, SentryTransactionEvent} from 'app/types';
-import DiscoverQuery, {TableData} from 'app/utils/discover/discoverQuery';
-import EventView from 'app/utils/discover/eventView';
-import {QueryResults, stringifyQueryObject} from 'app/utils/tokenizeSearch';
-import withOrganization from 'app/utils/withOrganization';
+import Alert from 'sentry/components/alert';
+import {Panel} from 'sentry/components/panels';
+import SearchBar from 'sentry/components/searchBar';
+import {ALL_ACCESS_PROJECTS} from 'sentry/constants/globalSelectionHeader';
+import {IconWarning} from 'sentry/icons';
+import {t, tn} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
+import {Organization, SentryTransactionEvent} from 'sentry/types';
+import DiscoverQuery, {TableData} from 'sentry/utils/discover/discoverQuery';
+import EventView from 'sentry/utils/discover/eventView';
+import {QueryResults, stringifyQueryObject} from 'sentry/utils/tokenizeSearch';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import Filter, {
   ActiveOperationFilter,

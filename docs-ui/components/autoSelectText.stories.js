@@ -1,7 +1,7 @@
 import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 
-import AutoSelectText from 'app/components/autoSelectText';
+import AutoSelectText from 'sentry/components/autoSelectText';
 
 export default {
   title: 'Utilities/AutoSelectText',

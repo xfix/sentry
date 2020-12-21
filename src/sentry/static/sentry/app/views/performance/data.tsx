@@ -1,10 +1,10 @@
 import {Location} from 'history';
 
-import {t} from 'app/locale';
-import {LightWeightOrganization, NewQuery, SelectValue} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {decodeScalar} from 'app/utils/queryString';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
+import {t} from 'sentry/locale';
+import {LightWeightOrganization, NewQuery, SelectValue} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
 
 import {
   getVitalDetailTableMehStatusFunction,

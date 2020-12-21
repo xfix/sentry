@@ -2,7 +2,7 @@ import React from 'react';
 
 import {shallow} from 'sentry-test/enzyme';
 
-import BulkController from 'app/components/bulkController';
+import BulkController from 'sentry/components/bulkController';
 
 describe('BulkController', function () {
   let wrapper, renderProp, toggleRow, selectPage, deselectPage, selectAll, unselectAll;

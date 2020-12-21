@@ -1,6 +1,6 @@
 import {EChartOption} from 'echarts';
 
-import {Theme} from 'app/utils/theme';
+import {Theme} from 'sentry/utils/theme';
 
 type Props = EChartOption.YAxis & {theme: Theme};
 

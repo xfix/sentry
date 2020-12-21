@@ -7,15 +7,15 @@ import {
   addErrorMessage,
   addLoadingMessage,
   clearIndicators,
-} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import {Organization, Project} from 'app/types';
-import {trackAdhocEvent, trackAnalyticsEvent} from 'app/utils/analytics';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
+} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import {Organization, Project} from 'sentry/types';
+import {trackAdhocEvent, trackAnalyticsEvent} from 'sentry/utils/analytics';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
 
 type Props = React.ComponentProps<typeof Button> & {
   api: Client;

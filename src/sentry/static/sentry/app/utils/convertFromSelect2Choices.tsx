@@ -1,4 +1,4 @@
-import {SelectValue} from 'app/types';
+import {SelectValue} from 'sentry/types';
 
 type Choices = Array<string | [value: string, label: string]>;
 

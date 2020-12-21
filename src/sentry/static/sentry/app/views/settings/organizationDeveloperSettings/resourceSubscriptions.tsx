@@ -2,13 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {Context} from 'app/components/forms/form';
-import {Permissions, WebhookEvent} from 'app/types';
+import {Context} from 'sentry/components/forms/form';
+import {Permissions, WebhookEvent} from 'sentry/types';
 import {
   EVENT_CHOICES,
   PERMISSIONS_MAP,
-} from 'app/views/settings/organizationDeveloperSettings/constants';
-import SubscriptionBox from 'app/views/settings/organizationDeveloperSettings/subscriptionBox';
+} from 'sentry/views/settings/organizationDeveloperSettings/constants';
+import SubscriptionBox from 'sentry/views/settings/organizationDeveloperSettings/subscriptionBox';
 
 type Resource = typeof EVENT_CHOICES[number];
 

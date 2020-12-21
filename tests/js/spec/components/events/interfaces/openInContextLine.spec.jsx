@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {OpenInContextLine} from 'app/components/events/interfaces/openInContextLine';
-import {addQueryParamsToExistingUrl} from 'app/utils/queryString';
+import {OpenInContextLine} from 'sentry/components/events/interfaces/openInContextLine';
+import {addQueryParamsToExistingUrl} from 'sentry/utils/queryString';
 
 describe('OpenInContextLine', function () {
   const filename = '/sentry/app.py';

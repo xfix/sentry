@@ -3,11 +3,11 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import partition from 'lodash/partition';
 
-import TextOverflow from 'app/components/textOverflow';
-import Tooltip from 'app/components/tooltip';
-import {tct, tn} from 'app/locale';
-import space from 'app/styles/space';
-import {GlobalSelection, Release} from 'app/types';
+import TextOverflow from 'sentry/components/textOverflow';
+import Tooltip from 'sentry/components/tooltip';
+import {tct, tn} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {GlobalSelection, Release} from 'sentry/types';
 
 import {DisplayOption} from '../utils';
 

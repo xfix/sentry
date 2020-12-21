@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Alert from 'app/components/alert';
-import EventDataSection from 'app/components/events/eventDataSection';
-import {IconUpgrade} from 'app/icons';
-import {tct} from 'app/locale';
-import {Event} from 'app/types';
+import Alert from 'sentry/components/alert';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import {IconUpgrade} from 'sentry/icons';
+import {tct} from 'sentry/locale';
+import {Event} from 'sentry/types';
 
 import getSuggestion from './getSuggestion';
 

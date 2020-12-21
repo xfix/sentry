@@ -1,7 +1,7 @@
 import {Link} from 'react-router';
 import styled from '@emotion/styled';
 
-import space from 'app/styles/space';
+import space from 'sentry/styles/space';
 
 const BackToIssues = styled(Link)`
   display: flex;

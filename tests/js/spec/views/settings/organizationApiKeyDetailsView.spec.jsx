@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import OrganizationApiKeyDetails from 'app/views/settings/organizationApiKeys/organizationApiKeyDetails';
+import OrganizationApiKeyDetails from 'sentry/views/settings/organizationApiKeys/organizationApiKeyDetails';
 
 jest.mock('jquery');
 

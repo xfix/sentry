@@ -3,17 +3,17 @@ import * as Sentry from '@sentry/react';
 import {withTheme} from 'emotion-theming';
 import isEqual from 'lodash/isEqual';
 
-import {fetchTotalCount} from 'app/actionCreators/events';
-import EventsChart from 'app/components/charts/eventsChart';
-import {getParams} from 'app/components/organizations/globalSelectionHeader/getParams';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {t} from 'app/locale';
-import {GlobalSelection} from 'app/types';
-import {axisLabelFormatter} from 'app/utils/discover/charts';
-import getDynamicText from 'app/utils/getDynamicText';
-import {Theme} from 'app/utils/theme';
-import withGlobalSelection from 'app/utils/withGlobalSelection';
-import {HeaderTitleLegend} from 'app/views/performance/styles';
+import {fetchTotalCount} from 'sentry/actionCreators/events';
+import EventsChart from 'sentry/components/charts/eventsChart';
+import {getParams} from 'sentry/components/organizations/globalSelectionHeader/getParams';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {t} from 'sentry/locale';
+import {GlobalSelection} from 'sentry/types';
+import {axisLabelFormatter} from 'sentry/utils/discover/charts';
+import getDynamicText from 'sentry/utils/getDynamicText';
+import {Theme} from 'sentry/utils/theme';
+import withGlobalSelection from 'sentry/utils/withGlobalSelection';
+import {HeaderTitleLegend} from 'sentry/views/performance/styles';
 
 type Props = Omit<
   EventsChart['props'],

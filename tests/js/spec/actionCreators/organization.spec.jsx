@@ -1,8 +1,8 @@
-import {fetchOrganizationDetails} from 'app/actionCreators/organization';
-import * as OrganizationsActionCreator from 'app/actionCreators/organizations';
-import OrganizationActions from 'app/actions/organizationActions';
-import ProjectsStore from 'app/stores/projectsStore';
-import TeamStore from 'app/stores/teamStore';
+import {fetchOrganizationDetails} from 'sentry/actionCreators/organization';
+import * as OrganizationsActionCreator from 'sentry/actionCreators/organizations';
+import OrganizationActions from 'sentry/actions/organizationActions';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import TeamStore from 'sentry/stores/teamStore';
 
 describe('OrganizationActionCreator', function () {
   const detailedOrg = TestStubs.Organization({

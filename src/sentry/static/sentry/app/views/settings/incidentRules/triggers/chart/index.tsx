@@ -3,25 +3,25 @@ import styled from '@emotion/styled';
 import chunk from 'lodash/chunk';
 import maxBy from 'lodash/maxBy';
 
-import {fetchTotalCount} from 'app/actionCreators/events';
-import {Client} from 'app/api';
-import Feature from 'app/components/acl/feature';
-import EventsRequest from 'app/components/charts/eventsRequest';
+import {fetchTotalCount} from 'sentry/actionCreators/events';
+import {Client} from 'sentry/api';
+import Feature from 'sentry/components/acl/feature';
+import EventsRequest from 'sentry/components/charts/eventsRequest';
 import {
   ChartControls,
   InlineContainer,
   SectionHeading,
   SectionValue,
-} from 'app/components/charts/styles';
-import SelectControl from 'app/components/forms/selectControl';
-import LoadingMask from 'app/components/loadingMask';
-import {Panel, PanelBody} from 'app/components/panels';
-import Placeholder from 'app/components/placeholder';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {SeriesDataUnit} from 'app/types/echarts';
-import withApi from 'app/utils/withApi';
+} from 'sentry/components/charts/styles';
+import SelectControl from 'sentry/components/forms/selectControl';
+import LoadingMask from 'sentry/components/loadingMask';
+import {Panel, PanelBody} from 'sentry/components/panels';
+import Placeholder from 'sentry/components/placeholder';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {SeriesDataUnit} from 'sentry/types/echarts';
+import withApi from 'sentry/utils/withApi';
 
 import {IncidentRule, TimePeriod, TimeWindow, Trigger} from '../../types';
 

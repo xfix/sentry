@@ -3,17 +3,17 @@ import sortBy from 'lodash/sortBy';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {openModal} from 'app/actionCreators/modal';
-import GlobalModal from 'app/components/globalModal';
-import convertRelayPiiConfig from 'app/views/settings/components/dataScrubbing/convertRelayPiiConfig';
-import Edit from 'app/views/settings/components/dataScrubbing/modals/edit';
-import submitRules from 'app/views/settings/components/dataScrubbing/submitRules';
-import {MethodType, RuleType} from 'app/views/settings/components/dataScrubbing/types';
+import {openModal} from 'sentry/actionCreators/modal';
+import GlobalModal from 'sentry/components/globalModal';
+import convertRelayPiiConfig from 'sentry/views/settings/components/dataScrubbing/convertRelayPiiConfig';
+import Edit from 'sentry/views/settings/components/dataScrubbing/modals/edit';
+import submitRules from 'sentry/views/settings/components/dataScrubbing/submitRules';
+import {MethodType, RuleType} from 'sentry/views/settings/components/dataScrubbing/types';
 import {
   getMethodLabel,
   getRuleLabel,
   valueSuggestions,
-} from 'app/views/settings/components/dataScrubbing/utils';
+} from 'sentry/views/settings/components/dataScrubbing/utils';
 
 // @ts-expect-error
 const relayPiiConfig = TestStubs.DataScrubbingRelayPiiConfig();
@@ -28,7 +28,7 @@ const endpoint = `/projects/${organizationSlug}/${projectId}/`;
 // @ts-expect-error
 const api = new MockApiClient();
 
-jest.mock('app/views/settings/components/dataScrubbing/submitRules');
+jest.mock('sentry/views/settings/components/dataScrubbing/submitRules');
 
 async function renderComponent() {
   const wrapper = mountWithTheme(<GlobalModal />);

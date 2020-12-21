@@ -2,11 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {IconReturn} from 'app/icons/iconReturn';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import theme from 'app/utils/theme';
-import TextCopyInput from 'app/views/settings/components/forms/textCopyInput';
+import {IconReturn} from 'sentry/icons/iconReturn';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import theme from 'sentry/utils/theme';
+import TextCopyInput from 'sentry/views/settings/components/forms/textCopyInput';
 
 interface Props {
   name?: string;

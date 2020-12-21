@@ -3,11 +3,11 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import FormModel from 'app/views/settings/components/forms/model';
-import RuleFormContainer from 'app/views/settings/incidentRules/ruleForm';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import FormModel from 'sentry/views/settings/components/forms/model';
+import RuleFormContainer from 'sentry/views/settings/incidentRules/ruleForm';
 
-jest.mock('app/actionCreators/indicator');
+jest.mock('sentry/actionCreators/indicator');
 
 describe('Incident Rules Form', function () {
   const {organization, project, routerContext} = initializeOrg();

@@ -2,16 +2,16 @@ import React from 'react';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import TextOverflow from 'app/components/textOverflow';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {Image} from 'app/types/debugImage';
-import theme from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import TextOverflow from 'sentry/components/textOverflow';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {Image} from 'sentry/types/debugImage';
+import theme from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
 
 import NotAvailable from './notAvailable';
 import Panel from './panel';

@@ -5,18 +5,18 @@ import {components, OptionProps, SingleValueProps} from 'react-select';
 import styled from '@emotion/styled';
 import cloneDeep from 'lodash/cloneDeep';
 
-import SelectControl from 'app/components/forms/selectControl';
-import Tag from 'app/components/tag';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {SelectValue} from 'app/types';
+import SelectControl from 'sentry/components/forms/selectControl';
+import Tag from 'sentry/components/tag';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {SelectValue} from 'sentry/types';
 import {
   AggregateParameter,
   ColumnType,
   QueryFieldValue,
   ValidateColumnTypes,
-} from 'app/utils/discover/fields';
-import Input from 'app/views/settings/components/forms/controls/input';
+} from 'sentry/utils/discover/fields';
+import Input from 'sentry/views/settings/components/forms/controls/input';
 
 import {FieldValue, FieldValueColumns, FieldValueKind} from './types';
 

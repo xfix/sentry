@@ -7,21 +7,21 @@ import styled from '@emotion/styled';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 
-import Checkbox from 'app/components/checkbox';
-import TimePicker from 'app/components/organizations/timeRangeSelector/timePicker';
-import {MAX_PICKABLE_DAYS} from 'app/constants';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
-import {analytics} from 'app/utils/analytics';
+import Checkbox from 'sentry/components/checkbox';
+import TimePicker from 'sentry/components/organizations/timeRangeSelector/timePicker';
+import {MAX_PICKABLE_DAYS} from 'sentry/constants';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
+import {analytics} from 'sentry/utils/analytics';
 import {
   getEndOfDay,
   getStartOfPeriodAgo,
   isValidTime,
   setDateToTime,
-} from 'app/utils/dates';
-import getRouteStringFromRoutes from 'app/utils/getRouteStringFromRoutes';
-import theme from 'app/utils/theme';
+} from 'sentry/utils/dates';
+import getRouteStringFromRoutes from 'sentry/utils/getRouteStringFromRoutes';
+import theme from 'sentry/utils/theme';
 
 class DateRange extends React.Component {
   static getTimeStringFromDate = date => moment(date).local().format('HH:mm');

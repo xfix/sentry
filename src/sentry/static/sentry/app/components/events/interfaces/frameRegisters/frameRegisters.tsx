@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import FrameRegistersValue from 'app/components/events/interfaces/frameRegisters/frameRegistersValue';
-import {getMeta} from 'app/components/events/meta/metaProxy';
-import {t} from 'app/locale';
-import {defined} from 'app/utils';
+import FrameRegistersValue from 'sentry/components/events/interfaces/frameRegisters/frameRegistersValue';
+import {getMeta} from 'sentry/components/events/meta/metaProxy';
+import {t} from 'sentry/locale';
+import {defined} from 'sentry/utils';
 
 type Props = {
   data: {[key: string]: string};

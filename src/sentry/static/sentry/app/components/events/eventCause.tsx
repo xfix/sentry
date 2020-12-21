@@ -3,16 +3,16 @@ import styled from '@emotion/styled';
 import flatMap from 'lodash/flatMap';
 import uniqBy from 'lodash/uniqBy';
 
-import {Client} from 'app/api';
-import CommitRow from 'app/components/commitRow';
-import {CauseHeader, DataSection} from 'app/components/events/styles';
-import {Panel} from 'app/components/panels';
-import {IconAdd, IconSubtract} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {AvatarProject, Committer, Event, Group, Organization} from 'app/types';
-import withApi from 'app/utils/withApi';
-import withCommitters from 'app/utils/withCommitters';
+import {Client} from 'sentry/api';
+import CommitRow from 'sentry/components/commitRow';
+import {CauseHeader, DataSection} from 'sentry/components/events/styles';
+import {Panel} from 'sentry/components/panels';
+import {IconAdd, IconSubtract} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {AvatarProject, Committer, Event, Group, Organization} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
+import withCommitters from 'sentry/utils/withCommitters';
 
 type Props = {
   // injected by HoC

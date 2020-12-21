@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {withInfo} from '@storybook/addon-info';
 
-import theme from 'app/utils/theme';
-import ColorBar from 'app/views/performance/vitalDetail/colorBar.tsx';
+import theme from 'sentry/utils/theme';
+import ColorBar from 'sentry/views/performance/vitalDetail/colorBar.tsx';
 
 export default {
   title: 'Features/Vitals/ColorBar',

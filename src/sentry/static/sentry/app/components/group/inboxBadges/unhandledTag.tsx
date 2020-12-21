@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Feature from 'app/components/acl/feature';
-import Tooltip from 'app/components/tooltip';
-import {IconFire} from 'app/icons';
-import {t} from 'app/locale';
-import {Organization} from 'app/types';
+import Feature from 'sentry/components/acl/feature';
+import Tooltip from 'sentry/components/tooltip';
+import {IconFire} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {Organization} from 'sentry/types';
 
 // TODO(matej): remove "unhandled-issue-flag" feature flag once testing is over (otherwise this won't ever be rendered in a shared event)
 const UnhandledTag = ({organization}: {organization: Organization}) => (

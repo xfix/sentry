@@ -2,10 +2,10 @@ import isArray from 'lodash/isArray';
 import isUndefined from 'lodash/isUndefined';
 import Reflux from 'reflux';
 
-import GroupActions from 'app/actions/groupActions';
-import {t} from 'app/locale';
-import IndicatorStore from 'app/stores/indicatorStore';
-import {Activity, BaseGroup, Group, GroupStats} from 'app/types';
+import GroupActions from 'sentry/actions/groupActions';
+import {t} from 'sentry/locale';
+import IndicatorStore from 'sentry/stores/indicatorStore';
+import {Activity, BaseGroup, Group, GroupStats} from 'sentry/types';
 
 function showAlert(msg, type) {
   IndicatorStore.addMessage(msg, type, {

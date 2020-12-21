@@ -5,17 +5,17 @@ import cloneDeep from 'lodash/cloneDeep';
 import {mountWithTheme, shallow} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ErrorRobot from 'app/components/errorRobot';
-import StreamGroup from 'app/components/stream/group';
-import GroupStore from 'app/stores/groupStore';
-import TagStore from 'app/stores/tagStore';
-import IssueListWithStores, {IssueListOverview} from 'app/views/issueList/overview';
+import ErrorRobot from 'sentry/components/errorRobot';
+import StreamGroup from 'sentry/components/stream/group';
+import GroupStore from 'sentry/stores/groupStore';
+import TagStore from 'sentry/stores/tagStore';
+import IssueListWithStores, {IssueListOverview} from 'sentry/views/issueList/overview';
 
 // Mock <IssueListSidebar> and <IssueListActions>
-jest.mock('app/views/issueList/sidebar', () => jest.fn(() => null));
-jest.mock('app/views/issueList/actions', () => jest.fn(() => null));
-jest.mock('app/components/stream/group', () => jest.fn(() => null));
-jest.mock('app/views/issueList/noGroupsHandler/congratsRobots', () =>
+jest.mock('sentry/views/issueList/sidebar', () => jest.fn(() => null));
+jest.mock('sentry/views/issueList/actions', () => jest.fn(() => null));
+jest.mock('sentry/components/stream/group', () => jest.fn(() => null));
+jest.mock('sentry/views/issueList/noGroupsHandler/congratsRobots', () =>
   jest.fn(() => null)
 );
 

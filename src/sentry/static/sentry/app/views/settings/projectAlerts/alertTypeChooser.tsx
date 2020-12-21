@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Feature from 'app/components/acl/feature';
-import Card from 'app/components/card';
-import List from 'app/components/list';
-import ListItem from 'app/components/list/listItem';
-import Radio from 'app/components/radio';
-import Tooltip from 'app/components/tooltip';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import textStyles from 'app/styles/text';
-import {Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
+import Feature from 'sentry/components/acl/feature';
+import Card from 'sentry/components/card';
+import List from 'sentry/components/list';
+import ListItem from 'sentry/components/list/listItem';
+import Radio from 'sentry/components/radio';
+import Tooltip from 'sentry/components/tooltip';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import textStyles from 'sentry/styles/text';
+import {Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
 
 type AlertType = 'metric' | 'issue' | null;
 

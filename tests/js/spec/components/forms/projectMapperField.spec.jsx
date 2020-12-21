@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {selectByValue} from 'sentry-test/select-new';
 
-import {RenderField} from 'app/views/settings/components/forms/projectMapperField';
+import {RenderField} from 'sentry/views/settings/components/forms/projectMapperField';
 
 describe('ProjectMapperField', () => {
   let wrapper;

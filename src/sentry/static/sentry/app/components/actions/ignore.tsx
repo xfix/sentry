@@ -3,23 +3,23 @@ import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 import classNames from 'classnames';
 
-import {openModal} from 'app/actionCreators/modal';
-import ActionLink from 'app/components/actions/actionLink';
-import Button from 'app/components/button';
-import CustomIgnoreCountModal from 'app/components/customIgnoreCountModal';
-import CustomIgnoreDurationModal from 'app/components/customIgnoreDurationModal';
-import DropdownLink from 'app/components/dropdownLink';
-import Duration from 'app/components/duration';
-import MenuItem from 'app/components/menuItem';
-import Tooltip from 'app/components/tooltip';
-import {IconChevron, IconMute, IconNot} from 'app/icons';
-import {t, tn} from 'app/locale';
-import space from 'app/styles/space';
+import {openModal} from 'sentry/actionCreators/modal';
+import ActionLink from 'sentry/components/actions/actionLink';
+import Button from 'sentry/components/button';
+import CustomIgnoreCountModal from 'sentry/components/customIgnoreCountModal';
+import CustomIgnoreDurationModal from 'sentry/components/customIgnoreDurationModal';
+import DropdownLink from 'sentry/components/dropdownLink';
+import Duration from 'sentry/components/duration';
+import MenuItem from 'sentry/components/menuItem';
+import Tooltip from 'sentry/components/tooltip';
+import {IconChevron, IconMute, IconNot} from 'sentry/icons';
+import {t, tn} from 'sentry/locale';
+import space from 'sentry/styles/space';
 import {
   ResolutionStatus,
   ResolutionStatusDetails,
   UpdateResolutionStatus,
-} from 'app/types';
+} from 'sentry/types';
 
 const IGNORE_DURATIONS = [30, 120, 360, 60 * 24, 60 * 24 * 7];
 const IGNORE_COUNTS = [1, 10, 100, 1000, 10000, 100000];

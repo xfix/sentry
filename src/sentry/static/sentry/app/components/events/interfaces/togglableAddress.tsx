@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {formatAddress, parseAddress} from 'app/components/events/interfaces/utils';
-import Tooltip from 'app/components/tooltip';
-import {IconFilter} from 'app/icons';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Theme} from 'app/utils/theme';
+import {formatAddress, parseAddress} from 'sentry/components/events/interfaces/utils';
+import Tooltip from 'sentry/components/tooltip';
+import {IconFilter} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Theme} from 'sentry/utils/theme';
 
 type Props = {
   address: string;

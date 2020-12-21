@@ -3,17 +3,17 @@ import {Link, withRouter} from 'react-router';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import DateTime from 'app/components/dateTime';
-import EmptyStateWarning from 'app/components/emptyStateWarning';
-import IdBadge from 'app/components/idBadge';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import Placeholder from 'app/components/placeholder';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import withProjects from 'app/utils/withProjects';
+import DateTime from 'sentry/components/dateTime';
+import EmptyStateWarning from 'sentry/components/emptyStateWarning';
+import IdBadge from 'sentry/components/idBadge';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import Placeholder from 'sentry/components/placeholder';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import withProjects from 'sentry/utils/withProjects';
 
 class EventsTableBody extends React.PureComponent {
   static propTypes = {

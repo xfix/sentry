@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import Button from 'app/components/button';
-import EventDataSection from 'app/components/events/eventDataSection';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, EventGroupInfo, Organization} from 'app/types';
-import withOrganization from 'app/utils/withOrganization';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import Button from 'sentry/components/button';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, EventGroupInfo, Organization} from 'sentry/types';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import GroupingConfigSelect from './groupingConfigSelect';
 import GroupVariant from './groupingVariant';

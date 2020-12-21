@@ -2,8 +2,8 @@ import React from 'react';
 import {action} from '@storybook/addon-actions';
 import {withInfo} from '@storybook/addon-info';
 
-import {Panel, PanelHeader} from 'app/components/panels';
-import LoadingError from 'app/components/loadingError';
+import {Panel, PanelHeader} from 'sentry/components/panels';
+import LoadingError from 'sentry/components/loadingError';
 
 export default {
   title: 'UI/Loaders/LoadingError',

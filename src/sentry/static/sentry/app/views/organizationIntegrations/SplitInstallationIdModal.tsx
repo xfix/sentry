@@ -2,9 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {addSuccessMessage} from 'app/actionCreators/indicator';
-import Button from 'app/components/button';
-import TextCopyInput from 'app/views/settings/components/forms/textCopyInput';
+import {addSuccessMessage} from 'sentry/actionCreators/indicator';
+import Button from 'sentry/components/button';
+import TextCopyInput from 'sentry/views/settings/components/forms/textCopyInput';
 
 type Props = {
   installationId: string;

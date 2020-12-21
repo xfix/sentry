@@ -2,14 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import {Panel} from 'app/components/panels';
-import ReleaseStats from 'app/components/releaseStats';
-import TextOverflow from 'app/components/textOverflow';
-import TimeSince from 'app/components/timeSince';
-import Version from 'app/components/version';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {GlobalSelection, Release} from 'app/types';
+import {Panel} from 'sentry/components/panels';
+import ReleaseStats from 'sentry/components/releaseStats';
+import TextOverflow from 'sentry/components/textOverflow';
+import TimeSince from 'sentry/components/timeSince';
+import Version from 'sentry/components/version';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {GlobalSelection, Release} from 'sentry/types';
 
 import ReleaseHealth from './releaseHealth';
 import {DisplayOption} from './utils';

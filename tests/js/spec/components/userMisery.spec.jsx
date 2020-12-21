@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import ScoreBar from 'app/components/scoreBar';
-import UserMisery from 'app/components/userMisery';
+import ScoreBar from 'sentry/components/scoreBar';
+import UserMisery from 'sentry/components/userMisery';
 
 describe('UserMisery', function () {
   beforeEach(function () {});

@@ -3,9 +3,9 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import {Client} from 'app/api';
-import OrganizationStore from 'app/stores/organizationStore';
-import OrganizationPerformance from 'app/views/settings/organizationPerformance';
+import {Client} from 'sentry/api';
+import OrganizationStore from 'sentry/stores/organizationStore';
+import OrganizationPerformance from 'sentry/views/settings/organizationPerformance';
 
 describe('Settings > OrganizationPerformance', function () {
   const organization = TestStubs.Organization({

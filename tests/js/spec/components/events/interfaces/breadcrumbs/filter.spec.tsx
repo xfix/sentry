@@ -2,14 +2,14 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import Filter from 'app/components/events/interfaces/breadcrumbs/filter';
-import Icon from 'app/components/events/interfaces/breadcrumbs/icon';
-import Level from 'app/components/events/interfaces/breadcrumbs/level';
+import Filter from 'sentry/components/events/interfaces/breadcrumbs/filter';
+import Icon from 'sentry/components/events/interfaces/breadcrumbs/icon';
+import Level from 'sentry/components/events/interfaces/breadcrumbs/level';
 import {
   BreadcrumbLevelType,
   BreadcrumbType,
-} from 'app/components/events/interfaces/breadcrumbs/types';
-import {IconFire, IconFix, IconLocation, IconSpan, IconSwitch, IconUser} from 'app/icons';
+} from 'sentry/components/events/interfaces/breadcrumbs/types';
+import {IconFire, IconFix, IconLocation, IconSpan, IconSwitch, IconUser} from 'sentry/icons';
 
 const options: React.ComponentProps<typeof Filter>['options'] = [
   [

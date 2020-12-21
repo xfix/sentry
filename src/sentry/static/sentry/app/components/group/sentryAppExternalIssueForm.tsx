@@ -3,20 +3,20 @@ import {createFilter} from 'react-select';
 import debounce from 'lodash/debounce';
 import PropTypes from 'prop-types';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import ExternalIssueStore from 'app/stores/externalIssueStore';
-import {Event, Group, PlatformExternalIssue, SentryAppInstallation} from 'app/types';
-import getStacktraceBody from 'app/utils/getStacktraceBody';
-import {addQueryParamsToExistingUrl} from 'app/utils/queryString';
-import {replaceAtArrayIndex} from 'app/utils/replaceAtArrayIndex';
-import withApi from 'app/utils/withApi';
-import FieldFromConfig from 'app/views/settings/components/forms/fieldFromConfig';
-import Form from 'app/views/settings/components/forms/form';
-import FormModel from 'app/views/settings/components/forms/model';
-import {Field, FieldValue} from 'app/views/settings/components/forms/type';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import ExternalIssueStore from 'sentry/stores/externalIssueStore';
+import {Event, Group, PlatformExternalIssue, SentryAppInstallation} from 'sentry/types';
+import getStacktraceBody from 'sentry/utils/getStacktraceBody';
+import {addQueryParamsToExistingUrl} from 'sentry/utils/queryString';
+import {replaceAtArrayIndex} from 'sentry/utils/replaceAtArrayIndex';
+import withApi from 'sentry/utils/withApi';
+import FieldFromConfig from 'sentry/views/settings/components/forms/fieldFromConfig';
+import Form from 'sentry/views/settings/components/forms/form';
+import FormModel from 'sentry/views/settings/components/forms/model';
+import {Field, FieldValue} from 'sentry/views/settings/components/forms/type';
 
 //0 is a valid choice but empty string, undefined, and null are not
 const hasValue = value => !!value || value === 0;

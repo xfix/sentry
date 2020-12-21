@@ -1,12 +1,12 @@
 import React from 'react';
 import {browserHistory, RouteComponentProps} from 'react-router';
 
-import IdBadge from 'app/components/idBadge';
-import {Team} from 'app/types';
-import recreateRoute from 'app/utils/recreateRoute';
-import withTeams from 'app/utils/withTeams';
-import BreadcrumbDropdown from 'app/views/settings/components/settingsBreadcrumb/breadcrumbDropdown';
-import MenuItem from 'app/views/settings/components/settingsBreadcrumb/menuItem';
+import IdBadge from 'sentry/components/idBadge';
+import {Team} from 'sentry/types';
+import recreateRoute from 'sentry/utils/recreateRoute';
+import withTeams from 'sentry/utils/withTeams';
+import BreadcrumbDropdown from 'sentry/views/settings/components/settingsBreadcrumb/breadcrumbDropdown';
+import MenuItem from 'sentry/views/settings/components/settingsBreadcrumb/menuItem';
 
 import {RouteWithName} from './types';
 import {CrumbLink} from '.';

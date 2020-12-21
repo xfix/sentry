@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import UserAvatar from 'app/components/avatar/userAvatar';
-import {tn} from 'app/locale';
-import space from 'app/styles/space';
-import {Group} from 'app/types';
+import UserAvatar from 'sentry/components/avatar/userAvatar';
+import {tn} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Group} from 'sentry/types';
 
 import SidebarSection from './sidebarSection';
 

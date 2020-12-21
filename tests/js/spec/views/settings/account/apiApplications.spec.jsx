@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ApiApplications from 'app/views/settings/account/apiApplications';
+import ApiApplications from 'sentry/views/settings/account/apiApplications';
 
 describe('ApiApplications', function () {
   let requestMock;

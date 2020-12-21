@@ -3,10 +3,10 @@ import identity from 'lodash/identity';
 import pick from 'lodash/pick';
 import pickBy from 'lodash/pickBy';
 
-import {DATE_TIME_KEYS, URL_PARAM} from 'app/constants/globalSelectionHeader';
-import {GlobalSelection} from 'app/types';
-import {defined} from 'app/utils';
-import {getUtcToLocalDateObject} from 'app/utils/dates';
+import {DATE_TIME_KEYS, URL_PARAM} from 'sentry/constants/globalSelectionHeader';
+import {GlobalSelection} from 'sentry/types';
+import {defined} from 'sentry/utils';
+import {getUtcToLocalDateObject} from 'sentry/utils/dates';
 
 import {getParams} from './getParams';
 

@@ -2,9 +2,9 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import * as OrgActions from 'app/actionCreators/organizations';
-import ConfigStore from 'app/stores/configStore';
-import {SettingsIndex} from 'app/views/settings/settingsIndex';
+import * as OrgActions from 'sentry/actionCreators/organizations';
+import ConfigStore from 'sentry/stores/configStore';
+import {SettingsIndex} from 'sentry/views/settings/settingsIndex';
 
 describe('SettingsIndex', function () {
   let wrapper;

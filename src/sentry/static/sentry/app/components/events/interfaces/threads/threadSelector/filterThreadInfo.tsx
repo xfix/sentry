@@ -1,6 +1,6 @@
-import {trimPackage} from 'app/components/events/interfaces/frame/utils';
-import {Event, Frame} from 'app/types';
-import {Thread} from 'app/types/events';
+import {trimPackage} from 'sentry/components/events/interfaces/frame/utils';
+import {Event, Frame} from 'sentry/types';
+import {Thread} from 'sentry/types/events';
 
 import getRelevantFrame from './getRelevantFrame';
 import getThreadStacktrace from './getThreadStacktrace';

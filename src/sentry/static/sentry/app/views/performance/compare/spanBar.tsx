@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Count from 'app/components/count';
-import * as DividerHandlerManager from 'app/components/events/interfaces/spans/dividerHandlerManager';
+import Count from 'sentry/components/count';
+import * as DividerHandlerManager from 'sentry/components/events/interfaces/spans/dividerHandlerManager';
 import {
   ConnectorBar,
   DividerLine,
@@ -18,23 +18,23 @@ import {
   SpanTreeTogglerContainer,
   StyledIconChevron,
   TOGGLE_BORDER_BOX,
-} from 'app/components/events/interfaces/spans/spanBar';
+} from 'sentry/components/events/interfaces/spans/spanBar';
 import {
   getHatchPattern,
   SPAN_ROW_HEIGHT,
   SPAN_ROW_PADDING,
   SpanRow,
-} from 'app/components/events/interfaces/spans/styles';
-import {TreeDepthType} from 'app/components/events/interfaces/spans/types';
+} from 'sentry/components/events/interfaces/spans/styles';
+import {TreeDepthType} from 'sentry/components/events/interfaces/spans/types';
 import {
   getHumanDuration,
   isOrphanTreeDepth,
   toPercent,
   unwrapTreeDepth,
-} from 'app/components/events/interfaces/spans/utils';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import theme from 'app/utils/theme';
+} from 'sentry/components/events/interfaces/spans/utils';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import theme from 'sentry/utils/theme';
 
 import SpanDetail from './spanDetail';
 import {SpanBarRectangle} from './styles';

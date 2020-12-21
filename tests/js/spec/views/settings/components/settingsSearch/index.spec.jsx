@@ -2,13 +2,13 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {navigateTo} from 'app/actionCreators/navigation';
-import FormSearchStore from 'app/stores/formSearchStore';
-import {SettingsSearch} from 'app/views/settings/components/settingsSearch';
+import {navigateTo} from 'sentry/actionCreators/navigation';
+import FormSearchStore from 'sentry/stores/formSearchStore';
+import {SettingsSearch} from 'sentry/views/settings/components/settingsSearch';
 
 jest.mock('jquery');
-jest.mock('app/actionCreators/formSearch');
-jest.mock('app/actionCreators/navigation');
+jest.mock('sentry/actionCreators/formSearch');
+jest.mock('sentry/actionCreators/navigation');
 
 const SETTINGS_SEARCH_PLACEHOLDER = 'Search';
 describe('SettingsSearch', function () {

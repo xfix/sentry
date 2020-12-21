@@ -2,10 +2,10 @@ import React from 'react';
 import {browserHistory, RouteComponentProps} from 'react-router';
 import PropTypes from 'prop-types';
 
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import routeTitleGen from 'app/utils/routeTitle';
-import AsyncView from 'app/views/asyncView';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import routeTitleGen from 'sentry/utils/routeTitle';
+import AsyncView from 'sentry/views/asyncView';
 
 import AuditLogList from './auditLogList';
 

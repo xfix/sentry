@@ -4,30 +4,32 @@ import styled from '@emotion/styled';
 import {Location, LocationDescriptor, Query} from 'history';
 import omit from 'lodash/omit';
 
-import {CreateAlertFromViewButton} from 'app/components/createAlertButton';
-import TransactionsList, {DropdownOption} from 'app/components/discover/transactionsList';
-import * as Layout from 'app/components/layouts/thirds';
-import {getParams} from 'app/components/organizations/globalSelectionHeader/getParams';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {generateQueryWithTag} from 'app/utils';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {TableDataRow} from 'app/utils/discover/discoverQuery';
-import EventView from 'app/utils/discover/eventView';
-import {getAggregateAlias} from 'app/utils/discover/fields';
-import {generateEventSlug} from 'app/utils/discover/urls';
-import {decodeScalar} from 'app/utils/queryString';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
-import withProjects from 'app/utils/withProjects';
-import SearchBar from 'app/views/events/searchBar';
-import {Actions, updateQuery} from 'app/views/eventsV2/table/cellAction';
-import {TableColumn} from 'app/views/eventsV2/table/types';
-import Tags from 'app/views/eventsV2/tags';
+import {CreateAlertFromViewButton} from 'sentry/components/createAlertButton';
+import TransactionsList, {
+  DropdownOption,
+} from 'sentry/components/discover/transactionsList';
+import * as Layout from 'sentry/components/layouts/thirds';
+import {getParams} from 'sentry/components/organizations/globalSelectionHeader/getParams';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {generateQueryWithTag} from 'sentry/utils';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import {TableDataRow} from 'sentry/utils/discover/discoverQuery';
+import EventView from 'sentry/utils/discover/eventView';
+import {getAggregateAlias} from 'sentry/utils/discover/fields';
+import {generateEventSlug} from 'sentry/utils/discover/urls';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
+import withProjects from 'sentry/utils/withProjects';
+import SearchBar from 'sentry/views/events/searchBar';
+import {Actions, updateQuery} from 'sentry/views/eventsV2/table/cellAction';
+import {TableColumn} from 'sentry/views/eventsV2/table/types';
+import Tags from 'sentry/views/eventsV2/tags';
 import {
   PERCENTILE as VITAL_PERCENTILE,
   VITAL_GROUPS,
-} from 'app/views/performance/transactionVitals/constants';
+} from 'sentry/views/performance/transactionVitals/constants';
 
 import {getTransactionDetailsUrl} from '../utils';
 

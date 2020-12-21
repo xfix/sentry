@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PlatformIcon from 'platformicons';
 
-import {PlatformKey} from 'app/data/platformCategories';
+import {PlatformKey} from 'sentry/data/platformCategories';
 
 type Props = {
   platforms?: PlatformKey[];

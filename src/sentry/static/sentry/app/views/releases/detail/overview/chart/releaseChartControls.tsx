@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import OptionSelector from 'app/components/charts/optionSelector';
+import OptionSelector from 'sentry/components/charts/optionSelector';
 import {
   ChartControls,
   InlineContainer,
   SectionHeading,
   SectionValue,
-} from 'app/components/charts/styles';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, SelectValue} from 'app/types';
-import {WebVital} from 'app/utils/discover/fields';
-import {WEB_VITAL_DETAILS} from 'app/views/performance/transactionVitals/constants';
+} from 'sentry/components/charts/styles';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, SelectValue} from 'sentry/types';
+import {WebVital} from 'sentry/utils/discover/fields';
+import {WEB_VITAL_DETAILS} from 'sentry/views/performance/transactionVitals/constants';
 
 export enum YAxis {
   SESSIONS = 'sessions',

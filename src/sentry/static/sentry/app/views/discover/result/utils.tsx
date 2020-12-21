@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import orderBy from 'lodash/orderBy';
 import Papa from 'papaparse';
 
-import {formatVersion} from 'app/utils/formatters';
+import {formatVersion} from 'sentry/utils/formatters';
 
 import {NUMBER_OF_SERIES_BY_DAY} from '../data';
 import {Aggregation, Query, Result, SnubaResult} from '../types';

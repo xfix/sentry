@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {IconCheckmark, IconFire, IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {formatPercentage} from 'app/utils/formatters';
-import theme, {Color} from 'app/utils/theme';
+import {IconCheckmark, IconFire, IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {formatPercentage} from 'sentry/utils/formatters';
+import theme, {Color} from 'sentry/utils/theme';
 
 import {VitalState, vitalStateColors} from './utils';
 

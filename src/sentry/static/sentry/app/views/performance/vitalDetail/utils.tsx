@@ -1,10 +1,10 @@
 import {Location, Query} from 'history';
 
-import {IconCheckmark, IconFire, IconWarning} from 'app/icons';
-import {Series} from 'app/types/echarts';
-import {getAggregateAlias, WebVital} from 'app/utils/discover/fields';
-import {decodeScalar} from 'app/utils/queryString';
-import theme from 'app/utils/theme';
+import {IconCheckmark, IconFire, IconWarning} from 'sentry/icons';
+import {Series} from 'sentry/types/echarts';
+import {getAggregateAlias, WebVital} from 'sentry/utils/discover/fields';
+import {decodeScalar} from 'sentry/utils/queryString';
+import theme from 'sentry/utils/theme';
 
 export function generateVitalDetailRoute({orgSlug}: {orgSlug: string}): string {
   return `/organizations/${orgSlug}/performance/vitaldetail/`;

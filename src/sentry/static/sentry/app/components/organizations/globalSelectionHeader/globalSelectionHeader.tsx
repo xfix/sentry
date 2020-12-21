@@ -8,30 +8,30 @@ import {
   updateDateTime,
   updateEnvironments,
   updateProjects,
-} from 'app/actionCreators/globalSelection';
-import BackToIssues from 'app/components/organizations/backToIssues';
-import HeaderItemPosition from 'app/components/organizations/headerItemPosition';
-import HeaderSeparator from 'app/components/organizations/headerSeparator';
-import MultipleEnvironmentSelector from 'app/components/organizations/multipleEnvironmentSelector';
-import MultipleProjectSelector from 'app/components/organizations/multipleProjectSelector';
-import TimeRangeSelector from 'app/components/organizations/timeRangeSelector';
-import Tooltip from 'app/components/tooltip';
-import {DEFAULT_STATS_PERIOD} from 'app/constants';
-import {IconArrow} from 'app/icons';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import {PageContent} from 'app/styles/organization';
-import space from 'app/styles/space';
+} from 'sentry/actionCreators/globalSelection';
+import BackToIssues from 'sentry/components/organizations/backToIssues';
+import HeaderItemPosition from 'sentry/components/organizations/headerItemPosition';
+import HeaderSeparator from 'sentry/components/organizations/headerSeparator';
+import MultipleEnvironmentSelector from 'sentry/components/organizations/multipleEnvironmentSelector';
+import MultipleProjectSelector from 'sentry/components/organizations/multipleProjectSelector';
+import TimeRangeSelector from 'sentry/components/organizations/timeRangeSelector';
+import Tooltip from 'sentry/components/tooltip';
+import {DEFAULT_STATS_PERIOD} from 'sentry/constants';
+import {IconArrow} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import {PageContent} from 'sentry/styles/organization';
+import space from 'sentry/styles/space';
 import {
   Environment,
   GlobalSelection,
   MinimalProject,
   Organization,
   Project,
-} from 'app/types';
-import {callIfFunction} from 'app/utils/callIfFunction';
-import Projects from 'app/utils/projects';
-import withGlobalSelection from 'app/utils/withGlobalSelection';
+} from 'sentry/types';
+import {callIfFunction} from 'sentry/utils/callIfFunction';
+import Projects from 'sentry/utils/projects';
+import withGlobalSelection from 'sentry/utils/withGlobalSelection';
 
 import Header from './header';
 

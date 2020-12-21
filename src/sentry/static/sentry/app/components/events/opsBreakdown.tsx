@@ -2,17 +2,17 @@ import React from 'react';
 import styled from '@emotion/styled';
 import isFinite from 'lodash/isFinite';
 
-import {SectionHeading} from 'app/components/charts/styles';
+import {SectionHeading} from 'sentry/components/charts/styles';
 import {
   RawSpanType,
   SpanEntry,
   TraceContextType,
-} from 'app/components/events/interfaces/spans/types';
-import {pickSpanBarColour} from 'app/components/events/interfaces/spans/utils';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, SentryTransactionEvent} from 'app/types';
+} from 'sentry/components/events/interfaces/spans/types';
+import {pickSpanBarColour} from 'sentry/components/events/interfaces/spans/utils';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, SentryTransactionEvent} from 'sentry/types';
 
 type StartTimestamp = number;
 type EndTimestamp = number;

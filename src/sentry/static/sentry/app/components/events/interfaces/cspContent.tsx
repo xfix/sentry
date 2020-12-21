@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import KeyValueList from 'app/components/events/interfaces/keyValueList/keyValueList';
+import KeyValueList from 'sentry/components/events/interfaces/keyValueList/keyValueList';
 
 type Props = {
   data: Record<string, any>;

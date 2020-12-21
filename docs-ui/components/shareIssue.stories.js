@@ -3,7 +3,7 @@ import {action} from '@storybook/addon-actions';
 import {text} from '@storybook/addon-knobs';
 import {withInfo} from '@storybook/addon-info';
 
-import ShareIssue from 'app/components/shareIssue';
+import ShareIssue from 'sentry/components/shareIssue';
 
 export default {
   title: 'Features/Issues/Share Issue',

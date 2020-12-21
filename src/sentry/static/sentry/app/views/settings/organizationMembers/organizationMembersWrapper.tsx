@@ -2,19 +2,19 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import {openInviteMembersModal} from 'app/actionCreators/modal';
-import AlertLink from 'app/components/alertLink';
-import Badge from 'app/components/badge';
-import ListLink from 'app/components/links/listLink';
-import NavTabs from 'app/components/navTabs';
-import {IconMail} from 'app/icons';
-import {t} from 'app/locale';
-import {Member, Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import routeTitleGen from 'app/utils/routeTitle';
-import withOrganization from 'app/utils/withOrganization';
-import AsyncView from 'app/views/asyncView';
-import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
+import {openInviteMembersModal} from 'sentry/actionCreators/modal';
+import AlertLink from 'sentry/components/alertLink';
+import Badge from 'sentry/components/badge';
+import ListLink from 'sentry/components/links/listLink';
+import NavTabs from 'sentry/components/navTabs';
+import {IconMail} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {Member, Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import routeTitleGen from 'sentry/utils/routeTitle';
+import withOrganization from 'sentry/utils/withOrganization';
+import AsyncView from 'sentry/views/asyncView';
+import SettingsPageHeader from 'sentry/views/settings/components/settingsPageHeader';
 
 type Props = {
   children?: any;

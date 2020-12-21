@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
 
 import Widget from './widget';
 

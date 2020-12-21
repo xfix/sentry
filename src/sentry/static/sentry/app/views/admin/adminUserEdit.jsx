@@ -3,17 +3,17 @@ import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import {openModal} from 'app/actionCreators/modal';
-import Button from 'app/components/button';
-import {t, tct} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
-import AsyncView from 'app/views/asyncView';
-import RadioGroup from 'app/views/settings/components/forms/controls/radioGroup';
-import Form from 'app/views/settings/components/forms/form';
-import JsonForm from 'app/views/settings/components/forms/jsonForm';
-import FormModel from 'app/views/settings/components/forms/model';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import {openModal} from 'sentry/actionCreators/modal';
+import Button from 'sentry/components/button';
+import {t, tct} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
+import AsyncView from 'sentry/views/asyncView';
+import RadioGroup from 'sentry/views/settings/components/forms/controls/radioGroup';
+import Form from 'sentry/views/settings/components/forms/form';
+import JsonForm from 'sentry/views/settings/components/forms/jsonForm';
+import FormModel from 'sentry/views/settings/components/forms/model';
 
 const userEditForm = {
   title: 'User details',

@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 import {withInfo} from '@storybook/addon-info';
 import {boolean, select} from '@storybook/addon-knobs';
 
-import Avatar from 'app/components/avatar';
-import SuggestedAvatarStack from 'app/components/avatar/suggestedAvatarStack';
-import TeamStore from 'app/stores/teamStore';
+import Avatar from 'sentry/components/avatar';
+import SuggestedAvatarStack from 'sentry/components/avatar/suggestedAvatarStack';
+import TeamStore from 'sentry/stores/teamStore';
 
 const USER = {
   id: 1,

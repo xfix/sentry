@@ -2,14 +2,14 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 import {browserHistory} from 'react-router';
 
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {API_ACCESS_SCOPES, DEFAULT_API_ACCESS_SCOPES} from 'app/constants';
-import {t, tct} from 'app/locale';
-import ApiForm from 'app/views/settings/components/forms/apiForm';
-import MultipleCheckbox from 'app/views/settings/components/forms/controls/multipleCheckbox';
-import FormField from 'app/views/settings/components/forms/formField';
-import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
-import TextBlock from 'app/views/settings/components/text/textBlock';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {API_ACCESS_SCOPES, DEFAULT_API_ACCESS_SCOPES} from 'sentry/constants';
+import {t, tct} from 'sentry/locale';
+import ApiForm from 'sentry/views/settings/components/forms/apiForm';
+import MultipleCheckbox from 'sentry/views/settings/components/forms/controls/multipleCheckbox';
+import FormField from 'sentry/views/settings/components/forms/formField';
+import SettingsPageHeader from 'sentry/views/settings/components/settingsPageHeader';
+import TextBlock from 'sentry/views/settings/components/text/textBlock';
 
 const SORTED_DEFAULT_API_ACCESS_SCOPES = DEFAULT_API_ACCESS_SCOPES.sort();
 const API_CHOICES = API_ACCESS_SCOPES.map(s => [s, s]);

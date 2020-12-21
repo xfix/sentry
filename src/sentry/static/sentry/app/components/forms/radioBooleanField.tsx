@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import InputField from 'app/components/forms/inputField';
-import {defined} from 'app/utils';
+import InputField from 'sentry/components/forms/inputField';
+import {defined} from 'sentry/utils';
 
 type Props = {
   yesLabel: string;

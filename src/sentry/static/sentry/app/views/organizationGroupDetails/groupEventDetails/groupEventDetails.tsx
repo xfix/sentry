@@ -5,17 +5,17 @@ import * as Sentry from '@sentry/react';
 import isEqual from 'lodash/isEqual';
 import PropTypes from 'prop-types';
 
-import {fetchSentryAppComponents} from 'app/actionCreators/sentryAppComponents';
-import {Client} from 'app/api';
-import GroupEventDetailsLoadingError from 'app/components/errors/groupEventDetailsLoadingError';
-import EventEntries from 'app/components/events/eventEntries';
-import {withMeta} from 'app/components/events/meta/metaProxy';
-import GroupSidebar from 'app/components/group/sidebar';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import MutedBox from 'app/components/mutedBox';
-import ReprocessedBox from 'app/components/reprocessedBox';
-import ResolutionBox from 'app/components/resolutionBox';
-import SentryTypes from 'app/sentryTypes';
+import {fetchSentryAppComponents} from 'sentry/actionCreators/sentryAppComponents';
+import {Client} from 'sentry/api';
+import GroupEventDetailsLoadingError from 'sentry/components/errors/groupEventDetailsLoadingError';
+import EventEntries from 'sentry/components/events/eventEntries';
+import {withMeta} from 'sentry/components/events/meta/metaProxy';
+import GroupSidebar from 'sentry/components/group/sidebar';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import MutedBox from 'sentry/components/mutedBox';
+import ReprocessedBox from 'sentry/components/reprocessedBox';
+import ResolutionBox from 'sentry/components/resolutionBox';
+import SentryTypes from 'sentry/sentryTypes';
 import {
   Environment,
   Event,
@@ -23,9 +23,9 @@ import {
   GroupActivityReprocess,
   Organization,
   Project,
-} from 'app/types';
-import {metric} from 'app/utils/analytics';
-import fetchSentryAppInstallations from 'app/utils/fetchSentryAppInstallations';
+} from 'sentry/types';
+import {metric} from 'sentry/utils/analytics';
+import fetchSentryAppInstallations from 'sentry/utils/fetchSentryAppInstallations';
 
 import GroupEventToolbar from '../eventToolbar';
 import ReprocessingProgress from '../reprocessingProgress';

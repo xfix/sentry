@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {t} from 'app/locale';
-import Form from 'app/views/settings/components/forms/form';
-import JsonForm from 'app/views/settings/components/forms/jsonForm';
-import FormModel from 'app/views/settings/components/forms/model';
-import {JsonFormObject} from 'app/views/settings/components/forms/type';
+import {t} from 'sentry/locale';
+import Form from 'sentry/views/settings/components/forms/form';
+import JsonForm from 'sentry/views/settings/components/forms/jsonForm';
+import FormModel from 'sentry/views/settings/components/forms/model';
+import {JsonFormObject} from 'sentry/views/settings/components/forms/type';
 
 type LambdaFunction = {FunctionName: string; Runtime: string};
 type Props = {

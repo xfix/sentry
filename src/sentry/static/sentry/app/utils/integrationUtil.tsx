@@ -9,8 +9,8 @@ import {
   IconGitlab,
   IconJira,
   IconVsts,
-} from 'app/icons';
-import HookStore from 'app/stores/hookStore';
+} from 'sentry/icons';
+import HookStore from 'sentry/stores/hookStore';
 import {
   AppOrProviderOrPlugin,
   DocumentIntegration,
@@ -24,10 +24,10 @@ import {
   SentryApp,
   SentryAppInstallation,
   SentryAppStatus,
-} from 'app/types';
-import {Hooks} from 'app/types/hooks';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {uniqueId} from 'app/utils/guid';
+} from 'sentry/types';
+import {Hooks} from 'sentry/types/hooks';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import {uniqueId} from 'sentry/utils/guid';
 
 const INTEGRATIONS_ANALYTICS_SESSION_KEY = 'INTEGRATION_ANALYTICS_SESSION' as const;
 

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import StacktraceContent from 'app/components/events/interfaces/stacktraceContent';
-import {Panel} from 'app/components/panels';
-import {IconWarning} from 'app/icons';
-import {Event, ExceptionValue, PlatformType} from 'app/types';
-import {STACK_VIEW} from 'app/types/stacktrace';
-import {defined} from 'app/utils';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import StacktraceContent from 'sentry/components/events/interfaces/stacktraceContent';
+import {Panel} from 'sentry/components/panels';
+import {IconWarning} from 'sentry/icons';
+import {Event, ExceptionValue, PlatformType} from 'sentry/types';
+import {STACK_VIEW} from 'sentry/types/stacktrace';
+import {defined} from 'sentry/utils';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 type Props = {
   stackView: STACK_VIEW;

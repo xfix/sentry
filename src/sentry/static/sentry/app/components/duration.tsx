@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {getDuration, getExactDuration} from 'app/utils/formatters';
+import {getDuration, getExactDuration} from 'sentry/utils/formatters';
 
 type Props = React.HTMLProps<HTMLSpanElement> & {
   seconds: number;

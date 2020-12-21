@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {addLoadingMessage, clearIndicators} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import ActionLink from 'app/components/actions/actionLink';
-import ResolveActions from 'app/components/actions/resolve';
-import DropdownLink from 'app/components/dropdownLink';
-import MenuItem from 'app/components/menuItem';
-import Tooltip from 'app/components/tooltip';
-import {IconEllipsis, IconIssues} from 'app/icons';
-import {t} from 'app/locale';
-import {GlobalSelection, Group, Project, Release, ResolutionStatus} from 'app/types';
-import Projects from 'app/utils/projects';
-import withApi from 'app/utils/withApi';
+import {addLoadingMessage, clearIndicators} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import ActionLink from 'sentry/components/actions/actionLink';
+import ResolveActions from 'sentry/components/actions/resolve';
+import DropdownLink from 'sentry/components/dropdownLink';
+import MenuItem from 'sentry/components/menuItem';
+import Tooltip from 'sentry/components/tooltip';
+import {IconEllipsis, IconIssues} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {GlobalSelection, Group, Project, Release, ResolutionStatus} from 'sentry/types';
+import Projects from 'sentry/utils/projects';
+import withApi from 'sentry/utils/withApi';
 
 type Props = {
   api: Client;

@@ -2,7 +2,7 @@ import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 import styled from '@emotion/styled';
 
-import theme, {aliases} from 'app/utils/theme';
+import theme, {aliases} from 'sentry/utils/theme';
 
 export default {
   title: 'Core/Style/Colors',

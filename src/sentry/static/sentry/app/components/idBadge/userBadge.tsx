@@ -2,11 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import UserAvatar from 'app/components/avatar/userAvatar';
-import SentryTypes from 'app/sentryTypes';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {AvatarUser} from 'app/types';
+import UserAvatar from 'sentry/components/avatar/userAvatar';
+import SentryTypes from 'sentry/sentryTypes';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {AvatarUser} from 'sentry/types';
 
 type Props = {
   avatarSize?: UserAvatar['props']['size'];

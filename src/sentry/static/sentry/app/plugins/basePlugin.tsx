@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Settings from 'app/plugins/components/settings';
-import {Organization, Plugin, Project} from 'app/types';
+import Settings from 'sentry/plugins/components/settings';
+import {Organization, Plugin, Project} from 'sentry/types';
 
 type Props = {
   organization: Organization;

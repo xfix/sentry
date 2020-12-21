@@ -2,11 +2,11 @@ import React from 'react';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import {getProjectRelease, getReleaseDeploys} from 'app/actionCreators/release';
-import {Client} from 'app/api';
-import ReleaseStore from 'app/stores/releaseStore';
-import {Deploy, Release} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
+import {getProjectRelease, getReleaseDeploys} from 'sentry/actionCreators/release';
+import {Client} from 'sentry/api';
+import ReleaseStore from 'sentry/stores/releaseStore';
+import {Deploy, Release} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 type DependentProps = {
   api: Client;

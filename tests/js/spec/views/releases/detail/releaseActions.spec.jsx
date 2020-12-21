@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ReleaseActions from 'app/views/releases/detail/releaseActions';
+import ReleaseActions from 'sentry/views/releases/detail/releaseActions';
 
 describe('ReleaseActions', function () {
   const {organization} = initializeOrg();

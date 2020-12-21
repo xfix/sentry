@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import ScoreCard from 'app/components/scoreCard';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import ScoreCard from 'sentry/components/scoreCard';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
 
 type Props = AsyncComponent['props'] & {
   organization: Organization;

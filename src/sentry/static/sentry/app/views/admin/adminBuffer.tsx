@@ -1,6 +1,6 @@
 import React from 'react';
 
-import InternalStatChart from 'app/components/internalStatChart';
+import InternalStatChart from 'sentry/components/internalStatChart';
 
 const AdminBuffer = () => {
   const since = new Date().getTime() / 1000 - 3600 * 24 * 7;

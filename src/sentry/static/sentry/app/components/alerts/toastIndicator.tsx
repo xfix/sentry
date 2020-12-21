@@ -4,12 +4,12 @@ import classNames from 'classnames';
 import {motion} from 'framer-motion';
 import PropTypes from 'prop-types';
 
-import {Indicator} from 'app/actionCreators/indicator';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {IconCheckmark, IconClose} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import testableTransition from 'app/utils/testableTransition';
+import {Indicator} from 'sentry/actionCreators/indicator';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {IconCheckmark, IconClose} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import testableTransition from 'sentry/utils/testableTransition';
 
 const Toast = styled(motion.div)`
   display: flex;

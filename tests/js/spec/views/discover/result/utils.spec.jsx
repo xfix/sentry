@@ -7,7 +7,7 @@ import {
   getChartDataForWidget,
   getDisplayText,
   getDisplayValue,
-} from 'app/views/discover/result/utils';
+} from 'sentry/views/discover/result/utils';
 
 describe('Utils', function () {
   describe('getChartData()', function () {

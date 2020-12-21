@@ -2,8 +2,8 @@ import React, {CSSProperties} from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-import {isRenderFunc} from 'app/utils/isRenderFunc';
-import {selectText} from 'app/utils/selectText';
+import {isRenderFunc} from 'sentry/utils/isRenderFunc';
+import {selectText} from 'sentry/utils/selectText';
 
 type ChildRenderProps = {
   doSelect: () => void;

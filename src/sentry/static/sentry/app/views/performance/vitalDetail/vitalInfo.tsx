@@ -1,10 +1,10 @@
 import React from 'react';
 import {Location} from 'history';
 
-import {Organization} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {WebVital} from 'app/utils/discover/fields';
-import VitalsCardDiscoverQuery from 'app/views/performance/vitalDetail/vitalsCardsDiscoverQuery';
+import {Organization} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {WebVital} from 'sentry/utils/discover/fields';
+import VitalsCardDiscoverQuery from 'sentry/views/performance/vitalDetail/vitalsCardsDiscoverQuery';
 
 import {VitalsCard} from '../vitalsCards';
 

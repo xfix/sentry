@@ -1,13 +1,13 @@
 import React from 'react';
 import {RouteComponentProps} from 'react-router';
 
-import {loadStats} from 'app/actionCreators/projects';
-import {Client} from 'app/api';
-import {Organization, Team} from 'app/types';
-import {sortArray} from 'app/utils';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
-import withTeams from 'app/utils/withTeams';
+import {loadStats} from 'sentry/actionCreators/projects';
+import {Client} from 'sentry/api';
+import {Organization, Team} from 'sentry/types';
+import {sortArray} from 'sentry/utils';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
+import withTeams from 'sentry/utils/withTeams';
 
 import OrganizationTeams from './organizationTeams';
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import EventDataSection from 'app/components/events/eventDataSection';
-import LazyLoad from 'app/components/lazyLoad';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, EventAttachment, Organization, Project} from 'app/types';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import LazyLoad from 'sentry/components/lazyLoad';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, EventAttachment, Organization, Project} from 'sentry/types';
 
 type Props = {
   event: Event;

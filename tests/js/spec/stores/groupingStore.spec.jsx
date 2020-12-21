@@ -1,5 +1,5 @@
-import {Client, mergeMock} from 'app/api';
-import GroupingStore from 'app/stores/groupingStore';
+import {Client, mergeMock} from 'sentry/api';
+import GroupingStore from 'sentry/stores/groupingStore';
 
 describe('Grouping Store', function () {
   let trigger;

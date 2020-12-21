@@ -5,9 +5,9 @@ import styled from '@emotion/styled';
 import omit from 'lodash/omit';
 import PropTypes from 'prop-types';
 
-import Tooltip from 'app/components/tooltip';
-import {IconChevron, IconClose, IconInfo, IconLock, IconSettings} from 'app/icons';
-import space from 'app/styles/space';
+import Tooltip from 'sentry/components/tooltip';
+import {IconChevron, IconClose, IconInfo, IconLock, IconSettings} from 'sentry/icons';
+import space from 'sentry/styles/space';
 
 type DefaultProps = {
   allowClear: boolean;

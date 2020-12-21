@@ -3,11 +3,11 @@ import {Params} from 'react-router/lib/Router';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import {getHumanDuration, parseTrace} from 'app/components/events/interfaces/spans/utils';
-import Link from 'app/components/links/link';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, Organization} from 'app/types';
+import {getHumanDuration, parseTrace} from 'sentry/components/events/interfaces/spans/utils';
+import Link from 'sentry/components/links/link';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, Organization} from 'sentry/types';
 
 import {getTransactionDetailsUrl} from '../utils';
 

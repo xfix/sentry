@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-import {defined} from 'app/utils';
+import {defined} from 'sentry/utils';
 
 const Context = styled('div')`
   display: inline;

@@ -3,14 +3,14 @@ import {browserHistory} from 'react-router';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import ConfigStore from 'app/stores/configStore';
-import OrganizationsStore from 'app/stores/organizationsStore';
-import OrganizationMembersList from 'app/views/settings/organizationMembers/organizationMembersList';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import ConfigStore from 'sentry/stores/configStore';
+import OrganizationsStore from 'sentry/stores/organizationsStore';
+import OrganizationMembersList from 'sentry/views/settings/organizationMembers/organizationMembersList';
 
-jest.mock('app/api');
-jest.mock('app/actionCreators/indicator');
+jest.mock('sentry/api');
+jest.mock('sentry/actionCreators/indicator');
 
 const roles = [
   {

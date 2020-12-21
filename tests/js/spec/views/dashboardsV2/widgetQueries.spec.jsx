@@ -3,8 +3,8 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import {Client} from 'app/api';
-import WidgetQueries from 'app/views/dashboardsV2/widgetQueries';
+import {Client} from 'sentry/api';
+import WidgetQueries from 'sentry/views/dashboardsV2/widgetQueries';
 
 describe('Dashboards > WidgetQueries', function () {
   const initialData = initializeOrg({

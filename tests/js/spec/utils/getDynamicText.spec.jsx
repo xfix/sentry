@@ -7,7 +7,7 @@ describe('getDynamicText', function () {
     jest.doMock('app/constants', () => ({
       IS_ACCEPTANCE_TEST: false,
     }));
-    const getDynamicText = require('app/utils/getDynamicText').default;
+    const getDynamicText = require('sentry/utils/getDynamicText').default;
 
     expect(
       getDynamicText({
@@ -21,7 +21,7 @@ describe('getDynamicText', function () {
     jest.doMock('app/constants', () => ({
       IS_ACCEPTANCE_TEST: true,
     }));
-    const getDynamicText = require('app/utils/getDynamicText').default;
+    const getDynamicText = require('sentry/utils/getDynamicText').default;
 
     expect(
       getDynamicText({

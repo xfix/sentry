@@ -5,19 +5,19 @@ import isObject from 'lodash/isObject';
 import keyBy from 'lodash/keyBy';
 import pickBy from 'lodash/pickBy';
 
-import {addLoadingMessage, clearIndicators} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import GuideAnchor from 'app/components/assistant/guideAnchor';
-import ErrorBoundary from 'app/components/errorBoundary';
-import ExternalIssueList from 'app/components/group/externalIssuesList';
-import GroupParticipants from 'app/components/group/participants';
-import GroupReleaseStats from 'app/components/group/releaseStats';
-import SuggestedOwners from 'app/components/group/suggestedOwners/suggestedOwners';
-import GroupTagDistributionMeter from 'app/components/group/tagDistributionMeter';
-import LoadingError from 'app/components/loadingError';
-import Placeholder from 'app/components/placeholder';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
+import {addLoadingMessage, clearIndicators} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import GuideAnchor from 'sentry/components/assistant/guideAnchor';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import ExternalIssueList from 'sentry/components/group/externalIssuesList';
+import GroupParticipants from 'sentry/components/group/participants';
+import GroupReleaseStats from 'sentry/components/group/releaseStats';
+import SuggestedOwners from 'sentry/components/group/suggestedOwners/suggestedOwners';
+import GroupTagDistributionMeter from 'sentry/components/group/tagDistributionMeter';
+import LoadingError from 'sentry/components/loadingError';
+import Placeholder from 'sentry/components/placeholder';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
 import {
   CurrentRelease,
   Environment,
@@ -26,8 +26,8 @@ import {
   Organization,
   Project,
   TagWithTopValues,
-} from 'app/types';
-import withApi from 'app/utils/withApi';
+} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
 
 import SidebarSection from './sidebarSection';
 

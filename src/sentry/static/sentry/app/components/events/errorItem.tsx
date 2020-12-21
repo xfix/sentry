@@ -4,8 +4,8 @@ import mapKeys from 'lodash/mapKeys';
 import startCase from 'lodash/startCase';
 import moment from 'moment';
 
-import KeyValueList from 'app/components/events/interfaces/keyValueList/keyValueList';
-import {t} from 'app/locale';
+import KeyValueList from 'sentry/components/events/interfaces/keyValueList/keyValueList';
+import {t} from 'sentry/locale';
 
 type Error = {
   type: string;

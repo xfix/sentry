@@ -3,28 +3,28 @@ import styled from '@emotion/styled';
 import classNames from 'classnames';
 import scrollToElement from 'scroll-to-element';
 
-import Button from 'app/components/button';
-import DebugImage from 'app/components/events/interfaces/debugMeta/debugImage';
-import {combineStatus} from 'app/components/events/interfaces/debugMeta/utils';
-import PackageLink from 'app/components/events/interfaces/packageLink';
+import Button from 'sentry/components/button';
+import DebugImage from 'sentry/components/events/interfaces/debugMeta/debugImage';
+import {combineStatus} from 'sentry/components/events/interfaces/debugMeta/utils';
+import PackageLink from 'sentry/components/events/interfaces/packageLink';
 import PackageStatus, {
   PackageStatusIcon,
-} from 'app/components/events/interfaces/packageStatus';
+} from 'sentry/components/events/interfaces/packageStatus';
 import TogglableAddress, {
   AddressToggleIcon,
-} from 'app/components/events/interfaces/togglableAddress';
-import {SymbolicatorStatus} from 'app/components/events/interfaces/types';
-import StrictClick from 'app/components/strictClick';
-import {IconChevron, IconRefresh} from 'app/icons';
-import {t} from 'app/locale';
-import {DebugMetaActions} from 'app/stores/debugMetaStore';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Event, Frame, Organization, PlatformType, SentryAppComponent} from 'app/types';
-import {defined, objectIsEmpty} from 'app/utils';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import withOrganization from 'app/utils/withOrganization';
-import withSentryAppComponents from 'app/utils/withSentryAppComponents';
+} from 'sentry/components/events/interfaces/togglableAddress';
+import {SymbolicatorStatus} from 'sentry/components/events/interfaces/types';
+import StrictClick from 'sentry/components/strictClick';
+import {IconChevron, IconRefresh} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {DebugMetaActions} from 'sentry/stores/debugMetaStore';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Event, Frame, Organization, PlatformType, SentryAppComponent} from 'sentry/types';
+import {defined, objectIsEmpty} from 'sentry/utils';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import withOrganization from 'sentry/utils/withOrganization';
+import withSentryAppComponents from 'sentry/utils/withSentryAppComponents';
 
 import Context from './context';
 import DefaultTitle from './defaultTitle';

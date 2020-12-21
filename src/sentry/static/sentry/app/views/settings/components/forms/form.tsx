@@ -3,13 +3,13 @@ import styled from '@emotion/styled';
 import {Observer} from 'mobx-react';
 import PropTypes from 'prop-types';
 
-import {APIRequestMethod} from 'app/api';
-import Button from 'app/components/button';
-import Panel from 'app/components/panels/panel';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {isRenderFunc} from 'app/utils/isRenderFunc';
-import FormModel, {FormOptions} from 'app/views/settings/components/forms/model';
+import {APIRequestMethod} from 'sentry/api';
+import Button from 'sentry/components/button';
+import Panel from 'sentry/components/panels/panel';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {isRenderFunc} from 'sentry/utils/isRenderFunc';
+import FormModel, {FormOptions} from 'sentry/views/settings/components/forms/model';
 
 type Data = Record<string, any>;
 

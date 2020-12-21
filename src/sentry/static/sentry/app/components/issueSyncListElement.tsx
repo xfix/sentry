@@ -4,11 +4,11 @@ import styled from '@emotion/styled';
 import capitalize from 'lodash/capitalize';
 import PropTypes from 'prop-types';
 
-import Hovercard from 'app/components/hovercard';
-import {IconAdd, IconClose} from 'app/icons';
-import space from 'app/styles/space';
-import {callIfFunction} from 'app/utils/callIfFunction';
-import {getIntegrationIcon} from 'app/utils/integrationUtil';
+import Hovercard from 'sentry/components/hovercard';
+import {IconAdd, IconClose} from 'sentry/icons';
+import space from 'sentry/styles/space';
+import {callIfFunction} from 'sentry/utils/callIfFunction';
+import {getIntegrationIcon} from 'sentry/utils/integrationUtil';
 
 type Props = {
   externalIssueLink?: string | null;

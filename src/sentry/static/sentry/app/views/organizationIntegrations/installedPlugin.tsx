@@ -5,20 +5,25 @@ import {
   addErrorMessage,
   addLoadingMessage,
   addSuccessMessage,
-} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import Access from 'app/components/acl/access';
-import Alert from 'app/components/alert';
-import Button from 'app/components/button';
-import Confirm from 'app/components/confirm';
-import ProjectBadge from 'app/components/idBadge/projectBadge';
-import Switch from 'app/components/switch';
-import {IconDelete, IconFlag, IconSettings} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {AvatarProject, Organization, PluginNoProject, PluginProjectItem} from 'app/types';
-import {SingleIntegrationEvent} from 'app/utils/integrationUtil';
-import withApi from 'app/utils/withApi';
+} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import Access from 'sentry/components/acl/access';
+import Alert from 'sentry/components/alert';
+import Button from 'sentry/components/button';
+import Confirm from 'sentry/components/confirm';
+import ProjectBadge from 'sentry/components/idBadge/projectBadge';
+import Switch from 'sentry/components/switch';
+import {IconDelete, IconFlag, IconSettings} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {
+  AvatarProject,
+  Organization,
+  PluginNoProject,
+  PluginProjectItem,
+} from 'sentry/types';
+import {SingleIntegrationEvent} from 'sentry/utils/integrationUtil';
+import withApi from 'sentry/utils/withApi';
 
 export type Props = {
   api: Client;

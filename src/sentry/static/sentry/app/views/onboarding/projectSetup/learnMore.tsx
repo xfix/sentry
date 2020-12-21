@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Alert from 'app/components/alert';
-import Panel from 'app/components/panels/panel';
-import PanelBody from 'app/components/panels/panelBody';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import getDynamicText from 'app/utils/getDynamicText';
-import CreateSampleEventButton from 'app/views/onboarding/createSampleEventButton';
+import Alert from 'sentry/components/alert';
+import Panel from 'sentry/components/panels/panel';
+import PanelBody from 'sentry/components/panels/panelBody';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import getDynamicText from 'sentry/utils/getDynamicText';
+import CreateSampleEventButton from 'sentry/views/onboarding/createSampleEventButton';
 
 import {StepProps} from '../types';
 

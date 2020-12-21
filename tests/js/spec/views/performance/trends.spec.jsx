@@ -4,13 +4,13 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import PerformanceLanding from 'app/views/performance/landing';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import PerformanceLanding from 'sentry/views/performance/landing';
 import {
   CONFIDENCE_LEVELS,
   DEFAULT_MAX_DURATION,
   TRENDS_FUNCTIONS,
-} from 'app/views/performance/trends/utils';
+} from 'sentry/views/performance/trends/utils';
 
 const trendsViewQuery = {
   view: 'TRENDS',

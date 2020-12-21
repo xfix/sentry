@@ -1,10 +1,10 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import Button from 'app/components/button';
-import {t, tct} from 'app/locale';
-import {Organization} from 'app/types';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import Button from 'sentry/components/button';
+import {t, tct} from 'sentry/locale';
+import {Organization} from 'sentry/types';
 
 import {QueryBuilder} from '../queryBuilder';
 import {

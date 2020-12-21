@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {t, tct} from 'app/locale';
-import {Organization, SentryTransactionEvent} from 'app/types';
-import {TableData} from 'app/utils/discover/discoverQuery';
+import {t, tct} from 'sentry/locale';
+import {Organization, SentryTransactionEvent} from 'sentry/types';
+import {TableData} from 'sentry/utils/discover/discoverQuery';
 
 import * as DividerHandlerManager from './dividerHandlerManager';
 import {DragManagerChildrenProps} from './dragManager';

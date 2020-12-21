@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {withTheme} from 'emotion-theming';
 
-import ActivityItem from 'app/components/activity/item';
-import space from 'app/styles/space';
+import ActivityItem from 'sentry/components/activity/item';
+import space from 'sentry/styles/space';
 
 export default withTheme(function ActivityPlaceholder(props) {
   return (

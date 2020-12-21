@@ -3,17 +3,17 @@ import {InjectedRouter} from 'react-router';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {openModal} from 'app/actionCreators/modal';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import ContextPickerModalContainer from 'app/components/contextPickerModal';
-import * as Layout from 'app/components/layouts/thirds';
-import QueryCount from 'app/components/queryCount';
-import {IconPause, IconPlay, IconUser} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import withProjects from 'app/utils/withProjects';
+import {openModal} from 'sentry/actionCreators/modal';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import ContextPickerModalContainer from 'sentry/components/contextPickerModal';
+import * as Layout from 'sentry/components/layouts/thirds';
+import QueryCount from 'sentry/components/queryCount';
+import {IconPause, IconPlay, IconUser} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import withProjects from 'sentry/utils/withProjects';
 
 import {Query, QueryCounts} from './utils';
 

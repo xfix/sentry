@@ -1,8 +1,8 @@
 import React from 'react';
 import capitalize from 'lodash/capitalize';
 
-import ExternalLink from 'app/components/links/externalLink';
-import {t, tct, tn} from 'app/locale';
+import ExternalLink from 'sentry/components/links/externalLink';
+import {t, tct, tn} from 'sentry/locale';
 
 import ExtraDescription from './extraDescription';
 

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Feature from 'app/components/acl/feature';
-import Alert from 'app/components/alert';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import {PageContent} from 'app/styles/organization';
-import withOrganization from 'app/utils/withOrganization';
+import Feature from 'sentry/components/acl/feature';
+import Alert from 'sentry/components/alert';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import {PageContent} from 'sentry/styles/organization';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import ProjectProguard from './projectProguard';
 

@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import {SectionHeading} from 'app/components/charts/styles';
+import Button from 'sentry/components/button';
+import {SectionHeading} from 'sentry/components/charts/styles';
 import {
   setBodyUserSelect,
   UserSelectValues,
-} from 'app/components/events/interfaces/spans/utils';
-import {IconAdd, IconDelete, IconGrabbable} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {LightWeightOrganization, SelectValue} from 'app/types';
-import {Column} from 'app/utils/discover/fields';
-import theme from 'app/utils/theme';
+} from 'sentry/components/events/interfaces/spans/utils';
+import {IconAdd, IconDelete, IconGrabbable} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {LightWeightOrganization, SelectValue} from 'sentry/types';
+import {Column} from 'sentry/utils/discover/fields';
+import theme from 'sentry/utils/theme';
 
 import {generateFieldOptions} from '../utils';
 

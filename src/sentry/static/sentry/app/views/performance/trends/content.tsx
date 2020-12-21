@@ -3,17 +3,17 @@ import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {GlobalSelection, Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import EventView from 'app/utils/discover/eventView';
-import {generateAggregateFields} from 'app/utils/discover/fields';
-import {decodeScalar} from 'app/utils/queryString';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
-import withGlobalSelection from 'app/utils/withGlobalSelection';
-import SearchBar from 'app/views/events/searchBar';
+import DropdownControl, {DropdownItem} from 'sentry/components/dropdownControl';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {GlobalSelection, Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import EventView from 'sentry/utils/discover/eventView';
+import {generateAggregateFields} from 'sentry/utils/discover/fields';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
+import withGlobalSelection from 'sentry/utils/withGlobalSelection';
+import SearchBar from 'sentry/views/events/searchBar';
 
 import {FilterViews} from '../landing';
 import {getTransactionSearchQuery} from '../utils';

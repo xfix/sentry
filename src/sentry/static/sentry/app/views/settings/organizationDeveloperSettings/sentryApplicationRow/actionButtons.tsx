@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import ConfirmDelete from 'app/components/confirmDelete';
-import {IconDelete, IconStats, IconUpgrade} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {LightWeightOrganization, SentryApp} from 'app/types';
+import Button from 'sentry/components/button';
+import ConfirmDelete from 'sentry/components/confirmDelete';
+import {IconDelete, IconStats, IconUpgrade} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {LightWeightOrganization, SentryApp} from 'sentry/types';
 
 type Props = {
   org: LightWeightOrganization;

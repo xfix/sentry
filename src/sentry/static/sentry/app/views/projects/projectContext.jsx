@@ -6,19 +6,19 @@ import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import {fetchOrgMembers} from 'app/actionCreators/members';
-import {setActiveProject} from 'app/actionCreators/projects';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import MissingProjectMembership from 'app/components/projects/missingProjectMembership';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import MemberListStore from 'app/stores/memberListStore';
-import ProjectsStore from 'app/stores/projectsStore';
-import space from 'app/styles/space';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
-import withProjects from 'app/utils/withProjects';
+import {fetchOrgMembers} from 'sentry/actionCreators/members';
+import {setActiveProject} from 'sentry/actionCreators/projects';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import MissingProjectMembership from 'sentry/components/projects/missingProjectMembership';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import MemberListStore from 'sentry/stores/memberListStore';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import space from 'sentry/styles/space';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
+import withProjects from 'sentry/utils/withProjects';
 
 const ERROR_TYPES = {
   MISSING_MEMBERSHIP: 'MISSING_MEMBERSHIP',

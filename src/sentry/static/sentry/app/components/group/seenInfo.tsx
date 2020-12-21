@@ -3,17 +3,17 @@ import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import DateTime from 'app/components/dateTime';
-import {Body, Header, Hovercard} from 'app/components/hovercard';
-import TimeSince from 'app/components/timeSince';
-import Version from 'app/components/version';
-import VersionHoverCard from 'app/components/versionHoverCard';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Release} from 'app/types';
-import {defined, toTitleCase} from 'app/utils';
-import theme from 'app/utils/theme';
+import DateTime from 'sentry/components/dateTime';
+import {Body, Header, Hovercard} from 'sentry/components/hovercard';
+import TimeSince from 'sentry/components/timeSince';
+import Version from 'sentry/components/version';
+import VersionHoverCard from 'sentry/components/versionHoverCard';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Release} from 'sentry/types';
+import {defined, toTitleCase} from 'sentry/utils';
+import theme from 'sentry/utils/theme';
 
 type RelaxedDateType = React.ComponentProps<typeof TimeSince>['date'];
 

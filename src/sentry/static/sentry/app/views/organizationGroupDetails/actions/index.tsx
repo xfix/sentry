@@ -6,31 +6,31 @@ import {
   addErrorMessage,
   addLoadingMessage,
   clearIndicators,
-} from 'app/actionCreators/indicator';
-import {openModal} from 'app/actionCreators/modal';
-import GroupActions from 'app/actions/groupActions';
-import {Client} from 'app/api';
-import IgnoreActions from 'app/components/actions/ignore';
-import ResolveActions from 'app/components/actions/resolve';
-import GuideAnchor from 'app/components/assistant/guideAnchor';
-import Link from 'app/components/links/link';
-import ShareIssue from 'app/components/shareIssue';
-import Tooltip from 'app/components/tooltip';
-import {IconRefresh, IconStar} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
+} from 'sentry/actionCreators/indicator';
+import {openModal} from 'sentry/actionCreators/modal';
+import GroupActions from 'sentry/actions/groupActions';
+import {Client} from 'sentry/api';
+import IgnoreActions from 'sentry/components/actions/ignore';
+import ResolveActions from 'sentry/components/actions/resolve';
+import GuideAnchor from 'sentry/components/assistant/guideAnchor';
+import Link from 'sentry/components/links/link';
+import ShareIssue from 'sentry/components/shareIssue';
+import Tooltip from 'sentry/components/tooltip';
+import {IconRefresh, IconStar} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
 import {
   Group,
   Organization,
   Project,
   SavedQueryVersions,
   UpdateResolutionStatus,
-} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {uniqueId} from 'app/utils/guid';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
-import ReprocessingDialogForm from 'app/views/organizationGroupDetails/reprocessingDialogForm';
+} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {uniqueId} from 'sentry/utils/guid';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
+import ReprocessingDialogForm from 'sentry/views/organizationGroupDetails/reprocessingDialogForm';
 
 import SubscribeAction from '../subscribeAction';
 

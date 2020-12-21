@@ -1,7 +1,7 @@
 import round from 'lodash/round';
 
-import {Release, ReleaseStatus} from 'app/types';
-import {QueryResults, stringifyQueryObject} from 'app/utils/tokenizeSearch';
+import {Release, ReleaseStatus} from 'sentry/types';
+import {QueryResults, stringifyQueryObject} from 'sentry/utils/tokenizeSearch';
 
 export const roundDuration = (seconds: number) => {
   return round(seconds, seconds > 60 ? 0 : 3);

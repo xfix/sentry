@@ -2,17 +2,17 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import Feature from 'app/components/acl/feature';
-import FeatureDisabled from 'app/components/acl/featureDisabled';
-import {Panel, PanelAlert, PanelBody, PanelHeader} from 'app/components/panels';
-import {IconFlag} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import InputControl from 'app/views/settings/components/forms/controls/input';
-import RangeSlider from 'app/views/settings/components/forms/controls/rangeSlider';
-import Form from 'app/views/settings/components/forms/form';
-import FormField from 'app/views/settings/components/forms/formField';
-import {ProjectKey} from 'app/views/settings/project/projectKeys/types';
+import Feature from 'sentry/components/acl/feature';
+import FeatureDisabled from 'sentry/components/acl/featureDisabled';
+import {Panel, PanelAlert, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {IconFlag} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import InputControl from 'sentry/views/settings/components/forms/controls/input';
+import RangeSlider from 'sentry/views/settings/components/forms/controls/rangeSlider';
+import Form from 'sentry/views/settings/components/forms/form';
+import FormField from 'sentry/views/settings/components/forms/formField';
+import {ProjectKey} from 'sentry/views/settings/project/projectKeys/types';
 
 const RATE_LIMIT_FORMAT_MAP = new Map([
   [0, 'None'],

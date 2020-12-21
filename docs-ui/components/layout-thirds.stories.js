@@ -2,12 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {withInfo} from '@storybook/addon-info';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import Breadcrumbs from 'app/components/breadcrumbs';
-import Link from 'app/components/links/link';
-import * as Layout from 'app/components/layouts/thirds';
-import space from 'app/styles/space';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import Breadcrumbs from 'sentry/components/breadcrumbs';
+import Link from 'sentry/components/links/link';
+import * as Layout from 'sentry/components/layouts/thirds';
+import space from 'sentry/styles/space';
 
 const crumbs = [
   {

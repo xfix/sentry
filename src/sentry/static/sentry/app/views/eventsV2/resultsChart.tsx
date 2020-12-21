@@ -4,17 +4,17 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import isEqual from 'lodash/isEqual';
 
-import {Client} from 'app/api';
-import EventsChart from 'app/components/charts/eventsChart';
-import {getParams} from 'app/components/organizations/globalSelectionHeader/getParams';
-import {Panel} from 'app/components/panels';
-import {Organization} from 'app/types';
-import {getUtcToLocalDateObject} from 'app/utils/dates';
-import EventView from 'app/utils/discover/eventView';
-import {DisplayModes, TOP_N} from 'app/utils/discover/types';
-import getDynamicText from 'app/utils/getDynamicText';
-import {decodeScalar} from 'app/utils/queryString';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import EventsChart from 'sentry/components/charts/eventsChart';
+import {getParams} from 'sentry/components/organizations/globalSelectionHeader/getParams';
+import {Panel} from 'sentry/components/panels';
+import {Organization} from 'sentry/types';
+import {getUtcToLocalDateObject} from 'sentry/utils/dates';
+import EventView from 'sentry/utils/discover/eventView';
+import {DisplayModes, TOP_N} from 'sentry/utils/discover/types';
+import getDynamicText from 'sentry/utils/getDynamicText';
+import {decodeScalar} from 'sentry/utils/queryString';
+import withApi from 'sentry/utils/withApi';
 
 import ChartFooter from './chartFooter';
 

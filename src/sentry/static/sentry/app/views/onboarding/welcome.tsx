@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import {t, tct} from 'app/locale';
-import {Config, Organization} from 'app/types';
-import {analytics} from 'app/utils/analytics';
-import withConfig from 'app/utils/withConfig';
-import withOrganization from 'app/utils/withOrganization';
+import Button from 'sentry/components/button';
+import {t, tct} from 'sentry/locale';
+import {Config, Organization} from 'sentry/types';
+import {analytics} from 'sentry/utils/analytics';
+import withConfig from 'sentry/utils/withConfig';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import {StepProps} from './types';
 

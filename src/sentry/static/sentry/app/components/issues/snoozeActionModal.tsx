@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import {t} from 'app/locale';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import {t} from 'sentry/locale';
 
 enum SnoozeTimes {
   // all values in minutes

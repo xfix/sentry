@@ -4,13 +4,13 @@ import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import GroupingActions from 'app/actions/groupingActions';
-import Checkbox from 'app/components/checkbox';
-import EventOrGroupHeader from 'app/components/eventOrGroupHeader';
-import FlowLayout from 'app/components/flowLayout';
-import {IconChevron} from 'app/icons';
-import GroupingStore from 'app/stores/groupingStore';
-import space from 'app/styles/space';
+import GroupingActions from 'sentry/actions/groupingActions';
+import Checkbox from 'sentry/components/checkbox';
+import EventOrGroupHeader from 'sentry/components/eventOrGroupHeader';
+import FlowLayout from 'sentry/components/flowLayout';
+import {IconChevron} from 'sentry/icons';
+import GroupingStore from 'sentry/stores/groupingStore';
+import space from 'sentry/styles/space';
 
 const MergedItem = createReactClass({
   displayName: 'MergedItem',

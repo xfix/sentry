@@ -3,37 +3,37 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import PropTypes from 'prop-types';
 
-import EventContexts from 'app/components/events/contexts';
-import EventContextSummary from 'app/components/events/contextSummary/contextSummary';
-import EventDevice from 'app/components/events/device';
-import EventErrors from 'app/components/events/errors';
-import EventAttachments from 'app/components/events/eventAttachments';
-import EventCause from 'app/components/events/eventCause';
-import EventCauseEmpty from 'app/components/events/eventCauseEmpty';
-import EventDataSection from 'app/components/events/eventDataSection';
-import EventExtraData from 'app/components/events/eventExtraData/eventExtraData';
-import EventSdk from 'app/components/events/eventSdk';
-import EventTags from 'app/components/events/eventTags/eventTags';
-import EventGroupingInfo from 'app/components/events/groupingInfo';
-import BreadcrumbsInterface from 'app/components/events/interfaces/breadcrumbs';
-import CspInterface from 'app/components/events/interfaces/csp';
-import DebugMetaInterface from 'app/components/events/interfaces/debugMeta';
-import ExceptionInterface from 'app/components/events/interfaces/exception';
-import GenericInterface from 'app/components/events/interfaces/generic';
-import MessageInterface from 'app/components/events/interfaces/message';
-import RequestInterface from 'app/components/events/interfaces/request';
-import SpansInterface from 'app/components/events/interfaces/spans';
-import StacktraceInterface from 'app/components/events/interfaces/stacktrace';
-import TemplateInterface from 'app/components/events/interfaces/template';
-import ThreadsInterface from 'app/components/events/interfaces/threads';
-import EventPackageData from 'app/components/events/packageData';
-import RRWebIntegration from 'app/components/events/rrwebIntegration';
-import EventSdkUpdates from 'app/components/events/sdkUpdates';
-import {DataSection} from 'app/components/events/styles';
-import EventUserFeedback from 'app/components/events/userFeedback';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import space from 'app/styles/space';
+import EventContexts from 'sentry/components/events/contexts';
+import EventContextSummary from 'sentry/components/events/contextSummary/contextSummary';
+import EventDevice from 'sentry/components/events/device';
+import EventErrors from 'sentry/components/events/errors';
+import EventAttachments from 'sentry/components/events/eventAttachments';
+import EventCause from 'sentry/components/events/eventCause';
+import EventCauseEmpty from 'sentry/components/events/eventCauseEmpty';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import EventExtraData from 'sentry/components/events/eventExtraData/eventExtraData';
+import EventSdk from 'sentry/components/events/eventSdk';
+import EventTags from 'sentry/components/events/eventTags/eventTags';
+import EventGroupingInfo from 'sentry/components/events/groupingInfo';
+import BreadcrumbsInterface from 'sentry/components/events/interfaces/breadcrumbs';
+import CspInterface from 'sentry/components/events/interfaces/csp';
+import DebugMetaInterface from 'sentry/components/events/interfaces/debugMeta';
+import ExceptionInterface from 'sentry/components/events/interfaces/exception';
+import GenericInterface from 'sentry/components/events/interfaces/generic';
+import MessageInterface from 'sentry/components/events/interfaces/message';
+import RequestInterface from 'sentry/components/events/interfaces/request';
+import SpansInterface from 'sentry/components/events/interfaces/spans';
+import StacktraceInterface from 'sentry/components/events/interfaces/stacktrace';
+import TemplateInterface from 'sentry/components/events/interfaces/template';
+import ThreadsInterface from 'sentry/components/events/interfaces/threads';
+import EventPackageData from 'sentry/components/events/packageData';
+import RRWebIntegration from 'sentry/components/events/rrwebIntegration';
+import EventSdkUpdates from 'sentry/components/events/sdkUpdates';
+import {DataSection} from 'sentry/components/events/styles';
+import EventUserFeedback from 'sentry/components/events/userFeedback';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import space from 'sentry/styles/space';
 import {
   Entry,
   Event,
@@ -41,12 +41,12 @@ import {
   Organization,
   Project,
   SharedViewOrganization,
-} from 'app/types';
-import {isNotSharedOrganization} from 'app/types/utils';
-import {objectIsEmpty} from 'app/utils';
-import {analytics} from 'app/utils/analytics';
-import {logException} from 'app/utils/logging';
-import withOrganization from 'app/utils/withOrganization';
+} from 'sentry/types';
+import {isNotSharedOrganization} from 'sentry/types/utils';
+import {objectIsEmpty} from 'sentry/utils';
+import {analytics} from 'sentry/utils/analytics';
+import {logException} from 'sentry/utils/logging';
+import withOrganization from 'sentry/utils/withOrganization';
 
 export const INTERFACES = {
   exception: ExceptionInterface,

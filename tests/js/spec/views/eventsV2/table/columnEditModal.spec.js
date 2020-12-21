@@ -4,7 +4,7 @@ import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {openMenu, selectByLabel} from 'sentry-test/select-new';
 
-import ColumnEditModal from 'app/views/eventsV2/table/columnEditModal';
+import ColumnEditModal from 'sentry/views/eventsV2/table/columnEditModal';
 
 const stubEl = props => <div>{props.children}</div>;
 

@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {selectByValue} from 'sentry-test/select-new';
 
-import SentryProjectSelectorField from 'app/views/settings/components/forms/sentryProjectSelectorField';
+import SentryProjectSelectorField from 'sentry/views/settings/components/forms/sentryProjectSelectorField';
 
 describe('SentryProjectSelectorField', () => {
   it('can change values', () => {

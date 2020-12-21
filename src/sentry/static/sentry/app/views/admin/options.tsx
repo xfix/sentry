@@ -6,9 +6,9 @@ import {
   EmailField,
   RadioBooleanField,
   TextField,
-} from 'app/components/forms';
-import {t, tct} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
+} from 'sentry/components/forms';
+import {t, tct} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
 
 type Section = {
   key: string;

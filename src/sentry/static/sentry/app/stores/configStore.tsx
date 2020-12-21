@@ -2,8 +2,8 @@ import moment from 'moment-timezone';
 import * as qs from 'query-string';
 import Reflux from 'reflux';
 
-import {setLocale} from 'app/locale';
-import {Config} from 'app/types';
+import {setLocale} from 'sentry/locale';
+import {Config} from 'sentry/types';
 
 type ConfigStoreInterface = {
   config: Config;

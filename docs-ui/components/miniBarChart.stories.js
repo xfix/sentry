@@ -1,8 +1,8 @@
 import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 
-import theme from 'app/utils/theme';
-import MiniBarChart from 'app/components/charts/miniBarChart';
+import theme from 'sentry/utils/theme';
+import MiniBarChart from 'sentry/components/charts/miniBarChart';
 
 export default {
   title: 'DataVisualization/Charts/MiniBarChart',

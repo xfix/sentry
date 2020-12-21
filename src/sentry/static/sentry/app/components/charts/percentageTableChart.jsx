@@ -5,13 +5,13 @@ import styled from '@emotion/styled';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-import TableChart from 'app/components/charts/tableChart';
-import Count from 'app/components/count';
-import {PanelItem} from 'app/components/panels';
-import {IconChevron} from 'app/icons';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
+import TableChart from 'sentry/components/charts/tableChart';
+import Count from 'sentry/components/count';
+import {PanelItem} from 'sentry/components/panels';
+import {IconChevron} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
 
 const Delta = ({current, previous, className}) => {
   if (typeof previous === 'undefined') {

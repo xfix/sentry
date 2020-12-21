@@ -2,15 +2,15 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import {fetchSavedQuery} from 'app/actionCreators/discoverSavedQueries';
-import {Client} from 'app/api';
-import {CreateAlertFromViewButton} from 'app/components/createAlertButton';
-import * as Layout from 'app/components/layouts/thirds';
-import TimeSince from 'app/components/timeSince';
-import {t} from 'app/locale';
-import {Organization, SavedQuery} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import withApi from 'app/utils/withApi';
+import {fetchSavedQuery} from 'sentry/actionCreators/discoverSavedQueries';
+import {Client} from 'sentry/api';
+import {CreateAlertFromViewButton} from 'sentry/components/createAlertButton';
+import * as Layout from 'sentry/components/layouts/thirds';
+import TimeSince from 'sentry/components/timeSince';
+import {t} from 'sentry/locale';
+import {Organization, SavedQuery} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import withApi from 'sentry/utils/withApi';
 
 import DiscoverBreadcrumb from './breadcrumb';
 import EventInputName from './eventInputName';

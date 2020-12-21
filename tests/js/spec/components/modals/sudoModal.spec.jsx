@@ -2,9 +2,9 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import {Client} from 'app/api';
-import ConfigStore from 'app/stores/configStore';
-import App from 'app/views/app';
+import {Client} from 'sentry/api';
+import ConfigStore from 'sentry/stores/configStore';
+import App from 'sentry/views/app';
 
 jest.mock('jquery');
 

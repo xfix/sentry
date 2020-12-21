@@ -3,30 +3,33 @@ import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 import {Location, LocationDescriptorObject} from 'history';
 
-import {openModal} from 'app/actionCreators/modal';
+import {openModal} from 'sentry/actionCreators/modal';
 import GridEditable, {
   COL_WIDTH_MINIMUM,
   COL_WIDTH_UNDEFINED,
-} from 'app/components/gridEditable';
-import SortLink from 'app/components/gridEditable/sortLink';
-import Link from 'app/components/links/link';
-import Tooltip from 'app/components/tooltip';
-import {IconStack} from 'app/icons';
-import {t} from 'app/locale';
-import {Organization, Project} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {TableData, TableDataRow} from 'app/utils/discover/discoverQuery';
+} from 'sentry/components/gridEditable';
+import SortLink from 'sentry/components/gridEditable/sortLink';
+import Link from 'sentry/components/links/link';
+import Tooltip from 'sentry/components/tooltip';
+import {IconStack} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {Organization, Project} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import {TableData, TableDataRow} from 'sentry/utils/discover/discoverQuery';
 import EventView, {
   isFieldSortable,
   pickRelevantLocationQueryStrings,
-} from 'app/utils/discover/eventView';
-import {getFieldRenderer} from 'app/utils/discover/fieldRenderers';
-import {Column} from 'app/utils/discover/fields';
-import {DisplayModes, TOP_N} from 'app/utils/discover/types';
-import {eventDetailsRouteWithEventView, generateEventSlug} from 'app/utils/discover/urls';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
-import withProjects from 'app/utils/withProjects';
-import {transactionSummaryRouteWithQuery} from 'app/views/performance/transactionSummary/utils';
+} from 'sentry/utils/discover/eventView';
+import {getFieldRenderer} from 'sentry/utils/discover/fieldRenderers';
+import {Column} from 'sentry/utils/discover/fields';
+import {DisplayModes, TOP_N} from 'sentry/utils/discover/types';
+import {
+  eventDetailsRouteWithEventView,
+  generateEventSlug,
+} from 'sentry/utils/discover/urls';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
+import withProjects from 'sentry/utils/withProjects';
+import {transactionSummaryRouteWithQuery} from 'sentry/views/performance/transactionSummary/utils';
 
 import {getExpandedResults, pushEventViewToLocation} from '../utils';
 

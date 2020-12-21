@@ -9,7 +9,7 @@ import {
 } from 'sentry-test/fixtures/ruleConditions';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import IssueAlertOptions from 'app/views/projectInstall/issueAlertOptions';
+import IssueAlertOptions from 'sentry/views/projectInstall/issueAlertOptions';
 
 describe('IssueAlertOptions', function () {
   const {organization, routerContext} = initializeOrg();

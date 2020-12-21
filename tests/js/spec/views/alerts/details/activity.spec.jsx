@@ -4,7 +4,7 @@ import changeReactMentionsInput from 'sentry-test/changeReactMentionsInput';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import IncidentActivity from 'app/views/alerts/details/activity';
+import IncidentActivity from 'sentry/views/alerts/details/activity';
 
 describe('IncidentDetails -> Activity', function () {
   const incident = TestStubs.Incident();

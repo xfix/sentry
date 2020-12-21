@@ -3,8 +3,8 @@ import 'echarts/lib/component/legendScroll';
 
 import {EChartOption} from 'echarts';
 
-import BaseChart from 'app/components/charts/baseChart';
-import {Theme} from 'app/utils/theme';
+import BaseChart from 'sentry/components/charts/baseChart';
+import {Theme} from 'sentry/utils/theme';
 
 import {truncationFormatter} from '../utils';
 

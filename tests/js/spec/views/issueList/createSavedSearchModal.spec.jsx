@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import CreateSavedSearchModal from 'app/views/issueList/createSavedSearchModal';
+import CreateSavedSearchModal from 'sentry/views/issueList/createSavedSearchModal';
 
 describe('CreateSavedSearchModal', function () {
   let wrapper, organization, createMock;

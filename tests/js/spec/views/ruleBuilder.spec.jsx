@@ -2,10 +2,10 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import MemberListStore from 'app/stores/memberListStore';
-import ProjectsStore from 'app/stores/projectsStore';
-import TeamStore from 'app/stores/teamStore';
-import RuleBuilder from 'app/views/settings/project/projectOwnership/ruleBuilder';
+import MemberListStore from 'sentry/stores/memberListStore';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import TeamStore from 'sentry/stores/teamStore';
+import RuleBuilder from 'sentry/views/settings/project/projectOwnership/ruleBuilder';
 
 jest.mock('jquery');
 

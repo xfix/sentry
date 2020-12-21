@@ -4,7 +4,7 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {inputStyles} from 'app/styles/input';
+import {inputStyles} from 'sentry/styles/input';
 
 type InputProps = Omit<Parameters<typeof inputStyles>[0], 'theme'>;
 type Props = React.TextareaHTMLAttributes<HTMLTextAreaElement> &

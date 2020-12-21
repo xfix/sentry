@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mount} from 'sentry-test/enzyme';
 
-import {SubscriptionBox} from 'app/views/settings/organizationDeveloperSettings/subscriptionBox';
+import {SubscriptionBox} from 'sentry/views/settings/organizationDeveloperSettings/subscriptionBox';
 
 describe('SubscriptionBox', () => {
   let wrapper;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {SymbolicatorStatus} from 'app/components/events/interfaces/types';
-import {IconQuestion, IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import {Frame, PlatformType} from 'app/types';
+import {SymbolicatorStatus} from 'sentry/components/events/interfaces/types';
+import {IconQuestion, IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {Frame, PlatformType} from 'sentry/types';
 
 export function trimPackage(pkg: string) {
   const pieces = pkg.split(/^([a-z]:\\|\\\\)/i.test(pkg) ? '\\' : '/');

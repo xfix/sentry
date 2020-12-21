@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Count from 'app/components/count';
-import Link from 'app/components/links/link';
-import Tooltip from 'app/components/tooltip';
-import {t, tn} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
+import Count from 'sentry/components/count';
+import Link from 'sentry/components/links/link';
+import Tooltip from 'sentry/components/tooltip';
+import {t, tn} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
 
 import {getReleaseNewIssuesUrl} from '../../utils';
 

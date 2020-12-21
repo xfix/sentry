@@ -3,8 +3,8 @@ import cloneDeep from 'lodash/cloneDeep';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import ExceptionStacktraceContent from 'app/components/events/interfaces/exceptionStacktraceContent';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import ExceptionStacktraceContent from 'sentry/components/events/interfaces/exceptionStacktraceContent';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 describe('ExceptionStacktraceContent', () => {
   const stacktrace = {

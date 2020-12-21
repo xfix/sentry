@@ -4,11 +4,11 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import * as globalSelection from 'app/actionCreators/globalSelection';
-import ProjectsStore from 'app/stores/projectsStore';
-import PerformanceLanding, {FilterViews} from 'app/views/performance/landing';
-import {DEFAULT_MAX_DURATION} from 'app/views/performance/trends/utils';
-import {vitalAbbreviations} from 'app/views/performance/vitalDetail/utils';
+import * as globalSelection from 'sentry/actionCreators/globalSelection';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import PerformanceLanding, {FilterViews} from 'sentry/views/performance/landing';
+import {DEFAULT_MAX_DURATION} from 'sentry/views/performance/trends/utils';
+import {vitalAbbreviations} from 'sentry/views/performance/vitalDetail/utils';
 
 const FEATURES = ['transaction-event', 'performance-view'];
 

@@ -1,23 +1,23 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {logout} from 'app/actionCreators/account';
-import {Client} from 'app/api';
-import Avatar from 'app/components/avatar';
-import DropdownMenu from 'app/components/dropdownMenu';
-import Hook from 'app/components/hook';
-import IdBadge from 'app/components/idBadge';
-import Link from 'app/components/links/link';
-import SidebarDropdownMenu from 'app/components/sidebar/sidebarDropdownMenu.styled';
-import SidebarMenuItem, {menuItemStyles} from 'app/components/sidebar/sidebarMenuItem';
-import SidebarOrgSummary from 'app/components/sidebar/sidebarOrgSummary';
-import TextOverflow from 'app/components/textOverflow';
-import {IconChevron, IconSentry} from 'app/icons';
-import {t} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
-import space from 'app/styles/space';
-import {Config, Organization, User} from 'app/types';
-import withApi from 'app/utils/withApi';
+import {logout} from 'sentry/actionCreators/account';
+import {Client} from 'sentry/api';
+import Avatar from 'sentry/components/avatar';
+import DropdownMenu from 'sentry/components/dropdownMenu';
+import Hook from 'sentry/components/hook';
+import IdBadge from 'sentry/components/idBadge';
+import Link from 'sentry/components/links/link';
+import SidebarDropdownMenu from 'sentry/components/sidebar/sidebarDropdownMenu.styled';
+import SidebarMenuItem, {menuItemStyles} from 'sentry/components/sidebar/sidebarMenuItem';
+import SidebarOrgSummary from 'sentry/components/sidebar/sidebarOrgSummary';
+import TextOverflow from 'sentry/components/textOverflow';
+import {IconChevron, IconSentry} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
+import space from 'sentry/styles/space';
+import {Config, Organization, User} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
 
 import {CommonSidebarProps} from '../types';
 

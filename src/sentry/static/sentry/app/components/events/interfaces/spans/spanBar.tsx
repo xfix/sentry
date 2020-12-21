@@ -3,15 +3,15 @@ import 'intersection-observer'; // this is a polyfill
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Count from 'app/components/count';
-import Tooltip from 'app/components/tooltip';
-import {IconChevron, IconWarning} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, SentryTransactionEvent} from 'app/types';
-import {defined, OmitHtmlDivProps} from 'app/utils';
-import {TableDataRow} from 'app/utils/discover/discoverQuery';
-import globalTheme from 'app/utils/theme';
+import Count from 'sentry/components/count';
+import Tooltip from 'sentry/components/tooltip';
+import {IconChevron, IconWarning} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, SentryTransactionEvent} from 'sentry/types';
+import {defined, OmitHtmlDivProps} from 'sentry/utils';
+import {TableDataRow} from 'sentry/utils/discover/discoverQuery';
+import globalTheme from 'sentry/utils/theme';
 
 import * as CursorGuideHandler from './cursorGuideHandler';
 import * as DividerHandlerManager from './dividerHandlerManager';

@@ -5,15 +5,15 @@ import * as Sentry from '@sentry/react';
 import isEqual from 'lodash/isEqual';
 import uniqWith from 'lodash/uniqWith';
 
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import EventErrorItem from 'app/components/events/errorItem';
-import {IconWarning} from 'app/icons';
-import {t, tn} from 'app/locale';
-import space from 'app/styles/space';
-import {Artifact, Event, Organization, Project} from 'app/types';
-import {Theme} from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import EventErrorItem from 'sentry/components/events/errorItem';
+import {IconWarning} from 'sentry/icons';
+import {t, tn} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Artifact, Event, Organization, Project} from 'sentry/types';
+import {Theme} from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
 
 import {BannerContainer, BannerSummary} from './styles';
 

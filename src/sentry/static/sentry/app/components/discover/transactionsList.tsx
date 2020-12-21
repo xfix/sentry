@@ -3,41 +3,44 @@ import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 import {Location, LocationDescriptor, Query} from 'history';
 
-import DiscoverButton from 'app/components/discoverButton';
-import DropdownButton from 'app/components/dropdownButton';
-import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
-import SortLink from 'app/components/gridEditable/sortLink';
-import Link from 'app/components/links/link';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import Pagination from 'app/components/pagination';
-import PanelTable from 'app/components/panels/panelTable';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
-import DiscoverQuery, {TableData, TableDataRow} from 'app/utils/discover/discoverQuery';
-import EventView, {MetaType} from 'app/utils/discover/eventView';
-import {getFieldRenderer} from 'app/utils/discover/fieldRenderers';
-import {getAggregateAlias, Sort} from 'app/utils/discover/fields';
-import {generateEventSlug} from 'app/utils/discover/urls';
-import {getDuration} from 'app/utils/formatters';
-import {decodeScalar} from 'app/utils/queryString';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
-import CellAction, {Actions} from 'app/views/eventsV2/table/cellAction';
-import HeaderCell from 'app/views/eventsV2/table/headerCell';
-import {TableColumn} from 'app/views/eventsV2/table/types';
-import {decodeColumnOrder} from 'app/views/eventsV2/utils';
-import {GridCell, GridCellNumber} from 'app/views/performance/styles';
+import DiscoverButton from 'sentry/components/discoverButton';
+import DropdownButton from 'sentry/components/dropdownButton';
+import DropdownControl, {DropdownItem} from 'sentry/components/dropdownControl';
+import SortLink from 'sentry/components/gridEditable/sortLink';
+import Link from 'sentry/components/links/link';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import Pagination from 'sentry/components/pagination';
+import PanelTable from 'sentry/components/panels/panelTable';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
+import DiscoverQuery, {
+  TableData,
+  TableDataRow,
+} from 'sentry/utils/discover/discoverQuery';
+import EventView, {MetaType} from 'sentry/utils/discover/eventView';
+import {getFieldRenderer} from 'sentry/utils/discover/fieldRenderers';
+import {getAggregateAlias, Sort} from 'sentry/utils/discover/fields';
+import {generateEventSlug} from 'sentry/utils/discover/urls';
+import {getDuration} from 'sentry/utils/formatters';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
+import CellAction, {Actions} from 'sentry/views/eventsV2/table/cellAction';
+import HeaderCell from 'sentry/views/eventsV2/table/headerCell';
+import {TableColumn} from 'sentry/views/eventsV2/table/types';
+import {decodeColumnOrder} from 'sentry/views/eventsV2/utils';
+import {GridCell, GridCellNumber} from 'sentry/views/performance/styles';
 import BaselineQuery, {
   BaselineQueryResults,
-} from 'app/views/performance/transactionSummary/baselineQuery';
-import {TrendsEventsDiscoverQuery} from 'app/views/performance/trends/trendsDiscoverQuery';
+} from 'sentry/views/performance/transactionSummary/baselineQuery';
+import {TrendsEventsDiscoverQuery} from 'sentry/views/performance/trends/trendsDiscoverQuery';
 import {
   TrendChangeType,
   TrendsDataEvents,
   TrendView,
-} from 'app/views/performance/trends/types';
-import {getTransactionComparisonUrl} from 'app/views/performance/utils';
+} from 'sentry/views/performance/trends/types';
+import {getTransactionComparisonUrl} from 'sentry/views/performance/utils';
 
 const DEFAULT_TRANSACTION_LIMIT = 5;
 

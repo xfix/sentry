@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import DashboardDetail from 'app/views/dashboardsV2/detail';
+import DashboardDetail from 'sentry/views/dashboardsV2/detail';
 
 describe('Dashboards > Detail', function () {
   const organization = TestStubs.Organization({

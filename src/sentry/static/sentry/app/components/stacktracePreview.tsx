@@ -2,17 +2,17 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {withTheme} from 'emotion-theming';
 
-import {Client} from 'app/api';
-import {isStacktraceNewestFirst} from 'app/components/events/interfaces/stacktrace';
-import StacktraceContent from 'app/components/events/interfaces/stacktraceContent';
-import Hovercard, {Body} from 'app/components/hovercard';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, Organization, PlatformType} from 'app/types';
-import {StacktraceType} from 'app/types/stacktrace';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {Theme} from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import {isStacktraceNewestFirst} from 'sentry/components/events/interfaces/stacktrace';
+import StacktraceContent from 'sentry/components/events/interfaces/stacktraceContent';
+import Hovercard, {Body} from 'sentry/components/hovercard';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, Organization, PlatformType} from 'sentry/types';
+import {StacktraceType} from 'sentry/types/stacktrace';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import {Theme} from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
 
 type Props = {
   issueId: string;

@@ -3,8 +3,8 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import StreamGroup from 'app/components/stream/group';
-import GroupStore from 'app/stores/groupStore';
+import StreamGroup from 'sentry/components/stream/group';
+import GroupStore from 'sentry/stores/groupStore';
 
 describe('StreamGroup', function () {
   let GROUP_1;

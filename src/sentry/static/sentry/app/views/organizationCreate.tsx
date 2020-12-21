@@ -1,10 +1,10 @@
 import React from 'react';
 
-import {ApiForm, BooleanField, TextField} from 'app/components/forms';
-import NarrowLayout from 'app/components/narrowLayout';
-import {t, tct} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
-import AsyncView from 'app/views/asyncView';
+import {ApiForm, BooleanField, TextField} from 'sentry/components/forms';
+import NarrowLayout from 'sentry/components/narrowLayout';
+import {t, tct} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
+import AsyncView from 'sentry/views/asyncView';
 
 export default class OrganizationCreate extends AsyncView {
   onSubmitSuccess = data => {

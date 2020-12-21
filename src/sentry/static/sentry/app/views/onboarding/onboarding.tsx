@@ -5,17 +5,17 @@ import styled from '@emotion/styled';
 import {AnimatePresence, motion} from 'framer-motion';
 import scrollToElement from 'scroll-to-element';
 
-import Hook from 'app/components/hook';
-import InlineSvg from 'app/components/inlineSvg';
-import PageHeading from 'app/components/pageHeading';
-import {IS_ACCEPTANCE_TEST} from 'app/constants';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {analytics} from 'app/utils/analytics';
-import testableTransition from 'app/utils/testableTransition';
-import withOrganization from 'app/utils/withOrganization';
-import withProjects from 'app/utils/withProjects';
+import Hook from 'sentry/components/hook';
+import InlineSvg from 'sentry/components/inlineSvg';
+import PageHeading from 'sentry/components/pageHeading';
+import {IS_ACCEPTANCE_TEST} from 'sentry/constants';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {analytics} from 'sentry/utils/analytics';
+import testableTransition from 'sentry/utils/testableTransition';
+import withOrganization from 'sentry/utils/withOrganization';
+import withProjects from 'sentry/utils/withProjects';
 
 import OnboardingPlatform from './platform';
 import OnboardingProjectSetup from './projectSetup';

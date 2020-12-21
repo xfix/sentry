@@ -1,5 +1,5 @@
-import {Widget} from 'app/types';
-import {getChartDataByDay, getChartDataForWidget} from 'app/views/discover/result/utils';
+import {Widget} from 'sentry/types';
+import {getChartDataByDay, getChartDataForWidget} from 'sentry/views/discover/result/utils';
 
 import {WIDGET_DISPLAY} from '../constants';
 

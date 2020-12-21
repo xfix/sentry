@@ -4,29 +4,29 @@ import {Location} from 'history';
 import isEqual from 'lodash/isEqual';
 import throttle from 'lodash/throttle';
 
-import Feature from 'app/components/acl/feature';
-import BarChart from 'app/components/charts/barChart';
-import BarChartZoom from 'app/components/charts/barChartZoom';
-import MarkLine from 'app/components/charts/components/markLine';
-import MarkPoint from 'app/components/charts/components/markPoint';
-import TransparentLoadingMask from 'app/components/charts/transparentLoadingMask';
-import DiscoverButton from 'app/components/discoverButton';
-import Tag from 'app/components/tag';
-import {FIRE_SVG_PATH} from 'app/icons/iconFire';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import EventView from 'app/utils/discover/eventView';
-import {getAggregateAlias, WebVital} from 'app/utils/discover/fields';
+import Feature from 'sentry/components/acl/feature';
+import BarChart from 'sentry/components/charts/barChart';
+import BarChartZoom from 'sentry/components/charts/barChartZoom';
+import MarkLine from 'sentry/components/charts/components/markLine';
+import MarkPoint from 'sentry/components/charts/components/markPoint';
+import TransparentLoadingMask from 'sentry/components/charts/transparentLoadingMask';
+import DiscoverButton from 'sentry/components/discoverButton';
+import Tag from 'sentry/components/tag';
+import {FIRE_SVG_PATH} from 'sentry/icons/iconFire';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import EventView from 'sentry/utils/discover/eventView';
+import {getAggregateAlias, WebVital} from 'sentry/utils/discover/fields';
 import {
   formatAbbreviatedNumber,
   formatFloat,
   formatPercentage,
   getDuration,
-} from 'app/utils/formatters';
-import theme from 'app/utils/theme';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
+} from 'sentry/utils/formatters';
+import theme from 'sentry/utils/theme';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
 
 import {
   VitalState,

@@ -4,13 +4,13 @@ import {ECharts} from 'echarts';
 import debounce from 'lodash/debounce';
 import flatten from 'lodash/flatten';
 
-import Graphic from 'app/components/charts/components/graphic';
-import Legend from 'app/components/charts/components/legend';
-import LineChart, {LineChartSeries} from 'app/components/charts/lineChart';
-import space from 'app/styles/space';
-import {GlobalSelection} from 'app/types';
-import {ReactEchartsRef, Series} from 'app/types/echarts';
-import theme from 'app/utils/theme';
+import Graphic from 'sentry/components/charts/components/graphic';
+import Legend from 'sentry/components/charts/components/legend';
+import LineChart, {LineChartSeries} from 'sentry/components/charts/lineChart';
+import space from 'sentry/styles/space';
+import {GlobalSelection} from 'sentry/types';
+import {ReactEchartsRef, Series} from 'sentry/types/echarts';
+import theme from 'sentry/utils/theme';
 
 import {AlertRuleThresholdType, IncidentRule, Trigger} from '../../types';
 

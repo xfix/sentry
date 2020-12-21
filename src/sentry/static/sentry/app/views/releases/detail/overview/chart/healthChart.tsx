@@ -3,20 +3,20 @@ import {browserHistory} from 'react-router';
 import {Location} from 'history';
 import isEqual from 'lodash/isEqual';
 
-import AreaChart from 'app/components/charts/areaChart';
-import LineChart from 'app/components/charts/lineChart';
-import StackedAreaChart from 'app/components/charts/stackedAreaChart';
-import {getSeriesSelection} from 'app/components/charts/utils';
-import {parseStatsPeriod} from 'app/components/organizations/timeRangeSelector/utils';
-import QuestionTooltip from 'app/components/questionTooltip';
-import {PlatformKey} from 'app/data/platformCategories';
-import {Series} from 'app/types/echarts';
-import {defined} from 'app/utils';
-import {axisDuration} from 'app/utils/discover/charts';
-import {getExactDuration} from 'app/utils/formatters';
-import {decodeList} from 'app/utils/queryString';
-import theme from 'app/utils/theme';
-import {HeaderTitleLegend} from 'app/views/performance/styles';
+import AreaChart from 'sentry/components/charts/areaChart';
+import LineChart from 'sentry/components/charts/lineChart';
+import StackedAreaChart from 'sentry/components/charts/stackedAreaChart';
+import {getSeriesSelection} from 'sentry/components/charts/utils';
+import {parseStatsPeriod} from 'sentry/components/organizations/timeRangeSelector/utils';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import {PlatformKey} from 'sentry/data/platformCategories';
+import {Series} from 'sentry/types/echarts';
+import {defined} from 'sentry/utils';
+import {axisDuration} from 'sentry/utils/discover/charts';
+import {getExactDuration} from 'sentry/utils/formatters';
+import {decodeList} from 'sentry/utils/queryString';
+import theme from 'sentry/utils/theme';
+import {HeaderTitleLegend} from 'sentry/views/performance/styles';
 
 import {
   getSessionTermDescription,

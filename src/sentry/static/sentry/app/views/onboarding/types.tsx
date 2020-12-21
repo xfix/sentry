@@ -1,5 +1,5 @@
-import {PlatformKey} from 'app/data/platformCategories';
-import {Project} from 'app/types';
+import {PlatformKey} from 'sentry/data/platformCategories';
+import {Project} from 'sentry/types';
 
 export type StepData = {
   platform?: PlatformKey | null;

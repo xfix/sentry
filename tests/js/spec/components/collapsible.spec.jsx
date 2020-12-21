@@ -2,8 +2,8 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import Button from 'app/components/button';
-import Collapsible from 'app/components/collapsible';
+import Button from 'sentry/components/button';
+import Collapsible from 'sentry/components/collapsible';
 
 const items = [1, 2, 3, 4, 5, 6, 7].map(i => <div key={i}>Item {i}</div>);
 

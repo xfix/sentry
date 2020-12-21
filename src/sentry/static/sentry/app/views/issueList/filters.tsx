@@ -2,14 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import Feature from 'app/components/acl/feature';
-import PageHeading from 'app/components/pageHeading';
-import QueryCount from 'app/components/queryCount';
-import {t} from 'app/locale';
-import {PageHeader} from 'app/styles/organization';
-import space from 'app/styles/space';
-import {Organization, SavedSearch} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
+import Feature from 'sentry/components/acl/feature';
+import PageHeading from 'sentry/components/pageHeading';
+import QueryCount from 'sentry/components/queryCount';
+import {t} from 'sentry/locale';
+import {PageHeader} from 'sentry/styles/organization';
+import space from 'sentry/styles/space';
+import {Organization, SavedSearch} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
 
 import SavedSearchSelector from './savedSearchSelector';
 import IssueListSearchBar from './searchBar';

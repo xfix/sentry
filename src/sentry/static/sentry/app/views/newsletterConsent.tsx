@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {ApiForm, RadioBooleanField} from 'app/components/forms';
-import ExternalLink from 'app/components/links/externalLink';
-import NarrowLayout from 'app/components/narrowLayout';
-import {t, tct} from 'app/locale';
+import {ApiForm, RadioBooleanField} from 'sentry/components/forms';
+import ExternalLink from 'sentry/components/links/externalLink';
+import NarrowLayout from 'sentry/components/narrowLayout';
+import {t, tct} from 'sentry/locale';
 
 type Props = {
   onSubmitSuccess?: () => void;

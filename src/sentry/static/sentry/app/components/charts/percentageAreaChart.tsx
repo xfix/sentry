@@ -3,7 +3,7 @@ import {EChartOption} from 'echarts';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 
-import {Series, SeriesDataUnit} from 'app/types/echarts';
+import {Series, SeriesDataUnit} from 'sentry/types/echarts';
 
 import AreaSeries from './series/areaSeries';
 import BaseChart from './baseChart';

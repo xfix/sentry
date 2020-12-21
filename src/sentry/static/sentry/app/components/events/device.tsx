@@ -1,10 +1,10 @@
 import React from 'react';
 
-import ContextData from 'app/components/contextData';
-import EventDataSection from 'app/components/events/eventDataSection';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import {Event} from 'app/types';
+import ContextData from 'sentry/components/contextData';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import {Event} from 'sentry/types';
 
 type Props = {
   event: Event;

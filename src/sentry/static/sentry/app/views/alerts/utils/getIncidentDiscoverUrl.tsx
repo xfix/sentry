@@ -1,9 +1,9 @@
-import {NewQuery, Project} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {getAggregateAlias} from 'app/utils/discover/fields';
-import {Incident, IncidentStats} from 'app/views/alerts/types';
-import {getStartEndFromStats} from 'app/views/alerts/utils';
-import {Dataset} from 'app/views/settings/incidentRules/types';
+import {NewQuery, Project} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {getAggregateAlias} from 'sentry/utils/discover/fields';
+import {Incident, IncidentStats} from 'sentry/views/alerts/types';
+import {getStartEndFromStats} from 'sentry/views/alerts/utils';
+import {Dataset} from 'sentry/views/settings/incidentRules/types';
 /**
  * Gets the URL for a discover view of the incident with the following default
  * parameters:

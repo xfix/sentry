@@ -1,13 +1,13 @@
 import React from 'react';
 import moment from 'moment';
 
-import MarkLine from 'app/components/charts/components/markLine';
-import MarkPoint from 'app/components/charts/components/markPoint';
-import LineChart, {LineChartSeries} from 'app/components/charts/lineChart';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import theme from 'app/utils/theme';
-import {Trigger} from 'app/views/settings/incidentRules/types';
+import MarkLine from 'sentry/components/charts/components/markLine';
+import MarkPoint from 'sentry/components/charts/components/markPoint';
+import LineChart, {LineChartSeries} from 'sentry/components/charts/lineChart';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import theme from 'sentry/utils/theme';
+import {Trigger} from 'sentry/views/settings/incidentRules/types';
 
 import closedSymbol from './closedSymbol';
 import startedSymbol from './startedSymbol';

@@ -3,7 +3,7 @@ import isPropValid from '@emotion/is-prop-valid';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import AutoSelectText from 'app/components/autoSelectText';
+import AutoSelectText from 'sentry/components/autoSelectText';
 
 type Props = {
   shortId: string;

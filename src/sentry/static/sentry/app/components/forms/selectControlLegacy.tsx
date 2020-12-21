@@ -4,10 +4,10 @@ import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {IconChevron} from 'app/icons';
-import space from 'app/styles/space';
-import {callIfFunction} from 'app/utils/callIfFunction';
-import convertFromSelect2Choices from 'app/utils/convertFromSelect2Choices';
+import {IconChevron} from 'sentry/icons';
+import space from 'sentry/styles/space';
+import {callIfFunction} from 'sentry/utils/callIfFunction';
+import convertFromSelect2Choices from 'sentry/utils/convertFromSelect2Choices';
 
 /**
  * The library has `value` defined as `PropTypes.object`, but this

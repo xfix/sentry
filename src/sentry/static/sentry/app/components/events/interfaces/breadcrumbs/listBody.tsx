@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Tooltip from 'app/components/tooltip';
-import space from 'app/styles/space';
-import {Event} from 'app/types';
+import Tooltip from 'sentry/components/tooltip';
+import space from 'sentry/styles/space';
+import {Event} from 'sentry/types';
 
 import Category from './category';
 import Data from './data';

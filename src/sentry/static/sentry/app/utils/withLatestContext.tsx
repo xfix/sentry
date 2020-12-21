@@ -3,12 +3,12 @@ import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import SentryTypes from 'app/sentryTypes';
-import ConfigStore from 'app/stores/configStore';
-import LatestContextStore from 'app/stores/latestContextStore';
-import {Organization, OrganizationSummary, Project} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
-import withOrganizations from 'app/utils/withOrganizations';
+import SentryTypes from 'sentry/sentryTypes';
+import ConfigStore from 'sentry/stores/configStore';
+import LatestContextStore from 'sentry/stores/latestContextStore';
+import {Organization, OrganizationSummary, Project} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
+import withOrganizations from 'sentry/utils/withOrganizations';
 
 type InjectedLatestContextProps = {
   organizations?: OrganizationSummary[];

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Tag from 'app/components/tag';
-import {defined} from 'app/utils';
-import {Theme} from 'app/utils/theme';
+import Tag from 'sentry/components/tag';
+import {defined} from 'sentry/utils';
+import {Theme} from 'sentry/utils/theme';
 
 type Props = {
   count?: number;

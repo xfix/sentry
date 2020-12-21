@@ -1,9 +1,9 @@
 import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 
-import {IconBusiness, IconTelescope, IconLightning, IconSiren} from 'app/icons';
-import List from 'app/components/list';
-import ListItem from 'app/components/list/listItem';
+import {IconBusiness, IconTelescope, IconLightning, IconSiren} from 'sentry/icons';
+import List from 'sentry/components/list';
+import ListItem from 'sentry/components/list/listItem';
 
 export default {
   title: 'Core/List',

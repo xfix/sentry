@@ -2,21 +2,25 @@ import React from 'react';
 import {withRouter, WithRouterProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import {navigateTo} from 'app/actionCreators/navigation';
-import Access from 'app/components/acl/access';
-import Alert from 'app/components/alert';
-import Button from 'app/components/button';
-import Link from 'app/components/links/link';
-import {IconClose, IconInfo, IconSiren} from 'app/icons';
-import {t, tct} from 'app/locale';
-import {Organization, Project} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import {Aggregation, AGGREGATIONS, explodeFieldString} from 'app/utils/discover/fields';
-import {getQueryDatasource} from 'app/views/alerts/utils';
+import {navigateTo} from 'sentry/actionCreators/navigation';
+import Access from 'sentry/components/acl/access';
+import Alert from 'sentry/components/alert';
+import Button from 'sentry/components/button';
+import Link from 'sentry/components/links/link';
+import {IconClose, IconInfo, IconSiren} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import {Organization, Project} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import {
+  Aggregation,
+  AGGREGATIONS,
+  explodeFieldString,
+} from 'sentry/utils/discover/fields';
+import {getQueryDatasource} from 'sentry/views/alerts/utils';
 import {
   errorFieldConfig,
   transactionFieldConfig,
-} from 'app/views/settings/incidentRules/constants';
+} from 'sentry/views/settings/incidentRules/constants';
 
 /**
  * Discover query supports more features than alert rules

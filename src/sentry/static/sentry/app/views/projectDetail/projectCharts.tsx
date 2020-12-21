@@ -4,22 +4,22 @@ import {browserHistory} from 'react-router';
 import {withTheme} from 'emotion-theming';
 import {Location} from 'history';
 
-import {Client} from 'app/api';
-import OptionSelector from 'app/components/charts/optionSelector';
+import {Client} from 'sentry/api';
+import OptionSelector from 'sentry/components/charts/optionSelector';
 import {
   ChartControls,
   InlineContainer,
   SectionHeading,
   SectionValue,
-} from 'app/components/charts/styles';
-import {Panel} from 'app/components/panels';
-import CHART_PALETTE from 'app/constants/chartPalette';
-import {t} from 'app/locale';
-import {Organization, SelectValue} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {decodeScalar} from 'app/utils/queryString';
-import {Theme} from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
+} from 'sentry/components/charts/styles';
+import {Panel} from 'sentry/components/panels';
+import CHART_PALETTE from 'sentry/constants/chartPalette';
+import {t} from 'sentry/locale';
+import {Organization, SelectValue} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {Theme} from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
 
 import {getTermHelp} from '../performance/data';
 import {ChartContainer} from '../performance/styles';

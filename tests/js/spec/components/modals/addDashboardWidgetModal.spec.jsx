@@ -4,8 +4,8 @@ import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {findOption, openMenu, selectByLabel} from 'sentry-test/select-new';
 
-import AddDashboardWidgetModal from 'app/components/modals/addDashboardWidgetModal';
-import TagStore from 'app/stores/tagStore';
+import AddDashboardWidgetModal from 'sentry/components/modals/addDashboardWidgetModal';
+import TagStore from 'sentry/stores/tagStore';
 
 const stubEl = props => <div>{props.children}</div>;
 

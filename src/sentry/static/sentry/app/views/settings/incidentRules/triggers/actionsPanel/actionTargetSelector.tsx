@@ -1,15 +1,15 @@
 import React from 'react';
 
-import SelectControl from 'app/components/forms/selectControl';
-import SelectMembers from 'app/components/selectMembers';
-import {Organization, Project, SelectValue} from 'app/types';
-import Input from 'app/views/settings/components/forms/controls/input';
+import SelectControl from 'sentry/components/forms/selectControl';
+import SelectMembers from 'sentry/components/selectMembers';
+import {Organization, Project, SelectValue} from 'sentry/types';
+import Input from 'sentry/views/settings/components/forms/controls/input';
 import {
   Action,
   ActionType,
   MetricActionTemplate,
   TargetType,
-} from 'app/views/settings/incidentRules/types';
+} from 'sentry/views/settings/incidentRules/types';
 
 const getPlaceholderForType = (type: ActionType) => {
   switch (type) {

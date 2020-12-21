@@ -3,15 +3,15 @@ import styled from '@emotion/styled';
 import isString from 'lodash/isString';
 import PropTypes from 'prop-types';
 
-import Alert from 'app/components/alert';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {analytics} from 'app/utils/analytics';
-import getRouteStringFromRoutes from 'app/utils/getRouteStringFromRoutes';
-import Redirect from 'app/utils/redirect';
-import withApi from 'app/utils/withApi';
+import Alert from 'sentry/components/alert';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {analytics} from 'sentry/utils/analytics';
+import getRouteStringFromRoutes from 'sentry/utils/getRouteStringFromRoutes';
+import Redirect from 'sentry/utils/redirect';
+import withApi from 'sentry/utils/withApi';
 
 class ProjectDetailsInner extends React.Component {
   static propTypes = {

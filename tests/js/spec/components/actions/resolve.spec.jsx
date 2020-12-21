@@ -3,8 +3,8 @@ import $ from 'jquery';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import ResolveActions from 'app/components/actions/resolve';
-import GlobalModal from 'app/components/globalModal';
+import ResolveActions from 'sentry/components/actions/resolve';
+import GlobalModal from 'sentry/components/globalModal';
 
 describe('ResolveActions', function () {
   describe('disabled', function () {

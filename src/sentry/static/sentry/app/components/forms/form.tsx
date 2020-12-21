@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 import isEqual from 'lodash/isEqual';
 import PropTypes from 'prop-types';
 
-import FormState from 'app/components/forms/state';
-import {t} from 'app/locale';
+import FormState from 'sentry/components/forms/state';
+import {t} from 'sentry/locale';
 
 type FormProps = {
   cancelLabel?: string;

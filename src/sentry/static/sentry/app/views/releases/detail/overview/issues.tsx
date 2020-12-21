@@ -3,20 +3,20 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import pick from 'lodash/pick';
 
-import Feature from 'app/components/acl/feature';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import DiscoverButton from 'app/components/discoverButton';
-import DropdownButton from 'app/components/dropdownButton';
-import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
-import GroupList from 'app/components/issues/groupList';
-import {Panel} from 'app/components/panels';
-import {DEFAULT_RELATIVE_PERIODS} from 'app/constants';
-import {URL_PARAM} from 'app/constants/globalSelectionHeader';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {GlobalSelection} from 'app/types';
-import {QueryResults, stringifyQueryObject} from 'app/utils/tokenizeSearch';
+import Feature from 'sentry/components/acl/feature';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import DiscoverButton from 'sentry/components/discoverButton';
+import DropdownButton from 'sentry/components/dropdownButton';
+import DropdownControl, {DropdownItem} from 'sentry/components/dropdownControl';
+import GroupList from 'sentry/components/issues/groupList';
+import {Panel} from 'sentry/components/panels';
+import {DEFAULT_RELATIVE_PERIODS} from 'sentry/constants';
+import {URL_PARAM} from 'sentry/constants/globalSelectionHeader';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {GlobalSelection} from 'sentry/types';
+import {QueryResults, stringifyQueryObject} from 'sentry/utils/tokenizeSearch';
 
 import EmptyState from '../emptyState';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ConfigStore from 'app/stores/configStore';
-import {Organization} from 'app/types';
-import {isRenderFunc} from 'app/utils/isRenderFunc';
-import withOrganization from 'app/utils/withOrganization';
+import ConfigStore from 'sentry/stores/configStore';
+import {Organization} from 'sentry/types';
+import {isRenderFunc} from 'sentry/utils/isRenderFunc';
+import withOrganization from 'sentry/utils/withOrganization';
 
 type RoleRenderProps = {
   hasRole: boolean;

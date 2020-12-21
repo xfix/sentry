@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import {IconChevron} from 'app/icons';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import {IconChevron} from 'sentry/icons';
 
 type PaginationProps = {
   getNextPage: () => void;

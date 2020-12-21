@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Clip from 'clipboard';
 import PropTypes from 'prop-types';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
 
 type DefaultProps = {
   successMessage: string;

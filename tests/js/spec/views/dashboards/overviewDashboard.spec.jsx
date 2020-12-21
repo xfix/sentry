@@ -4,11 +4,11 @@ import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {mockRouterPush} from 'sentry-test/mockRouterPush';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import DashboardsContainer from 'app/views/dashboards';
-import OverviewDashboard from 'app/views/dashboards/overviewDashboard';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import DashboardsContainer from 'sentry/views/dashboards';
+import OverviewDashboard from 'sentry/views/dashboards/overviewDashboard';
 
-jest.mock('app/utils/withLatestContext');
+jest.mock('sentry/utils/withLatestContext');
 
 describe('OverviewDashboard', function () {
   let wrapper;

@@ -3,21 +3,24 @@ import isEqual from 'lodash/isEqual';
 import omitBy from 'lodash/omitBy';
 import PropTypes from 'prop-types';
 
-import {doEventsRequest} from 'app/actionCreators/events';
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import LoadingPanel from 'app/components/charts/loadingPanel';
-import {canIncludePreviousPeriod, isMultiSeriesStats} from 'app/components/charts/utils';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
+import {doEventsRequest} from 'sentry/actionCreators/events';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import LoadingPanel from 'sentry/components/charts/loadingPanel';
+import {
+  canIncludePreviousPeriod,
+  isMultiSeriesStats,
+} from 'sentry/components/charts/utils';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
 import {
   DateString,
   EventsStats,
   EventsStatsData,
   MultiSeriesEventsStats,
   OrganizationSummary,
-} from 'app/types';
-import {Series, SeriesDataUnit} from 'app/types/echarts';
+} from 'sentry/types';
+import {Series, SeriesDataUnit} from 'sentry/types/echarts';
 
 export type TimeSeriesData = {
   // timeseries data

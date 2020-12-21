@@ -4,16 +4,16 @@ import partition from 'lodash/partition';
 import uniqBy from 'lodash/uniqBy';
 import PropTypes from 'prop-types';
 
-import ProjectActions from 'app/actions/projectActions';
-import {Client} from 'app/api';
-import SentryTypes from 'app/sentryTypes';
-import ProjectsStore from 'app/stores/projectsStore';
-import {AvatarProject, Project} from 'app/types';
-import {defined} from 'app/utils';
-import parseLinkHeader from 'app/utils/parseLinkHeader';
-import RequestError from 'app/utils/requestError/requestError';
-import withApi from 'app/utils/withApi';
-import withProjects from 'app/utils/withProjects';
+import ProjectActions from 'sentry/actions/projectActions';
+import {Client} from 'sentry/api';
+import SentryTypes from 'sentry/sentryTypes';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import {AvatarProject, Project} from 'sentry/types';
+import {defined} from 'sentry/utils';
+import parseLinkHeader from 'sentry/utils/parseLinkHeader';
+import RequestError from 'sentry/utils/requestError/requestError';
+import withApi from 'sentry/utils/withApi';
+import withProjects from 'sentry/utils/withProjects';
 
 type ProjectPlaceholder = AvatarProject;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {Panel, PanelHeader, PanelItem} from 'app/components/panels';
+import {Panel, PanelHeader, PanelItem} from 'sentry/components/panels';
 
 export const TableChart = styled(
   class TableChartComponent extends React.Component {

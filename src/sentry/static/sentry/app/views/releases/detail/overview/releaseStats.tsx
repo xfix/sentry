@@ -2,25 +2,25 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import Feature from 'app/components/acl/feature';
-import {SectionHeading} from 'app/components/charts/styles';
-import Count from 'app/components/count';
-import DeployBadge from 'app/components/deployBadge';
-import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import QuestionTooltip from 'app/components/questionTooltip';
-import TimeSince from 'app/components/timeSince';
-import Tooltip from 'app/components/tooltip';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {GlobalSelection, Organization, Release, ReleaseProject} from 'app/types';
-import DiscoverQuery from 'app/utils/discover/discoverQuery';
-import {getAggregateAlias} from 'app/utils/discover/fields';
-import {getTermHelp} from 'app/views/performance/data';
+import Feature from 'sentry/components/acl/feature';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import Count from 'sentry/components/count';
+import DeployBadge from 'sentry/components/deployBadge';
+import GlobalSelectionLink from 'sentry/components/globalSelectionLink';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import TimeSince from 'sentry/components/timeSince';
+import Tooltip from 'sentry/components/tooltip';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {GlobalSelection, Organization, Release, ReleaseProject} from 'sentry/types';
+import DiscoverQuery from 'sentry/utils/discover/discoverQuery';
+import {getAggregateAlias} from 'sentry/utils/discover/fields';
+import {getTermHelp} from 'sentry/views/performance/data';
 import {
   getSessionTermDescription,
   SessionTerm,
   sessionTerm,
-} from 'app/views/releases/utils/sessionTerm';
+} from 'sentry/views/releases/utils/sessionTerm';
 
 import {getReleaseEventView} from '../utils';
 

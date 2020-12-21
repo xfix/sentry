@@ -1,14 +1,14 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import InlineInput from 'app/components/inputInline';
-import {Title} from 'app/components/layouts/thirds';
-import {t} from 'app/locale';
-import {Organization, SavedQuery} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import withApi from 'app/utils/withApi';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import InlineInput from 'sentry/components/inputInline';
+import {Title} from 'sentry/components/layouts/thirds';
+import {t} from 'sentry/locale';
+import {Organization, SavedQuery} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
+import withApi from 'sentry/utils/withApi';
 
 import {handleUpdateQueryName} from './savedQuery/utils';
 

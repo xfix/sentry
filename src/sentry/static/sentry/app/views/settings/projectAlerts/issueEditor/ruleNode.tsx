@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {openModal} from 'app/actionCreators/modal';
-import Alert from 'app/components/alert';
-import Button from 'app/components/button';
-import SelectControl from 'app/components/forms/selectControl';
-import ExternalLink from 'app/components/links/externalLink';
-import {IconDelete, IconSettings} from 'app/icons';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
+import {openModal} from 'sentry/actionCreators/modal';
+import Alert from 'sentry/components/alert';
+import Button from 'sentry/components/button';
+import SelectControl from 'sentry/components/forms/selectControl';
+import ExternalLink from 'sentry/components/links/externalLink';
+import {IconDelete, IconSettings} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
 import {
   AssigneeTargetType,
   IssueAlertRuleAction,
@@ -17,8 +17,8 @@ import {
   IssueAlertRuleCondition,
   IssueAlertRuleConditionTemplate,
   MailActionTargetType,
-} from 'app/types/alerts';
-import Input from 'app/views/settings/components/forms/controls/input';
+} from 'sentry/types/alerts';
+import Input from 'sentry/views/settings/components/forms/controls/input';
 
 import MemberTeamFields from './memberTeamFields';
 import TicketRuleModal from './ticketRuleModal';

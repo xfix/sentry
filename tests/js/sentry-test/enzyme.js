@@ -4,7 +4,7 @@ import {cache} from 'emotion'; // eslint-disable-line emotion/no-vanilla
 import {ThemeProvider} from 'emotion-theming';
 import {mount, render, shallow} from 'enzyme'; // eslint-disable-line no-restricted-imports
 
-import theme from 'app/utils/theme';
+import theme from 'sentry/utils/theme';
 
 const mountWithTheme = (tree, opts) => {
   const WrappingThemeProvider = props => (

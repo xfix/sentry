@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import PageHeading from 'app/components/pageHeading';
-import ResourceCard from 'app/components/resourceCard';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
+import PageHeading from 'sentry/components/pageHeading';
+import ResourceCard from 'sentry/components/resourceCard';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
 
 import breadcrumbsImg from '../../../images/spot/breadcrumbs-generic.svg';
 import docsImg from '../../../images/spot/code-arguments-tags-mirrored.svg';

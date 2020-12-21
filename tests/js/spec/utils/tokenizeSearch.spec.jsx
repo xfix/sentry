@@ -3,7 +3,7 @@ import {
   stringifyQueryObject,
   tokenizeSearch,
   TokenType,
-} from 'app/utils/tokenizeSearch';
+} from 'sentry/utils/tokenizeSearch';
 
 describe('utils/tokenizeSearch', function () {
   describe('tokenizeSearch()', function () {

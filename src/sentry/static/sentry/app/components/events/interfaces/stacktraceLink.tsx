@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {openModal} from 'app/actionCreators/modal';
-import AsyncComponent from 'app/components/asyncComponent';
-import Button from 'app/components/button';
-import {t} from 'app/locale';
+import {openModal} from 'sentry/actionCreators/modal';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import Button from 'sentry/components/button';
+import {t} from 'sentry/locale';
 import {
   Event,
   Frame,
@@ -12,10 +12,10 @@ import {
   Organization,
   Project,
   RepositoryProjectPathConfig,
-} from 'app/types';
-import {getIntegrationIcon, trackIntegrationEvent} from 'app/utils/integrationUtil';
-import withOrganization from 'app/utils/withOrganization';
-import withProjects from 'app/utils/withProjects';
+} from 'sentry/types';
+import {getIntegrationIcon, trackIntegrationEvent} from 'sentry/utils/integrationUtil';
+import withOrganization from 'sentry/utils/withOrganization';
+import withProjects from 'sentry/utils/withProjects';
 
 import {OpenInContainer, OpenInLink, OpenInName} from './openInContextLine';
 import StacktraceLinkModal from './stacktraceLinkModal';

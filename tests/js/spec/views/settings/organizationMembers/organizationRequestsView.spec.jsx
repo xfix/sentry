@@ -3,11 +3,11 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {selectByValue} from 'sentry-test/select';
 
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import OrganizationMembersWrapper from 'app/views/settings/organizationMembers/organizationMembersWrapper';
-import OrganizationRequestsView from 'app/views/settings/organizationMembers/organizationRequestsView';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import OrganizationMembersWrapper from 'sentry/views/settings/organizationMembers/organizationMembersWrapper';
+import OrganizationRequestsView from 'sentry/views/settings/organizationMembers/organizationRequestsView';
 
-jest.mock('app/utils/analytics', () => ({
+jest.mock('sentry/utils/analytics', () => ({
   trackAnalyticsEvent: jest.fn(),
 }));
 

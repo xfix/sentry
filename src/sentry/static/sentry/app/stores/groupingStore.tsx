@@ -5,10 +5,10 @@ import {
   addErrorMessage,
   addLoadingMessage,
   addSuccessMessage,
-} from 'app/actionCreators/indicator';
-import GroupingActions from 'app/actions/groupingActions';
-import {Client} from 'app/api';
-import {Event, Group, Organization, Project} from 'app/types';
+} from 'sentry/actionCreators/indicator';
+import GroupingActions from 'sentry/actions/groupingActions';
+import {Client} from 'sentry/api';
+import {Event, Group, Organization, Project} from 'sentry/types';
 
 // Between 0-100
 const MIN_SCORE = 0.6;

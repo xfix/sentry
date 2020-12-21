@@ -1,22 +1,22 @@
 import React from 'react';
 
-import MiniBarChart from 'app/components/charts/miniBarChart';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import PageHeading from 'app/components/pageHeading';
-import Pagination from 'app/components/pagination';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {t} from 'app/locale';
-import {PageContent} from 'app/styles/organization';
-import {Organization, Project} from 'app/types';
-import {Series} from 'app/types/echarts';
-import PerformanceAlert from 'app/views/organizationStats/performanceAlert';
-import ProjectTable from 'app/views/organizationStats/projectTable';
+import MiniBarChart from 'sentry/components/charts/miniBarChart';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import PageHeading from 'sentry/components/pageHeading';
+import Pagination from 'sentry/components/pagination';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {t} from 'sentry/locale';
+import {PageContent} from 'sentry/styles/organization';
+import {Organization, Project} from 'sentry/types';
+import {Series} from 'sentry/types/echarts';
+import PerformanceAlert from 'sentry/views/organizationStats/performanceAlert';
+import ProjectTable from 'sentry/views/organizationStats/projectTable';
 import {
   ProjectTableDataElement,
   ProjectTableLayout,
-} from 'app/views/organizationStats/projectTableLayout';
-import TextBlock from 'app/views/settings/components/text/textBlock';
+} from 'sentry/views/organizationStats/projectTableLayout';
+import TextBlock from 'sentry/views/settings/components/text/textBlock';
 
 import {OrgTotal, ProjectTotal} from './types';
 

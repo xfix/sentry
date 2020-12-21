@@ -3,9 +3,9 @@ import * as Sentry from '@sentry/react';
 import PropTypes from 'prop-types';
 import u2f from 'u2f-api';
 
-import {t, tct} from 'app/locale';
-import ConfigStore from 'app/stores/configStore';
-import {ChallengeData} from 'app/types';
+import {t, tct} from 'sentry/locale';
+import ConfigStore from 'sentry/stores/configStore';
+import {ChallengeData} from 'sentry/types';
 
 type Props = {
   challengeData: ChallengeData;

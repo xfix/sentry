@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {toggleKeyTransaction} from 'app/actionCreators/performance';
-import {Client} from 'app/api';
-import {IconStar} from 'app/icons';
-import {Organization, Project} from 'app/types';
-import withApi from 'app/utils/withApi';
-import withProjects from 'app/utils/withProjects';
+import {toggleKeyTransaction} from 'sentry/actionCreators/performance';
+import {Client} from 'sentry/api';
+import {IconStar} from 'sentry/icons';
+import {Organization, Project} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
+import withProjects from 'sentry/utils/withProjects';
 
 type Props = {
   api: Client;

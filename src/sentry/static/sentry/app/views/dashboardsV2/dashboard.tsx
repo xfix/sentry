@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {openAddDashboardWidgetModal} from 'app/actionCreators/modal';
-import {loadOrganizationTags} from 'app/actionCreators/tags';
-import {Client} from 'app/api';
-import {IconAdd} from 'app/icons';
-import space from 'app/styles/space';
-import {GlobalSelection, Organization} from 'app/types';
-import withApi from 'app/utils/withApi';
-import withGlobalSelection from 'app/utils/withGlobalSelection';
+import {openAddDashboardWidgetModal} from 'sentry/actionCreators/modal';
+import {loadOrganizationTags} from 'sentry/actionCreators/tags';
+import {Client} from 'sentry/api';
+import {IconAdd} from 'sentry/icons';
+import space from 'sentry/styles/space';
+import {GlobalSelection, Organization} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
+import withGlobalSelection from 'sentry/utils/withGlobalSelection';
 
 import {DashboardDetails, Widget} from './types';
 import WidgetCard from './widgetCard';

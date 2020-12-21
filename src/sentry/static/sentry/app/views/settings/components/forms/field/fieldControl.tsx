@@ -2,9 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import QuestionTooltip from 'app/components/questionTooltip';
-import space from 'app/styles/space';
-import FieldControlState from 'app/views/settings/components/forms/field/fieldControlState';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import space from 'sentry/styles/space';
+import FieldControlState from 'sentry/views/settings/components/forms/field/fieldControlState';
 
 const defaultProps = {
   flexibleControlStateSize: false,

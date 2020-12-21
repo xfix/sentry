@@ -2,14 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import PageHeading from 'app/components/pageHeading';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import ConfigStore from 'app/stores/configStore';
-import space from 'app/styles/space';
-import {LightWeightOrganization, Organization, Project} from 'app/types';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import PageHeading from 'sentry/components/pageHeading';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import ConfigStore from 'sentry/stores/configStore';
+import space from 'sentry/styles/space';
+import {LightWeightOrganization, Organization, Project} from 'sentry/types';
 
 /* TODO: replace with I/O when finished */
 import img from '../../images/spot/hair-on-fire.svg';

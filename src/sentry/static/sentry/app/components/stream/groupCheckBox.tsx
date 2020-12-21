@@ -3,9 +3,9 @@ import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import Checkbox from 'app/components/checkbox';
-import {t} from 'app/locale';
-import SelectedGroupStore from 'app/stores/selectedGroupStore';
+import Checkbox from 'sentry/components/checkbox';
+import {t} from 'sentry/locale';
+import SelectedGroupStore from 'sentry/stores/selectedGroupStore';
 
 type Props = {
   id: string;

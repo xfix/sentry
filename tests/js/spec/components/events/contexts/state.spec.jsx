@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mount} from 'sentry-test/enzyme';
 
-import StateContextType from 'app/components/events/contexts/state';
+import StateContextType from 'sentry/components/events/contexts/state';
 
 const STATE_CONTEXT = {
   type: 'state',

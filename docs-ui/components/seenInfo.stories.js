@@ -2,7 +2,7 @@ import React from 'react';
 import {text} from '@storybook/addon-knobs';
 import {withInfo} from '@storybook/addon-info';
 
-import SeenInfo from 'app/components/group/seenInfo';
+import SeenInfo from 'sentry/components/group/seenInfo';
 
 export default {
   title: 'Features/Issues/Seen Info',

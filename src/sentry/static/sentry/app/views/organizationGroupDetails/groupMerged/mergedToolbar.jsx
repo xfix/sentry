@@ -5,15 +5,15 @@ import pick from 'lodash/pick';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import {openDiffModal} from 'app/actionCreators/modal';
-import Button from 'app/components/button';
-import LinkWithConfirmation from 'app/components/links/linkWithConfirmation';
-import SpreadLayout from 'app/components/spreadLayout';
-import Toolbar from 'app/components/toolbar';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import GroupingStore from 'app/stores/groupingStore';
-import space from 'app/styles/space';
+import {openDiffModal} from 'sentry/actionCreators/modal';
+import Button from 'sentry/components/button';
+import LinkWithConfirmation from 'sentry/components/links/linkWithConfirmation';
+import SpreadLayout from 'sentry/components/spreadLayout';
+import Toolbar from 'sentry/components/toolbar';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import GroupingStore from 'sentry/stores/groupingStore';
+import space from 'sentry/styles/space';
 
 const MergedToolbar = createReactClass({
   displayName: 'MergedToolbar',

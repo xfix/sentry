@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
-import {t} from 'app/locale';
+import DropdownControl, {DropdownItem} from 'sentry/components/dropdownControl';
+import {t} from 'sentry/locale';
 
 type Props = {
   sort: string;

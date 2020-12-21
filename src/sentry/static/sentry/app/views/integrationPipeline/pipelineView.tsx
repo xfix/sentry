@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ThemeAndStyleProvider from 'app/themeAndStyleProvider';
+import ThemeAndStyleProvider from 'sentry/themeAndStyleProvider';
 
 import AwsLambdaFailureDetails from './awsLambdaFailureDetails';
 import AwsLambdaFunctionSelect from './awsLambdaFunctionSelect';

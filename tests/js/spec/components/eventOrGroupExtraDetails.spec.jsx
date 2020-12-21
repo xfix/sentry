@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import EventOrGroupExtraDetails from 'app/components/eventOrGroupExtraDetails';
+import EventOrGroupExtraDetails from 'sentry/components/eventOrGroupExtraDetails';
 
 import {initializeOrg} from '../../sentry-test/initializeOrg';
 

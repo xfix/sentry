@@ -4,36 +4,36 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import isEqual from 'lodash/isEqual';
 
-import {updateDateTime} from 'app/actionCreators/globalSelection';
-import {loadOrganizationTags} from 'app/actionCreators/tags';
-import {Client} from 'app/api';
-import Feature from 'app/components/acl/feature';
-import Alert from 'app/components/alert';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import LightWeightNoProjectMessage from 'app/components/lightWeightNoProjectMessage';
-import GlobalSelectionHeader from 'app/components/organizations/globalSelectionHeader';
-import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
-import {ALL_ACCESS_PROJECTS} from 'app/constants/globalSelectionHeader';
-import {IconFlag} from 'app/icons';
-import {t} from 'app/locale';
-import {PageContent} from 'app/styles/organization';
-import space from 'app/styles/space';
-import {GlobalSelection, Organization, Project} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import EventView from 'app/utils/discover/eventView';
-import {generateAggregateFields} from 'app/utils/discover/fields';
-import {decodeScalar} from 'app/utils/queryString';
+import {updateDateTime} from 'sentry/actionCreators/globalSelection';
+import {loadOrganizationTags} from 'sentry/actionCreators/tags';
+import {Client} from 'sentry/api';
+import Feature from 'sentry/components/acl/feature';
+import Alert from 'sentry/components/alert';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import LightWeightNoProjectMessage from 'sentry/components/lightWeightNoProjectMessage';
+import GlobalSelectionHeader from 'sentry/components/organizations/globalSelectionHeader';
+import SentryDocumentTitle from 'sentry/components/sentryDocumentTitle';
+import {ALL_ACCESS_PROJECTS} from 'sentry/constants/globalSelectionHeader';
+import {IconFlag} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {PageContent} from 'sentry/styles/organization';
+import space from 'sentry/styles/space';
+import {GlobalSelection, Organization, Project} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import EventView from 'sentry/utils/discover/eventView';
+import {generateAggregateFields} from 'sentry/utils/discover/fields';
+import {decodeScalar} from 'sentry/utils/queryString';
 import {
   QueryResults,
   stringifyQueryObject,
   tokenizeSearch,
-} from 'app/utils/tokenizeSearch';
-import withApi from 'app/utils/withApi';
-import withGlobalSelection from 'app/utils/withGlobalSelection';
-import withOrganization from 'app/utils/withOrganization';
-import withProjects from 'app/utils/withProjects';
-import SearchBar from 'app/views/events/searchBar';
+} from 'sentry/utils/tokenizeSearch';
+import withApi from 'sentry/utils/withApi';
+import withGlobalSelection from 'sentry/utils/withGlobalSelection';
+import withOrganization from 'sentry/utils/withOrganization';
+import withProjects from 'sentry/utils/withProjects';
+import SearchBar from 'sentry/views/events/searchBar';
 
 import Charts from './charts/index';
 import TrendsContent from './trends/content';

@@ -3,20 +3,20 @@ import {Link, withRouter, WithRouterProps} from 'react-router';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
-import EventAnnotation from 'app/components/events/eventAnnotation';
-import InboxReason from 'app/components/group/inboxBadges/inboxReason';
-import InboxShortId from 'app/components/group/inboxBadges/shortId';
-import TimesTag from 'app/components/group/inboxBadges/timesTag';
-import UnhandledTag from 'app/components/group/inboxBadges/unhandledTag';
-import Times from 'app/components/group/times';
-import ProjectBadge from 'app/components/idBadge/projectBadge';
-import Placeholder from 'app/components/placeholder';
-import ShortId from 'app/components/shortId';
-import {IconChat} from 'app/icons';
-import {tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Event, Group, Organization} from 'app/types';
-import withOrganization from 'app/utils/withOrganization';
+import EventAnnotation from 'sentry/components/events/eventAnnotation';
+import InboxReason from 'sentry/components/group/inboxBadges/inboxReason';
+import InboxShortId from 'sentry/components/group/inboxBadges/shortId';
+import TimesTag from 'sentry/components/group/inboxBadges/timesTag';
+import UnhandledTag from 'sentry/components/group/inboxBadges/unhandledTag';
+import Times from 'sentry/components/group/times';
+import ProjectBadge from 'sentry/components/idBadge/projectBadge';
+import Placeholder from 'sentry/components/placeholder';
+import ShortId from 'sentry/components/shortId';
+import {IconChat} from 'sentry/icons';
+import {tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Event, Group, Organization} from 'sentry/types';
+import withOrganization from 'sentry/utils/withOrganization';
 
 type Props = WithRouterProps<{orgId: string}> & {
   data: Event | Group;

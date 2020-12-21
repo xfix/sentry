@@ -1,8 +1,8 @@
 import {EChartOption} from 'echarts';
 
-import BaseChart from 'app/components/charts/baseChart';
-import {getFormattedDate, getTimeFormat} from 'app/utils/dates';
-import {Theme} from 'app/utils/theme';
+import BaseChart from 'sentry/components/charts/baseChart';
+import {getFormattedDate, getTimeFormat} from 'sentry/utils/dates';
+import {Theme} from 'sentry/utils/theme';
 
 import {truncationFormatter, useShortInterval} from '../utils';
 

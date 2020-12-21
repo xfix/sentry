@@ -1,5 +1,5 @@
-import {Event, ExceptionValue} from 'app/types';
-import {Thread} from 'app/types/events';
+import {Event, ExceptionValue} from 'sentry/types';
+import {Thread} from 'sentry/types/events';
 
 import getThreadException from './getThreadException';
 

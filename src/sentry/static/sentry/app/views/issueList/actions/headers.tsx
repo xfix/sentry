@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import QueryCount from 'app/components/queryCount';
-import ToolbarHeader from 'app/components/toolbarHeader';
-import {t, tct} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {GlobalSelection} from 'app/types';
+import QueryCount from 'sentry/components/queryCount';
+import ToolbarHeader from 'sentry/components/toolbarHeader';
+import {t, tct} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {GlobalSelection} from 'sentry/types';
 
 type Props = {
   selection: GlobalSelection;

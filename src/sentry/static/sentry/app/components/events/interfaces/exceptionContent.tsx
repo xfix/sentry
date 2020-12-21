@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import ExceptionMechanism from 'app/components/events/interfaces/exceptionMechanism';
-import Annotated from 'app/components/events/meta/annotated';
-import space from 'app/styles/space';
-import {Event, ExceptionType} from 'app/types';
-import {STACK_TYPE} from 'app/types/stacktrace';
+import ExceptionMechanism from 'sentry/components/events/interfaces/exceptionMechanism';
+import Annotated from 'sentry/components/events/meta/annotated';
+import space from 'sentry/styles/space';
+import {Event, ExceptionType} from 'sentry/types';
+import {STACK_TYPE} from 'sentry/types/stacktrace';
 
 import ExceptionStacktraceContent from './exceptionStacktraceContent';
 import ExceptionTitle from './exceptionTitle';

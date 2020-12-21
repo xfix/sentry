@@ -2,10 +2,10 @@ import React from 'react';
 import * as ReactRouter from 'react-router';
 import partition from 'lodash/partition';
 
-import ConfigStore from 'app/stores/configStore';
-import {Organization, Project} from 'app/types';
-import withOrganization from 'app/utils/withOrganization';
-import withProjectsSpecified from 'app/utils/withProjectsSpecified';
+import ConfigStore from 'sentry/stores/configStore';
+import {Organization, Project} from 'sentry/types';
+import withOrganization from 'sentry/utils/withOrganization';
+import withProjectsSpecified from 'sentry/utils/withProjectsSpecified';
 
 import GlobalSelectionHeader from './globalSelectionHeader';
 import InitializeGlobalSelectionHeader from './initializeGlobalSelectionHeader';

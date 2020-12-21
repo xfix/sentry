@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import EventsTableRow from 'app/components/eventsTable/eventsTableRow';
-import {t} from 'app/locale';
-import CustomPropTypes from 'app/sentryTypes';
-import {Event, Tag} from 'app/types';
+import EventsTableRow from 'sentry/components/eventsTable/eventsTableRow';
+import {t} from 'sentry/locale';
+import CustomPropTypes from 'sentry/sentryTypes';
+import {Event, Tag} from 'sentry/types';
 
 type Props = {
   events: Event[];

@@ -4,11 +4,11 @@ import styled from '@emotion/styled';
 import * as Sentry from '@sentry/react';
 import PropTypes from 'prop-types';
 
-import Alert from 'app/components/alert';
-import {IconWarning} from 'app/icons';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import getRouteStringFromRoutes from 'app/utils/getRouteStringFromRoutes';
+import Alert from 'sentry/components/alert';
+import {IconWarning} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import getRouteStringFromRoutes from 'sentry/utils/getRouteStringFromRoutes';
 
 type Props = WithRouterProps & {
   error: Error | undefined;

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {Panel, PanelBody} from 'app/components/panels';
-import QuestionTooltip from 'app/components/questionTooltip';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Theme} from 'app/utils/theme';
+import {Panel, PanelBody} from 'sentry/components/panels';
+import QuestionTooltip from 'sentry/components/questionTooltip';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Theme} from 'sentry/utils/theme';
 
 type Props = {
   title: React.ReactNode;

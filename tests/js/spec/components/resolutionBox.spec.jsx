@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import ResolutionBox from 'app/components/resolutionBox';
+import ResolutionBox from 'sentry/components/resolutionBox';
 
 describe('ResolutionBox', function () {
   describe('render()', function () {

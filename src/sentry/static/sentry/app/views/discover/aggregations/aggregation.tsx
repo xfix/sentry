@@ -1,8 +1,8 @@
 import React from 'react';
 import {Value} from 'react-select-legacy';
 
-import SelectControl from 'app/components/forms/selectControl';
-import {t} from 'app/locale';
+import SelectControl from 'sentry/components/forms/selectControl';
+import {t} from 'sentry/locale';
 
 import {ARRAY_FIELD_PREFIXES} from '../data';
 import {PlaceholderText} from '../styles';

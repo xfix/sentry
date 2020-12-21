@@ -1,18 +1,18 @@
 import React from 'react';
 import {ClassNames} from '@emotion/core';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import {createProject} from 'app/actionCreators/projects';
-import ProjectActions from 'app/actions/projectActions';
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import PlatformPicker from 'app/components/platformPicker';
-import {PlatformKey} from 'app/data/platformCategories';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Team} from 'app/types';
-import withApi from 'app/utils/withApi';
-import withTeams from 'app/utils/withTeams';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import {createProject} from 'sentry/actionCreators/projects';
+import ProjectActions from 'sentry/actions/projectActions';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import PlatformPicker from 'sentry/components/platformPicker';
+import {PlatformKey} from 'sentry/data/platformCategories';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Team} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
+import withTeams from 'sentry/utils/withTeams';
 
 import {StepProps} from './types';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import {t} from 'app/locale';
+import Button from 'sentry/components/button';
+import {t} from 'sentry/locale';
 
 type Props = {
   lambdaFunctionFailures: Array<{FunctionName: string; Runtime: string}>;

@@ -2,11 +2,11 @@ import React from 'react';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import {getCommitters} from 'app/actionCreators/committers';
-import {Client} from 'app/api';
-import CommitterStore from 'app/stores/committerStore';
-import {AvatarProject, Committer, Event, Group, Organization, Project} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
+import {getCommitters} from 'sentry/actionCreators/committers';
+import {Client} from 'sentry/api';
+import CommitterStore from 'sentry/stores/committerStore';
+import {AvatarProject, Committer, Event, Group, Organization, Project} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 type DependentProps = {
   api: Client;

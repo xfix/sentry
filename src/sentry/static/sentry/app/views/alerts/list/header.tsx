@@ -2,17 +2,17 @@ import React from 'react';
 import {InjectedRouter} from 'react-router/lib/Router';
 import styled from '@emotion/styled';
 
-import {navigateTo} from 'app/actionCreators/navigation';
-import Feature from 'app/components/acl/feature';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import CreateAlertButton from 'app/components/createAlertButton';
-import * as Layout from 'app/components/layouts/thirds';
-import Link from 'app/components/links/link';
-import {IconSettings} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Organization} from 'app/types';
+import {navigateTo} from 'sentry/actionCreators/navigation';
+import Feature from 'sentry/components/acl/feature';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import CreateAlertButton from 'sentry/components/createAlertButton';
+import * as Layout from 'sentry/components/layouts/thirds';
+import Link from 'sentry/components/links/link';
+import {IconSettings} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Organization} from 'sentry/types';
 
 type Props = {
   router: InjectedRouter;

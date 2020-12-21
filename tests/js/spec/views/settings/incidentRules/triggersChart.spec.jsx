@@ -3,11 +3,11 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import {Client} from 'app/api';
-import LineChart from 'app/components/charts/lineChart';
-import TriggersChart from 'app/views/settings/incidentRules/triggers/chart';
+import {Client} from 'sentry/api';
+import LineChart from 'sentry/components/charts/lineChart';
+import TriggersChart from 'sentry/views/settings/incidentRules/triggers/chart';
 
-jest.mock('app/components/charts/lineChart');
+jest.mock('sentry/components/charts/lineChart');
 
 describe('Incident Rules Create', () => {
   let eventStatsMock;

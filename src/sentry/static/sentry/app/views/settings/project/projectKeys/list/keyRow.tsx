@@ -2,18 +2,18 @@ import React from 'react';
 import {Link, RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import ClippedBox from 'app/components/clippedBox';
-import Confirm from 'app/components/confirm';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {IconDelete} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {Scope} from 'app/types';
-import recreateRoute from 'app/utils/recreateRoute';
-import ProjectKeyCredentials from 'app/views/settings/project/projectKeys/projectKeyCredentials';
-import {ProjectKey} from 'app/views/settings/project/projectKeys/types';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import ClippedBox from 'sentry/components/clippedBox';
+import Confirm from 'sentry/components/confirm';
+import {Panel, PanelBody, PanelHeader} from 'sentry/components/panels';
+import {IconDelete} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Scope} from 'sentry/types';
+import recreateRoute from 'sentry/utils/recreateRoute';
+import ProjectKeyCredentials from 'sentry/views/settings/project/projectKeys/projectKeyCredentials';
+import {ProjectKey} from 'sentry/views/settings/project/projectKeys/types';
 
 type Props = {
   api: Client;

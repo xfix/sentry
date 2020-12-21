@@ -2,7 +2,7 @@ import React from 'react';
 
 import {mount, render} from 'sentry-test/enzyme';
 
-import {ResultTable} from 'app/views/discover/result/table';
+import {ResultTable} from 'sentry/views/discover/result/table';
 
 describe('ResultTable', function () {
   let wrapper;

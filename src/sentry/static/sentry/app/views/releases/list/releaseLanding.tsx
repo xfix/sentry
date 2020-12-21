@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import EmptyStateWarning from 'app/components/emptyStateWarning';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import EmptyStateWarning from 'sentry/components/emptyStateWarning';
 import FeatureTourModal, {
   TourImage,
   TourStep,
   TourText,
-} from 'app/components/modals/featureTourModal';
-import OnboardingPanel from 'app/components/onboardingPanel';
-import {t} from 'app/locale';
-import {Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
-import AsyncView from 'app/views/asyncView';
+} from 'sentry/components/modals/featureTourModal';
+import OnboardingPanel from 'sentry/components/onboardingPanel';
+import {t} from 'sentry/locale';
+import {Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
+import AsyncView from 'sentry/views/asyncView';
 
 import emptyStateImg from '../../../../images/spot/releases-empty-state.svg';
 import commitImage from '../../../../images/spot/releases-tour-commits.svg';

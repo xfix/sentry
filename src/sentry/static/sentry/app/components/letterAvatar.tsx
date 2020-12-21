@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {imageStyle} from 'app/components/avatar/styles';
-import theme from 'app/utils/theme';
+import {imageStyle} from 'sentry/components/avatar/styles';
+import theme from 'sentry/utils/theme';
 
 const COLORS = [
   '#4674ca', // blue

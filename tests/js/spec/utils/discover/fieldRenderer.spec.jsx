@@ -1,8 +1,8 @@
 import {mount, mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ProjectsStore from 'app/stores/projectsStore';
-import {getFieldRenderer} from 'app/utils/discover/fieldRenderers';
+import ProjectsStore from 'sentry/stores/projectsStore';
+import {getFieldRenderer} from 'sentry/utils/discover/fieldRenderers';
 
 describe('getFieldRenderer', function () {
   let location, context, project, organization, data, user;

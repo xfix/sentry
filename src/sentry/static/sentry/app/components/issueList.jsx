@@ -2,16 +2,16 @@ import React from 'react';
 import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 
-import CompactIssue from 'app/components/issues/compactIssue';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import Pagination from 'app/components/pagination';
-import {Panel, PanelBody} from 'app/components/panels';
-import {IconSearch} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import withApi from 'app/utils/withApi';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import CompactIssue from 'sentry/components/issues/compactIssue';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import Pagination from 'sentry/components/pagination';
+import {Panel, PanelBody} from 'sentry/components/panels';
+import {IconSearch} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import withApi from 'sentry/utils/withApi';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 const IssueList = createReactClass({
   displayName: 'IssueList',

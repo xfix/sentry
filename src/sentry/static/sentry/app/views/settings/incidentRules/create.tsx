@@ -1,12 +1,12 @@
 import React from 'react';
 import {RouteComponentProps} from 'react-router';
 
-import {Organization, Project} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
+import {Organization, Project} from 'sentry/types';
+import EventView from 'sentry/utils/discover/eventView';
 import {
   createDefaultRule,
   createRuleFromEventView,
-} from 'app/views/settings/incidentRules/constants';
+} from 'sentry/views/settings/incidentRules/constants';
 
 import RuleForm from './ruleForm';
 

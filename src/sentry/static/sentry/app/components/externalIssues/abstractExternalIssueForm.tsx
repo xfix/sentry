@@ -3,13 +3,13 @@ import {Modal} from 'react-bootstrap';
 import debounce from 'lodash/debounce';
 import * as queryString from 'query-string';
 
-import AsyncComponent from 'app/components/asyncComponent';
-import {tct} from 'app/locale';
-import {IntegrationIssueConfig, IssueConfigField} from 'app/types';
-import FieldFromConfig from 'app/views/settings/components/forms/fieldFromConfig';
-import Form from 'app/views/settings/components/forms/form';
-import {FieldValue} from 'app/views/settings/components/forms/model';
-import {FormField} from 'app/views/settings/projectAlerts/issueEditor/ruleNode';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import {tct} from 'sentry/locale';
+import {IntegrationIssueConfig, IssueConfigField} from 'sentry/types';
+import FieldFromConfig from 'sentry/views/settings/components/forms/fieldFromConfig';
+import Form from 'sentry/views/settings/components/forms/form';
+import {FieldValue} from 'sentry/views/settings/components/forms/model';
+import {FormField} from 'sentry/views/settings/projectAlerts/issueEditor/ruleNode';
 
 export type ExternalIssueAction = 'create' | 'link';
 

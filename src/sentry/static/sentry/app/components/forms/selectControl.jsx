@@ -5,9 +5,9 @@ import AsyncCreatable from 'react-select/async-creatable';
 import Creatable from 'react-select/creatable';
 import {withTheme} from 'emotion-theming';
 
-import {IconChevron, IconClose} from 'app/icons';
-import space from 'app/styles/space';
-import convertFromSelect2Choices from 'app/utils/convertFromSelect2Choices';
+import {IconChevron, IconClose} from 'sentry/icons';
+import space from 'sentry/styles/space';
+import convertFromSelect2Choices from 'sentry/utils/convertFromSelect2Choices';
 
 import SelectControlLegacy from './selectControlLegacy';
 

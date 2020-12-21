@@ -1,6 +1,6 @@
 import {css} from '@emotion/core';
 
-import theme from 'app/utils/theme';
+import theme from 'sentry/utils/theme';
 
 export type ImageStyleProps = {
   round?: boolean;

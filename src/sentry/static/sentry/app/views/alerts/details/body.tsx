@@ -2,27 +2,27 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import Feature from 'app/components/acl/feature';
-import Alert from 'app/components/alert';
-import Button from 'app/components/button';
-import {SectionHeading} from 'app/components/charts/styles';
-import Duration from 'app/components/duration';
-import Link from 'app/components/links/link';
-import NavTabs from 'app/components/navTabs';
-import {Panel, PanelBody, PanelFooter} from 'app/components/panels';
-import Placeholder from 'app/components/placeholder';
-import SeenByList from 'app/components/seenByList';
-import {IconWarning} from 'app/icons';
-import {t, tct} from 'app/locale';
-import {PageContent} from 'app/styles/organization';
-import space from 'app/styles/space';
-import {Project} from 'app/types';
-import {defined} from 'app/utils';
-import Projects from 'app/utils/projects';
-import theme from 'app/utils/theme';
-import {DATASET_EVENT_TYPE_FILTERS} from 'app/views/settings/incidentRules/constants';
-import {makeDefaultCta} from 'app/views/settings/incidentRules/presets';
-import {AlertRuleThresholdType} from 'app/views/settings/incidentRules/types';
+import Feature from 'sentry/components/acl/feature';
+import Alert from 'sentry/components/alert';
+import Button from 'sentry/components/button';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import Duration from 'sentry/components/duration';
+import Link from 'sentry/components/links/link';
+import NavTabs from 'sentry/components/navTabs';
+import {Panel, PanelBody, PanelFooter} from 'sentry/components/panels';
+import Placeholder from 'sentry/components/placeholder';
+import SeenByList from 'sentry/components/seenByList';
+import {IconWarning} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import {PageContent} from 'sentry/styles/organization';
+import space from 'sentry/styles/space';
+import {Project} from 'sentry/types';
+import {defined} from 'sentry/utils';
+import Projects from 'sentry/utils/projects';
+import theme from 'sentry/utils/theme';
+import {DATASET_EVENT_TYPE_FILTERS} from 'sentry/views/settings/incidentRules/constants';
+import {makeDefaultCta} from 'sentry/views/settings/incidentRules/presets';
+import {AlertRuleThresholdType} from 'sentry/views/settings/incidentRules/types';
 
 import {
   AlertRuleStatus,

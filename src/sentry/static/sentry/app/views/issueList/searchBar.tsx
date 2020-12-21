@@ -2,15 +2,15 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {fetchRecentSearches} from 'app/actionCreators/savedSearches';
-import {Client} from 'app/api';
-import SmartSearchBar from 'app/components/smartSearchBar';
-import {SearchItem} from 'app/components/smartSearchBar/types';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import {Organization, SavedSearch, SavedSearchType, Tag} from 'app/types';
-import withApi from 'app/utils/withApi';
-import withOrganization from 'app/utils/withOrganization';
+import {fetchRecentSearches} from 'sentry/actionCreators/savedSearches';
+import {Client} from 'sentry/api';
+import SmartSearchBar from 'sentry/components/smartSearchBar';
+import {SearchItem} from 'sentry/components/smartSearchBar/types';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import {Organization, SavedSearch, SavedSearchType, Tag} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import {TagValueLoader} from './types';
 

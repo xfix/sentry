@@ -3,31 +3,31 @@ import styled from '@emotion/styled';
 import sortBy from 'lodash/sortBy';
 import * as qs from 'query-string';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import {openModal} from 'app/actionCreators/modal';
-import Alert from 'app/components/alert';
-import AsyncComponent from 'app/components/asyncComponent';
-import Button from 'app/components/button';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import RepositoryProjectPathConfigForm from 'app/components/repositoryProjectPathConfigForm';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import {openModal} from 'sentry/actionCreators/modal';
+import Alert from 'sentry/components/alert';
+import AsyncComponent from 'sentry/components/asyncComponent';
+import Button from 'sentry/components/button';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import RepositoryProjectPathConfigForm from 'sentry/components/repositoryProjectPathConfigForm';
 import RepositoryProjectPathConfigRow, {
   ButtonColumn,
   InputPathColumn,
   NameRepoColumn,
   OutputPathColumn,
-} from 'app/components/repositoryProjectPathConfigRow';
-import {IconAdd, IconInfo} from 'app/icons';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
+} from 'sentry/components/repositoryProjectPathConfigRow';
+import {IconAdd, IconInfo} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
 import {
   Integration,
   Organization,
   Repository,
   RepositoryProjectPathConfig,
-} from 'app/types';
-import {getIntegrationIcon, trackIntegrationEvent} from 'app/utils/integrationUtil';
-import withOrganization from 'app/utils/withOrganization';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+} from 'sentry/types';
+import {getIntegrationIcon, trackIntegrationEvent} from 'sentry/utils/integrationUtil';
+import withOrganization from 'sentry/utils/withOrganization';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 type Props = AsyncComponent['props'] & {
   integration: Integration;

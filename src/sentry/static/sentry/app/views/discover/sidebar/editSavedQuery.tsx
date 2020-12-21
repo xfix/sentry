@@ -1,9 +1,9 @@
 import React from 'react';
 import isEqual from 'lodash/isEqual';
 
-import Button from 'app/components/button';
-import {IconDelete} from 'app/icons';
-import {t} from 'app/locale';
+import Button from 'sentry/components/button';
+import {IconDelete} from 'sentry/icons';
+import {t} from 'sentry/locale';
 
 import {QueryBuilder} from '../queryBuilder';
 import {

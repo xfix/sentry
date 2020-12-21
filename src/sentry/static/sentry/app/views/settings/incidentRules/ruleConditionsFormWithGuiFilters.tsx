@@ -1,27 +1,27 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import {Client} from 'app/api';
-import Feature from 'app/components/acl/feature';
-import SelectControl from 'app/components/forms/selectControl';
-import List from 'app/components/list';
-import ListItem from 'app/components/list/listItem';
-import {Panel, PanelBody} from 'app/components/panels';
-import Tooltip from 'app/components/tooltip';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {Environment, Organization} from 'app/types';
-import {getDisplayName} from 'app/utils/environment';
-import theme from 'app/utils/theme';
+import {addErrorMessage} from 'sentry/actionCreators/indicator';
+import {Client} from 'sentry/api';
+import Feature from 'sentry/components/acl/feature';
+import SelectControl from 'sentry/components/forms/selectControl';
+import List from 'sentry/components/list';
+import ListItem from 'sentry/components/list/listItem';
+import {Panel, PanelBody} from 'sentry/components/panels';
+import Tooltip from 'sentry/components/tooltip';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {Environment, Organization} from 'sentry/types';
+import {getDisplayName} from 'sentry/utils/environment';
+import theme from 'sentry/utils/theme';
 import {
   convertDatasetEventTypesToSource,
   DATA_SOURCE_LABELS,
   DATA_SOURCE_TO_SET_AND_EVENT_TYPES,
-} from 'app/views/alerts/utils';
-import SearchBar from 'app/views/events/searchBar';
-import FormField from 'app/views/settings/components/forms/formField';
-import SelectField from 'app/views/settings/components/forms/selectField';
+} from 'sentry/views/alerts/utils';
+import SearchBar from 'sentry/views/events/searchBar';
+import FormField from 'sentry/views/settings/components/forms/formField';
+import SelectField from 'sentry/views/settings/components/forms/selectField';
 
 import {DEFAULT_AGGREGATE} from './constants';
 import MetricField from './metricField';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {t, tct} from 'app/locale';
+import {t, tct} from 'sentry/locale';
 
 import {BULK_LIMIT, BULK_LIMIT_STR} from './utils';
 

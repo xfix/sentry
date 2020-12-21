@@ -2,7 +2,7 @@ import React from 'react';
 import {withInfo} from '@storybook/addon-info';
 import {text} from '@storybook/addon-knobs';
 
-import CommandLine from 'app/components/commandLine';
+import CommandLine from 'sentry/components/commandLine';
 
 export default {
   title: 'Core/CommandLine',

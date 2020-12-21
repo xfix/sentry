@@ -2,7 +2,7 @@ import React from 'react';
 import * as Sentry from '@sentry/react';
 import PropTypes from 'prop-types';
 
-import {MENU_CLOSE_DELAY} from 'app/constants';
+import {MENU_CLOSE_DELAY} from 'sentry/constants';
 
 type GetActorArgs = {
   onClick?: (e: React.MouseEvent<Element>) => void;

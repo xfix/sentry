@@ -5,7 +5,7 @@ import {shallow} from 'sentry-test/enzyme';
 import {
   formatStoreCrashReports,
   getStoreCrashReportsValues,
-} from 'app/utils/crashReports';
+} from 'sentry/utils/crashReports';
 
 describe('crashReportsUtils', () => {
   it('returns correct values for organization scope', () => {

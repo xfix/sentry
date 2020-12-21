@@ -4,13 +4,13 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import PropTypes from 'prop-types';
 
-import LightWeightNoProjectMessage from 'app/components/lightWeightNoProjectMessage';
-import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
-import {t} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import {PageContent} from 'app/styles/organization';
-import {Organization} from 'app/types';
-import withOrganization from 'app/utils/withOrganization';
+import LightWeightNoProjectMessage from 'sentry/components/lightWeightNoProjectMessage';
+import SentryDocumentTitle from 'sentry/components/sentryDocumentTitle';
+import {t} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import {PageContent} from 'sentry/styles/organization';
+import {Organization} from 'sentry/types';
+import withOrganization from 'sentry/utils/withOrganization';
 
 import EventDetailsContent from './content';
 

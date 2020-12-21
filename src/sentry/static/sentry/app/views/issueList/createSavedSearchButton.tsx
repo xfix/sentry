@@ -1,11 +1,11 @@
 import React from 'react';
 
-import {openModal} from 'app/actionCreators/modal';
-import Access from 'app/components/acl/access';
-import Button from 'app/components/button';
-import {IconAdd} from 'app/icons';
-import {t} from 'app/locale';
-import {LightWeightOrganization} from 'app/types';
+import {openModal} from 'sentry/actionCreators/modal';
+import Access from 'sentry/components/acl/access';
+import Button from 'sentry/components/button';
+import {IconAdd} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import {LightWeightOrganization} from 'sentry/types';
 
 import CreateSavedSearchModal from './createSavedSearchModal';
 

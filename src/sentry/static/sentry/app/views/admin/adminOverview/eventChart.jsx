@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import MiniBarChart from 'app/components/charts/miniBarChart';
-import LoadingError from 'app/components/loadingError';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {t} from 'app/locale';
-import theme from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
+import MiniBarChart from 'sentry/components/charts/miniBarChart';
+import LoadingError from 'sentry/components/loadingError';
+import LoadingIndicator from 'sentry/components/loadingIndicator';
+import {t} from 'sentry/locale';
+import theme from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
 
 class EventChart extends React.Component {
   static propTypes = {

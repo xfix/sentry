@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import theme from 'app/utils/theme';
+import theme from 'sentry/utils/theme';
 
 type Props = {
   score: number;

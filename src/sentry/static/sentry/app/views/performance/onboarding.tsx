@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
 import FeatureTourModal, {
   TourImage,
   TourStep,
   TourText,
-} from 'app/components/modals/featureTourModal';
-import OnboardingPanel from 'app/components/onboardingPanel';
-import {t} from 'app/locale';
-import {Organization} from 'app/types';
-import {trackAnalyticsEvent} from 'app/utils/analytics';
+} from 'sentry/components/modals/featureTourModal';
+import OnboardingPanel from 'sentry/components/onboardingPanel';
+import {t} from 'sentry/locale';
+import {Organization} from 'sentry/types';
+import {trackAnalyticsEvent} from 'sentry/utils/analytics';
 
 import emptyStateImg from '../../../images/spot/performance-empty-state.svg';
 import tourAlert from '../../../images/spot/performance-tour-alert.svg';

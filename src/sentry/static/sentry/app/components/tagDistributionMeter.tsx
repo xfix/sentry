@@ -5,13 +5,13 @@ import styled from '@emotion/styled';
 import {LocationDescriptor} from 'history';
 import PropTypes from 'prop-types';
 
-import {TagSegment} from 'app/actionCreators/events';
-import Tooltip from 'app/components/tooltip';
-import Version from 'app/components/version';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {percent} from 'app/utils';
+import {TagSegment} from 'sentry/actionCreators/events';
+import Tooltip from 'sentry/components/tooltip';
+import Version from 'sentry/components/version';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {percent} from 'sentry/utils';
 
 type DefaultProps = {
   isLoading: boolean;

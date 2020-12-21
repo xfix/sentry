@@ -3,13 +3,13 @@ import styled from '@emotion/styled';
 import pickBy from 'lodash/pickBy';
 import PropTypes from 'prop-types';
 
-import Button from 'app/components/button';
-import Confirm from 'app/components/confirm';
-import DropdownAutoComplete from 'app/components/dropdownAutoComplete';
-import DropdownButton from 'app/components/dropdownButton';
-import {IconAdd, IconDelete, IconSettings} from 'app/icons';
-import {t} from 'app/locale';
-import InputField from 'app/views/settings/components/forms/inputField';
+import Button from 'sentry/components/button';
+import Confirm from 'sentry/components/confirm';
+import DropdownAutoComplete from 'sentry/components/dropdownAutoComplete';
+import DropdownButton from 'sentry/components/dropdownButton';
+import {IconAdd, IconDelete, IconSettings} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import InputField from 'sentry/views/settings/components/forms/inputField';
 
 const RichListProps = {
   /**

@@ -4,19 +4,19 @@ import styled from '@emotion/styled';
 import memoize from 'lodash/memoize';
 import moment from 'moment';
 
-import Access from 'app/components/acl/access';
-import Button from 'app/components/button';
-import ButtonBar from 'app/components/buttonBar';
-import Confirm from 'app/components/confirm';
-import ErrorBoundary from 'app/components/errorBoundary';
-import IdBadge from 'app/components/idBadge';
-import Link from 'app/components/links/link';
-import {IconDelete, IconSettings} from 'app/icons';
-import {t, tct} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Project} from 'app/types';
-import {IssueAlertRule} from 'app/types/alerts';
+import Access from 'sentry/components/acl/access';
+import Button from 'sentry/components/button';
+import ButtonBar from 'sentry/components/buttonBar';
+import Confirm from 'sentry/components/confirm';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import IdBadge from 'sentry/components/idBadge';
+import Link from 'sentry/components/links/link';
+import {IconDelete, IconSettings} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Project} from 'sentry/types';
+import {IssueAlertRule} from 'sentry/types/alerts';
 
 import {isIssueAlert} from '../utils';
 

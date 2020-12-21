@@ -2,19 +2,19 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import {SectionHeading} from 'app/components/charts/styles';
-import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import Tooltip from 'app/components/tooltip';
-import {IconLink} from 'app/icons';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {Organization, Project} from 'app/types';
-import {decodeScalar} from 'app/utils/queryString';
-import {stringifyQueryObject, tokenizeSearch} from 'app/utils/tokenizeSearch';
-import {FilterViews} from 'app/views/performance/landing';
-import {DEFAULT_MAX_DURATION} from 'app/views/performance/trends/utils';
-import {getPerformanceLandingUrl} from 'app/views/performance/utils';
+import {SectionHeading} from 'sentry/components/charts/styles';
+import GlobalSelectionLink from 'sentry/components/globalSelectionLink';
+import Tooltip from 'sentry/components/tooltip';
+import {IconLink} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {Organization, Project} from 'sentry/types';
+import {decodeScalar} from 'sentry/utils/queryString';
+import {stringifyQueryObject, tokenizeSearch} from 'sentry/utils/tokenizeSearch';
+import {FilterViews} from 'sentry/views/performance/landing';
+import {DEFAULT_MAX_DURATION} from 'sentry/views/performance/trends/utils';
+import {getPerformanceLandingUrl} from 'sentry/views/performance/utils';
 
 type Props = {
   organization: Organization;

@@ -1,11 +1,11 @@
 import Reflux from 'reflux';
 
-import OrganizationActions from 'app/actions/organizationActions';
-import ProjectActions from 'app/actions/projectActions';
-import TeamActions from 'app/actions/teamActions';
-import {ORGANIZATION_FETCH_ERROR_TYPES} from 'app/constants';
-import {Organization, Project, Team} from 'app/types';
-import RequestError from 'app/utils/requestError/requestError';
+import OrganizationActions from 'sentry/actions/organizationActions';
+import ProjectActions from 'sentry/actions/projectActions';
+import TeamActions from 'sentry/actions/teamActions';
+import {ORGANIZATION_FETCH_ERROR_TYPES} from 'sentry/constants';
+import {Organization, Project, Team} from 'sentry/types';
+import RequestError from 'sentry/utils/requestError/requestError';
 
 type UpdateOptions = {
   replace?: boolean;

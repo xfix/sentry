@@ -1,15 +1,15 @@
 import React from 'react';
 
-import {addLoadingMessage, clearIndicators} from 'app/actionCreators/indicator';
-import {ModalRenderProps} from 'app/actionCreators/modal';
-import {createSavedSearch} from 'app/actionCreators/savedSearches';
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import {TextField} from 'app/components/forms';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
-import {LightWeightOrganization} from 'app/types';
-import withApi from 'app/utils/withApi';
+import {addLoadingMessage, clearIndicators} from 'sentry/actionCreators/indicator';
+import {ModalRenderProps} from 'sentry/actionCreators/modal';
+import {createSavedSearch} from 'sentry/actionCreators/savedSearches';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import {TextField} from 'sentry/components/forms';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {LightWeightOrganization} from 'sentry/types';
+import withApi from 'sentry/utils/withApi';
 
 type Props = ModalRenderProps & {
   api: Client;

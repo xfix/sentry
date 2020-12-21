@@ -3,8 +3,8 @@ import React from 'react';
 import {
   getAttachmentUrl,
   ViewerProps,
-} from 'app/components/events/attachmentViewers/utils';
-import {PanelItem} from 'app/components/panels';
+} from 'sentry/components/events/attachmentViewers/utils';
+import {PanelItem} from 'sentry/components/panels';
 
 export default function ImageViewer(props: ViewerProps) {
   return (

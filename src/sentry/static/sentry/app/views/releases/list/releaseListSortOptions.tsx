@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {t} from 'app/locale';
+import {t} from 'sentry/locale';
 
 import ReleaseListDropdown from './releaseListDropdown';
 import {SortOption} from './utils';

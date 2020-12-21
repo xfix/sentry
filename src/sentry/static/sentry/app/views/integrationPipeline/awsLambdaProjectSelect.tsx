@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {t} from 'app/locale';
-import {Project} from 'app/types';
-import {uniqueId} from 'app/utils/guid';
-import Form from 'app/views/settings/components/forms/form';
-import JsonForm from 'app/views/settings/components/forms/jsonForm';
-import {JsonFormObject} from 'app/views/settings/components/forms/type';
+import {t} from 'sentry/locale';
+import {Project} from 'sentry/types';
+import {uniqueId} from 'sentry/utils/guid';
+import Form from 'sentry/views/settings/components/forms/form';
+import JsonForm from 'sentry/views/settings/components/forms/jsonForm';
+import {JsonFormObject} from 'sentry/views/settings/components/forms/type';
 
 const ID_NAME = 'AWS_EXTERNAL_ID';
 const getAwsExternalId = () => {

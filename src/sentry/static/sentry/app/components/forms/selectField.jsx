@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import {defined} from 'app/utils';
+import {defined} from 'sentry/utils';
 
 import {StyledForm} from './form';
 import FormField from './formField';

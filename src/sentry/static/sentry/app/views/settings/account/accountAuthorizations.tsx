@@ -2,16 +2,16 @@ import React from 'react';
 import {Link, RouteComponentProps} from 'react-router';
 import styled from '@emotion/styled';
 
-import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import Button from 'app/components/button';
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import {IconDelete} from 'app/icons';
-import {t, tct} from 'app/locale';
-import space from 'app/styles/space';
-import {ApiApplication} from 'app/types';
-import AsyncView from 'app/views/asyncView';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
+import {addErrorMessage, addSuccessMessage} from 'sentry/actionCreators/indicator';
+import Button from 'sentry/components/button';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'sentry/components/panels';
+import {IconDelete} from 'sentry/icons';
+import {t, tct} from 'sentry/locale';
+import space from 'sentry/styles/space';
+import {ApiApplication} from 'sentry/types';
+import AsyncView from 'sentry/views/asyncView';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
+import SettingsPageHeader from 'sentry/views/settings/components/settingsPageHeader';
 
 type Authorization = {
   application: ApiApplication;

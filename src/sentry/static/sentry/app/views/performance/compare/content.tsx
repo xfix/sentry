@@ -3,12 +3,12 @@ import {Params} from 'react-router/lib/Router';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import * as Layout from 'app/components/layouts/thirds';
-import {Panel} from 'app/components/panels';
-import {t} from 'app/locale';
-import {Event, Organization} from 'app/types';
-import {decodeScalar} from 'app/utils/queryString';
-import Breadcrumb from 'app/views/performance/breadcrumb';
+import * as Layout from 'sentry/components/layouts/thirds';
+import {Panel} from 'sentry/components/panels';
+import {t} from 'sentry/locale';
+import {Event, Organization} from 'sentry/types';
+import {decodeScalar} from 'sentry/utils/queryString';
+import Breadcrumb from 'sentry/views/performance/breadcrumb';
 
 import {FilterViews} from '../landing';
 

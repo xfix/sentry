@@ -4,17 +4,17 @@ import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import SettingsBreadcrumbActions from 'app/actions/settingsBreadcrumbActions';
-import Link from 'app/components/links/link';
-import SentryTypes from 'app/sentryTypes';
-import SettingsBreadcrumbStore from 'app/stores/settingsBreadcrumbStore';
-import getRouteStringFromRoutes from 'app/utils/getRouteStringFromRoutes';
-import recreateRoute from 'app/utils/recreateRoute';
-import Crumb from 'app/views/settings/components/settingsBreadcrumb/crumb';
-import Divider from 'app/views/settings/components/settingsBreadcrumb/divider';
-import OrganizationCrumb from 'app/views/settings/components/settingsBreadcrumb/organizationCrumb';
-import ProjectCrumb from 'app/views/settings/components/settingsBreadcrumb/projectCrumb';
-import TeamCrumb from 'app/views/settings/components/settingsBreadcrumb/teamCrumb';
+import SettingsBreadcrumbActions from 'sentry/actions/settingsBreadcrumbActions';
+import Link from 'sentry/components/links/link';
+import SentryTypes from 'sentry/sentryTypes';
+import SettingsBreadcrumbStore from 'sentry/stores/settingsBreadcrumbStore';
+import getRouteStringFromRoutes from 'sentry/utils/getRouteStringFromRoutes';
+import recreateRoute from 'sentry/utils/recreateRoute';
+import Crumb from 'sentry/views/settings/components/settingsBreadcrumb/crumb';
+import Divider from 'sentry/views/settings/components/settingsBreadcrumb/divider';
+import OrganizationCrumb from 'sentry/views/settings/components/settingsBreadcrumb/organizationCrumb';
+import ProjectCrumb from 'sentry/views/settings/components/settingsBreadcrumb/projectCrumb';
+import TeamCrumb from 'sentry/views/settings/components/settingsBreadcrumb/teamCrumb';
 
 import {RouteWithName} from './types';
 

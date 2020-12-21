@@ -7,14 +7,14 @@ import pick from 'lodash/pick';
 import uniqBy from 'lodash/uniqBy';
 import moment from 'moment';
 
-import {EventQuery} from 'app/actionCreators/events';
-import {COL_WIDTH_UNDEFINED} from 'app/components/gridEditable';
-import {getParams} from 'app/components/organizations/globalSelectionHeader/getParams';
-import {DEFAULT_PER_PAGE} from 'app/constants';
-import {GlobalSelection, NewQuery, SavedQuery, SelectValue, User} from 'app/types';
-import {decodeList, decodeScalar} from 'app/utils/queryString';
-import {TableColumn, TableColumnSort} from 'app/views/eventsV2/table/types';
-import {decodeColumnOrder} from 'app/views/eventsV2/utils';
+import {EventQuery} from 'sentry/actionCreators/events';
+import {COL_WIDTH_UNDEFINED} from 'sentry/components/gridEditable';
+import {getParams} from 'sentry/components/organizations/globalSelectionHeader/getParams';
+import {DEFAULT_PER_PAGE} from 'sentry/constants';
+import {GlobalSelection, NewQuery, SavedQuery, SelectValue, User} from 'sentry/types';
+import {decodeList, decodeScalar} from 'sentry/utils/queryString';
+import {TableColumn, TableColumnSort} from 'sentry/views/eventsV2/table/types';
+import {decodeColumnOrder} from 'sentry/views/eventsV2/utils';
 
 import {statsPeriodToDays} from '../dates';
 

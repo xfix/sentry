@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import ProgressBar from 'app/components/progressBar';
-import space from 'app/styles/space';
+import ProgressBar from 'sentry/components/progressBar';
+import space from 'sentry/styles/space';
 
 export default {
   title: 'DataVisualization/Charts/ProgressBar',

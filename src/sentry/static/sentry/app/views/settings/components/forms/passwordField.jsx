@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import FormState from 'app/components/forms/state';
-import InputField from 'app/views/settings/components/forms/inputField';
+import FormState from 'sentry/components/forms/state';
+import InputField from 'sentry/views/settings/components/forms/inputField';
 
 // TODO(dcramer): im not entirely sure this is working correctly with
 // value propagation in all scenarios

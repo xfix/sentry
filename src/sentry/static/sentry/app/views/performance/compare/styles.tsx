@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {
   SPAN_ROW_HEIGHT,
   SPAN_ROW_PADDING,
-} from 'app/components/events/interfaces/spans/styles';
+} from 'sentry/components/events/interfaces/spans/styles';
 
 export const SpanBarRectangle = styled('div')`
   position: relative;

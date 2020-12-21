@@ -2,14 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 
-import Button from 'app/components/button';
-import Collapsible from 'app/components/collapsible';
-import ProjectBadge from 'app/components/idBadge/projectBadge';
-import Link from 'app/components/links/link';
-import {tn} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import space from 'app/styles/space';
-import {ReleaseProject} from 'app/types';
+import Button from 'sentry/components/button';
+import Collapsible from 'sentry/components/collapsible';
+import ProjectBadge from 'sentry/components/idBadge/projectBadge';
+import Link from 'sentry/components/links/link';
+import {tn} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import space from 'sentry/styles/space';
+import {ReleaseProject} from 'sentry/types';
 
 import {SectionHeading, Wrapper} from './styles';
 

@@ -6,9 +6,9 @@ import styled from '@emotion/styled';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-import {fadeIn} from 'app/styles/animations';
-import space from 'app/styles/space';
-import {domId} from 'app/utils/domId';
+import {fadeIn} from 'sentry/styles/animations';
+import space from 'sentry/styles/space';
+import {domId} from 'sentry/utils/domId';
 
 const VALID_DIRECTIONS = ['top', 'bottom', 'left', 'right'] as const;
 

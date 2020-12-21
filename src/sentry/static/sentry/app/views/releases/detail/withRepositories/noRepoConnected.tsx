@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Button from 'app/components/button';
-import {Panel} from 'app/components/panels';
-import {IconCommit} from 'app/icons';
-import {t} from 'app/locale';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import Button from 'sentry/components/button';
+import {Panel} from 'sentry/components/panels';
+import {IconCommit} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import EmptyMessage from 'sentry/views/settings/components/emptyMessage';
 
 type Props = {
   orgId: string;

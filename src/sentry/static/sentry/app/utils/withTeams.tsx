@@ -2,9 +2,9 @@ import React from 'react';
 import createReactClass from 'create-react-class';
 import Reflux from 'reflux';
 
-import TeamStore from 'app/stores/teamStore';
-import {Team} from 'app/types';
-import getDisplayName from 'app/utils/getDisplayName';
+import TeamStore from 'sentry/stores/teamStore';
+import {Team} from 'sentry/types';
+import getDisplayName from 'sentry/utils/getDisplayName';
 
 type InjectedTeamsProps = {
   teams: Team[];

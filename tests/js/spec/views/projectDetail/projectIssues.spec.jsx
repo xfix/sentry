@@ -3,7 +3,7 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 
-import ProjectIssues from 'app/views/projectDetail/projectIssues';
+import ProjectIssues from 'sentry/views/projectDetail/projectIssues';
 
 describe('ProjectDetail > ProjectIssues', function () {
   let endpointMock, filteredEndpointMock;

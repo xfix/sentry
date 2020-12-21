@@ -3,12 +3,12 @@ import {CacheProvider} from '@emotion/core'; // This is needed to set "speedy" =
 import {cache} from 'emotion'; // eslint-disable-line emotion/no-vanilla
 import {ThemeProvider} from 'emotion-theming';
 
-import {loadPreferencesState} from 'app/actionCreators/preferences';
-import ConfigStore from 'app/stores/configStore';
-import GlobalStyles from 'app/styles/global';
-import {Config} from 'app/types';
-import theme, {darkTheme, Theme} from 'app/utils/theme';
-import withConfig from 'app/utils/withConfig';
+import {loadPreferencesState} from 'sentry/actionCreators/preferences';
+import ConfigStore from 'sentry/stores/configStore';
+import GlobalStyles from 'sentry/styles/global';
+import {Config} from 'sentry/types';
+import theme, {darkTheme, Theme} from 'sentry/utils/theme';
+import withConfig from 'sentry/utils/withConfig';
 
 type Props = {
   config: Config;

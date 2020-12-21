@@ -4,9 +4,9 @@ import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {selectByLabel} from 'sentry-test/select';
 
-import GlobalModal from 'app/components/globalModal';
-import SelectedGroupStore from 'app/stores/selectedGroupStore';
-import {IssueListActions} from 'app/views/issueList/actions';
+import GlobalModal from 'sentry/components/globalModal';
+import SelectedGroupStore from 'sentry/stores/selectedGroupStore';
+import {IssueListActions} from 'sentry/views/issueList/actions';
 
 describe('IssueListActions', function () {
   let actions;

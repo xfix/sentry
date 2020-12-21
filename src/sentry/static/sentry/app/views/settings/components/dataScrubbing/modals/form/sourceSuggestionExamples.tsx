@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Hovercard from 'app/components/hovercard';
-import {IconQuestion} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
+import Hovercard from 'sentry/components/hovercard';
+import {IconQuestion} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
 
 type Props = {
   examples: Array<string>;

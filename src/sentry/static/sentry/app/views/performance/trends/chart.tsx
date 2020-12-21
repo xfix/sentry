@@ -2,22 +2,22 @@ import React from 'react';
 import {browserHistory, withRouter} from 'react-router';
 import {WithRouterProps} from 'react-router/lib/withRouter';
 
-import {Client} from 'app/api';
-import ChartZoom from 'app/components/charts/chartZoom';
-import LineChart from 'app/components/charts/lineChart';
-import ReleaseSeries from 'app/components/charts/releaseSeries';
-import TransitionChart from 'app/components/charts/transitionChart';
-import TransparentLoadingMask from 'app/components/charts/transparentLoadingMask';
-import {EventsStatsData, OrganizationSummary, Project} from 'app/types';
-import {Series} from 'app/types/echarts';
-import {getUtcToLocalDateObject} from 'app/utils/dates';
-import {axisLabelFormatter, tooltipFormatter} from 'app/utils/discover/charts';
-import EventView from 'app/utils/discover/eventView';
-import getDynamicText from 'app/utils/getDynamicText';
-import {decodeList, decodeScalar} from 'app/utils/queryString';
-import theme from 'app/utils/theme';
-import withApi from 'app/utils/withApi';
-import {YAxis} from 'app/views/releases/detail/overview/chart/releaseChartControls';
+import {Client} from 'sentry/api';
+import ChartZoom from 'sentry/components/charts/chartZoom';
+import LineChart from 'sentry/components/charts/lineChart';
+import ReleaseSeries from 'sentry/components/charts/releaseSeries';
+import TransitionChart from 'sentry/components/charts/transitionChart';
+import TransparentLoadingMask from 'sentry/components/charts/transparentLoadingMask';
+import {EventsStatsData, OrganizationSummary, Project} from 'sentry/types';
+import {Series} from 'sentry/types/echarts';
+import {getUtcToLocalDateObject} from 'sentry/utils/dates';
+import {axisLabelFormatter, tooltipFormatter} from 'sentry/utils/discover/charts';
+import EventView from 'sentry/utils/discover/eventView';
+import getDynamicText from 'sentry/utils/getDynamicText';
+import {decodeList, decodeScalar} from 'sentry/utils/queryString';
+import theme from 'sentry/utils/theme';
+import withApi from 'sentry/utils/withApi';
+import {YAxis} from 'sentry/views/releases/detail/overview/chart/releaseChartControls';
 
 import {NormalizedTrendsTransaction, TrendChangeType, TrendsStats} from './types';
 import {

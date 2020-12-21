@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {withInfo} from '@storybook/addon-info';
 
-import Pagination from 'app/components/pagination';
+import Pagination from 'sentry/components/pagination';
 
 export default {
   title: 'Core/Pagination',

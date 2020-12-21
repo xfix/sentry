@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 import {browserHistory, RouteComponentProps} from 'react-router';
 
-import {switchOrganization} from 'app/actionCreators/organizations';
-import AlertActions from 'app/actions/alertActions';
-import {Client} from 'app/api';
-import Button from 'app/components/button';
-import ErrorBoundary from 'app/components/errorBoundary';
-import Footer from 'app/components/footer';
-import NarrowLayout from 'app/components/narrowLayout';
-import {t, tct} from 'app/locale';
-import SentryTypes from 'app/sentryTypes';
-import {Organization} from 'app/types';
-import getRouteStringFromRoutes from 'app/utils/getRouteStringFromRoutes';
-import OrganizationContext from 'app/views/organizationContext';
+import {switchOrganization} from 'sentry/actionCreators/organizations';
+import AlertActions from 'sentry/actions/alertActions';
+import {Client} from 'sentry/api';
+import Button from 'sentry/components/button';
+import ErrorBoundary from 'sentry/components/errorBoundary';
+import Footer from 'sentry/components/footer';
+import NarrowLayout from 'sentry/components/narrowLayout';
+import {t, tct} from 'sentry/locale';
+import SentryTypes from 'sentry/sentryTypes';
+import {Organization} from 'sentry/types';
+import getRouteStringFromRoutes from 'sentry/utils/getRouteStringFromRoutes';
+import OrganizationContext from 'sentry/views/organizationContext';
 
 type InProgressProps = {
   organization: Organization;

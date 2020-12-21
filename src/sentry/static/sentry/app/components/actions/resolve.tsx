@@ -4,23 +4,23 @@ import styled from '@emotion/styled';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-import {openModal} from 'app/actionCreators/modal';
-import ActionLink from 'app/components/actions/actionLink';
-import Button from 'app/components/button';
-import CustomResolutionModal from 'app/components/customResolutionModal';
-import DropdownLink from 'app/components/dropdownLink';
-import MenuItem from 'app/components/menuItem';
-import Tooltip from 'app/components/tooltip';
-import {IconCheckmark} from 'app/icons';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
+import {openModal} from 'sentry/actionCreators/modal';
+import ActionLink from 'sentry/components/actions/actionLink';
+import Button from 'sentry/components/button';
+import CustomResolutionModal from 'sentry/components/customResolutionModal';
+import DropdownLink from 'sentry/components/dropdownLink';
+import MenuItem from 'sentry/components/menuItem';
+import Tooltip from 'sentry/components/tooltip';
+import {IconCheckmark} from 'sentry/icons';
+import {t} from 'sentry/locale';
+import space from 'sentry/styles/space';
 import {
   Release,
   ResolutionStatus,
   ResolutionStatusDetails,
   UpdateResolutionStatus,
-} from 'app/types';
-import {formatVersion} from 'app/utils/formatters';
+} from 'sentry/types';
+import {formatVersion} from 'sentry/utils/formatters';
 
 const defaultProps = {
   isResolved: false,

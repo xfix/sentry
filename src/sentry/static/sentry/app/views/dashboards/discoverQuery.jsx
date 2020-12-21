@@ -4,13 +4,13 @@ import memoize from 'lodash/memoize';
 import omit from 'lodash/omit';
 import PropTypes from 'prop-types';
 
-import {getInterval} from 'app/components/charts/utils';
-import {DEFAULT_STATS_PERIOD} from 'app/constants';
-import SentryTypes from 'app/sentryTypes';
-import {parsePeriodToHours} from 'app/utils/dates';
-import {getPeriod} from 'app/utils/getPeriod';
-import withProjects from 'app/utils/withProjects';
-import createQueryBuilder from 'app/views/discover/queryBuilder';
+import {getInterval} from 'sentry/components/charts/utils';
+import {DEFAULT_STATS_PERIOD} from 'sentry/constants';
+import SentryTypes from 'sentry/sentryTypes';
+import {parsePeriodToHours} from 'sentry/utils/dates';
+import {getPeriod} from 'sentry/utils/getPeriod';
+import withProjects from 'sentry/utils/withProjects';
+import createQueryBuilder from 'sentry/views/discover/queryBuilder';
 
 // Note: Limit max releases so that chart is still a bit readable
 const MAX_RECENT_RELEASES = 20;

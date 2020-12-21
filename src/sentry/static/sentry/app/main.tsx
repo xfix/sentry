@@ -1,7 +1,7 @@
 import React from 'react';
 import {browserHistory, Router} from 'react-router';
 
-import routes from 'app/routes';
+import routes from 'sentry/routes';
 
 import ThemeAndStyleProvider from './themeAndStyleProvider';
 

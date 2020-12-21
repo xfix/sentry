@@ -3,9 +3,9 @@ import React from 'react';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {selectByValue} from 'sentry-test/select-new';
 
-import {Client} from 'app/api';
-import GlobalModal from 'app/components/globalModal';
-import IntegrationCodeMappings from 'app/views/organizationIntegrations/integrationCodeMappings';
+import {Client} from 'sentry/api';
+import GlobalModal from 'sentry/components/globalModal';
+import IntegrationCodeMappings from 'sentry/views/organizationIntegrations/integrationCodeMappings';
 
 const mockResponse = mocks => {
   mocks.forEach(([url, body]) =>

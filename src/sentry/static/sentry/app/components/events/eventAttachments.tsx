@@ -3,21 +3,21 @@ import styled from '@emotion/styled';
 import {Location} from 'history';
 import PropTypes from 'prop-types';
 
-import {Client} from 'app/api';
-import Feature from 'app/components/acl/feature';
-import ImageViewer from 'app/components/events/attachmentViewers/imageViewer';
-import JsonViewer from 'app/components/events/attachmentViewers/jsonViewer';
-import LogFileViewer from 'app/components/events/attachmentViewers/logFileViewer';
-import RRWebJsonViewer from 'app/components/events/attachmentViewers/rrwebJsonViewer';
-import EventAttachmentActions from 'app/components/events/eventAttachmentActions';
-import EventDataSection from 'app/components/events/eventDataSection';
-import FileSize from 'app/components/fileSize';
-import {PanelTable} from 'app/components/panels';
-import {t} from 'app/locale';
-import overflowEllipsis from 'app/styles/overflowEllipsis';
-import {Event, EventAttachment} from 'app/types';
-import AttachmentUrl from 'app/utils/attachmentUrl';
-import withApi from 'app/utils/withApi';
+import {Client} from 'sentry/api';
+import Feature from 'sentry/components/acl/feature';
+import ImageViewer from 'sentry/components/events/attachmentViewers/imageViewer';
+import JsonViewer from 'sentry/components/events/attachmentViewers/jsonViewer';
+import LogFileViewer from 'sentry/components/events/attachmentViewers/logFileViewer';
+import RRWebJsonViewer from 'sentry/components/events/attachmentViewers/rrwebJsonViewer';
+import EventAttachmentActions from 'sentry/components/events/eventAttachmentActions';
+import EventDataSection from 'sentry/components/events/eventDataSection';
+import FileSize from 'sentry/components/fileSize';
+import {PanelTable} from 'sentry/components/panels';
+import {t} from 'sentry/locale';
+import overflowEllipsis from 'sentry/styles/overflowEllipsis';
+import {Event, EventAttachment} from 'sentry/types';
+import AttachmentUrl from 'sentry/utils/attachmentUrl';
+import withApi from 'sentry/utils/withApi';
 
 import EventAttachmentsCrashReportsNotice from './eventAttachmentsCrashReportsNotice';
 

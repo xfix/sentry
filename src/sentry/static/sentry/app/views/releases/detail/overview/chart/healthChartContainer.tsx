@@ -1,13 +1,13 @@
 import React from 'react';
 import * as ReactRouter from 'react-router';
 
-import ChartZoom from 'app/components/charts/chartZoom';
-import ErrorPanel from 'app/components/charts/errorPanel';
-import TransitionChart from 'app/components/charts/transitionChart';
-import TransparentLoadingMask from 'app/components/charts/transparentLoadingMask';
-import {PlatformKey} from 'app/data/platformCategories';
-import {IconWarning} from 'app/icons';
-import {GlobalSelection} from 'app/types';
+import ChartZoom from 'sentry/components/charts/chartZoom';
+import ErrorPanel from 'sentry/components/charts/errorPanel';
+import TransitionChart from 'sentry/components/charts/transitionChart';
+import TransparentLoadingMask from 'sentry/components/charts/transparentLoadingMask';
+import {PlatformKey} from 'sentry/data/platformCategories';
+import {IconWarning} from 'sentry/icons';
+import {GlobalSelection} from 'sentry/types';
 
 import {ReleaseStatsRequestRenderProps} from '../releaseStatsRequest';
 

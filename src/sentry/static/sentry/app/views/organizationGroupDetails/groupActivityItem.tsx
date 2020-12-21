@@ -1,13 +1,13 @@
 import React from 'react';
 
-import CommitLink from 'app/components/commitLink';
-import Duration from 'app/components/duration';
-import Link from 'app/components/links/link';
-import PullRequestLink from 'app/components/pullRequestLink';
-import Version from 'app/components/version';
-import {t, tct, tn} from 'app/locale';
-import MemberListStore from 'app/stores/memberListStore';
-import TeamStore from 'app/stores/teamStore';
+import CommitLink from 'sentry/components/commitLink';
+import Duration from 'sentry/components/duration';
+import Link from 'sentry/components/links/link';
+import PullRequestLink from 'sentry/components/pullRequestLink';
+import Version from 'sentry/components/version';
+import {t, tct, tn} from 'sentry/locale';
+import MemberListStore from 'sentry/stores/memberListStore';
+import TeamStore from 'sentry/stores/teamStore';
 import {
   GroupActivity,
   GroupActivityAssigned,
@@ -16,7 +16,7 @@ import {
   Organization,
   Project,
   User,
-} from 'app/types';
+} from 'sentry/types';
 
 type Props = {
   author: React.ReactNode;

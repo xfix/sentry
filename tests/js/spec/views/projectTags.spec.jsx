@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import {mountWithTheme} from 'sentry-test/enzyme';
 
-import ProjectTags from 'app/views/settings/projectTags';
+import ProjectTags from 'sentry/views/settings/projectTags';
 
 describe('ProjectTags', function () {
   let org, project, wrapper;

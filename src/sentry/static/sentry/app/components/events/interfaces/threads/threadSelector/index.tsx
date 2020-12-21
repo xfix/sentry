@@ -2,12 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 import partition from 'lodash/partition';
 
-import DropdownAutoComplete from 'app/components/dropdownAutoComplete';
-import DropdownButton from 'app/components/dropdownButton';
-import {t} from 'app/locale';
-import {EntryData, Event} from 'app/types';
-import {Thread} from 'app/types/events';
-import theme from 'app/utils/theme';
+import DropdownAutoComplete from 'sentry/components/dropdownAutoComplete';
+import DropdownButton from 'sentry/components/dropdownButton';
+import {t} from 'sentry/locale';
+import {EntryData, Event} from 'sentry/types';
+import {Thread} from 'sentry/types/events';
+import theme from 'sentry/utils/theme';
 
 import filterThreadInfo from './filterThreadInfo';
 import getThreadException from './getThreadException';

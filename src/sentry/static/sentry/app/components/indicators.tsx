@@ -6,10 +6,10 @@ import {AnimatePresence} from 'framer-motion';
 import PropTypes from 'prop-types';
 import Reflux from 'reflux';
 
-import {Indicator, removeIndicator} from 'app/actionCreators/indicator';
-import ToastIndicator from 'app/components/alerts/toastIndicator';
-import IndicatorStore from 'app/stores/indicatorStore';
-import theme from 'app/utils/theme';
+import {Indicator, removeIndicator} from 'sentry/actionCreators/indicator';
+import ToastIndicator from 'sentry/components/alerts/toastIndicator';
+import IndicatorStore from 'sentry/stores/indicatorStore';
+import theme from 'sentry/utils/theme';
 
 const Toasts = styled('div')`
   position: fixed;
