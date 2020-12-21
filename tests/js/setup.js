@@ -47,11 +47,11 @@ ConfigStore.loadInitialData({
  * Mocks
  */
 jest.mock('lodash/debounce', () => jest.fn(fn => fn));
-jest.mock('app/utils/recreateRoute');
-jest.mock('app/translations');
-jest.mock('app/api');
-jest.mock('app/utils/domId');
-jest.mock('app/utils/withOrganization');
+jest.mock('sentry/utils/recreateRoute');
+jest.mock('sentry/translations');
+jest.mock('sentry/api');
+jest.mock('sentry/utils/domId');
+jest.mock('sentry/utils/withOrganization');
 jest.mock('scroll-to-element', () => jest.fn());
 jest.mock('react-router', () => {
   const ReactRouter = jest.requireActual('react-router');

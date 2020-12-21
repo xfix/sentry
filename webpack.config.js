@@ -218,7 +218,7 @@ let appConfig = {
     /**
      * Main Sentry SPA
      */
-    app: 'app',
+    app: 'sentry',
 
     /**
      * Legacy CSS Webpack appConfig for Django-powered views.
@@ -344,7 +344,8 @@ let appConfig = {
   ],
   resolve: {
     alias: {
-      app: path.join(staticPrefix, 'app'),
+      sentry: path.join(staticPrefix, 'app'),
+      'sentry-images': path.join(staticPrefix, 'images'),
       '@emotion/styled': path.join(staticPrefix, 'app', 'styled'),
       '@original-emotion/styled': path.join(
         __dirname,
