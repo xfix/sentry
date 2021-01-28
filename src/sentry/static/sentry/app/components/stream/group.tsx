@@ -318,6 +318,7 @@ class StreamGroup extends React.Component<Props, State> {
             data={data}
             query={query}
             size="normal"
+            hasGuideAnchor={hasGuideAnchor}
           />
           <EventOrGroupExtraDetails organization={organization} data={data} />
         </GroupSummary>

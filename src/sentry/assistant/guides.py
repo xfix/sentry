@@ -19,4 +19,5 @@ GUIDES = {
     "issue": {"id": 1, "required_targets": ["issue_title", "exception"]},
     "issue_stream": {"id": 3, "required_targets": ["issue_stream"]},
     "dynamic_counts": {"id": 7, "required_targets": ["dynamic_counts"]},
+    "stack_trace_preview": {"id": 8, "required_targets": ["issue_title"]},
 }

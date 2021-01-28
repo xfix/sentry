@@ -29,6 +29,7 @@ type Props = WithRouterProps<{orgId: string}> & {
   hideLevel?: boolean;
   query?: string;
   className?: string;
+  hasGuideAnchor?: boolean;
 } & Partial<DefaultProps>;
 
 /**

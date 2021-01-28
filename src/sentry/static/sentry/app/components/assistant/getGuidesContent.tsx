@@ -98,6 +98,13 @@ export default function getGuidesContent(): GuidesContent {
             }
           ),
         },
+        {
+          title: t('Stack Trace Preview'),
+          target: 'issue_title',
+          description: t(
+            `TODO:: You can now hover title to get the stack trace preview.`
+          ),
+        },
       ],
     },
     {
@@ -111,6 +118,17 @@ export default function getGuidesContent(): GuidesContent {
             `These numbers and the bar chart now respect the time selected and any search
             filters you've applied. You can hover to see the totals.`
           ),
+        },
+      ],
+    },
+    {
+      guide: 'stack_trace_preview',
+      requiredTargets: ['issue_title', 'issue_stream'],
+      steps: [
+        {
+          title: t('Stack Trace Preview'),
+          target: 'issue_title',
+          description: t(`TODO: You can now hover title to get the stack trace preview.`),
         },
       ],
     },

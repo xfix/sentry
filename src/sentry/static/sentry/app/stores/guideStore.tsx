@@ -188,13 +188,30 @@ const guideStoreConfig: Reflux.StoreDefinition & GuideStoreInterface = {
     const userDateJoined = new Date(user?.dateJoined);
 
     if (!forceShow) {
-      guideOptions = guideOptions.filter(({guide, seen}) =>
-        seen
-          ? false
-          : user?.isSuperuser || guide === 'dynamic_counts'
-          ? true
-          : userDateJoined > assistantThreshold
-      );
+      guideOptions = guideOptions.filter(({guide, seen}) => {
+        if (seen) {
+          return false;
+        }
+
+        if (guide === 'dynamic_counts') {
+          if (userDateJoined < new Date(2020, 9, 7)) {
+            return true;
+          }
+
+          return false;
+        }
+
+        if (guide === 'stack_trace_preview') {
+          if (userDateJoined < new Date(2021, 0, 28)) {
+            return true;
+          }
+
+          // They will get this tip as one of the steps in issue stream guide
+          return false;
+        }
+
+        return userDateJoined > assistantThreshold;
+      });
     }
 
     const nextGuide =
