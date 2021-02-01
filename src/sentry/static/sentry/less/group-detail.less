@@ -872,8 +872,7 @@ div.traceback > ul {
 
   ol.context {
     margin: 0;
-    list-style-position: inside;
-    list-style-type: decimal-leading-zero;
+    list-style-type: none;
     border-radius: 3px;
     padding-left: 0;
 
@@ -895,6 +894,11 @@ div.traceback > ul {
       white-space: pre-wrap;
       word-wrap: break-word;
       min-height: 24px;
+      counter-increment: loc-counter;
+
+      &:before {
+        content: counter(loc-counter) '.';
+      }
     }
 
     > li.active {

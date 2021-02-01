@@ -70,7 +70,10 @@ const Context = ({
   const startLineNo = hasContextSource ? frame.context[0][0] : undefined;
 
   return (
-    <ol start={startLineNo} className={`context ${isExpanded ? 'expanded' : ''}`}>
+    <ol
+      className={`context ${isExpanded ? 'expanded' : ''}`}
+      style={{counterReset: `loc-counter ${startLineNo ? startLineNo - 1 : undefined}`}}
+    >
       {defined(frame.errors) && (
         <li className={expandable ? 'expandable error' : 'error'} key="errors">
           {frame.errors.join(', ')}
