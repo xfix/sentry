@@ -24,13 +24,14 @@ from sentry.api.helpers.group_index import (
 from sentry.api.paginator import DateTimePaginator, Paginator
 from sentry.api.serializers import serialize
 from sentry.api.serializers.models.group import StreamGroupSerializerSnuba
+from sentry.api.event_search import InvalidSearchQuery
 from sentry.api.utils import get_date_range_from_params, InvalidParams
 from sentry.models import Environment, Group, GroupEnvironment, GroupInbox, GroupStatus, Project
 from sentry.search.snuba.backend import (
     assigned_or_suggested_filter,
     EventsDatasetSnubaSearchBackend,
 )
-from sentry.search.snuba.executors import get_search_filter, InvalidSearchQuery
+from sentry.search.snuba.executors import get_search_filter
 from sentry.snuba import discover
 from sentry.utils.compat import map
 from sentry.utils.cursors import Cursor, CursorResult
