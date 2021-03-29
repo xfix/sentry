@@ -17,21 +17,59 @@ from sentry.models import (
 )
 from sentry.search.utils import tokenize_query
 from sentry.signals import team_created
+from sentry.models import InviteStatus
+
+SCIM_API_ERROR = "urn:ietf:params:scim:api:messages:2.0:Error"
+SCIM_API_LIST = "urn:ietf:params:scim:api:messages:2.0:ListResponse"
+# SCIM_API_SEARCH = "urn:ietf:params:scim:api:messages:2.0:SearchRequest"
+SCIM_API_PATCH = "urn:ietf:params:scim:api:messages:2.0:PatchOp"
+# SCIM_API_BULK_REQUEST = "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
+# SCIM_API_BULK_RESPONSE = "urn:ietf:params:scim:api:messages:2.0:BulkResponse"
+
+SCIM_SCHEMA_USER = "urn:ietf:params:scim:schemas:core:2.0:User"
+SCIM_SCHEMA_USER_ENTERPRISE = "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+SCIM_SCHEMA_GROUP = "urn:ietf:params:scim:schemas:core:2.0:Group"
 
 
 class OrganizationScimUserDetails(OrganizationEndpoint):
     # what would permissions be?
 
-    # GET /scim/v2/Users?filter=userName%20eq%20%22test.user%40okta.local%22&startIndex=1&count=100 HTTP/1.1
+    # GET /scim/v2/Users?filter=userName%20eq%20%22test.user%40okta.local%22
+    # &startIndex=1&count=100 HTTP/1.1
     def get(self, request, organization):
         req_filter = request.GET.get("filter")
         startIndex = request.GET.get("startIndex")
         count = request.GET.get("count")
 
         parsed_filter = parse_filter_conditions(req_filter)
-
         print(parsed_filter)
-        return Response({})
+        filter_val = [parsed_filter[0][1]]
+        print(filter_val)
+        queryset = (
+            OrganizationMember.objects.filter(
+                Q(user__is_active=True) | Q(user__isnull=True),
+                organization=organization,
+                # invite_status=InviteStatus.APPROVED.value,
+            )
+            .select_related("user")
+            .order_by("email", "user__email")
+        )
+        queryset = queryset.filter(
+            Q(email__in=filter_val)
+            | Q(user__email__in=filter_val)
+            | Q(user__emails__email__in=filter_val)
+        )
+
+        print(queryset)
+
+        context = {
+            "schemas": [SCIM_API_LIST],
+            "totalResults": 0,  # must be integer
+            "startIndex": 1,  # must be integer
+            "itemsPerPage": 0,  # must be integer
+            "Resources": [],
+        }
+        return Response(context)
 
     def post(self, request, organization):
         pass
