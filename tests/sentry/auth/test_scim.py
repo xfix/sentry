@@ -1,20 +1,56 @@
 from sentry.testutils import APITestCase
 
+CREATE_USER_POST_DATA = {
+    "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User"],
+    "userName": "test.user@okta.local",
+    "name": {"givenName": "Test", "familyName": "User"},
+    "emails": [{"primary": True, "value": "test.user@okta.local", "type": "work"}],
+    "displayName": "Test User",
+    "locale": "en-US",
+    "externalId": "00ujl29u0le5T6Aj10h7",
+    "groups": [],
+    "password": "1mz050nq",
+    "active": True,
+}
+
 
 class SCIMUserTests(APITestCase):
-    def setup(self):
-        pass
+    def setUp(self):
+        super().setUp()
+        self.login_as(user=self.user)
+
     def test_create_user(self):
-        self.client.get("/scim/v2/Users?filter=userName%20eq%20%22test.user%40okta.local%22&startIndex=1&count=100")
-        GET  HTTP/1.1
-        User-Agent: Okta SCIM Client 1.0.0
-        Authorization: <Authorization credentials>
+        response = self.client.get(
+            f"/scim/{self.organization.slug}/scim/v2/Users?filter=userName%20eq%20%22test.user%40okta.local%22&startIndex=1&count=100"
+        )
+        correct_get_data = {
+            "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"],
+            "totalResults": 0,
+            "startIndex": 1,
+            "itemsPerPage": 0,
+            "Resources": [],
+        }
+        assert correct_get_data == response.data
 
+        response = self.client.post(
+            f"/scim/{self.organization.slug}/scim/v2/Users", CREATE_USER_POST_DATA
+        )
 
+        correct_post_data = {
+            "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User"],
+            "id": "23a35c27-23d3-4c03-b4c5-6443c09e7173",
+            "userName": "test.user@okta.local",
+            "name": {"givenName": "Test", "familyName": "User"},
+            "emails": [{"primary": True, "value": "test.user@okta.local", "type": "work"}],
+            "displayName": "Test User",
+            "locale": "en-US",
+            "externalId": "00ujl29u0le5T6Aj10h7",
+            "active": True,
+            "groups": [],
+            "meta": {"resourceType": "User"},
+        }
 
-
-
-
+        assert correct_post_data == response.data
 
 
 # {

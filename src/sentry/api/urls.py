@@ -1296,11 +1296,6 @@ urlpatterns = [
                     OrganizationRequestProjectCreation.as_view(),
                     name="sentry-api-0-organization-request-project-creation",
                 ),
-                url(
-                    r"^(?P<organization_slug>[^\/]+)/scim/v2/Users$",
-                    OrganizationScimUserDetails.as_view(),
-                    name="sentry-api-0-organization-details",
-                ),
             ]
         ),
     ),

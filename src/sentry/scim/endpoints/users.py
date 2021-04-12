@@ -10,6 +10,7 @@ from sentry.api.serializers import serialize
 from sentry.api.serializers.models import team as team_serializers
 from sentry.models import (
     AuditLogEntryEvent,
+    InviteStatus,
     OrganizationMember,
     OrganizationMemberTeam,
     Team,
@@ -17,7 +18,6 @@ from sentry.models import (
 )
 from sentry.search.utils import tokenize_query
 from sentry.signals import team_created
-from sentry.models import InviteStatus
 
 SCIM_API_ERROR = "urn:ietf:params:scim:api:messages:2.0:Error"
 SCIM_API_LIST = "urn:ietf:params:scim:api:messages:2.0:ListResponse"
@@ -31,7 +31,7 @@ SCIM_SCHEMA_USER_ENTERPRISE = "urn:ietf:params:scim:schemas:extension:enterprise
 SCIM_SCHEMA_GROUP = "urn:ietf:params:scim:schemas:core:2.0:Group"
 
 
-class OrganizationScimUserDetails(OrganizationEndpoint):
+class OrganizationScimUserIndex(OrganizationEndpoint):
     # what would permissions be?
 
     # GET /scim/v2/Users?filter=userName%20eq%20%22test.user%40okta.local%22
@@ -72,7 +72,7 @@ class OrganizationScimUserDetails(OrganizationEndpoint):
         return Response(context)
 
     def post(self, request, organization):
-        pass
+        return Response({})
 
 
 def parse_filter_conditions(raw_filters):
