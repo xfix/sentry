@@ -45,6 +45,7 @@ from sentry.incidents.endpoints.project_alert_rule_index import (
 from sentry.incidents.endpoints.project_alert_rule_task_details import (
     ProjectAlertRuleTaskDetailsEndpoint,
 )
+from sentry.scim.endpoints.users import OrganizationScimUserDetails
 
 from .endpoints.accept_organization_invite import AcceptOrganizationInvite
 from .endpoints.accept_project_transfer import AcceptProjectTransferEndpoint
@@ -1294,6 +1295,11 @@ urlpatterns = [
                     r"^(?P<organization_slug>[^\/]+)/request-project-creation/$",
                     OrganizationRequestProjectCreation.as_view(),
                     name="sentry-api-0-organization-request-project-creation",
+                ),
+                url(
+                    r"^(?P<organization_slug>[^\/]+)/$",
+                    OrganizationScimUserDetails.as_view(),
+                    name="sentry-api-0-organization-details",
                 ),
             ]
         ),
