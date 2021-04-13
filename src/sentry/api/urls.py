@@ -45,7 +45,6 @@ from sentry.incidents.endpoints.project_alert_rule_index import (
 from sentry.incidents.endpoints.project_alert_rule_task_details import (
     ProjectAlertRuleTaskDetailsEndpoint,
 )
-from sentry.scim.endpoints.users import OrganizationScimUserDetails
 
 from .endpoints.accept_organization_invite import AcceptOrganizationInvite
 from .endpoints.accept_project_transfer import AcceptProjectTransferEndpoint

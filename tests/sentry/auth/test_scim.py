@@ -20,6 +20,8 @@ class SCIMUserTests(APITestCase):
         self.login_as(user=self.user)
 
     def test_create_user(self):
+
+        # test user to be created does not exist
         response = self.client.get(
             f"/scim/{self.organization.slug}/scim/v2/Users?filter=userName%20eq%20%22test.user%40okta.local%22&startIndex=1&count=100"
         )
@@ -49,6 +51,8 @@ class SCIMUserTests(APITestCase):
             "groups": [],
             "meta": {"resourceType": "User"},
         }
+
+        print(response.data)
 
         assert correct_post_data == response.data
 
