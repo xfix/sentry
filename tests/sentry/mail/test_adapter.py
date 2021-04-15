@@ -1,5 +1,6 @@
-import pytz
 from datetime import datetime
+
+import pytz
 from django.contrib.auth.models import AnonymousUser
 from django.core import mail
 from django.db.models import F
