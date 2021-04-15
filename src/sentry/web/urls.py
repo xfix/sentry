@@ -7,7 +7,7 @@ from django.views.generic import RedirectView
 
 from sentry.auth.providers.saml2.provider import SAML2AcceptACSView, SAML2MetadataView, SAML2SLSView
 from sentry.charts.endpoints import serve_chartcuterie_config
-from sentry.scim.endpoints.users import OrganizationScimUserIndex
+from sentry.scim.endpoints.users import OrganizationScimUserDetails, OrganizationScimUserIndex
 from sentry.web import api
 from sentry.web.frontend import accounts, generic
 from sentry.web.frontend.account_identity import AccountIdentityAssociateView
@@ -159,7 +159,12 @@ urlpatterns += [
                 url(
                     r"^(?P<organization_slug>[^/]+)/scim/v2/Users$",
                     OrganizationScimUserIndex.as_view(),
-                    # name="sentry-auth-organization-saml-acs",
+                    name="sentry-scim-organization-members-index",
+                ),
+                url(
+                    r"^(?P<organization_slug>[^/]+)/scim/v2/Users/(?P<member_id>\d+)$",
+                    OrganizationScimUserDetails.as_view(),
+                    name="sentry-scim-organization-members-details",
                 ),
                 # url(
                 #     r"^(?P<organization_slug>[^/]+)/scim/v2/$",

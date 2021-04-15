@@ -1,32 +1,21 @@
-from django.db import IntegrityError, transaction
-from django.db.models import Q
 from django.conf import settings
-
-from django.utils.translation import ugettext_lazy as _
-from rest_framework import serializers, status
+from django.db import transaction
+from django.db.models import Q
 from rest_framework.response import Response
 
-from sentry.api.bases.organization import OrganizationEndpoint, OrganizationPermission
-from sentry.api.paginator import OffsetPaginator
-from sentry.api.serializers import serialize
-from sentry.api.serializers.models import team as team_serializers
-from sentry.app import locks
-from sentry.utils.retries import TimedRetryPolicy
-
+from sentry import roles
+from sentry.api.bases.organization import OrganizationEndpoint
 from sentry.api.endpoints.organization_member_index import OrganizationMemberSerializer
-
+from sentry.app import locks
 from sentry.models import (
     AuditLogEntryEvent,
     InviteStatus,
     OrganizationMember,
+    OrganizationMemberState,
     OrganizationMemberTeam,
-    Team,
-    TeamStatus,
-    UserOption,
 )
-from sentry.search.utils import tokenize_query
-from sentry.signals import team_created, member_invited
-from sentry import roles
+from sentry.signals import member_invited
+from sentry.utils.retries import TimedRetryPolicy
 
 SCIM_API_ERROR = "urn:ietf:params:scim:api:messages:2.0:Error"
 SCIM_API_LIST = "urn:ietf:params:scim:api:messages:2.0:ListResponse"
@@ -39,7 +28,27 @@ SCIM_SCHEMA_USER = "urn:ietf:params:scim:schemas:core:2.0:User"
 SCIM_SCHEMA_USER_ENTERPRISE = "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
 SCIM_SCHEMA_GROUP = "urn:ietf:params:scim:schemas:core:2.0:Group"
 
-DEFAULT_INVITE_ROLE = roles.get_default()
+DEFAULT_INVITE_ROLE = roles.get_default()  # can use auth provider default role
+
+from rest_framework.negotiation import BaseContentNegotiation
+
+
+class IgnoreClientContentNegotiation(BaseContentNegotiation):
+    def select_parser(self, request, parsers):
+        """
+        Select the first parser in the `.parser_classes` list.
+        """
+        return parsers[0]
+
+    def select_renderer(self, request, renderers, format_suffix):
+        """
+        Select the first renderer in the `.renderer_classes` list.
+        """
+        return (renderers[0], renderers[0].media_type)
+
+
+class ScimEndpoint(OrganizationEndpoint):
+    content_negotiation_class = IgnoreClientContentNegotiation
 
 
 @transaction.atomic
@@ -54,8 +63,7 @@ def save_team_assignments(organization_member, teams):
     )
 
 
-def scim_response_serializer(om, params):
-
+def scim_user_response_serializer(om, params=None):
     return {
         "schemas": [SCIM_SCHEMA_USER],
         "id": om.id,
@@ -64,26 +72,57 @@ def scim_response_serializer(om, params):
         "emails": [{"primary": True, "value": om.email, "type": "work"}],
         # "displayName": om.user.name,
         # "locale": language, # we are mapping to OM, not user, not sure if okta will care about langauge
-        "externalId": params.get("externalId"),
-        "active": True,  # user should be able to login, so this is correct
+        "externalId": params.get("externalId") if params else None,
+        "active": om.state != OrganizationMemberState.INACTIVE.value,
         "meta": {"resourceType": "User"},
     }
 
 
-class OrganizationScimUserIndex(OrganizationEndpoint):
+class OrganizationScimUserDetails(ScimEndpoint):
+    def get(self, request, organization, member_id):
+        try:
+            om = OrganizationMember.objects.get(organization=organization, id=member_id)
+        except OrganizationMember.DoesNotExist:
+            pass
+        return Response(scim_user_response_serializer(om, request.data), 200)
+
+    def patch(self, request, organization, member_id):
+        try:
+            om = OrganizationMember.objects.get(organization=organization, id=member_id)
+        except OrganizationMember.DoesNotExist:
+            pass
+
+        for operation in request.data.get("Operations", []):
+            if operation["value"]["active"] is False:
+                with transaction.atomic():
+                    om.deactivate()
+                    om.save()
+            elif operation["value"]["active"] is True:
+                # this only happens after deactivion
+                with transaction.atomic():
+                    om.activate()
+                    om.save()
+
+        return Response(scim_user_response_serializer(om, request.data), 200)
+
+
+class OrganizationScimUserIndex(ScimEndpoint):
     # what would permissions be?
 
     # GET /scim/v2/Users?filter=userName%20eq%20%22test.user%40okta.local%22
     # &startIndex=1&count=100 HTTP/1.1
     def get(self, request, organization):
         req_filter = request.GET.get("filter")
-        startIndex = request.GET.get("startIndex")
-        count = request.GET.get("count")
+        # TODO: implement pagination for user getting
+        # startIndex = request.GET.get("startIndex")
+        # count = request.GET.get("count")
 
         parsed_filter = parse_filter_conditions(req_filter)
-        print(parsed_filter)
-        filter_val = [parsed_filter[0][1]]
-        print(filter_val)
+
+        if len(parsed_filter) > 0:
+            filter_val = [parsed_filter[0][1]]
+        else:
+            filter_val = [None]
         queryset = (
             OrganizationMember.objects.filter(
                 Q(user__is_active=True) | Q(user__isnull=True),
@@ -99,20 +138,17 @@ class OrganizationScimUserIndex(OrganizationEndpoint):
             | Q(user__emails__email__in=filter_val)
         )
 
-        print(queryset)
-
         context = {
             "schemas": [SCIM_API_LIST],
-            "totalResults": 0,  # must be integer
+            "totalResults": len(queryset),  # must be integer
             "startIndex": 1,  # must be integer
-            "itemsPerPage": 0,  # must be integer
-            "Resources": [],
+            "itemsPerPage": len(queryset),  # what's max?
+            "Resources": [scim_user_response_serializer(om) for om in queryset],
         }
         return Response(context)
 
     def post(self, request, organization):
-        # what to do about the role?
-        print(request.POST)
+        # what to do about the role? # use option specified in saml settings
         serializer = OrganizationMemberSerializer(
             data={"email": request.data.get("userName"), "role": DEFAULT_INVITE_ROLE.id},
             context={
@@ -121,8 +157,9 @@ class OrganizationScimUserIndex(OrganizationEndpoint):
                 "allow_existing_invite_request": True,
             },
         )
-        if not serializer.is_valid():  # TODO: catch this and 409
-            return Response(serializer.errors, status=400)
+
+        if not serializer.is_valid():
+            return Response(serializer.errors, status=409)
 
         result = serializer.validated_data
         with transaction.atomic():
@@ -140,7 +177,7 @@ class OrganizationScimUserIndex(OrganizationEndpoint):
                 role=result["role"],
                 inviter=request.user,
             )
-
+            # TODO: what does this do?
             if settings.SENTRY_ENABLE_INVITES:
                 om.token = om.generate_token()
             om.save()
@@ -166,12 +203,14 @@ class OrganizationScimUserIndex(OrganizationEndpoint):
             else AuditLogEntryEvent.MEMBER_ADD,
         )
 
-        return Response(scim_response_serializer(om, request.data), status=201)
+        return Response(scim_user_response_serializer(om, request.data), status=201)
 
 
 def parse_filter_conditions(raw_filters):
-    conditions = raw_filters.split(",")
     filters = []
+    if raw_filters is None:
+        return filters
+    conditions = raw_filters.split(",")
 
     for c in conditions:
         [key, value] = c.split(" eq ")
