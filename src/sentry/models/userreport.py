@@ -27,6 +27,7 @@ class UserReport(Model):
 
     def notify(self):
         from django.contrib.auth.models import AnonymousUser
+
         from sentry.api.serializers import UserReportWithGroupSerializer, serialize
         from sentry.tasks.user_report import user_report
 
