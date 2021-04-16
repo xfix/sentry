@@ -7,10 +7,15 @@ require() {
     command -v "$1" >/dev/null 2>&1
 }
 
+# Report issues to sentry-dev-env
 configure-sentry-cli() {
-    if [ -n "${SENTRY_DSN+x}" ] && [ -z "${SENTRY_DEVENV_NO_REPORT+x}" ]; then
+    if [ -z "${SENTRY_DEVENV_NO_REPORT+x}" ]; then
         if ! require sentry-cli; then
             curl -sL https://sentry.io/get-cli/ | bash
+        fi
+        if [ -z "${SENTRY_DSN+x}" ]; then
+            # Report issues to sentry-dev-env
+            export SENTRY_DSN="https://9bdb053cb8274ea69231834d1edeec4c@o1.ingest.sentry.io/5723503"
         fi
         eval "$(sentry-cli bash-hook)"
     fi
@@ -135,6 +140,7 @@ install-js-dev() {
 }
 
 develop() {
+    exit 1
     setup-git
     install-js-dev
     install-py-dev
