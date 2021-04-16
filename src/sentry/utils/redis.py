@@ -126,6 +126,7 @@ class _RedisCluster:
                     # https://github.com/Grokzen/redis-py-cluster/blob/73f27edf7ceb4a408b3008ef7d82dac570ab9c6a/rediscluster/nodemanager.py#L385
                     startup_nodes=deepcopy(hosts),
                     decode_responses=True,
+                    encoding_errors="ignore",
                     skip_full_coverage_check=True,
                     max_connections=16,
                     max_connections_per_node=True,
@@ -133,6 +134,7 @@ class _RedisCluster:
             else:
                 host = hosts[0].copy()
                 host["decode_responses"] = True
+                host["encoding_errors"] = "ignore"
                 return StrictRedis(**host)
 
         return SimpleLazyObject(cluster_factory)
