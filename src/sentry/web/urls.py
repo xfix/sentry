@@ -7,6 +7,8 @@ from django.views.generic import RedirectView
 
 from sentry.auth.providers.saml2.provider import SAML2AcceptACSView, SAML2MetadataView, SAML2SLSView
 from sentry.charts.endpoints import serve_chartcuterie_config
+from sentry.scim.endpoints.groups import OrganizationScimGroupDetails, OrganizationScimGroupIndex
+from sentry.scim.endpoints.users import OrganizationScimUserDetails, OrganizationScimUserIndex
 from sentry.web import api
 from sentry.web.frontend import accounts, generic
 from sentry.web.frontend.account_identity import AccountIdentityAssociateView
@@ -153,6 +155,34 @@ urlpatterns += [
                     r"^metadata/(?P<organization_slug>[^/]+)/$",
                     SAML2MetadataView.as_view(),
                     name="sentry-auth-organization-saml-metadata",
+                ),
+            ]
+        ),
+    ),
+    # SCIM
+    url(
+        r"^scim/",
+        include(
+            [
+                url(
+                    r"^(?P<organization_slug>[^/]+)/scim/v2/Users$",
+                    OrganizationScimUserIndex.as_view(),
+                    name="sentry-scim-organization-members-index",
+                ),
+                url(
+                    r"^(?P<organization_slug>[^/]+)/scim/v2/Users/(?P<member_id>\d+)$",
+                    OrganizationScimUserDetails.as_view(),
+                    name="sentry-scim-organization-members-details",
+                ),
+                url(
+                    r"^(?P<organization_slug>[^/]+)/scim/v2/Groups/(?P<team_slug>\d+)$",
+                    OrganizationScimGroupDetails.as_view(),
+                    name="sentry-scim-organization-group-details",
+                ),
+                url(
+                    r"^(?P<organization_slug>[^/]+)/scim/v2/Groups$",
+                    OrganizationScimGroupIndex.as_view(),
+                    name="sentry-scim-organization-group-index",
                 ),
             ]
         ),

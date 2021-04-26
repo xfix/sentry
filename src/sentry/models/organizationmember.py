@@ -35,6 +35,12 @@ class InviteStatus(Enum):
     REQUESTED_TO_JOIN = 2
 
 
+class OrganizationMemberState(Enum):
+    ACTIVE_MEMBER = 0
+    INVITED = 1
+    INACTIVE = 2
+
+
 invite_status_names = {
     InviteStatus.APPROVED.value: "approved",
     InviteStatus.REQUESTED_TO_BE_INVITED.value: "requested_to_be_invited",
@@ -120,6 +126,16 @@ class OrganizationMember(Model):
         null=True,
     )
 
+    state = models.PositiveIntegerField(
+        choices=(
+            (OrganizationMemberState.ACTIVE_MEMBER.value, _("Active Member")),
+            (OrganizationMemberState.INVITED.value, _("Invited")),
+            (OrganizationMemberState.INACTIVE.value, _("Inactive")),
+        ),
+        default=OrganizationMemberState.ACTIVE_MEMBER.value,
+        null=False,
+    )
+
     # Deprecated -- no longer used
     type = BoundedPositiveIntegerField(default=50, blank=True)
 
@@ -147,6 +163,15 @@ class OrganizationMember(Model):
         self.email = self.get_email()
         self.user = None
         self.token = self.generate_token()
+
+    def deactivate(self):
+        self.token = None
+        self.token_expires_at = None
+        self.state = OrganizationMemberState.INACTIVE.value
+
+    def activate(self):
+        # only to be used after deactivating
+        self.state = OrganizationMemberState.ACTIVE_MEMBER.value
 
     def regenerate_token(self):
         self.token = self.generate_token()
