@@ -46,6 +46,27 @@ def test_invalid_interval():
         start, end, interval = get_constrained_date_range({"interval": "0d"})
 
 
+def test_invalid_max_hours_for_minute_res():
+    with pytest.raises(ValueError):
+        start, end, interval = get_constrained_date_range(
+            {"interval": "15m", "statsPeriod": "2d"},
+            allow_minute_resolution=True,
+            max_hours_for_minute_res=25,
+        )
+
+
+@freeze_time("2018-12-11 03:21:00")
+def test_minute_res_parameter():
+    start, end, interval = get_constrained_date_range(
+        {"interval": "15m", "statsPeriod": "1d"},
+        allow_minute_resolution=True,
+        max_hours_for_minute_res=24,
+    )
+    assert start == datetime(2018, 12, 10, 3, 0, tzinfo=pytz.utc)
+    assert end == datetime(2018, 12, 11, 3, 22, tzinfo=pytz.utc)
+    assert interval == 900
+
+
 def test_round_exact():
     start, end, interval = get_constrained_date_range(
         {"start": "2021-01-12T04:06:16", "end": "2021-01-17T08:26:13", "interval": "1d"},
@@ -92,12 +113,12 @@ def test_interval_restrictions():
     # restrictions for minute resolution time range
     with pytest.raises(
         InvalidParams,
-        match="The time-range when using one-minute resolution intervals is restricted to 6 hours.",
+        match="The time-range when using minute resolution intervals is restricted to 6 hours.",
     ):
         _make_query("statsPeriod=7h&interval=15m&field=sum(session)")
     with pytest.raises(
         InvalidParams,
-        match="The time-range when using one-minute resolution intervals is restricted to the last 30 days.",
+        match="The time-range when using minute resolution intervals is restricted to the last 30 days.",
     ):
         _make_query(
             "start=2021-01-05T11:14:17&end=2021-01-05T12:14:17&interval=15m&field=sum(session)"

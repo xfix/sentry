@@ -230,7 +230,12 @@ class QueryDefinition:
         self.fields = {}
         self.aggregations = []
         self.query: List[Any] = []  # not used but needed for compat with sessions logic
-        start, end, rollup = get_constrained_date_range(query, allow_minute_resolution)
+
+        start, end, rollup = get_constrained_date_range(
+            query,
+            allow_minute_resolution,
+            max_hours_for_minute_res=24,
+        )
         self.dataset = _outcomes_dataset(rollup)
         self.rollup = rollup
         self.start = start

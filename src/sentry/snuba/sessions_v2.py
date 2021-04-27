@@ -286,6 +286,7 @@ class QueryDefinition:
         self.filter_keys = snuba_filter.filter_keys
 
 
+MAX_HOURS_FOR_MINUTE_RES = 6
 MAX_POINTS = 1000
 ONE_DAY = timedelta(days=1).total_seconds()
 ONE_HOUR = timedelta(hours=1).total_seconds()
@@ -297,7 +298,10 @@ class InvalidParams(Exception):
 
 
 def get_constrained_date_range(
-    params, allow_minute_resolution=False, max_points=MAX_POINTS
+    params,
+    allow_minute_resolution=False,
+    max_points=MAX_POINTS,
+    max_hours_for_minute_res=MAX_HOURS_FOR_MINUTE_RES,
 ) -> Tuple[datetime, datetime, int]:
     interval = parse_stats_period(params.get("interval", "1h"))
     interval = int(3600 if interval is None else interval.total_seconds())
@@ -308,6 +312,9 @@ def get_constrained_date_range(
         raise InvalidParams(
             f"The interval has to be a multiple of the minimum interval of {interval_str}."
         )
+
+    if max_hours_for_minute_res * ONE_HOUR > ONE_DAY:
+        raise ValueError("The maximum range for minute queries is one day")
 
     if interval > ONE_DAY:
         raise InvalidParams("The interval has to be less than one day.")
@@ -338,13 +345,13 @@ def get_constrained_date_range(
     )
 
     if using_minute_resolution:
-        if date_range.total_seconds() > 6 * ONE_HOUR:
+        if date_range.total_seconds() > max_hours_for_minute_res * ONE_HOUR:
             raise InvalidParams(
-                "The time-range when using one-minute resolution intervals is restricted to 6 hours."
+                f"The time-range when using minute resolution intervals is restricted to {max_hours_for_minute_res} hours."
             )
         if (now - start).total_seconds() > 30 * ONE_DAY:
             raise InvalidParams(
-                "The time-range when using one-minute resolution intervals is restricted to the last 30 days."
+                "The time-range when using minute resolution intervals is restricted to the last 30 days."
             )
 
     if date_range.total_seconds() / interval > max_points:
