@@ -17,11 +17,13 @@ from sentry.models import (
 from sentry.signals import member_invited
 from sentry.utils.retries import TimedRetryPolicy
 
+from .utils import parse_filter_conditions
+
 SCIM_API_ERROR = "urn:ietf:params:scim:api:messages:2.0:Error"
 SCIM_API_LIST = "urn:ietf:params:scim:api:messages:2.0:ListResponse"
 SCIM_API_PATCH = "urn:ietf:params:scim:api:messages:2.0:PatchOp"
 SCIM_SCHEMA_USER = "urn:ietf:params:scim:schemas:core:2.0:User"
-SCIM_SCHEMA_GROUP = "urn:ietf:params:scim:schemas:core:2.0:Group"
+
 DEFAULT_INVITE_ROLE = roles.get_default()  # can use auth provider default role
 
 from rest_framework.negotiation import BaseContentNegotiation
@@ -102,12 +104,11 @@ class OrganizationScimUserDetails(OrganizationEndpoint, ScimEndpoint):
 
 class OrganizationScimUserIndex(OrganizationEndpoint, ScimEndpoint):
     def get(self, request, organization):
-        req_filter = request.GET.get("filter")
         # TODO: implement pagination for user getting
         # startIndex = request.GET.get("startIndex")
         # count = request.GET.get("count")
 
-        parsed_filter = parse_filter_conditions(req_filter)
+        parsed_filter = parse_filter_conditions(request.GET.get("filter"))
 
         if len(parsed_filter) > 0:
             filter_val = [parsed_filter[0][1]]
@@ -194,31 +195,3 @@ class OrganizationScimUserIndex(OrganizationEndpoint, ScimEndpoint):
         )
 
         return Response(scim_user_response_serializer(om, request.data), status=201)
-
-
-def parse_filter_conditions(raw_filters):
-    filters = []
-    if raw_filters is None:
-        return filters
-    conditions = raw_filters.split(",")
-
-    for c in conditions:
-        [key, value] = c.split(" eq ")
-        if not key or not value:
-            continue
-
-        key = key.strip()
-        value = value.strip()
-
-        # For USERS: Unique username should always be lowercase
-        if key == "userName":
-            value = value.lower()
-
-        if value[0] == '"' and value[-1] == '"':
-            value = value.replace('"', "")
-        if value[0] == "'" and value[-1] == "'":
-            value = value.replace("'", "")
-
-        filters.append([key, value])
-
-    return filters

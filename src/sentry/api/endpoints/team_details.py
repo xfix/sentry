@@ -44,7 +44,6 @@ class TeamDetailsEndpoint(TeamEndpoint):
         """
         context = serialize(team, request.user)
         context["organization"] = serialize(team.organization, request.user)
-        print(context)
         return Response(context)
 
     def put(self, request, team):

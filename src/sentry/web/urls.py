@@ -175,7 +175,7 @@ urlpatterns += [
                     name="sentry-scim-organization-members-details",
                 ),
                 url(
-                    r"^(?P<organization_slug>[^/]+)/scim/v2/Groups/(?P<team_slug>\d+)$",
+                    r"^(?P<organization_slug>[^/]+)/scim/v2/Groups/(?P<team_slug>[^\/]+)$",
                     OrganizationScimGroupDetails.as_view(),
                     name="sentry-scim-organization-group-details",
                 ),
