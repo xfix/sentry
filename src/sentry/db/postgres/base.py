@@ -16,6 +16,8 @@ from .operations import DatabaseOperations
 
 __all__ = ("DatabaseWrapper",)
 
+from .schema import DatabaseSchemaEditorProxy
+
 
 def remove_null(value):
     # In psycopg2 2.7+, behavior was introduced where a
@@ -83,6 +85,8 @@ class CursorWrapper:
 
 
 class DatabaseWrapper(DatabaseWrapper):
+    SchemaEditorClass = DatabaseSchemaEditorProxy
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.ops = DatabaseOperations(self)
