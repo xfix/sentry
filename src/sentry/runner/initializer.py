@@ -346,6 +346,8 @@ def initialize_app(config, skip_service_validation=False):
     if getattr(settings, "SENTRY_DEBUGGER", None) is None:
         settings.SENTRY_DEBUGGER = settings.DEBUG
 
+    monkeypatch_drf_jsonrenderer_jsonencoder()
+
     monkeypatch_drf_listfield_serializer_errors()
 
     monkeypatch_model_unpickle()
@@ -472,6 +474,36 @@ def monkeypatch_django_migrations():
     from sentry.new_migrations.monkey import monkey_migrations
 
     monkey_migrations()
+
+
+from math import isnan
+from simplejson.decoder import PosInf, NegInf
+from rest_framework.utils.encoders import JSONEncoder
+
+class _JSONEncoder(JSONEncoder):
+    def default(self, obj):
+        if obj == PosInf or obj == NegInf or isnan(obj):
+            return "null"
+        return super().default(obj)
+
+
+def monkeypatch_drf_jsonrenderer_jsonencoder():
+    # We'd like to keep the default STRICT_JSON=True for DRF parsers,
+    # but rather than error on nan/inf for rendering or pass them through,
+    # we want to coerce to "null" to give to frontend.
+    # One way to do this is to swap out JSONRenderer's encoder for our simplejson encoder
+    # which does this already (ignore_nan=True overrides the allow_nan set by DRF's JSONRenderer
+    # if STRICT_JSON=True), but there are differences that break test cases, for example
+    # we do uuid.hex in our better_default_encoder versus str(uuid).
+    # A more conservative way would just be to extend DRF's JSONEncoder to do this coercion.
+    from rest_framework.renderers import JSONRenderer
+
+    JSONRenderer.encoder_class = _JSONEncoder
+
+    # We need to force this, since it is passed to stdlib json.dumps as
+    # allow_nan=not self.strict and the bad float checking takes place before encoding.
+    # XXX: this doesn't work, RIP.
+    JSONRenderer.strict = False
 
 
 def monkeypatch_drf_listfield_serializer_errors():
