@@ -72,7 +72,9 @@ class LazyLoad<C extends Component> extends React.Component<Props<C>, State<C>> 
   }
 
   componentDidCatch(error: any) {
+    console.log('didCatch called');
     Sentry.captureException(error);
+    console.log('after captureException');
     this.handleError(error);
   }
 

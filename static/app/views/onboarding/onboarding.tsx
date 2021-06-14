@@ -201,6 +201,7 @@ class Onboarding extends React.Component<Props, State> {
   };
 
   render() {
+    throw new Error('boom');
     if (this.activeStepIndex === -1) {
       return null;
     }
