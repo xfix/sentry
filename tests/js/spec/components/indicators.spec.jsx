@@ -21,6 +21,12 @@ describe('Indicators', function () {
     jest.runAllTimers();
   });
 
+  afterEach(function () {
+    if (wrapper) {
+      wrapper.unmount();
+    }
+  });
+
   it('renders nothing by default', function () {
     expect(wrapper.find('ToastIndicator')).toHaveLength(0);
   });
