@@ -12,8 +12,7 @@ import IndicatorStore from 'app/stores/indicatorStore';
 // Make sure we use `duration: null` to test add/remove
 jest.useFakeTimers();
 
-// eslint-disable-next-line
-describe.skip('Indicators', function () {
+describe('Indicators', function () {
   let wrapper;
   beforeEach(function () {
     wrapper = mountWithTheme(<Indicators />, TestStubs.routerContext());
