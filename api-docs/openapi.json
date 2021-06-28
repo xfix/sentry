@@ -68,6 +68,15 @@
         "description": "Found an error? Let us know.",
         "url": "https://github.com/getsentry/sentry-docs/issues/new/?title=API%20Documentation%20Error:%20/api/integration-platform/&template=api_error_template.md"
       }
+    },
+    {
+      "name": "SCIM",
+      "x-sidebar-name": "SCIM",
+      "description": "Endpoints for use with SCIM Integrations",
+      "externalDocs": {
+        "description": "Found an error? Let us know.",
+        "url": "https://github.com/getsentry/sentry-docs/issues/new/?title=API%20Documentation%20Error:%20/api/integration-platform/&template=api_error_template.md"
+      }
     }
   ],
   "paths": {
@@ -217,6 +226,18 @@
     },
     "/api/0/sentry-app-installations/{uuid}/external-issues/{external_issue_id}/": {
       "$ref": "paths/integration-platform/sentry-app-external-issue-details.json"
+    },
+    "/api/0/organizations/{organization_slug}/scim/v2/Users": {
+      "$ref": "paths/scim/users.json"
+    },
+    "/api/0/organizations/{organization_slug}/scim/v2/Users/{member_id}": {
+      "$ref": "paths/scim/user_details.json"
+    },
+    "/api/0/organizations/{organization_slug}/scim/v2/Groups": {
+      "$ref": "paths/scim/groups.json"
+    },
+    "/api/0/organizations/{organization_slug}/scim/v2/Groups/{team_id}": {
+      "$ref": "paths/scim/group_details.json"
     }
   },
   "components": {

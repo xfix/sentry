@@ -1,0 +1,29 @@
+{
+    "filter": {
+      "name": "filter",
+      "in": "query",
+      "required": false,
+      "description": "A SCIM filter expression.",
+      "schema": {
+        "type": "string"
+      }
+    },
+    "startIndex": {
+        "name": "startIndex",
+        "in": "query",
+        "required": false,
+        "description": "SCIM 1-offset based indexing for pagination.",
+        "schema": {
+          "type": "integer"
+        }
+      },
+      "count": {
+        "name": "count",
+        "in": "query",
+        "required": false,
+        "description": "the maximum number of results the query should return.",
+        "schema": {
+          "type": "integer"
+        }
+      }
+  }

@@ -1,0 +1,48 @@
+{
+    "definitions": {
+        "active": {
+            "type": "boolean"
+        },
+        "displayName": {
+            "type": "string"
+        },
+        "schemas": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "members": {
+            "type": "array"
+        },
+        "meta": {
+            "type": "object",
+            "properties": {
+                "resourceType": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "Group": {
+        "type": "object",
+        "required": [],
+        "properties": {
+            "schemas": {
+                "$ref": "#/definitions/schemas"
+            },
+            "id": {
+                "type": "string"
+            },
+            "displayName": {
+                "$ref": "#/definitions/displayName"
+            },
+            "members": {
+                "$ref": "#/definitions/members"
+            },
+            "meta": {
+                "$ref": "#/definitions/meta"
+            }
+        }
+    }
+}
