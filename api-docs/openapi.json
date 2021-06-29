@@ -72,7 +72,7 @@
     {
       "name": "SCIM",
       "x-sidebar-name": "SCIM",
-      "description": "Endpoints for use with SCIM Integrations",
+      "description": "SCIM (System for Cross-Domain Identity Management) is a standard implemented by IdPs and apps in order to facilitate federated identity management. Through these APIs you can add and delete members and teams. In order to use SCIM, you must be on a Business Plan with SAML2 Enabled. For how to enable SCIM, see docs (here), or how to set up SCIM with your specific identity provider see (here).",
       "externalDocs": {
         "description": "Found an error? Let us know.",
         "url": "https://github.com/getsentry/sentry-docs/issues/new/?title=API%20Documentation%20Error:%20/api/integration-platform/&template=api_error_template.md"

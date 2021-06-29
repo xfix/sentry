@@ -12,7 +12,7 @@
         "name": "startIndex",
         "in": "query",
         "required": false,
-        "description": "SCIM 1-offset based indexing for pagination.",
+        "description": "SCIM 1-offset based index for pagination.",
         "schema": {
           "type": "integer"
         }

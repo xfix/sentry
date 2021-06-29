@@ -4,7 +4,7 @@
             "SCIM"
         ],
         "description": "Returns a paginated list of members bound to a organization with a SCIM Users GET Request. See here for details on setting up SCIM.",
-        "operationId": "GET Users",
+        "operationId": "List an Organization's Members",
         "parameters": [
             {
                 "name": "organization_slug",
@@ -93,7 +93,7 @@
             "SCIM"
         ],
         "description": "Create a new Organization Member via a SCIM POST Users Request.",
-        "operationId": "POST Users",
+        "operationId": "Create a New Organization Member",
         "parameters": [
             {
                 "name": "organization_slug",

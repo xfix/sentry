@@ -4,7 +4,7 @@
             "SCIM"
         ],
         "description": "Query an individual Organization Member with a SCIM User GET Request.",
-        "operationId": "GET User",
+        "operationId": "Query an Individual Organization Member",
         "parameters": [
             {
                 "name": "organization_slug",
@@ -79,7 +79,7 @@
             "SCIM"
         ],
         "description": "Update an Organization Member's attributes with a SCIM PATCH Request. The only supported attribute is `active`, and after setting to false, will permanently delete the Organization Member.",
-        "operationId": "PATCH User",
+        "operationId": "Update an Organization Member's Attributes",
         "parameters": [
             {
                 "name": "organization_slug",
@@ -163,7 +163,7 @@
           "SCIM"
       ],
       "description": "Delete an Organization Member with a SCIM User Delete Request.",
-      "operationId": "DELETE User",
+      "operationId": "Delete an Organization Member",
       "parameters": [
           {
               "name": "organization_slug",
