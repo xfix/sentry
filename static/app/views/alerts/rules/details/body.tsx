@@ -10,7 +10,6 @@ import ActorAvatar from 'app/components/avatar/actorAvatar';
 import {SectionHeading} from 'app/components/charts/styles';
 import {getInterval} from 'app/components/charts/utils';
 import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
-import Duration from 'app/components/duration';
 import IdBadge from 'app/components/idBadge';
 import {KeyValueTable, KeyValueTableRow} from 'app/components/keyValueTable';
 import * as Layout from 'app/components/layouts/thirds';
@@ -64,20 +63,6 @@ export default class DetailsBody extends React.Component<Props> {
 
     return tct('[metric]', {
       metric: aggregate,
-    });
-  }
-
-  getTimeWindow(): React.ReactNode {
-    const {rule} = this.props;
-
-    if (!rule) {
-      return '';
-    }
-
-    const {timeWindow} = rule;
-
-    return tct('[window]', {
-      window: <Duration seconds={timeWindow * 60} />,
     });
   }
 
