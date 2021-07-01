@@ -215,18 +215,12 @@ export default class DetailsBody extends React.Component<Props> {
     );
   }
 
-  renderMetricStatus() {
-    const {
-      rule,
-      incidents,
-      params: {orgId},
-    } = this.props;
+  renderMetricStatus(projects: Project[]) {
+    const {rule, incidents} = this.props;
 
     if (!rule) {
       return this.renderLoading();
     }
-
-    const {projects: projectSlugs} = rule;
 
     // get current status
     const activeIncident = incidents?.find(({dateClosed}) => !dateClosed);
@@ -241,34 +235,26 @@ export default class DetailsBody extends React.Component<Props> {
       : null;
 
     return (
-      <Projects orgId={orgId} slugs={projectSlugs}>
-        {({initiallyLoaded, projects}) => {
-          return initiallyLoaded ? (
-            <StatusContainer>
-              <HeaderItem>
-                <Heading noMargin>{t('Status')}</Heading>
-                <Status>
-                  <AlertBadge status={status} hideText />
-                  <ActiveIncidentWrapper>
-                    <div>{activeIncident ? t('Triggered') : t('Resolved')}</div>
-                    <ActiveIncidentTime>
-                      {activityDate ? <TimeSince date={activityDate} /> : '-'}
-                    </ActiveIncidentTime>
-                  </ActiveIncidentWrapper>
-                </Status>
-              </HeaderItem>
-              {projects && projects.length && (
-                <HeaderItem>
-                  <Heading noMargin>{t('Project')}</Heading>
-                  <IdBadge avatarSize={16} project={projects[0]} />
-                </HeaderItem>
-              )}
-            </StatusContainer>
-          ) : (
-            <Placeholder height="200px" />
-          );
-        }}
-      </Projects>
+      <StatusContainer>
+        <HeaderItem>
+          <Heading noMargin>{t('Status')}</Heading>
+          <Status>
+            <AlertBadge status={status} hideText />
+            <ActiveIncidentWrapper>
+              <div>{activeIncident ? t('Triggered') : t('Resolved')}</div>
+              <ActiveIncidentTime>
+                {activityDate ? <TimeSince date={activityDate} /> : '-'}
+              </ActiveIncidentTime>
+            </ActiveIncidentWrapper>
+          </Status>
+        </HeaderItem>
+        {projects && projects.length && (
+          <HeaderItem>
+            <Heading noMargin>{t('Project')}</Heading>
+            <IdBadge avatarSize={16} project={projects[0]} />
+          </HeaderItem>
+        )}
+      </StatusContainer>
     );
   }
 
@@ -387,7 +373,7 @@ export default class DetailsBody extends React.Component<Props> {
                   </DetailWrapper>
                 </Layout.Main>
                 <Layout.Side>
-                  {this.renderMetricStatus()}
+                  {this.renderMetricStatus(projects as Project[])}
                   <Timeline
                     api={api}
                     organization={organization}
