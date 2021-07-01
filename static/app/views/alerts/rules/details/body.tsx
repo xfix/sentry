@@ -434,7 +434,6 @@ const HeaderItem = styled('div')`
   flex-direction: column;
 
   > *:nth-child(2) {
-    flex: 1;
     display: flex;
     align-items: center;
   }
