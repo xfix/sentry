@@ -1,20 +1,22 @@
 {
-    "type": "object",
-    "required": [],
-    "properties": {
-        "totalResults": {
-            "type": "integer"
-        },
-        "itemsPerPage": {
-            "type": "integer"
-        },
-        "startIndex": {
-            "type": "integer"
-        },
-        "Resources": {
-            "type": "array",
-            "items": {
-                "$ref": "user.json#/User"
+    "UserList": {
+        "type": "object",
+        "required": ["totalResults","itemsPerPage","startIndex","Resources"],
+        "properties": {
+            "totalResults": {
+                "type": "integer"
+            },
+            "itemsPerPage": {
+                "type": "integer"
+            },
+            "startIndex": {
+                "type": "integer"
+            },
+            "Resources": {
+                "type": "array",
+                "items": {
+                    "$ref": "user.json#/User"
+                }
             }
         }
     }

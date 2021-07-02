@@ -18,7 +18,10 @@
                 "name": "member_id",
                 "in": "path",
                 "required": true,
-                "description": "The id of the member you'd like to query."
+                "description": "The id of the member you'd like to query.",
+                "schema": {
+                    "type": "integer"
+                }
             }
         ],
         "responses": {
@@ -93,7 +96,10 @@
                 "name": "member_id",
                 "in": "path",
                 "required": true,
-                "description": "The id of the member you'd like to update."
+                "description": "The id of the member you'd like to update.",
+                "schema": {
+                    "type": "integer"
+                }
             }
         ],
         "requestBody": {
@@ -159,50 +165,50 @@
         ]
     },
     "delete": {
-      "tags": [
-          "SCIM"
-      ],
-      "description": "Delete an organization member with a SCIM User DELETE Request.",
-      "operationId": "Delete an Organization Member",
-      "parameters": [
-          {
-              "name": "organization_slug",
-              "in": "path",
-              "required": true,
-              "schema": {
-                  "type": "string"
-              }
-          },
-          {
-              "name": "member_id",
-              "in": "path",
-              "required": true,
-              "description": "The id of the member you'd like to delete.",
-              "schema": {
-                "type": "integer"
+        "tags": [
+            "SCIM"
+        ],
+        "description": "Delete an organization member with a SCIM User DELETE Request.",
+        "operationId": "Delete an Organization Member",
+        "parameters": [
+            {
+                "name": "organization_slug",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            {
+                "name": "member_id",
+                "in": "path",
+                "required": true,
+                "description": "The id of the member you'd like to delete.",
+                "schema": {
+                    "type": "integer"
+                }
             }
-          }
-      ],
-      "responses": {
-          "204": {
-              "description": "Success"
-          },
-          "401": {
-              "description": "Unauthorized"
-          },
-          "403": {
-              "description": "Forbidden"
-          },
-          "404": {
-              "description": "Not Found."
-          }
-      },
-      "security": [
-          {
-              "auth_token": [
-                  "member:admin"
-              ]
-          }
-      ]
-  }
+        ],
+        "responses": {
+            "204": {
+                "description": "Success"
+            },
+            "401": {
+                "description": "Unauthorized"
+            },
+            "403": {
+                "description": "Forbidden"
+            },
+            "404": {
+                "description": "Not Found."
+            }
+        },
+        "security": [
+            {
+                "auth_token": [
+                    "member:admin"
+                ]
+            }
+        ]
+    }
 }

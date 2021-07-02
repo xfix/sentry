@@ -51,7 +51,7 @@
     },
     "User": {
         "type": "object",
-        "required": [],
+        "required": ["schemas","id","active","username","name","meta","emails"],
         "properties": {
             "schemas": {"$ref": "#/definitions/schemas"},
             "id": {

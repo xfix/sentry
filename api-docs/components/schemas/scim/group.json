@@ -13,7 +13,10 @@
             }
         },
         "members": {
-            "type": "array"
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
         },
         "meta": {
             "type": "object",
@@ -26,7 +29,7 @@
     },
     "Group": {
         "type": "object",
-        "required": [],
+        "required": ["schemas","id","displayName","members","meta"],
         "properties": {
             "schemas": {
                 "$ref": "#/definitions/schemas"

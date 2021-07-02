@@ -1,6 +1,6 @@
 {
     "type": "object",
-    "required": [],
+    "required": ["totalResults","itemsPerPage","startIndex","Resources"],
     "properties": {
         "totalResults": {
             "type": "integer"
