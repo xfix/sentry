@@ -15,7 +15,16 @@
         "members": {
             "type": "array",
             "items": {
-                "type": "object"
+                "type": "object",
+                "required": ["value","display"],
+                "properties": {
+                    "value": {
+                        "type": "string"
+                    },
+                    "display": {
+                        "type": "string"
+                    }
+                }
             }
         },
         "meta": {
@@ -29,7 +38,13 @@
     },
     "Group": {
         "type": "object",
-        "required": ["schemas","id","displayName","members","meta"],
+        "required": [
+            "schemas",
+            "id",
+            "displayName",
+            "members",
+            "meta"
+        ],
         "properties": {
             "schemas": {
                 "$ref": "#/definitions/schemas"
