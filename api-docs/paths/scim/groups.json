@@ -39,10 +39,7 @@
                 "content": {
                     "application/json": {
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "../../components/schemas/scim/group_list.json"
-                            }
+                            "$ref": "../../components/schemas/scim/group_list.json"
                         },
                         "example": {
                             "schemas": [
@@ -140,7 +137,9 @@
                             ],
                             "displayName": "Test SCIMv2",
                             "members": [],
-                            "meta": {"resourceType": "Group"}
+                            "meta": {
+                                "resourceType": "Group"
+                            }
                         }
                     }
                 }

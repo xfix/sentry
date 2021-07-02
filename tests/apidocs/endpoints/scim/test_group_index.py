@@ -5,11 +5,11 @@ from tests.apidocs.util import APIDocsTestCase
 from tests.sentry.api.test_scim import SCIMTestCase
 
 
-class SCIMMemberDetailsDocs(APIDocsTestCase, SCIMTestCase):
+class SCIMTeamDetailsDocs(APIDocsTestCase, SCIMTestCase):
     def setUp(self):
         super().setUp()
         self.member = self.create_member(user=self.create_user(), organization=self.organization)
-
+        self.team = self.create_team(organization=self.organization, members=[self.user])
         self.url = reverse(
             "sentry-api-0-organization-scim-team-index",
             kwargs={"organization_slug": self.organization.slug},

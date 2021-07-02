@@ -30,10 +30,7 @@
                 "content": {
                     "application/json": {
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "../../components/schemas/scim/group.json#/Group"
-                            }
+                            "$ref": "../../components/schemas/scim/group.json#/Group"
                         },
                         "example": {
                             "schemas": [
@@ -125,7 +122,7 @@
             "required": true
         },
         "responses": {
-            "204": {
+            "200": {
                 "description": "Success"
             },
             "401": {
@@ -142,6 +139,47 @@
             {
                 "auth_token": [
                     "team:write"
+                ]
+            }
+        ]
+    },
+    "delete": {
+        "tags": [
+            "SCIM"
+        ],
+        "description": "Delete a team with a SCIM Group GET Request.",
+        "operationId": "Delete an Individual Team",
+        "parameters": [
+            {
+                "name": "organization_slug",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            {
+                "name": "team_id",
+                "in": "path",
+                "required": true,
+                "description": "The id of the team you'd like to query.",
+                "schema": {
+                    "type": "integer"
+                }
+            }
+        ],
+        "responses": {
+            "204": {
+                "description": "Success"
+            },
+            "404": {
+                "description": "Not Found"
+            }
+        },
+        "security": [
+            {
+                "auth_token": [
+                    "team: read"
                 ]
             }
         ]

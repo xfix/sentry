@@ -19,3 +19,8 @@ class SCIMMemberDetailsDocs(APIDocsTestCase, SCIMTestCase):
         response = self.client.get(self.url)
         request = RequestFactory().get(self.url)
         self.validate_schema(request, response)
+
+    def test_delete(self):
+        response = self.client.delete(self.url)
+        request = RequestFactory().delete(self.url)
+        self.validate_schema(request, response)
