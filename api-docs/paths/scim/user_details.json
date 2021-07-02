@@ -3,7 +3,7 @@
         "tags": [
             "SCIM"
         ],
-        "description": "Query an individual Organization Member with a SCIM User GET Request.",
+        "description": "Query an individual organization member with a SCIM User GET Request.\n- The `name` object will contain fields `firstName` and `lastName` with the values of `N/A`. Sentry's SCIM API does not currently support these fields but returns them for compatibility purposes.",
         "operationId": "Query an Individual Organization Member",
         "parameters": [
             {
@@ -78,7 +78,7 @@
         "tags": [
             "SCIM"
         ],
-        "description": "Update an Organization Member's attributes with a SCIM PATCH Request. The only supported attribute is `active`, and after setting to false, will permanently delete the Organization Member.",
+        "description": "Update an organization member's attributes with a SCIM PATCH Request. The only supported attribute is `active`, and after setting to false, will permanently delete the Organization Member.",
         "operationId": "Update an Organization Member's Attributes",
         "parameters": [
             {
@@ -162,7 +162,7 @@
       "tags": [
           "SCIM"
       ],
-      "description": "Delete an Organization Member with a SCIM User Delete Request.",
+      "description": "Delete an organization member with a SCIM User DELETE Request.",
       "operationId": "Delete an Organization Member",
       "parameters": [
           {

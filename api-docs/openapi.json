@@ -77,8 +77,8 @@
     },
     {
       "name": "SCIM",
-      "x-sidebar-name": "SCIM",
-      "description": "The System for Cross-Domain Identity Management ([SCIM](http://www.simplecloud.info/)) is a standard implemented by Identity Providers and applications in order to facilitate federated identity management. Through these APIs you can add and delete members as well as teams. Sentry SaaS customers must be on a Business Plan with SAML2 Enabled. For how to enable SCIM, see docs (here), or how to set up SCIM with your specific identity provider see (here).",
+      "x-sidebar-name": "SCIM (User & Team Provisioning)",
+      "description": "System for Cross-Domain Identity Management ([SCIM](http://www.simplecloud.info/)) is a standard implemented by Identity Providers and applications in order to facilitate federated identity management. Through these APIs you can add and delete members as well as teams. Sentry SaaS customers must be on a Business Plan with SAML2 Enabled. SCIM uses a bearer token for authentication that is created when you enable it. For how to enable SCIM, see our docs [here](TODO).\n Sentry's SCIM API does not currently support syncing passwords, or setting any User attributes other than `active`",
       "x-display-description": true,
       "externalDocs": {
         "description": "Found an error? Let us know.",

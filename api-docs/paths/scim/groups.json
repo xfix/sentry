@@ -3,7 +3,7 @@
         "tags": [
             "SCIM"
         ],
-        "description": "Returns a paginated list of teams bound to a organization with a SCIM Groups GET Request.",
+        "description": "Returns a paginated list of teams bound to a organization with a SCIM Groups GET Request.\n- Note that the members field will only contain up to 10000 members.",
         "operationId": "List an Organization's Teams",
         "parameters": [
             {
@@ -48,7 +48,7 @@
                             "schemas": [
                                 "urn:ietf:params:scim:schemas:core:2.0:Group"
                             ],
-                            "id": 23232,
+                            "id": "23232",
                             "displayName": "test-scimv2",
                             "members": [],
                             "meta": {
@@ -139,7 +139,8 @@
                                 "urn:ietf:params:scim:schemas:core:2.0:Group"
                             ],
                             "displayName": "Test SCIMv2",
-                            "members": []
+                            "members": [],
+                            "meta": {"resourceType": "Group"}
                         }
                     }
                 }
