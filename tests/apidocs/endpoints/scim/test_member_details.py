@@ -18,5 +18,4 @@ class SCIMMemberDetailsDocs(APIDocsTestCase, SCIMTestCase):
     def test_get(self):
         response = self.client.get(self.url)
         request = RequestFactory().get(self.url)
-        print(response.data)
         self.validate_schema(request, response)

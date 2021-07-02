@@ -30,10 +30,7 @@
                 "content": {
                     "application/json": {
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "../../components/schemas/scim/user.json#/User"
-                            }
+                            "$ref": "../../components/schemas/scim/user.json#/User"
                         },
                         "example": [
                             {
