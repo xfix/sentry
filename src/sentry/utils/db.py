@@ -1,3 +1,5 @@
+import inspect
+
 import sentry_sdk
 from django.db import DEFAULT_DB_ALIAS, connections
 from django.db.models.fields.related_descriptors import ReverseOneToOneDescriptor
@@ -6,6 +8,8 @@ from sentry_sdk.integrations import Integration
 
 class DjangoAtomicIntegration(Integration):
     identifier = "django_atomic"
+    _frame = None
+    _using = None
 
     @staticmethod
     def setup_once():
@@ -17,10 +21,18 @@ class DjangoAtomicIntegration(Integration):
         def _enter(self):
             self._sentry_sdk_span = sentry_sdk.start_span(op="transaction.atomic")
             self._sentry_sdk_span.set_data("using", self.using)
+            self._sentry_sdk_span.set_data("where", inspect.stack()[1])
+
+            DjangoAtomicIntegration._frame = inspect.stack()[1]
+            DjangoAtomicIntegration._using = self.using
+
             self._sentry_sdk_span.__enter__()
             return original_enter(self)
 
         def _exit(self, exc_type, exc_value, traceback):
+            DjangoAtomicIntegration._frame = None
+            DjangoAtomicIntegration._using = None
+
             rv = original_exit(self, exc_type, exc_value, traceback)
             if hasattr(self, "_sentry_sdk_span"):
                 self._sentry_sdk_span.__exit__(exc_type, exc_value, traceback)

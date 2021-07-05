@@ -12,10 +12,58 @@ from datetime import timedelta
 from urllib.parse import urlparse
 
 from django.conf.global_settings import *  # NOQA
+from django.db.models import QuerySet
 
 import sentry
 from sentry.utils.celery import crontab_with_minute_jitter
 from sentry.utils.types import type_from_value
+
+
+def check_file_txn(orgiginal_fn):
+    def _check_file_txn(self, *args, **kwargs):
+        from sentry.models import (
+            File,
+            FileBlob,
+            FileBlobIndex,
+            FileBlobOwner,
+            ProjectDebugFile,
+            ReleaseFile,
+        )
+        from sentry.utils.db import DjangoAtomicIntegration
+
+        if self.model in {
+            File,
+            FileBlob,
+            FileBlobIndex,
+            FileBlobOwner,
+            ProjectDebugFile,
+            ReleaseFile,
+        }:
+            frame = DjangoAtomicIntegration._frame
+            if (
+                DjangoAtomicIntegration._using is None
+                and frame
+                and not frame.filename.endswith(
+                    (
+                        "/django/test/testcases.py",
+                        "/django/db/models/query.py",
+                    )
+                )
+            ):
+
+                raise Exception(f"File table in transaction: {self.model}, {frame}")
+
+        return orgiginal_fn(self, *args, **kwargs)
+
+    return _check_file_txn
+
+
+QuerySet.update = check_file_txn(QuerySet.update)
+QuerySet.create = check_file_txn(QuerySet.create)
+QuerySet.delete = check_file_txn(QuerySet.delete)
+QuerySet._update = check_file_txn(QuerySet._update)
+QuerySet._insert = check_file_txn(QuerySet._insert)
+QuerySet._raw_delete = check_file_txn(QuerySet._raw_delete)
 
 
 def gettext_noop(s):
