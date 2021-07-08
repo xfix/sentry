@@ -64,6 +64,7 @@ SAMPLED_TASKS = {
     "sentry.tasks.store.process_event": settings.SENTRY_PROCESS_EVENT_APM_SAMPLING,
     "sentry.tasks.store.process_event_from_reprocessing": settings.SENTRY_PROCESS_EVENT_APM_SAMPLING,
     "sentry.tasks.assemble.assemble_dif": 0.1,
+    "sentry.tasks.process_suspect_commits": 0.1,
 }
 
 
