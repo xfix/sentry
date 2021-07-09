@@ -1109,6 +1109,9 @@ SENTRY_RELAY_ENDPOINT_APM_SAMPLING = 0
 # sample rate for ingest consumer processing functions
 SENTRY_INGEST_CONSUMER_APM_SAMPLING = 0
 
+# sample rate for suspect commits task
+SENTRY_SUSPECT_COMMITS_APM_SAMPLING = 0
+
 # ----
 # end APM config
 # ----
