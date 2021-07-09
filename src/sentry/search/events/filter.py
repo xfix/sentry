@@ -17,6 +17,7 @@ from sentry.api.event_search import (
     SearchValue,
     parse_search_query,
 )
+from sentry.constants import SEMVER_FAKE_PACKAGE
 from sentry.exceptions import InvalidSearchQuery
 from sentry.models import Project, Release, SemverFilter
 from sentry.models.group import Group
@@ -36,7 +37,6 @@ from sentry.search.events.constants import (
     RELEASE_ALIAS,
     SEMVER_ALIAS,
     SEMVER_EMPTY_RELEASE,
-    SEMVER_FAKE_PACKAGE,
     SEMVER_MAX_SEARCH_RELEASES,
     SEMVER_PACKAGE_ALIAS,
     SEMVER_WILDCARDS,
