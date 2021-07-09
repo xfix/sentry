@@ -30,8 +30,8 @@ from sentry.shared_integrations.exceptions import (
     IntegrationError,
 )
 from sentry.utils import json
-from sentry.web.helpers import render_to_response
 from sentry.utils.http import absolute_uri
+from sentry.web.helpers import render_to_response
 
 from .client import SlackClient
 
