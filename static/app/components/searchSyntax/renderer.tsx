@@ -1,8 +1,9 @@
-import {Fragment, useEffect, useState} from 'react';
+import {Fragment, useEffect, useRef, useState} from 'react';
 import {css} from '@emotion/react';
 import styled from '@emotion/styled';
 
 import Tooltip from 'app/components/tooltip';
+import {shake} from 'app/styles/animations';
 import space from 'app/styles/space';
 
 import {ParseResult, Token, TokenResult} from './parser';
@@ -67,6 +68,8 @@ function renderToken(token: TokenResult<Token>, cursor: number) {
   }
 }
 
+const shakeAnimation = shake({intensity: [0, 3], steps: 10});
+
 const FilterToken = ({
   filter,
   cursor,
@@ -81,6 +84,9 @@ const FilterToken = ({
   // cursor initally being in it.
   const [hasLeft, setHasLeft] = useState(!isActive);
 
+  // Used to trigger the shake animation when the element becomes invalid
+  const filterElementRef = useRef<HTMLSpanElement>(null);
+
   // Trigger the effect when isActive changes to updated whether the cursor has
   // left the token.
   useEffect(() => {
@@ -92,6 +98,23 @@ const FilterToken = ({
   const showInvalid = hasLeft && !!filter.invalid;
   const showTooltip = showInvalid && isActive;
 
+  // Trigger the effect when showInvalid changes to re-run
+  useEffect(() => {
+    if (!filterElementRef.current || !showInvalid) {
+      return;
+    }
+
+    const style = filterElementRef.current.style;
+
+    style.animation = 'none';
+    style.animationPlayState = 'running';
+    void filterElementRef.current.offsetTop;
+
+    window.requestAnimationFrame(
+      () => (style.animation = `${shakeAnimation.name} 300ms`)
+    );
+  }, [showInvalid]);
+
   return (
     <Tooltip
       disabled={!showTooltip}
@@ -100,7 +123,7 @@ const FilterToken = ({
       forceShow
       skipWrapper
     >
-      <Filter active={isActive} invalid={showInvalid}>
+      <Filter ref={filterElementRef} active={isActive} invalid={showInvalid}>
         {filter.negated && <Negation>!</Negation>}
         <KeyToken token={filter.key} negated={filter.negated} />
         {filter.operator && <Operator>{filter.operator}</Operator>}
@@ -164,6 +187,10 @@ const Filter = styled('span')<FilterProps>`
   --token-bg: ${p => p.theme.searchTokenBackground[colorType(p)]};
   --token-border: ${p => p.theme.searchTokenBorder[colorType(p)]};
   --token-value-color: ${p => (p.invalid ? p.theme.red300 : p.theme.blue300)};
+
+  display: inline-block;
+  animation-name: ${shakeAnimation};
+  animation-play-state: paused;
 `;
 
 const filterCss = css`

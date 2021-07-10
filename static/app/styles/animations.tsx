@@ -111,8 +111,7 @@ export const highlight = (color: string) => keyframes`
   }
 `;
 
-// TODO(ts): priority should be pulled from `keyof typeof theme.alert`
-export const alertHighlight = (priority: string, theme: Theme) => keyframes`
+export const alertHighlight = (priority: keyof Theme['alert'], theme: Theme) => keyframes`
   0%,
   100% {
     background: rgba(255, 255, 255, 0);
@@ -122,5 +121,30 @@ export const alertHighlight = (priority: string, theme: Theme) => keyframes`
   25% {
     background: ${theme.alert[priority].backgroundLight};
     border-color: ${theme.alert[priority].border};
+  }
+`;
+
+export const shake = ({
+  steps = 50,
+  intensity = 3,
+}: {steps?: number; intensity?: number | [number, number]} = {}) => keyframes`
+${new Array(steps)
+  .fill(0)
+  .map((_, i) => {
+    const [intensityX, intensityY] = Array.isArray(intensity)
+      ? intensity
+      : [intensity, intensity];
+
+    const rand1 = Math.round(Math.random() * intensityX);
+    const rand2 = Math.round(Math.random() * intensityY);
+
+    return `${i * (99 / steps)}% {
+      transform: translate(${rand1}px, ${rand2}px);
+    }`;
+  })
+  .join('\n')}
+
+  100% {
+    transform: none;
   }
 `;
